@@ -1,0 +1,6 @@
+input_size: 224
+batch_size_latency: 1
+batch_size_throughput: 64
+warmup_iters: 30
+measure_iters: 100
+precision: amp

@@ -1,0 +1,8 @@
+models:
+  - oncoderm_mambax_b0_backbone_only
+  - oncoderm_mambax_b3_cssa
+  - oncoderm_mambax_b6_full
+perturbations:
+  gaussian_blur: [3, 5]
+  brightness_shift: [-0.2, 0.2]
+  hair_occlusion_lines: [5, 10]

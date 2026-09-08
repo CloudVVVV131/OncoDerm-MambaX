@@ -1,0 +1,7 @@
+member,architecture,score_seed,representative_efficiency_run,stored_parameters,flops,latency_ms_b1,derivation_note
+B2 score seed 42,B2,42,oncoderm_mambax_b2_metadata_cmgf_seed42_20260706_234933,32010026.0,4484499584.0,4.2572760581970215,Representative seed-42 architecture benchmark applied to each score member
+B2 score seed 2024,B2,2024,oncoderm_mambax_b2_metadata_cmgf_seed42_20260706_234933,32010026.0,4484499584.0,4.2572760581970215,Representative seed-42 architecture benchmark applied to each score member
+B2 score seed 3407,B2,3407,oncoderm_mambax_b2_metadata_cmgf_seed42_20260706_234933,32010026.0,4484499584.0,4.2572760581970215,Representative seed-42 architecture benchmark applied to each score member
+B6 score seed 42,B6,42,oncoderm_mambax_b6_full_seed42_20260707_004712,33431726.0,5331094144.0,5.656552314758301,Representative seed-42 architecture benchmark applied to each score member
+B6 score seed 2024,B6,2024,oncoderm_mambax_b6_full_seed42_20260707_004712,33431726.0,5331094144.0,5.656552314758301,Representative seed-42 architecture benchmark applied to each score member
+B6 score seed 3407,B6,3407,oncoderm_mambax_b6_full_seed42_20260707_004712,33431726.0,5331094144.0,5.656552314758301,Representative seed-42 architecture benchmark applied to each score member

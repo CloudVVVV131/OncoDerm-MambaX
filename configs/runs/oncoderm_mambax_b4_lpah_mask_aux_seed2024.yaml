@@ -1,0 +1,153 @@
+project:
+  name: oncoderm_mambax_submission_v1_stability
+  output_dir: outputs
+  seed: 2024
+  split_seed: 42
+data:
+  dataset: HAM10000
+  metadata_csv: data/raw/HAM10000/HAM10000_metadata.csv
+  image_dir: data/raw/HAM10000/images
+  split_dir: splits
+  input_size: 224
+  resize_short_side: 256
+  num_classes: 7
+  label_column: dx
+  image_id_column: image_id
+  group_column: lesion_id
+  patient_id_column: patient_id
+  split:
+    train: 0.7
+    val: 0.15
+    test: 0.15
+    stratify: dx
+    group_policy: lesion_id_first_patient_id_if_complete
+    group_priority:
+    - lesion_id
+    - patient_id
+  transforms:
+    random_resized_crop_scale:
+    - 0.8
+    - 1.0
+    hflip_p: 0.5
+    vflip_p: 0.5
+    rotation_degrees: 30
+    color_jitter:
+    - 0.1
+    - 0.1
+    - 0.08
+    - 0.02
+    gaussian_blur_p: 0.05
+    random_erasing_p: 0.0
+    mixup_alpha: 0.0
+    cutmix_alpha: 0.0
+  metadata:
+    enabled: false
+    age_column: age
+    sex_column: sex
+    localization_column: localization
+    age_scale: 100.0
+    include_missing_indicators: true
+    sex_values:
+    - male
+    - female
+    - unknown
+    localization_values:
+    - abdomen
+    - acral
+    - back
+    - chest
+    - ear
+    - face
+    - foot
+    - genital
+    - hand
+    - lower extremity
+    - neck
+    - scalp
+    - trunk
+    - unknown
+    - upper extremity
+  mask_aux:
+    enabled: true
+    image_dir: data/raw/ISIC_masks_auxiliary/images
+    mask_dir: data/raw/ISIC_masks_auxiliary/masks
+    batch_size: 32
+    num_workers: 0
+    expected_pairs: 100
+  root: data/raw/HAM10000
+train:
+  epochs: 80
+  batch_size: 48
+  batch_size_candidates:
+  - 64
+  - 128
+  num_workers: 8
+  optimizer: adamw
+  lr: 0.0003
+  weight_decay: 0.05
+  warmup_epochs: 5
+  scheduler: cosine
+  amp: true
+  grad_clip: 1.0
+  early_stopping_patience: 15
+  selection_metric: macro_f1
+  selection_tie_breaker: mel_auc
+  backbone_lr: 3.0e-05
+  adapter_lr: 0.0003
+  head_lr: 0.0003
+loss:
+  name: weighted_ce
+  beta: 0.999
+  gamma: 2.0
+  label_smoothing: 0.05
+  lambda_sparse: 0.0005
+  lambda_tv: 0.002
+  multitask: true
+  lambda_7class: 1.0
+  lambda_melanoma: 0.5
+  lambda_mask_aux: 0.1
+  lambda_consistency: 0.05
+eval:
+  bootstrap_iters: 1000
+  bootstrap_min_iters_if_time_limited: 500
+  ece_bins: 15
+  threshold_source: validation
+  save_logits: true
+  save_val_predictions: true
+  save_test_predictions: true
+  save_attention: true
+  report_ci_metrics:
+  - macro_f1
+  - macro_auc
+  - mel_auc
+  - sensitivity
+  - specificity
+  calibration:
+    min_temperature: 0.5
+    max_temperature: 5.0
+model:
+  name: oncoderm_mambax_b4_lpah_mask_aux
+  source: oncoderm_mambax
+  timm_name: convnext_tiny
+  pretrained: true
+  num_classes: 7
+  out_indices:
+  - 1
+  - 2
+  - 3
+  fusion_dim: 768
+  multi_scale_fusion: false
+  dropout: 0.1
+  cssa:
+    enabled: false
+    stage3_enabled: false
+    adapter_dim: 256
+    scan_kernel_size: 7
+  lesion_prior:
+    enabled: true
+  metadata_fusion:
+    enabled: false
+    hidden_dim: 64
+  heads:
+    melanoma_endpoint: true
+  allow_random_init_fallback: false

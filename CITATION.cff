@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Cite this software repository and the accompanying paper when using this implementation."
+type: software
+title: "OncoDerm-MambaX"
+authors:
+  - name: "OncoDerm-MambaX contributors"
+repository-code: "https://github.com/CloudVVVV131/OncoDerm-MambaX"
+url: "https://github.com/CloudVVVV131/OncoDerm-MambaX"
+version: "0.3.0"
