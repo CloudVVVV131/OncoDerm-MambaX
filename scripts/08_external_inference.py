@@ -20,6 +20,42 @@ from lesionmamba.utils.config import load_yaml
 from lesionmamba.utils.io import ensure_dir, write_json
 
 
+def build_summary_row(
+    run_id: str,
+    threshold_source: str,
+    internal_multiclass_auc: float | None,
+    external_metrics: dict,
+    external_score_source: str,
+) -> dict:
+    return {
+        **external_metrics,
+        "run_id": run_id,
+        "threshold_source": threshold_source,
+        "internal_score_source": "seven_class_softmax_mel",
+        "external_score_source": external_score_source,
+        "Internal multiclass MEL-AUC": internal_multiclass_auc,
+        "External endpoint ROC-AUC": external_metrics.get("roc_auc"),
+    }
+
+
+def merge_summary_rows(old_df: pd.DataFrame, new_df: pd.DataFrame) -> pd.DataFrame:
+    # Upgrade the summary schema without interpreting a cross-head difference.
+    old_df = old_df.drop(columns=["Drop"], errors="ignore").copy()
+    for old, current in {
+        "Internal Mel-AUC": "Internal multiclass MEL-AUC",
+        "External Mel-AUC": "External endpoint ROC-AUC",
+    }.items():
+        if old in old_df:
+            if current in old_df:
+                old_df[current] = old_df[current].combine_first(old_df[old])
+                old_df = old_df.drop(columns=[old])
+            else:
+                old_df = old_df.rename(columns={old: current})
+    if "run_id" in old_df:
+        old_df = old_df[~old_df["run_id"].isin(new_df["run_id"])]
+    return pd.concat([old_df, new_df], ignore_index=True, sort=False)
+
+
 def iter_run_dirs(base_dir: Path, selected_runs: list[str] | None, run_glob: str | None) -> list[Path]:
     if selected_runs:
         return [Path(run) for run in selected_runs]
@@ -88,6 +124,7 @@ def main() -> None:
         model.load_state_dict(ckpt["model"], strict=True)
         model.eval()
         all_scores, all_labels, out_rows = [], [], []
+        external_score_source = None
         with torch.no_grad():
             for batch in loader:
                 images = batch["image"].to(device)
@@ -101,8 +138,13 @@ def main() -> None:
                 mel_logits = out.get("mel_logits")
                 if isinstance(mel_logits, torch.Tensor):
                     scores = torch.sigmoid(mel_logits).float().cpu().numpy()
+                    batch_score_source = "binary_head_sigmoid"
                 else:
                     scores = probs[:, 4]
+                    batch_score_source = "seven_class_softmax_mel"
+                if external_score_source is not None and external_score_source != batch_score_source:
+                    raise ValueError("External score source changed between batches.")
+                external_score_source = batch_score_source
                 all_scores.append(scores)
                 all_labels.append(batch["label"].numpy())
                 for i in range(len(batch["label"])):
@@ -127,24 +169,18 @@ def main() -> None:
             import json
 
             internal_mel_auc = json.loads(metrics_path.read_text(encoding="utf-8")).get("mel_auc")
-        rows.append(
-            {
-                "run_id": run_dir.name,
-                "threshold_source": threshold_source,
-                "Internal Mel-AUC": internal_mel_auc,
-                "External Mel-AUC": metrics.get("roc_auc"),
-                "Drop": None if internal_mel_auc is None else internal_mel_auc - metrics.get("roc_auc"),
-                **metrics,
-            }
-        )
+        rows.append(build_summary_row(
+            run_dir.name, threshold_source, internal_mel_auc, metrics, external_score_source
+        ))
     if not rows:
         raise ValueError("No external runs were evaluated. Specify existing --selected-runs directories.")
     columns = [
         "run_id",
         "threshold_source",
-        "Internal Mel-AUC",
-        "External Mel-AUC",
-        "Drop",
+        "internal_score_source",
+        "external_score_source",
+        "Internal multiclass MEL-AUC",
+        "External endpoint ROC-AUC",
         "roc_auc",
         "pr_auc",
         "sensitivity",
@@ -157,9 +193,7 @@ def main() -> None:
     merge_existing = bool(args.selected_runs or args.run_glob)
     if merge_existing and out_path.exists() and not new_df.empty:
         old_df = pd.read_csv(out_path)
-        if "run_id" in old_df.columns:
-            old_df = old_df[~old_df["run_id"].isin(new_df["run_id"])]
-        out_df = pd.concat([old_df, new_df], ignore_index=True, sort=False)
+        out_df = merge_summary_rows(old_df, new_df)
     else:
         out_df = new_df
     out_df.to_csv(out_path, index=False)

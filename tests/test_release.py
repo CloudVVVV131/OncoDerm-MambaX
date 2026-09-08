@@ -98,6 +98,76 @@ class CheckpointTests(unittest.TestCase):
 
 
 class EvidenceTests(unittest.TestCase):
+    def test_external_summary_labels_both_score_sources(self):
+        module = load_script("08_external_inference.py")
+        metrics = {"roc_auc": 0.73, "pr_auc": 0.24}
+        for score_source in ("binary_head_sigmoid", "seven_class_softmax_mel"):
+            with self.subTest(score_source=score_source):
+                row = module.build_summary_row("run", "validation", 0.91, metrics, score_source)
+                self.assertEqual(row["Internal multiclass MEL-AUC"], 0.91)
+                self.assertEqual(row["External endpoint ROC-AUC"], 0.73)
+                self.assertEqual(row["internal_score_source"], "seven_class_softmax_mel")
+                self.assertEqual(row["external_score_source"], score_source)
+                self.assertEqual(row["pr_auc"], 0.24)
+                self.assertNotIn("Drop", row)
+        self.assertEqual(metrics, {"roc_auc": 0.73, "pr_auc": 0.24})
+
+    def test_external_summary_preserves_missing_internal_auc(self):
+        module = load_script("08_external_inference.py")
+        row = module.build_summary_row("run", "validation", None, {"roc_auc": 0.73}, "binary_head_sigmoid")
+        self.assertIsNone(row["Internal multiclass MEL-AUC"])
+        self.assertNotIn("Drop", row)
+
+    def test_external_summary_merge_removes_legacy_drop(self):
+        import pandas as pd
+        module = load_script("08_external_inference.py")
+        old = pd.DataFrame([
+            {"run_id": "keep", "Internal Mel-AUC": 0.91, "External Mel-AUC": 0.73, "Drop": 0.18},
+            {"run_id": "replace", "Internal Mel-AUC": 0.81, "External Mel-AUC": 0.63, "Drop": 0.18},
+        ])
+        original = old.copy(deep=True)
+        new = pd.DataFrame([module.build_summary_row(
+            "replace", "validation", 0.89, {"roc_auc": 0.74}, "binary_head_sigmoid"
+        )])
+        merged = module.merge_summary_rows(old, new).set_index("run_id")
+        self.assertEqual(list(merged.index), ["keep", "replace"])
+        self.assertEqual(merged.loc["keep", "Internal multiclass MEL-AUC"], 0.91)
+        self.assertEqual(merged.loc["replace", "External endpoint ROC-AUC"], 0.74)
+        self.assertTrue(pd.isna(merged.loc["keep", "external_score_source"]))
+        for column in ("Drop", "Internal Mel-AUC", "External Mel-AUC"):
+            self.assertNotIn(column, merged)
+        pd.testing.assert_frame_equal(old, original)
+
+    def test_external_summary_merge_supports_current_schema(self):
+        import pandas as pd
+        module = load_script("08_external_inference.py")
+        old = pd.DataFrame([module.build_summary_row(
+            "keep", "validation", 0.9, {"roc_auc": 0.7}, "seven_class_softmax_mel"
+        )])
+        new = pd.DataFrame([module.build_summary_row(
+            "new", "validation", 0.8, {"roc_auc": 0.6}, "binary_head_sigmoid"
+        )])
+        merged = module.merge_summary_rows(old, new)
+        self.assertEqual(merged["run_id"].tolist(), ["keep", "new"])
+        self.assertEqual(merged["external_score_source"].tolist(), ["seven_class_softmax_mel", "binary_head_sigmoid"])
+        self.assertNotIn("Drop", merged)
+
+    def test_external_summary_merge_upgrades_mixed_schema(self):
+        import pandas as pd
+        module = load_script("08_external_inference.py")
+        old = pd.DataFrame([
+            {"run_id": "legacy", "Internal Mel-AUC": 0.9, "External Mel-AUC": 0.7},
+            {"run_id": "current", "Internal multiclass MEL-AUC": 0.8, "External endpoint ROC-AUC": 0.6},
+        ])
+        new = pd.DataFrame([module.build_summary_row(
+            "new", "validation", 0.85, {"roc_auc": 0.65}, "binary_head_sigmoid"
+        )])
+        merged = module.merge_summary_rows(old, new)
+        self.assertEqual(merged["Internal multiclass MEL-AUC"].tolist(), [0.9, 0.8, 0.85])
+        self.assertEqual(merged["External endpoint ROC-AUC"].tolist(), [0.7, 0.6, 0.65])
+        self.assertNotIn("Internal Mel-AUC", merged)
+        self.assertNotIn("External Mel-AUC", merged)
+
     def test_ambiguous_runs_require_explicit_selection(self):
         module = load_script("17_submission_v1_evidence.py")
         with tempfile.TemporaryDirectory() as tmp:

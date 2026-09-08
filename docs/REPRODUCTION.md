@@ -26,6 +26,10 @@ loader.
   to test predictions and external evaluation.
 - Temperature scaling is fit on validation logits.
 
+The external summary labels internal multiclass MEL-AUC and external endpoint
+ROC-AUC separately and records their score sources. Comparisons of internal and
+external performance require the same score definition on both cohorts.
+
 Active auxiliary and consistency losses depend on both coefficients and enabled
 output heads. B0-B6 compare implemented configurations; component effects are
 interpreted within each configuration's enabled heads and losses.
