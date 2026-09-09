@@ -3,8 +3,31 @@ message: "Cite this software repository and the accompanying paper when using th
 type: software
 title: "OncoDerm-MambaX"
 authors:
-  - name: "OncoDerm-MambaX contributors"
+  - given-names: Jiangdi
+    family-names: Xu
+    affiliation: "University of Shanghai for Science and Technology"
+    orcid: "https://orcid.org/0009-0009-2358-3791"
+  - given-names: Yijun
+    family-names: Sha
+    affiliation: "University of Shanghai for Science and Technology"
+    orcid: "https://orcid.org/0009-0003-8255-804X"
+  - given-names: Fengming
+    family-names: An
+    affiliation: "University of Shanghai for Science and Technology"
+    orcid: "https://orcid.org/0009-0008-9214-4330"
 repository-code: "https://github.com/CloudVVVV131/OncoDerm-MambaX"
 url: "https://github.com/CloudVVVV131/OncoDerm-MambaX"
 version: "0.3.0"
+date-released: "2026-09-09"
 license: MIT
+abstract: >-
+  Research software for dermoscopic skin-lesion classification and melanoma
+  endpoint evaluation. The source release includes OncoDerm-MambaX model code,
+  experiment configurations, data preparation and evaluation scripts, fixed
+  image-ID partitions, and selected aggregate figure data with rendering scripts.
+keywords:
+  - medical imaging
+  - melanoma
+  - skin-lesion classification
+  - PyTorch
+  - reproducible research
