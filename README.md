@@ -81,5 +81,8 @@ Use [CITATION.cff](CITATION.cff) for the software citation. Report reproducibili
 questions through [Issues](https://github.com/CloudVVVV131/OncoDerm-MambaX/issues)
 using reproducible examples and redacted logs.
 
-See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for dependency and data terms.
-Source license: pending author approval.
+## License
+
+Original source code is licensed under the [MIT License](LICENSE).
+Third-party software, datasets and pretrained weights retain their respective
+terms; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

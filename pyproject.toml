@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=70", "wheel"]
+requires = ["setuptools>=77.0.3", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -7,6 +7,8 @@ name = "oncoderm-mambax"
 version = "0.3.0"
 description = "Research software for skin-lesion classification and melanoma evaluation"
 readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
 requires-python = ">=3.10"
 dependencies = [
   "torch>=2.6,<3", "torchvision>=0.21,<1", "timm>=1.0.27,<1.1",

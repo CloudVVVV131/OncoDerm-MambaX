@@ -1,8 +1,8 @@
 # Third-Party Software and Data
 
-Dependencies are installed separately and retain their upstream licenses and
-copyright notices. See [README.md](README.md) for the authors' source-license
-status; third-party components retain the terms linked below.
+Original source code is licensed under the [MIT License](LICENSE). Dependencies
+are installed separately and retain their upstream licenses and copyright
+notices, as linked below.
 
 | Component | Upstream source / license | Use |
 |---|---|---|
