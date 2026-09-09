@@ -77,6 +77,9 @@ comparators; the DermaMamba comparison implementation is outside this distributi
 
 ## Citation and Contributions
 
+Version 0.3.0 is archived on Zenodo with the version-specific DOI
+[10.5281/zenodo.22678600](https://doi.org/10.5281/zenodo.22678600).
+
 Use [CITATION.cff](CITATION.cff) for the software citation. Report reproducibility
 questions through [Issues](https://github.com/CloudVVVV131/OncoDerm-MambaX/issues)
 using reproducible examples and redacted logs.
