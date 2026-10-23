@@ -1,0 +1,136 @@
+{
+  "status": "PASSED",
+  "code": [
+    {
+      "path": "${R52_PATH_FC5034C5656F}",
+      "bytes": 11677,
+      "sha256": "7a62a3ff4b546a427ea521a14750490565638938b1dc52fad7fe7e313b941841",
+      "unchanged": true
+    },
+    {
+      "path": "${R52_PATH_8ABAD82565CD}",
+      "bytes": 1316,
+      "sha256": "29d8dfcf071c63ba66d9ffa6f6879e313b77fdf1c7d6c16d721db477554e0ab4",
+      "unchanged": true
+    },
+    {
+      "path": "${R52_PATH_45DF3EF0ECCC}",
+      "bytes": 820,
+      "sha256": "b8cf51b7127d843df110e0167fe188a19344c5fe66acfb68f94c1426853eeba7",
+      "unchanged": true
+    },
+    {
+      "path": "${R52_PATH_3A20468F1150}",
+      "bytes": 20990,
+      "sha256": "7de3cc3b304a91728da77ba4def90f76e7cafd98aa9cf68a218d041e28f2d646",
+      "previous_sha256": "3a0e9718d88795c26c284d1c6a23f95f1517631d34df02fea3fc9b4c19808090",
+      "previous_source_saved": "${R52_PATH_19A1F08692AF}",
+      "revision_reason": "report wording and allowlist only",
+      "unchanged": true
+    },
+    {
+      "path": "${R52_PATH_F4FC841C37A8}",
+      "bytes": 4568,
+      "sha256": "3f849e09db2f1eff63aad5dc6804dc19e19d58d830a14a8712d882324a0b4fc0",
+      "unchanged": true
+    },
+    {
+      "path": "${R52_PATH_A67B1F19BCEF}",
+      "bytes": 4813,
+      "sha256": "fdb9232c0725fc95f76a0d5864c55072fd481730abe372643730622b58e57340",
+      "unchanged": true
+    },
+    {
+      "path": "${R52_PATH_6C12D0FA3153}",
+      "bytes": 6736,
+      "sha256": "c298bf30940111e20553f078a111084ce3261ccbcf30e5770d2399834f959095",
+      "unchanged": true
+    },
+    {
+      "path": "${R52_PATH_0B78DDB24CBB}",
+      "bytes": 3200,
+      "sha256": "8e6ea964509edfbdb1534a5f882adb4d8ac22be9b2af26a31fa2f416a5ded59e",
+      "unchanged": true
+    },
+    {
+      "path": "${R52_PATH_348609B18ACB}",
+      "bytes": 28415,
+      "sha256": "58238eb7c63f0add536bb9e345e51b08e0322e3cfc620907949945557c5a3b5b",
+      "unchanged": true
+    },
+    {
+      "path": "${R52_PATH_1632DE166419}",
+      "bytes": 2027,
+      "sha256": "4a31d166cb0c83c4c40aef2c7129c5a61b4dace9bf1c3d04c704121b69aba9ce",
+      "unchanged": true
+    },
+    {
+      "path": "${R52_PATH_FE44DBDCE934}",
+      "bytes": 7527,
+      "sha256": "5362ba3d8c6815c88321a89e11f528e2e72840d5862837f01f3c87427e1eafdc",
+      "unchanged": true
+    },
+    {
+      "path": "${R52_PATH_89C0DA62963C}",
+      "bytes": 22,
+      "sha256": "56b5e91c3bb77ab933c25fd65eba883419bdc5691cc94cb9dc840e8f4e3674eb",
+      "unchanged": true
+    },
+    {
+      "path": "${R52_PATH_BF1664D16B5C}",
+      "bytes": 10801,
+      "sha256": "db399b81dbed64eb56130f27f1936089808872260a50fd345ce909f1ed1685e6",
+      "unchanged": true
+    },
+    {
+      "path": "${R52_PATH_4CA8805FA236}",
+      "bytes": 2104,
+      "sha256": "4c001f03eca3a93ee3e9a590d46ef0710f66fc88be1512241d3f71a0bc3be6c6",
+      "unchanged": true
+    },
+    {
+      "path": "${R52_PATH_87D36B44F570}",
+      "bytes": 190,
+      "sha256": "78d6dddaf4113248d3df55c21acbd7751075189a56b282833042bc6bd2fb3f62",
+      "unchanged": true
+    },
+    {
+      "path": "${R52_PATH_0CF6EBE798D1}",
+      "bytes": 13751,
+      "sha256": "7e737a004f69053821628f84b3da9c44a4e4a208a386fa7322c5c7ff9331a0c5",
+      "unchanged": true
+    },
+    {
+      "path": "${R52_PATH_15B63EEFEA4B}",
+      "bytes": 66,
+      "sha256": "c0c19257e4aa5fcff4bf73c6923128029375a903ef71a7b43e0cefa6fc1c0a7d",
+      "unchanged": true
+    },
+    {
+      "path": "${R52_PATH_ED014DBD518E}",
+      "bytes": 3079,
+      "sha256": "00c19958f26f7db9e9977e34a927e3b1357a4852e5e612d8b6c945d2ce3e22d8",
+      "unchanged": true
+    },
+    {
+      "path": "${R52_PATH_34E62BE23219}",
+      "bytes": 795,
+      "sha256": "83fefab1d4f2504ed9bf128a1bbf19c82e25306071e959df13ffe59446a42adc",
+      "unchanged": true
+    },
+    {
+      "path": "${R52_PATH_96BBF62D78BA}",
+      "bytes": 9580,
+      "sha256": "b55d17a0d257bf9c3954520b4049b806a8e070617f0f80276d4e98555279908d",
+      "unchanged": true
+    },
+    {
+      "path": "${R52_PATH_1A36F7F36860}",
+      "bytes": 2861,
+      "sha256": "4de61041c03e49a0d8ca03437a73f21317b0ed65a95d38f5d173bfd3c190995a",
+      "unchanged": true
+    }
+  ],
+  "original_copied_sources_unchanged": true,
+  "source_models_not_modified": true
+}

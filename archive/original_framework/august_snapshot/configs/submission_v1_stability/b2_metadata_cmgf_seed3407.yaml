@@ -1,0 +1,17 @@
+_base_: defaults_seed3407.yaml
+model:
+  name: oncoderm_mambax_b2_metadata_cmgf
+  multi_scale_fusion: false
+  cssa:
+    enabled: false
+    stage3_enabled: false
+  lesion_prior:
+    enabled: false
+  metadata_fusion:
+    enabled: true
+  heads:
+    melanoma_endpoint: true
+data:
+  mask_aux:
+    enabled: false
+

@@ -1,0 +1,11 @@
+{
+  "at": "2026-10-23T03:53:49.256601+08:00",
+  "scope": "Only release wrappers / synthetic fixture / archive identity",
+  "no_model_dry_run": "PASS",
+  "historical_end_to_end": "NOT_RUN",
+  "online": "NOT_PUBLISHED",
+  "retained_archive_files_unchanged": 982,
+  "model_imports": 0,
+  "weights_loaded": 0,
+  "experiments_started": 0
+}

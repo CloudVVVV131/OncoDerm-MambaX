@@ -1,0 +1,137 @@
+{
+  "status": "PASS",
+  "scope": "synthetic packaging only; no research reproduction",
+  "wrapper_sha256": "1b4a52b6aaca82583360a2d4268206f63ca26e63558af60ed4ae8d61a16cef4d",
+  "tests": [
+    {
+      "name": "manifest_integrity",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "status": "PASS",
+      "operation_result": "PASS"
+    },
+    {
+      "name": "tampered_manifest_rejected",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "status": "PASS",
+      "operation_result": "FAIL"
+    },
+    {
+      "name": "resolved_paths_stat_only",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "status": "PASS",
+      "operation_result": "PASS"
+    },
+    {
+      "name": "yaml_text_only",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "status": "PASS",
+      "operation_result": "PASS"
+    },
+    {
+      "name": "toml_text_only",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "status": "PASS",
+      "operation_result": "PASS"
+    },
+    {
+      "name": "materialize_new_workspace",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "status": "PASS",
+      "operation_result": "PASS"
+    },
+    {
+      "name": "overwrite_rejected",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "status": "PASS",
+      "operation_result": "FAIL"
+    },
+    {
+      "name": "workspace_in_release_rejected",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "status": "PASS",
+      "operation_result": "FAIL"
+    },
+    {
+      "name": "workspace_in_input_rejected",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "status": "PASS",
+      "operation_result": "FAIL"
+    },
+    {
+      "name": "unresolved_token_rejected",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "status": "PASS",
+      "operation_result": "FAIL"
+    },
+    {
+      "name": "path_traversal_rejected",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "status": "PASS",
+      "operation_result": "FAIL"
+    },
+    {
+      "name": "unknown_binding_key_rejected",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "status": "PASS",
+      "operation_result": "FAIL"
+    },
+    {
+      "name": "actual_archived_template_materialization",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "status": "PASS",
+      "operation_result": "PASS"
+    }
+  ],
+  "test_count": 13,
+  "import_roots": [
+    "argparse",
+    "csv",
+    "hashlib",
+    "json",
+    "os",
+    "pathlib",
+    "re",
+    "sys"
+  ],
+  "stdlib_only_imports": true,
+  "audit_guard_probe_count": 3,
+  "audit_probe_events": [
+    "socket.__new__",
+    "subprocess.Popen",
+    "tensor-open"
+  ],
+  "wrapper_forbidden_side_effect_attempts": [],
+  "source_or_input_write_attempts": [],
+  "external_input_contents_read": [],
+  "source_tree_identical": true,
+  "nonpath_bytes_preserved": true,
+  "research_modules_imported": [],
+  "network_calls": 0,
+  "processes_started": 0,
+  "tensor_files_loaded": 0,
+  "elapsed_seconds": 0.20300000000133878,
+  "real_inputs_validated": false,
+  "end_to_end_reproduction": "NOT_RUN",
+  "actual_archived_template_check": {
+    "archive_relative_path": "archive/controlled_mask_supervision/seed42/INPUT_SOURCES.json",
+    "template_sha256": "b1da12823ce6a4b808aca15c9c986c4a23e936c05eabf51c797abdb6d63aada9",
+    "input_entries": 8,
+    "real_scientific_inputs_checked": false,
+    "purpose": "Actual archived token syntax and exact nonpath preservation only",
+    "original_bytes_and_sha_fields_preserved": true,
+    "nonpath_bytes_preserved": true
+  }
+}

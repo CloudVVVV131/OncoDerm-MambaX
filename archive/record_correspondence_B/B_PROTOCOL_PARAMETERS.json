@@ -1,0 +1,68 @@
+{
+  "protocol_id": "FIM_B_ORIGINAL_RECORD_MATCHING_v1.0_20261020",
+  "status": "DESIGN_FINAL_RUNTIME_NOT_STARTED",
+  "new_training_runs": 0,
+  "manuscript_baseline": "R5.1",
+  "A1_status": "ACCEPTED_COMPLETE",
+  "A1_directory": "${R52_PATH_EDA0A4B2C0A1}",
+  "model_order": [
+    "ORIG_B2_s42",
+    "ORIG_B2_s2024",
+    "ORIG_B2_s3407",
+    "ORIG_B6_s42",
+    "ORIG_B6_s2024",
+    "ORIG_B6_s3407"
+  ],
+  "cohorts": {
+    "SIIM": {
+      "n": 33126,
+      "positives": 584,
+      "blocks": 2056,
+      "block": "patient_id",
+      "exchange_images": 31638,
+      "fixed_images": 1488,
+      "fixed_singleton_size_blocks": 19,
+      "unique_clinical_types": 167
+    },
+    "Derm7pt": {
+      "n": 1011,
+      "positives": 252,
+      "blocks": 1011,
+      "block": "existing case_num/same-image binding",
+      "exchange_images": 1011,
+      "fixed_images": 0,
+      "unique_clinical_types": 16
+    }
+  },
+  "reassignment": "uniform block derangement within exact block-size strata + independent random permutation of complete records within assigned donor block; singleton-size strata native",
+  "conditions": [
+    "E_MATCHED",
+    "E_NULL",
+    "E_BLOCK_SHUFFLED"
+  ],
+  "K_observed": 50,
+  "K_within_bootstrap": 50,
+  "B_effective": 2000,
+  "RNG": "PCG64(SeedSequence([20261020,cohort_code,phase,draw,repeat,attempt]))",
+  "primary_comparisons": [
+    "SIIM/ORIG_B2/softmax_MEL/AP/matched-minus-shuffled",
+    "SIIM/ORIG_B6/softmax_MEL/AP/matched-minus-shuffled"
+  ],
+  "primary_ci_levels": [
+    0.95,
+    0.975
+  ],
+  "supporting_ci_level": 0.95,
+  "quantile_method": "linear",
+  "bootstrap": "within-size-stratum whole-block resampling; recreate donors on resampled block copies; retain original singleton-size strata; fixed six models",
+  "bootstrap_includes_new_clinical_model_forward": false,
+  "head_forward": "original CMGF + original linear heads, FP32 eval; finite score grid covering all observed joint metadata vectors and NULL",
+  "reference_code": "clinical_matching_reference.py",
+  "runtime_hours_cap": 4,
+  "default_max_statistics_workers": 2,
+  "performance_results_read_for_design": false,
+  "method_limits": "Model reliance diagnostic; conditional empirical percentile bootstrap, not exact randomization p or clinical causal claim",
+  "main_report": "B_CLINICAL_MATCHING_REPORT.md",
+  "result_zip": "R5_2_CLINICAL_MATCHING_RESULTS.zip",
+  "progress": "B_CLINICAL_MATCHING_PROGRESS.json"
+}

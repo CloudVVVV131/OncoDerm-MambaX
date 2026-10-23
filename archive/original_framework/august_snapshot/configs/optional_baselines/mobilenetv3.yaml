@@ -1,0 +1,7 @@
+_base_: ../defaults.yaml
+model:
+  name: mobilenetv3
+  source: timm
+  timm_name: mobilenetv3_large_100
+  pretrained: true
+  num_classes: 7

@@ -1,0 +1,4 @@
+-r requirements-autodl.txt
+packaging
+ninja
+mamba-ssm[causal-conv1d]==2.3.2.post1

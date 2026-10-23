@@ -1,0 +1,12 @@
+timm
+numpy
+pandas
+scikit-learn
+pillow
+matplotlib
+seaborn
+pyyaml
+tqdm
+einops
+thop
+remotezip==0.12.3

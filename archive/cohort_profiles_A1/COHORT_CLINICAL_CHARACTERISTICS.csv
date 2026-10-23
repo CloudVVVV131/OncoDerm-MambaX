@@ -1,0 +1,187 @@
+cohort,field,statistic,n,denominator,percent,value,value_unit,statistical_unit,source_path,source_field,note
+HAM_train,cohort,rows,6982,6982,100.0,NA,image,image,${R52_PATH_E37E406F66F5},cohort,
+HAM_train,label,melanoma_positive,775,6982,11.099971354912633,NA,image,image,${R52_PATH_E37E406F66F5},dx,non-melanoma is not synonymous with benign
+HAM_train,label,non_melanoma,6207,6982,88.90002864508737,NA,image,image,${R52_PATH_E37E406F66F5},dx,
+HAM_train,image,distinct_identifier,6982,NA,NA,NA,image identifier,image,${R52_PATH_E37E406F66F5},image_id,"Distinct identifiers, not percent of rows"
+HAM_train,image,unavailable_identifier_rows,0,6982,0.0,NA,image,image,${R52_PATH_E37E406F66F5},image_id,
+HAM_train,lesion,distinct_identifier,5230,NA,NA,NA,lesion identifier,image,${R52_PATH_E37E406F66F5},lesion_id,"Distinct identifiers, not percent of rows"
+HAM_train,lesion,unavailable_identifier_rows,0,6982,0.0,NA,image,image,${R52_PATH_E37E406F66F5},lesion_id,
+HAM_train,patient,distinct_identifier,NA,NA,NA,NA,image,image,${R52_PATH_E37E406F66F5},NA,NA: no reliable patient identifier in this source
+HAM_train,case,distinct_identifier,NA,NA,NA,NA,image,image,${R52_PATH_E37E406F66F5},NA,NA: no reliable case identifier in this source
+HAM_train,age,valid,6945,6982,99.47006588370094,NA,image,image,${R52_PATH_E37E406F66F5},age,
+HAM_train,age,unavailable,37,6982,0.5299341162990547,NA,image,image,${R52_PATH_E37E406F66F5},age,
+HAM_train,age,column_absent,0,6982,0.0,NA,image,image,${R52_PATH_E37E406F66F5},age,
+HAM_train,age,blank,37,6982,0.5299341162990547,NA,image,image,${R52_PATH_E37E406F66F5},age,
+HAM_train,age,NA_token,0,6982,0.0,NA,image,image,${R52_PATH_E37E406F66F5},age,
+HAM_train,age,explicit_unknown,0,6982,0.0,NA,image,image,${R52_PATH_E37E406F66F5},age,
+HAM_train,age,invalid_or_nonfinite_numeric,0,6982,0.0,NA,image,image,${R52_PATH_E37E406F66F5},age,
+HAM_train,sex,valid,6949,6982,99.52735605843598,NA,image,image,${R52_PATH_E37E406F66F5},sex,
+HAM_train,sex,unavailable,33,6982,0.4726439415640218,NA,image,image,${R52_PATH_E37E406F66F5},sex,
+HAM_train,sex,column_absent,0,6982,0.0,NA,image,image,${R52_PATH_E37E406F66F5},sex,
+HAM_train,sex,blank,0,6982,0.0,NA,image,image,${R52_PATH_E37E406F66F5},sex,
+HAM_train,sex,NA_token,0,6982,0.0,NA,image,image,${R52_PATH_E37E406F66F5},sex,
+HAM_train,sex,explicit_unknown,33,6982,0.4726439415640218,NA,image,image,${R52_PATH_E37E406F66F5},sex,
+HAM_train,sex,invalid_or_nonfinite_numeric,0,6982,0.0,NA,image,image,${R52_PATH_E37E406F66F5},sex,
+HAM_train,site,valid,6845,6982,98.03781151532512,NA,image,image,${R52_PATH_E37E406F66F5},localization,
+HAM_train,site,unavailable,137,6982,1.9621884846748783,NA,image,image,${R52_PATH_E37E406F66F5},localization,
+HAM_train,site,column_absent,0,6982,0.0,NA,image,image,${R52_PATH_E37E406F66F5},localization,
+HAM_train,site,blank,0,6982,0.0,NA,image,image,${R52_PATH_E37E406F66F5},localization,
+HAM_train,site,NA_token,0,6982,0.0,NA,image,image,${R52_PATH_E37E406F66F5},localization,
+HAM_train,site,explicit_unknown,137,6982,1.9621884846748783,NA,image,image,${R52_PATH_E37E406F66F5},localization,
+HAM_train,site,invalid_or_nonfinite_numeric,0,6982,0.0,NA,image,image,${R52_PATH_E37E406F66F5},localization,
+HAM_train,age,min,6945,6945,100.0,0.0,years,image,${R52_PATH_E37E406F66F5},age,Finite valid ages only; linear quantile; no imputation/clipping
+HAM_train,age,q1,6945,6945,100.0,40.0,years,image,${R52_PATH_E37E406F66F5},age,Finite valid ages only; linear quantile; no imputation/clipping
+HAM_train,age,median,6945,6945,100.0,50.0,years,image,${R52_PATH_E37E406F66F5},age,Finite valid ages only; linear quantile; no imputation/clipping
+HAM_train,age,q3,6945,6945,100.0,65.0,years,image,${R52_PATH_E37E406F66F5},age,Finite valid ages only; linear quantile; no imputation/clipping
+HAM_train,age,max,6945,6945,100.0,85.0,years,image,${R52_PATH_E37E406F66F5},age,Finite valid ages only; linear quantile; no imputation/clipping
+HAM_train,age,observed_zero_not_missing,27,6982,0.38670867946147236,NA,image,image,${R52_PATH_E37E406F66F5},age,
+HAM_train,age,observed_negative_not_excluded,0,6982,0.0,NA,image,image,${R52_PATH_E37E406F66F5},age,
+HAM_validation,cohort,rows,1513,1513,100.0,NA,image,image,${R52_PATH_A7EDEF14667C},cohort,
+HAM_validation,label,melanoma_positive,164,1513,10.839391936549902,NA,image,image,${R52_PATH_A7EDEF14667C},dx,non-melanoma is not synonymous with benign
+HAM_validation,label,non_melanoma,1349,1513,89.1606080634501,NA,image,image,${R52_PATH_A7EDEF14667C},dx,
+HAM_validation,image,distinct_identifier,1513,NA,NA,NA,image identifier,image,${R52_PATH_A7EDEF14667C},image_id,"Distinct identifiers, not percent of rows"
+HAM_validation,image,unavailable_identifier_rows,0,1513,0.0,NA,image,image,${R52_PATH_A7EDEF14667C},image_id,
+HAM_validation,lesion,distinct_identifier,1120,NA,NA,NA,lesion identifier,image,${R52_PATH_A7EDEF14667C},lesion_id,"Distinct identifiers, not percent of rows"
+HAM_validation,lesion,unavailable_identifier_rows,0,1513,0.0,NA,image,image,${R52_PATH_A7EDEF14667C},lesion_id,
+HAM_validation,patient,distinct_identifier,NA,NA,NA,NA,image,image,${R52_PATH_A7EDEF14667C},NA,NA: no reliable patient identifier in this source
+HAM_validation,case,distinct_identifier,NA,NA,NA,NA,image,image,${R52_PATH_A7EDEF14667C},NA,NA: no reliable case identifier in this source
+HAM_validation,age,valid,1502,1513,99.2729676140119,NA,image,image,${R52_PATH_A7EDEF14667C},age,
+HAM_validation,age,unavailable,11,1513,0.7270323859881032,NA,image,image,${R52_PATH_A7EDEF14667C},age,
+HAM_validation,age,column_absent,0,1513,0.0,NA,image,image,${R52_PATH_A7EDEF14667C},age,
+HAM_validation,age,blank,11,1513,0.7270323859881032,NA,image,image,${R52_PATH_A7EDEF14667C},age,
+HAM_validation,age,NA_token,0,1513,0.0,NA,image,image,${R52_PATH_A7EDEF14667C},age,
+HAM_validation,age,explicit_unknown,0,1513,0.0,NA,image,image,${R52_PATH_A7EDEF14667C},age,
+HAM_validation,age,invalid_or_nonfinite_numeric,0,1513,0.0,NA,image,image,${R52_PATH_A7EDEF14667C},age,
+HAM_validation,sex,valid,1500,1513,99.14077990746861,NA,image,image,${R52_PATH_A7EDEF14667C},sex,
+HAM_validation,sex,unavailable,13,1513,0.8592200925313945,NA,image,image,${R52_PATH_A7EDEF14667C},sex,
+HAM_validation,sex,column_absent,0,1513,0.0,NA,image,image,${R52_PATH_A7EDEF14667C},sex,
+HAM_validation,sex,blank,0,1513,0.0,NA,image,image,${R52_PATH_A7EDEF14667C},sex,
+HAM_validation,sex,NA_token,0,1513,0.0,NA,image,image,${R52_PATH_A7EDEF14667C},sex,
+HAM_validation,sex,explicit_unknown,13,1513,0.8592200925313945,NA,image,image,${R52_PATH_A7EDEF14667C},sex,
+HAM_validation,sex,invalid_or_nonfinite_numeric,0,1513,0.0,NA,image,image,${R52_PATH_A7EDEF14667C},sex,
+HAM_validation,site,valid,1460,1513,96.49702577660278,NA,image,image,${R52_PATH_A7EDEF14667C},localization,
+HAM_validation,site,unavailable,53,1513,3.502974223397224,NA,image,image,${R52_PATH_A7EDEF14667C},localization,
+HAM_validation,site,column_absent,0,1513,0.0,NA,image,image,${R52_PATH_A7EDEF14667C},localization,
+HAM_validation,site,blank,0,1513,0.0,NA,image,image,${R52_PATH_A7EDEF14667C},localization,
+HAM_validation,site,NA_token,0,1513,0.0,NA,image,image,${R52_PATH_A7EDEF14667C},localization,
+HAM_validation,site,explicit_unknown,53,1513,3.502974223397224,NA,image,image,${R52_PATH_A7EDEF14667C},localization,
+HAM_validation,site,invalid_or_nonfinite_numeric,0,1513,0.0,NA,image,image,${R52_PATH_A7EDEF14667C},localization,
+HAM_validation,age,min,1502,1502,100.0,0.0,years,image,${R52_PATH_A7EDEF14667C},age,Finite valid ages only; linear quantile; no imputation/clipping
+HAM_validation,age,q1,1502,1502,100.0,40.0,years,image,${R52_PATH_A7EDEF14667C},age,Finite valid ages only; linear quantile; no imputation/clipping
+HAM_validation,age,median,1502,1502,100.0,50.0,years,image,${R52_PATH_A7EDEF14667C},age,Finite valid ages only; linear quantile; no imputation/clipping
+HAM_validation,age,q3,1502,1502,100.0,65.0,years,image,${R52_PATH_A7EDEF14667C},age,Finite valid ages only; linear quantile; no imputation/clipping
+HAM_validation,age,max,1502,1502,100.0,85.0,years,image,${R52_PATH_A7EDEF14667C},age,Finite valid ages only; linear quantile; no imputation/clipping
+HAM_validation,age,observed_zero_not_missing,5,1513,0.3304692663582287,NA,image,image,${R52_PATH_A7EDEF14667C},age,
+HAM_validation,age,observed_negative_not_excluded,0,1513,0.0,NA,image,image,${R52_PATH_A7EDEF14667C},age,
+HAM_internal_test,cohort,rows,1520,1520,100.0,NA,image,image,${R52_PATH_1E005046B878},cohort,
+HAM_internal_test,label,melanoma_positive,174,1520,11.447368421052632,NA,image,image,${R52_PATH_1E005046B878},dx,non-melanoma is not synonymous with benign
+HAM_internal_test,label,non_melanoma,1346,1520,88.55263157894737,NA,image,image,${R52_PATH_1E005046B878},dx,
+HAM_internal_test,image,distinct_identifier,1520,NA,NA,NA,image identifier,image,${R52_PATH_1E005046B878},image_id,"Distinct identifiers, not percent of rows"
+HAM_internal_test,image,unavailable_identifier_rows,0,1520,0.0,NA,image,image,${R52_PATH_1E005046B878},image_id,
+HAM_internal_test,lesion,distinct_identifier,1120,NA,NA,NA,lesion identifier,image,${R52_PATH_1E005046B878},lesion_id,"Distinct identifiers, not percent of rows"
+HAM_internal_test,lesion,unavailable_identifier_rows,0,1520,0.0,NA,image,image,${R52_PATH_1E005046B878},lesion_id,
+HAM_internal_test,patient,distinct_identifier,NA,NA,NA,NA,image,image,${R52_PATH_1E005046B878},NA,NA: no reliable patient identifier in this source
+HAM_internal_test,case,distinct_identifier,NA,NA,NA,NA,image,image,${R52_PATH_1E005046B878},NA,NA: no reliable case identifier in this source
+HAM_internal_test,age,valid,1511,1520,99.40789473684211,NA,image,image,${R52_PATH_1E005046B878},age,
+HAM_internal_test,age,unavailable,9,1520,0.5921052631578947,NA,image,image,${R52_PATH_1E005046B878},age,
+HAM_internal_test,age,column_absent,0,1520,0.0,NA,image,image,${R52_PATH_1E005046B878},age,
+HAM_internal_test,age,blank,9,1520,0.5921052631578947,NA,image,image,${R52_PATH_1E005046B878},age,
+HAM_internal_test,age,NA_token,0,1520,0.0,NA,image,image,${R52_PATH_1E005046B878},age,
+HAM_internal_test,age,explicit_unknown,0,1520,0.0,NA,image,image,${R52_PATH_1E005046B878},age,
+HAM_internal_test,age,invalid_or_nonfinite_numeric,0,1520,0.0,NA,image,image,${R52_PATH_1E005046B878},age,
+HAM_internal_test,sex,valid,1509,1520,99.27631578947368,NA,image,image,${R52_PATH_1E005046B878},sex,
+HAM_internal_test,sex,unavailable,11,1520,0.7236842105263158,NA,image,image,${R52_PATH_1E005046B878},sex,
+HAM_internal_test,sex,column_absent,0,1520,0.0,NA,image,image,${R52_PATH_1E005046B878},sex,
+HAM_internal_test,sex,blank,0,1520,0.0,NA,image,image,${R52_PATH_1E005046B878},sex,
+HAM_internal_test,sex,NA_token,0,1520,0.0,NA,image,image,${R52_PATH_1E005046B878},sex,
+HAM_internal_test,sex,explicit_unknown,11,1520,0.7236842105263158,NA,image,image,${R52_PATH_1E005046B878},sex,
+HAM_internal_test,sex,invalid_or_nonfinite_numeric,0,1520,0.0,NA,image,image,${R52_PATH_1E005046B878},sex,
+HAM_internal_test,site,valid,1476,1520,97.10526315789474,NA,image,image,${R52_PATH_1E005046B878},localization,
+HAM_internal_test,site,unavailable,44,1520,2.8947368421052633,NA,image,image,${R52_PATH_1E005046B878},localization,
+HAM_internal_test,site,column_absent,0,1520,0.0,NA,image,image,${R52_PATH_1E005046B878},localization,
+HAM_internal_test,site,blank,0,1520,0.0,NA,image,image,${R52_PATH_1E005046B878},localization,
+HAM_internal_test,site,NA_token,0,1520,0.0,NA,image,image,${R52_PATH_1E005046B878},localization,
+HAM_internal_test,site,explicit_unknown,44,1520,2.8947368421052633,NA,image,image,${R52_PATH_1E005046B878},localization,
+HAM_internal_test,site,invalid_or_nonfinite_numeric,0,1520,0.0,NA,image,image,${R52_PATH_1E005046B878},localization,
+HAM_internal_test,age,min,1511,1511,100.0,0.0,years,image,${R52_PATH_1E005046B878},age,Finite valid ages only; linear quantile; no imputation/clipping
+HAM_internal_test,age,q1,1511,1511,100.0,40.0,years,image,${R52_PATH_1E005046B878},age,Finite valid ages only; linear quantile; no imputation/clipping
+HAM_internal_test,age,median,1511,1511,100.0,50.0,years,image,${R52_PATH_1E005046B878},age,Finite valid ages only; linear quantile; no imputation/clipping
+HAM_internal_test,age,q3,1511,1511,100.0,65.0,years,image,${R52_PATH_1E005046B878},age,Finite valid ages only; linear quantile; no imputation/clipping
+HAM_internal_test,age,max,1511,1511,100.0,85.0,years,image,${R52_PATH_1E005046B878},age,Finite valid ages only; linear quantile; no imputation/clipping
+HAM_internal_test,age,observed_zero_not_missing,7,1520,0.4605263157894737,NA,image,image,${R52_PATH_1E005046B878},age,
+HAM_internal_test,age,observed_negative_not_excluded,0,1520,0.0,NA,image,image,${R52_PATH_1E005046B878},age,
+SIIM,cohort,rows,33126,33126,100.0,NA,image,image,${R52_PATH_83C520ED9A14},cohort,
+SIIM,label,melanoma_positive,584,33126,1.762965646320111,NA,image,image,${R52_PATH_83C520ED9A14},target,non-melanoma is not synonymous with benign
+SIIM,label,non_melanoma,32542,33126,98.23703435367989,NA,image,image,${R52_PATH_83C520ED9A14},target,
+SIIM,image,distinct_identifier,33126,NA,NA,NA,image identifier,image,${R52_PATH_83C520ED9A14},image_name,"Distinct identifiers, not percent of rows"
+SIIM,image,unavailable_identifier_rows,0,33126,0.0,NA,image,image,${R52_PATH_83C520ED9A14},image_name,
+SIIM,lesion,distinct_identifier,32701,NA,NA,NA,lesion identifier,image,${R52_PATH_83C520ED9A14},lesion_id,"Distinct identifiers, not percent of rows"
+SIIM,lesion,unavailable_identifier_rows,0,33126,0.0,NA,image,image,${R52_PATH_83C520ED9A14},lesion_id,
+SIIM,patient,distinct_identifier,2056,NA,NA,NA,patient identifier,image,${R52_PATH_83C520ED9A14},patient_id,"Distinct identifiers, not percent of rows"
+SIIM,patient,unavailable_identifier_rows,0,33126,0.0,NA,image,image,${R52_PATH_83C520ED9A14},patient_id,
+SIIM,case,distinct_identifier,NA,NA,NA,NA,image,image,${R52_PATH_83C520ED9A14},NA,NA: no reliable case identifier in this source
+SIIM,age,valid,33058,33126,99.79472317816821,NA,image,image,${R52_PATH_83C520ED9A14},age_approx,
+SIIM,age,unavailable,68,33126,0.20527682183179377,NA,image,image,${R52_PATH_83C520ED9A14},age_approx,
+SIIM,age,column_absent,0,33126,0.0,NA,image,image,${R52_PATH_83C520ED9A14},age_approx,
+SIIM,age,blank,68,33126,0.20527682183179377,NA,image,image,${R52_PATH_83C520ED9A14},age_approx,
+SIIM,age,NA_token,0,33126,0.0,NA,image,image,${R52_PATH_83C520ED9A14},age_approx,
+SIIM,age,explicit_unknown,0,33126,0.0,NA,image,image,${R52_PATH_83C520ED9A14},age_approx,
+SIIM,age,invalid_or_nonfinite_numeric,0,33126,0.0,NA,image,image,${R52_PATH_83C520ED9A14},age_approx,
+SIIM,sex,valid,33061,33126,99.80377950854314,NA,image,image,${R52_PATH_83C520ED9A14},sex,
+SIIM,sex,unavailable,65,33126,0.19622049145686168,NA,image,image,${R52_PATH_83C520ED9A14},sex,
+SIIM,sex,column_absent,0,33126,0.0,NA,image,image,${R52_PATH_83C520ED9A14},sex,
+SIIM,sex,blank,65,33126,0.19622049145686168,NA,image,image,${R52_PATH_83C520ED9A14},sex,
+SIIM,sex,NA_token,0,33126,0.0,NA,image,image,${R52_PATH_83C520ED9A14},sex,
+SIIM,sex,explicit_unknown,0,33126,0.0,NA,image,image,${R52_PATH_83C520ED9A14},sex,
+SIIM,sex,invalid_or_nonfinite_numeric,0,33126,0.0,NA,image,image,${R52_PATH_83C520ED9A14},sex,
+SIIM,site,valid,32599,33126,98.4091046308036,NA,image,image,${R52_PATH_83C520ED9A14},anatom_site_general_challenge,
+SIIM,site,unavailable,527,33126,1.5908953691964016,NA,image,image,${R52_PATH_83C520ED9A14},anatom_site_general_challenge,
+SIIM,site,column_absent,0,33126,0.0,NA,image,image,${R52_PATH_83C520ED9A14},anatom_site_general_challenge,
+SIIM,site,blank,527,33126,1.5908953691964016,NA,image,image,${R52_PATH_83C520ED9A14},anatom_site_general_challenge,
+SIIM,site,NA_token,0,33126,0.0,NA,image,image,${R52_PATH_83C520ED9A14},anatom_site_general_challenge,
+SIIM,site,explicit_unknown,0,33126,0.0,NA,image,image,${R52_PATH_83C520ED9A14},anatom_site_general_challenge,
+SIIM,site,invalid_or_nonfinite_numeric,0,33126,0.0,NA,image,image,${R52_PATH_83C520ED9A14},anatom_site_general_challenge,
+SIIM,age,min,33058,33058,100.0,0.0,years,image,${R52_PATH_83C520ED9A14},age_approx,Finite valid ages only; linear quantile; no imputation/clipping
+SIIM,age,q1,33058,33058,100.0,40.0,years,image,${R52_PATH_83C520ED9A14},age_approx,Finite valid ages only; linear quantile; no imputation/clipping
+SIIM,age,median,33058,33058,100.0,50.0,years,image,${R52_PATH_83C520ED9A14},age_approx,Finite valid ages only; linear quantile; no imputation/clipping
+SIIM,age,q3,33058,33058,100.0,60.0,years,image,${R52_PATH_83C520ED9A14},age_approx,Finite valid ages only; linear quantile; no imputation/clipping
+SIIM,age,max,33058,33058,100.0,90.0,years,image,${R52_PATH_83C520ED9A14},age_approx,Finite valid ages only; linear quantile; no imputation/clipping
+SIIM,age,observed_zero_not_missing,2,33126,0.006037553583288052,NA,image,image,${R52_PATH_83C520ED9A14},age_approx,
+SIIM,age,observed_negative_not_excluded,0,33126,0.0,NA,image,image,${R52_PATH_83C520ED9A14},age_approx,
+Derm7pt,cohort,rows,1011,1011,100.0,NA,dermoscopy case,dermoscopy case,${R52_PATH_CB55B27527EC},cohort,
+Derm7pt,label,melanoma_positive,252,1011,24.92581602373887,NA,dermoscopy case,dermoscopy case,${R52_PATH_CB55B27527EC},diagnosis,non-melanoma is not synonymous with benign
+Derm7pt,label,non_melanoma,759,1011,75.07418397626112,NA,dermoscopy case,dermoscopy case,${R52_PATH_CB55B27527EC},diagnosis,
+Derm7pt,image,distinct_identifier,1011,NA,NA,NA,image identifier,dermoscopy case,${R52_PATH_CB55B27527EC},derm,"Distinct identifiers, not percent of rows"
+Derm7pt,image,unavailable_identifier_rows,0,1011,0.0,NA,dermoscopy case,dermoscopy case,${R52_PATH_CB55B27527EC},derm,
+Derm7pt,lesion,distinct_identifier,NA,NA,NA,NA,dermoscopy case,dermoscopy case,${R52_PATH_CB55B27527EC},NA,NA: no reliable lesion identifier in this source
+Derm7pt,patient,distinct_identifier,NA,NA,NA,NA,dermoscopy case,dermoscopy case,${R52_PATH_CB55B27527EC},NA,NA: no reliable patient identifier in this source
+Derm7pt,case,distinct_identifier,1011,NA,NA,NA,case identifier,dermoscopy case,${R52_PATH_CB55B27527EC},case_num,"Distinct identifiers, not percent of rows"
+Derm7pt,case,unavailable_identifier_rows,0,1011,0.0,NA,dermoscopy case,dermoscopy case,${R52_PATH_CB55B27527EC},case_num,
+Derm7pt,age,valid,0,1011,0.0,NA,dermoscopy case,dermoscopy case,${R52_PATH_CB55B27527EC},age,
+Derm7pt,age,unavailable,1011,1011,100.0,NA,dermoscopy case,dermoscopy case,${R52_PATH_CB55B27527EC},age,
+Derm7pt,age,column_absent,1011,1011,100.0,NA,dermoscopy case,dermoscopy case,${R52_PATH_CB55B27527EC},age,
+Derm7pt,age,blank,0,1011,0.0,NA,dermoscopy case,dermoscopy case,${R52_PATH_CB55B27527EC},age,
+Derm7pt,age,NA_token,0,1011,0.0,NA,dermoscopy case,dermoscopy case,${R52_PATH_CB55B27527EC},age,
+Derm7pt,age,explicit_unknown,0,1011,0.0,NA,dermoscopy case,dermoscopy case,${R52_PATH_CB55B27527EC},age,
+Derm7pt,age,invalid_or_nonfinite_numeric,0,1011,0.0,NA,dermoscopy case,dermoscopy case,${R52_PATH_CB55B27527EC},age,
+Derm7pt,sex,valid,1011,1011,100.0,NA,dermoscopy case,dermoscopy case,${R52_PATH_CB55B27527EC},sex,
+Derm7pt,sex,unavailable,0,1011,0.0,NA,dermoscopy case,dermoscopy case,${R52_PATH_CB55B27527EC},sex,
+Derm7pt,sex,column_absent,0,1011,0.0,NA,dermoscopy case,dermoscopy case,${R52_PATH_CB55B27527EC},sex,
+Derm7pt,sex,blank,0,1011,0.0,NA,dermoscopy case,dermoscopy case,${R52_PATH_CB55B27527EC},sex,
+Derm7pt,sex,NA_token,0,1011,0.0,NA,dermoscopy case,dermoscopy case,${R52_PATH_CB55B27527EC},sex,
+Derm7pt,sex,explicit_unknown,0,1011,0.0,NA,dermoscopy case,dermoscopy case,${R52_PATH_CB55B27527EC},sex,
+Derm7pt,sex,invalid_or_nonfinite_numeric,0,1011,0.0,NA,dermoscopy case,dermoscopy case,${R52_PATH_CB55B27527EC},sex,
+Derm7pt,site,valid,1011,1011,100.0,NA,dermoscopy case,dermoscopy case,${R52_PATH_CB55B27527EC},location,
+Derm7pt,site,unavailable,0,1011,0.0,NA,dermoscopy case,dermoscopy case,${R52_PATH_CB55B27527EC},location,
+Derm7pt,site,column_absent,0,1011,0.0,NA,dermoscopy case,dermoscopy case,${R52_PATH_CB55B27527EC},location,
+Derm7pt,site,blank,0,1011,0.0,NA,dermoscopy case,dermoscopy case,${R52_PATH_CB55B27527EC},location,
+Derm7pt,site,NA_token,0,1011,0.0,NA,dermoscopy case,dermoscopy case,${R52_PATH_CB55B27527EC},location,
+Derm7pt,site,explicit_unknown,0,1011,0.0,NA,dermoscopy case,dermoscopy case,${R52_PATH_CB55B27527EC},location,
+Derm7pt,site,invalid_or_nonfinite_numeric,0,1011,0.0,NA,dermoscopy case,dermoscopy case,${R52_PATH_CB55B27527EC},location,
+Derm7pt,age,min,0,NA,NA,NA,years,dermoscopy case,${R52_PATH_CB55B27527EC},age,Finite valid ages only; linear quantile; no imputation/clipping
+Derm7pt,age,q1,0,NA,NA,NA,years,dermoscopy case,${R52_PATH_CB55B27527EC},age,Finite valid ages only; linear quantile; no imputation/clipping
+Derm7pt,age,median,0,NA,NA,NA,years,dermoscopy case,${R52_PATH_CB55B27527EC},age,Finite valid ages only; linear quantile; no imputation/clipping
+Derm7pt,age,q3,0,NA,NA,NA,years,dermoscopy case,${R52_PATH_CB55B27527EC},age,Finite valid ages only; linear quantile; no imputation/clipping
+Derm7pt,age,max,0,NA,NA,NA,years,dermoscopy case,${R52_PATH_CB55B27527EC},age,Finite valid ages only; linear quantile; no imputation/clipping
+Derm7pt,age,observed_zero_not_missing,0,1011,0.0,NA,dermoscopy case,dermoscopy case,${R52_PATH_CB55B27527EC},age,
+Derm7pt,age,observed_negative_not_excluded,0,1011,0.0,NA,dermoscopy case,dermoscopy case,${R52_PATH_CB55B27527EC},age,

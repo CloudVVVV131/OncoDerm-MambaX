@@ -1,0 +1,25 @@
+{
+  "status": "PASSED",
+  "at": "2026-10-15T01:08:54.434106+08:00",
+  "dataset_and_worker_init_AST_identical": true,
+  "checks": [
+    {
+      "split": "train",
+      "eight_images_exact_tensor_equality": true,
+      "workers": 2,
+      "metadata_and_labels_exact": true
+    },
+    {
+      "split": "val",
+      "eight_images_exact_tensor_equality": true,
+      "workers": 2,
+      "metadata_and_labels_exact": true
+    }
+  ],
+  "scientific_code_and_original_files_unchanged": true,
+  "change": "Dataset class and worker_init import from a lightweight module; spawned main imports stdlib only.",
+  "original_dataset_source": "${R52_PATH_16FF92BB0C8A}",
+  "worker_dataset_source": "${R52_PATH_B396E72C60F0}",
+  "inference_or_training_in_check": false,
+  "rng_restored_after_check": true
+}

@@ -1,0 +1,20 @@
+{
+  "new_training_runs": 0,
+  "expected_models": 15,
+  "status": "COMPLETE",
+  "evaluation_status": "COMPLETE",
+  "statistics_status": "COMPLETE",
+  "updated_at": "2026-10-16T05:48:29+08:00",
+  "deadline": "2026-10-16T09:27:36+08:00",
+  "cohort_rows": 1011,
+  "excluded_rows": 0,
+  "current": null,
+  "evaluation_completed": 15,
+  "estimated_inference_seconds_remaining": 0,
+  "bootstrap_accepted": 10000,
+  "completed_at": "2026-10-16T05:48:28+08:00",
+  "report": "${R52_PATH_33DC0EF9FA24}",
+  "results_zip": "${R52_PATH_CD86E23AF5DC}",
+  "packaging_status": "VERIFIED",
+  "zip_verification": "${R52_PATH_51678BF7E129}"
+}

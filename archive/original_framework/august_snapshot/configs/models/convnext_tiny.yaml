@@ -1,0 +1,7 @@
+_base_: ../defaults.yaml
+model:
+  name: convnext_tiny
+  source: timm
+  timm_name: convnext_tiny
+  pretrained: true
+  num_classes: 7

@@ -1,0 +1,5 @@
+model,condition,score,metric,mean,sample_sd,confidence,lower,upper,replicates,unit,conditional_on,method
+ORIG_B2,E_AVAILABLE,prob_mel,roc_auc,0.8470645028616043,0.0037197931426867976,0.95,0.8205409101230138,0.872243520374003,10000,case/same-image cluster,three fixed training runs,percentile; linear quantile
+ORIG_B2,E_AVAILABLE,prob_mel,average_precision,0.6771808734333812,0.010796556088096161,0.95,0.6192629887753663,0.7344038603963189,10000,case/same-image cluster,three fixed training runs,percentile; linear quantile
+ORIG_B6,E_AVAILABLE,prob_mel,roc_auc,0.8492019923179344,0.0016507589585671163,0.95,0.8238981038228997,0.8731542086662645,10000,case/same-image cluster,three fixed training runs,percentile; linear quantile
+ORIG_B6,E_AVAILABLE,prob_mel,average_precision,0.6681751319945856,0.009102583480021392,0.95,0.6101236127767823,0.7263516312686595,10000,case/same-image cluster,three fixed training runs,percentile; linear quantile

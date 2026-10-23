@@ -1,0 +1,43 @@
+_base_: ../defaults.yaml
+model:
+  name: lesionmamba_compact
+  source: lesionmamba
+  pretrained: auto_if_available
+  pretrained_checkpoint: null
+  input_size: 224
+  num_classes: 7
+  channels: [48, 96, 192, 384]
+  depths: [1, 2, 4, 1]
+  downsample: overlap_patch_merging
+  window_size:
+    stage2: 7
+    stage3: 7
+  stages:
+    stage1:
+      use_mple: true
+      scan_mode: local_lightweight
+      use_dpmss: false
+      use_lmgf: false
+    stage2:
+      use_mple: true
+      scan_mode: dual_path
+      use_dpmss: true
+      use_lmgf: true
+      window_size: 7
+    stage3:
+      use_mple: true
+      scan_mode: dual_path
+      use_dpmss: true
+      use_lmgf: true
+      window_size: 7
+    stage4:
+      use_mple: simplified
+      scan_mode: global_cross
+      use_dpmss: global_only
+      use_lmgf: optional
+  use_lesion_pooling: true
+  attention_source: last_lmgf_or_stage3_resized
+  drop_path_rate: 0.1
+  ssm_backend: auto
+  strict_ssm: false
+  allow_torch_fallback: true

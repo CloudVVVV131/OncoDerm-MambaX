@@ -1,0 +1,5 @@
+Comparison,AP difference,95% interval,97.5% interval
+B6 − B2,−0.02842,"[−0.04734, −0.01038]","[−0.05065, −0.00770]"
+B6 − EfficientNet-B0,+0.03350,"[0.01355, 0.05509]","[0.01104, 0.05850]"
+B6 − DermaMamba port,+0.02411,"[0.00269, 0.04699]",Not specified
+B2 − EfficientNet-B0,+0.06192,"[0.04035, 0.08656]",Not specified

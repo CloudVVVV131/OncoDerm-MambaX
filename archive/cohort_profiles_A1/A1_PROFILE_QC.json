@@ -1,0 +1,1544 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "stable read: a1_inputs.json",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "stable read: a1_profile.py",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "stable read: R5_2_A1_Start_v1_2.zip",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "start ZIP CRC",
+      "observed": null,
+      "expected": null,
+      "passed": true
+    },
+    {
+      "check": "stable read: SHA256SUMS.txt",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "stable read: 00_START_HERE.md",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source SHA: 00_START_HERE.md",
+      "observed": "420342a00415f4bb760fde03da081bffc8546b894380c7deacbfc80372652ba2",
+      "expected": "420342a00415f4bb760fde03da081bffc8546b894380c7deacbfc80372652ba2",
+      "passed": true
+    },
+    {
+      "check": "extracted ZIP member 00_START_HERE.md",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "stable read: CODEX_A1_PROFILE_AND_B_DESIGN.txt",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source SHA: CODEX_A1_PROFILE_AND_B_DESIGN.txt",
+      "observed": "aa3b071cb9165002825358b5ced578763ffe7158df651ddc96ea418b2d06605e",
+      "expected": "aa3b071cb9165002825358b5ced578763ffe7158df651ddc96ea418b2d06605e",
+      "passed": true
+    },
+    {
+      "check": "extracted ZIP member CODEX_A1_PROFILE_AND_B_DESIGN.txt",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "stable read: HANDOFF_INFO.json",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source SHA: HANDOFF_INFO.json",
+      "observed": "941addb87761e07d6c269fcb27f566cc1e735c10bb3e0a6fbb9b69c631f61c25",
+      "expected": "941addb87761e07d6c269fcb27f566cc1e735c10bb3e0a6fbb9b69c631f61c25",
+      "passed": true
+    },
+    {
+      "check": "extracted ZIP member HANDOFF_INFO.json",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "stable read: PROJECT_MASTER_PLAN_OncoDerm_Frontiers_v1_2.md",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source SHA: PROJECT_MASTER_PLAN_OncoDerm_Frontiers_v1_2.md",
+      "observed": "5d004b8c5ce9e85491a74aea305fe4ebf30b2604acece1e48ecf7df3dfb66c50",
+      "expected": "5d004b8c5ce9e85491a74aea305fe4ebf30b2604acece1e48ecf7df3dfb66c50",
+      "passed": true
+    },
+    {
+      "check": "extracted ZIP member PROJECT_MASTER_PLAN_OncoDerm_Frontiers_v1_2.md",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "stable read: COHORT_FIELDS_AVAILABILITY.csv",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "stable read: RESULTS_SOURCE_REGISTER.csv",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "stable read: MANUSCRIPT_BASELINE_MANIFEST.csv",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "stable read: BRANCH_SEPARATION_REGISTER.md",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "stable read: freeze_baseline.py",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "stable read: datasets.py",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source SHA: datasets.py",
+      "observed": "db399b81dbed64eb56130f27f1936089808872260a50fd345ce909f1ed1685e6",
+      "expected": "db399b81dbed64eb56130f27f1936089808872260a50fd345ce909f1ed1685e6",
+      "passed": true
+    },
+    {
+      "check": "pure encoder symbol whitelist",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "stable read: METADATA_TOKEN_MAPPING.csv",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source SHA: METADATA_TOKEN_MAPPING.csv",
+      "observed": "e2e0900d973d9b9f055e1d1a2e7787b515238270a1f61e7ab0803004cc5fbaf8",
+      "expected": "e2e0900d973d9b9f055e1d1a2e7787b515238270a1f61e7ab0803004cc5fbaf8",
+      "passed": true
+    },
+    {
+      "check": "stable read: B2_FROZEN_PROTOCOL.json",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source SHA: B2_FROZEN_PROTOCOL.json",
+      "observed": "34971a0d95f7280ade627f6d0275af77456e62b0c6312b34bcef43f4e029a559",
+      "expected": "34971a0d95f7280ade627f6d0275af77456e62b0c6312b34bcef43f4e029a559",
+      "passed": true
+    },
+    {
+      "check": "stable read: metadata_mapping.json",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source SHA: metadata_mapping.json",
+      "observed": "67d0b7f2b09003813e8ad20ead76921d20d2c72c15144d404f242bedc55545b5",
+      "expected": "67d0b7f2b09003813e8ad20ead76921d20d2c72c15144d404f242bedc55545b5",
+      "passed": true
+    },
+    {
+      "check": "stable read: CLINICAL_MAPPING.json",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source SHA: CLINICAL_MAPPING.json",
+      "observed": "f9ca207bb37b6f6446a0c492b9ee837c067cad89919b5c937cdfd7abc5cc9bd1",
+      "expected": "f9ca207bb37b6f6446a0c492b9ee837c067cad89919b5c937cdfd7abc5cc9bd1",
+      "passed": true
+    },
+    {
+      "check": "stable read: COHORT_BINDING.json",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source SHA: COHORT_BINDING.json",
+      "observed": "ecbe4e48de90176899387916800771037426140d7f30cee4f483a2a59c757dc4",
+      "expected": "ecbe4e48de90176899387916800771037426140d7f30cee4f483a2a59c757dc4",
+      "passed": true
+    },
+    {
+      "check": "stable read: FIXED_MODEL_IDENTITIES.json",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source SHA: FIXED_MODEL_IDENTITIES.json",
+      "observed": "21c7fd8b212311f0b4ee90f93ac1f13ed32a0e89d1cdc0b94b09cdcf9309fe07",
+      "expected": "21c7fd8b212311f0b4ee90f93ac1f13ed32a0e89d1cdc0b94b09cdcf9309fe07",
+      "passed": true
+    },
+    {
+      "check": "stable read: ORIGINALCORE_PROTOCOL.json",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source SHA: ORIGINALCORE_PROTOCOL.json",
+      "observed": "0297e10819ea17cef968ebbb9c33bb74d00cb741c416df4fd4393244390d73f3",
+      "expected": "0297e10819ea17cef968ebbb9c33bb74d00cb741c416df4fd4393244390d73f3",
+      "passed": true
+    },
+    {
+      "check": "stable read: core_common.py",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source SHA: core_common.py",
+      "observed": "60811324b4d342e49fb2cb3c26e79cf6e23dfcbf4ab9150ac2dd8be534cb6d9b",
+      "expected": "60811324b4d342e49fb2cb3c26e79cf6e23dfcbf4ab9150ac2dd8be534cb6d9b",
+      "passed": true
+    },
+    {
+      "check": "stable read: core_prepare.py",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source SHA: core_prepare.py",
+      "observed": "9cd9055be6aa48c02387fec84daf41952657f96f00f6dd86a651d6352a123b58",
+      "expected": "9cd9055be6aa48c02387fec84daf41952657f96f00f6dd86a651d6352a123b58",
+      "passed": true
+    },
+    {
+      "check": "stable read: core_data.py",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source SHA: core_data.py",
+      "observed": "4fd293e58e3713c353453c4c48dceb34e65cd6d01b0a2c571fe2064ea87b0e87",
+      "expected": "4fd293e58e3713c353453c4c48dceb34e65cd6d01b0a2c571fe2064ea87b0e87",
+      "passed": true
+    },
+    {
+      "check": "stable read: COHORT_ALIGNMENT.csv",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source SHA: COHORT_ALIGNMENT.csv",
+      "observed": "5b04396ea0b20d576c944e4125b2536ed1ee94968b796edf1e4523401446902c",
+      "expected": "5b04396ea0b20d576c944e4125b2536ed1ee94968b796edf1e4523401446902c",
+      "passed": true
+    },
+    {
+      "check": "original vocab sex",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "original vocab site",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "SIIM token order",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "SIIM age scale",
+      "observed": 100,
+      "expected": 100,
+      "passed": true
+    },
+    {
+      "check": "six original model identities",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "original metadata dimension",
+      "observed": 22,
+      "expected": 22,
+      "passed": true
+    },
+    {
+      "check": "structured NULL coverage",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "Derm positive label category count",
+      "observed": 6,
+      "expected": 6,
+      "passed": true
+    },
+    {
+      "check": "HAM_train exact registered source",
+      "observed": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "check": "stable read: ham10000_seed42_train.csv",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source SHA: ham10000_seed42_train.csv",
+      "observed": "f30b240e75191f37d765cefd5f67b352cd89c0c543e0a5e2623204f3ac833816",
+      "expected": "f30b240e75191f37d765cefd5f67b352cd89c0c543e0a5e2623204f3ac833816",
+      "passed": true
+    },
+    {
+      "check": "HAM_train row count",
+      "observed": 6982,
+      "expected": 6982,
+      "passed": true
+    },
+    {
+      "check": "HAM_train independent CSV parse",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "HAM_train labels",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "HAM_train positive label count",
+      "observed": 775,
+      "expected": 775,
+      "passed": true
+    },
+    {
+      "check": "HAM_train: age missing partition",
+      "observed": 6982,
+      "expected": 6982,
+      "passed": true
+    },
+    {
+      "check": "HAM_train: sex missing partition",
+      "observed": 6982,
+      "expected": 6982,
+      "passed": true
+    },
+    {
+      "check": "HAM_train: site missing partition",
+      "observed": 6982,
+      "expected": 6982,
+      "passed": true
+    },
+    {
+      "check": "HAM_train independently parsed valid ages",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "HAM_train independent linear q1",
+      "observed": 40.0,
+      "expected": 40.0,
+      "passed": true
+    },
+    {
+      "check": "HAM_train independent linear median",
+      "observed": 50.0,
+      "expected": 50.0,
+      "passed": true
+    },
+    {
+      "check": "HAM_train independent linear q3",
+      "observed": 65.0,
+      "expected": 65.0,
+      "passed": true
+    },
+    {
+      "check": "HAM_train: independent full sex distribution",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "HAM_train: independent full site distribution",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "HAM_train: independent full diagnosis distribution",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "HAM_train: independent full diagnosis_method distribution",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "HAM_train all-row independent encoding",
+      "observed": 6982,
+      "expected": 6982,
+      "passed": true
+    },
+    {
+      "check": "HAM_train age coverage partition",
+      "observed": 6982,
+      "expected": 6982,
+      "passed": true
+    },
+    {
+      "check": "HAM_train sex coverage partition",
+      "observed": 6982,
+      "expected": 6982,
+      "passed": true
+    },
+    {
+      "check": "HAM_train site coverage partition",
+      "observed": 6982,
+      "expected": 6982,
+      "passed": true
+    },
+    {
+      "check": "HAM_validation exact registered source",
+      "observed": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "check": "stable read: ham10000_seed42_val.csv",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source SHA: ham10000_seed42_val.csv",
+      "observed": "b1e4982d61df694d6acc64a5c024f9423a110d87489a2731c5e361f183caf4f3",
+      "expected": "b1e4982d61df694d6acc64a5c024f9423a110d87489a2731c5e361f183caf4f3",
+      "passed": true
+    },
+    {
+      "check": "HAM_validation row count",
+      "observed": 1513,
+      "expected": 1513,
+      "passed": true
+    },
+    {
+      "check": "HAM_validation independent CSV parse",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "HAM_validation labels",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "HAM_validation positive label count",
+      "observed": 164,
+      "expected": 164,
+      "passed": true
+    },
+    {
+      "check": "HAM_validation: age missing partition",
+      "observed": 1513,
+      "expected": 1513,
+      "passed": true
+    },
+    {
+      "check": "HAM_validation: sex missing partition",
+      "observed": 1513,
+      "expected": 1513,
+      "passed": true
+    },
+    {
+      "check": "HAM_validation: site missing partition",
+      "observed": 1513,
+      "expected": 1513,
+      "passed": true
+    },
+    {
+      "check": "HAM_validation independently parsed valid ages",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "HAM_validation independent linear q1",
+      "observed": 40.0,
+      "expected": 40.0,
+      "passed": true
+    },
+    {
+      "check": "HAM_validation independent linear median",
+      "observed": 50.0,
+      "expected": 50.0,
+      "passed": true
+    },
+    {
+      "check": "HAM_validation independent linear q3",
+      "observed": 65.0,
+      "expected": 65.0,
+      "passed": true
+    },
+    {
+      "check": "HAM_validation: independent full sex distribution",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "HAM_validation: independent full site distribution",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "HAM_validation: independent full diagnosis distribution",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "HAM_validation: independent full diagnosis_method distribution",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "HAM_validation all-row independent encoding",
+      "observed": 1513,
+      "expected": 1513,
+      "passed": true
+    },
+    {
+      "check": "HAM_validation age coverage partition",
+      "observed": 1513,
+      "expected": 1513,
+      "passed": true
+    },
+    {
+      "check": "HAM_validation sex coverage partition",
+      "observed": 1513,
+      "expected": 1513,
+      "passed": true
+    },
+    {
+      "check": "HAM_validation site coverage partition",
+      "observed": 1513,
+      "expected": 1513,
+      "passed": true
+    },
+    {
+      "check": "HAM_internal_test exact registered source",
+      "observed": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "check": "stable read: ham10000_seed42_test.csv",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source SHA: ham10000_seed42_test.csv",
+      "observed": "e0805420739e57e029e95ac399b449ba9b91cd1d91226fc9033f18c3cda5cd48",
+      "expected": "e0805420739e57e029e95ac399b449ba9b91cd1d91226fc9033f18c3cda5cd48",
+      "passed": true
+    },
+    {
+      "check": "HAM_internal_test row count",
+      "observed": 1520,
+      "expected": 1520,
+      "passed": true
+    },
+    {
+      "check": "HAM_internal_test independent CSV parse",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "HAM_internal_test labels",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "HAM_internal_test positive label count",
+      "observed": 174,
+      "expected": 174,
+      "passed": true
+    },
+    {
+      "check": "HAM_internal_test: age missing partition",
+      "observed": 1520,
+      "expected": 1520,
+      "passed": true
+    },
+    {
+      "check": "HAM_internal_test: sex missing partition",
+      "observed": 1520,
+      "expected": 1520,
+      "passed": true
+    },
+    {
+      "check": "HAM_internal_test: site missing partition",
+      "observed": 1520,
+      "expected": 1520,
+      "passed": true
+    },
+    {
+      "check": "HAM_internal_test independently parsed valid ages",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "HAM_internal_test independent linear q1",
+      "observed": 40.0,
+      "expected": 40.0,
+      "passed": true
+    },
+    {
+      "check": "HAM_internal_test independent linear median",
+      "observed": 50.0,
+      "expected": 50.0,
+      "passed": true
+    },
+    {
+      "check": "HAM_internal_test independent linear q3",
+      "observed": 65.0,
+      "expected": 65.0,
+      "passed": true
+    },
+    {
+      "check": "HAM_internal_test: independent full sex distribution",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "HAM_internal_test: independent full site distribution",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "HAM_internal_test: independent full diagnosis distribution",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "HAM_internal_test: independent full diagnosis_method distribution",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "HAM_internal_test all-row independent encoding",
+      "observed": 1520,
+      "expected": 1520,
+      "passed": true
+    },
+    {
+      "check": "HAM_internal_test age coverage partition",
+      "observed": 1520,
+      "expected": 1520,
+      "passed": true
+    },
+    {
+      "check": "HAM_internal_test sex coverage partition",
+      "observed": 1520,
+      "expected": 1520,
+      "passed": true
+    },
+    {
+      "check": "HAM_internal_test site coverage partition",
+      "observed": 1520,
+      "expected": 1520,
+      "passed": true
+    },
+    {
+      "check": "SIIM exact registered source",
+      "observed": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "check": "stable read: ISIC_2020_Training_GroundTruth_v2.csv",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source SHA: ISIC_2020_Training_GroundTruth_v2.csv",
+      "observed": "a1c7c97c59e5f49232dfe3b6f6817efaaee5dbf9bcb4ce584c1889e641be5c4e",
+      "expected": "a1c7c97c59e5f49232dfe3b6f6817efaaee5dbf9bcb4ce584c1889e641be5c4e",
+      "passed": true
+    },
+    {
+      "check": "SIIM row count",
+      "observed": 33126,
+      "expected": 33126,
+      "passed": true
+    },
+    {
+      "check": "SIIM independent CSV parse",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "SIIM target vocabulary",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "SIIM positive label count",
+      "observed": 584,
+      "expected": 584,
+      "passed": true
+    },
+    {
+      "check": "SIIM: age missing partition",
+      "observed": 33126,
+      "expected": 33126,
+      "passed": true
+    },
+    {
+      "check": "SIIM: sex missing partition",
+      "observed": 33126,
+      "expected": 33126,
+      "passed": true
+    },
+    {
+      "check": "SIIM: site missing partition",
+      "observed": 33126,
+      "expected": 33126,
+      "passed": true
+    },
+    {
+      "check": "SIIM independently parsed valid ages",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "SIIM independent linear q1",
+      "observed": 40.0,
+      "expected": 40.0,
+      "passed": true
+    },
+    {
+      "check": "SIIM independent linear median",
+      "observed": 50.0,
+      "expected": 50.0,
+      "passed": true
+    },
+    {
+      "check": "SIIM independent linear q3",
+      "observed": 60.0,
+      "expected": 60.0,
+      "passed": true
+    },
+    {
+      "check": "SIIM: independent full sex distribution",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "SIIM: independent full site distribution",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "SIIM: independent full diagnosis distribution",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "SIIM diagnosis unknown does not exclude target",
+      "observed": 27124,
+      "expected": 27124,
+      "passed": true
+    },
+    {
+      "check": "SIIM all-row independent encoding",
+      "observed": 33126,
+      "expected": 33126,
+      "passed": true
+    },
+    {
+      "check": "SIIM age coverage partition",
+      "observed": 33126,
+      "expected": 33126,
+      "passed": true
+    },
+    {
+      "check": "SIIM sex coverage partition",
+      "observed": 33126,
+      "expected": 33126,
+      "passed": true
+    },
+    {
+      "check": "SIIM site coverage partition",
+      "observed": 33126,
+      "expected": 33126,
+      "passed": true
+    },
+    {
+      "check": "Derm7pt exact registered source",
+      "observed": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "check": "stable read: meta.csv",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source SHA: meta.csv",
+      "observed": "471199fb86bcc97cd1521bcc4255bb3f9c563e2ed0ad3ff836392d81a3ed9d3b",
+      "expected": "471199fb86bcc97cd1521bcc4255bb3f9c563e2ed0ad3ff836392d81a3ed9d3b",
+      "passed": true
+    },
+    {
+      "check": "Derm7pt row count",
+      "observed": 1011,
+      "expected": 1011,
+      "passed": true
+    },
+    {
+      "check": "Derm7pt independent CSV parse",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "Derm original 20 labels",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "Derm7pt positive label count",
+      "observed": 252,
+      "expected": 252,
+      "passed": true
+    },
+    {
+      "check": "Derm7pt: age missing partition",
+      "observed": 1011,
+      "expected": 1011,
+      "passed": true
+    },
+    {
+      "check": "Derm7pt: sex missing partition",
+      "observed": 1011,
+      "expected": 1011,
+      "passed": true
+    },
+    {
+      "check": "Derm7pt: site missing partition",
+      "observed": 1011,
+      "expected": 1011,
+      "passed": true
+    },
+    {
+      "check": "Derm7pt independently parsed valid ages",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "Derm7pt independent linear q1",
+      "observed": null,
+      "expected": null,
+      "passed": true
+    },
+    {
+      "check": "Derm7pt independent linear median",
+      "observed": null,
+      "expected": null,
+      "passed": true
+    },
+    {
+      "check": "Derm7pt independent linear q3",
+      "observed": null,
+      "expected": null,
+      "passed": true
+    },
+    {
+      "check": "Derm7pt: independent full sex distribution",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "Derm7pt: independent full site distribution",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "Derm7pt: independent full diagnosis distribution",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "Derm7pt all-row independent encoding",
+      "observed": 1011,
+      "expected": 1011,
+      "passed": true
+    },
+    {
+      "check": "Derm7pt age coverage partition",
+      "observed": 1011,
+      "expected": 1011,
+      "passed": true
+    },
+    {
+      "check": "Derm7pt sex coverage partition",
+      "observed": 1011,
+      "expected": 1011,
+      "passed": true
+    },
+    {
+      "check": "Derm7pt site coverage partition",
+      "observed": 1011,
+      "expected": 1011,
+      "passed": true
+    },
+    {
+      "check": "HAM split total",
+      "observed": 10015,
+      "expected": 10015,
+      "passed": true
+    },
+    {
+      "check": "HAM10000 prior age unavailable",
+      "observed": 57,
+      "expected": 57,
+      "passed": true
+    },
+    {
+      "check": "HAM10000 prior sex unavailable",
+      "observed": 57,
+      "expected": 57,
+      "passed": true
+    },
+    {
+      "check": "HAM10000 prior site unavailable",
+      "observed": 234,
+      "expected": 234,
+      "passed": true
+    },
+    {
+      "check": "SIIM-ISIC2020 prior age unavailable",
+      "observed": 68,
+      "expected": 68,
+      "passed": true
+    },
+    {
+      "check": "SIIM-ISIC2020 prior sex unavailable",
+      "observed": 65,
+      "expected": 65,
+      "passed": true
+    },
+    {
+      "check": "SIIM-ISIC2020 prior site unavailable",
+      "observed": 527,
+      "expected": 527,
+      "passed": true
+    },
+    {
+      "check": "Derm7pt prior age unavailable",
+      "observed": 1011,
+      "expected": 1011,
+      "passed": true
+    },
+    {
+      "check": "Derm7pt prior sex unavailable",
+      "observed": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "Derm7pt prior site unavailable",
+      "observed": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "SIIM frozen mapping category female",
+      "observed": 15981,
+      "expected": 15981,
+      "passed": true
+    },
+    {
+      "check": "SIIM frozen mapping category male",
+      "observed": 17080,
+      "expected": 17080,
+      "passed": true
+    },
+    {
+      "check": "SIIM frozen mapping category unknown",
+      "observed": 65,
+      "expected": 65,
+      "passed": true
+    },
+    {
+      "check": "SIIM frozen mapping category head/neck",
+      "observed": 1855,
+      "expected": 1855,
+      "passed": true
+    },
+    {
+      "check": "SIIM frozen mapping category lower extremity",
+      "observed": 8417,
+      "expected": 8417,
+      "passed": true
+    },
+    {
+      "check": "SIIM frozen mapping category oral/genital",
+      "observed": 124,
+      "expected": 124,
+      "passed": true
+    },
+    {
+      "check": "SIIM frozen mapping category palms/soles",
+      "observed": 375,
+      "expected": 375,
+      "passed": true
+    },
+    {
+      "check": "SIIM frozen mapping category torso",
+      "observed": 16845,
+      "expected": 16845,
+      "passed": true
+    },
+    {
+      "check": "SIIM frozen mapping category unknown",
+      "observed": 527,
+      "expected": 527,
+      "passed": true
+    },
+    {
+      "check": "SIIM frozen mapping category upper extremity",
+      "observed": 4983,
+      "expected": 4983,
+      "passed": true
+    },
+    {
+      "check": "SIIM patient groups",
+      "observed": 2056,
+      "expected": 2056,
+      "passed": true
+    },
+    {
+      "check": "SIIM weighted patient-size sum",
+      "observed": 33126,
+      "expected": 33126,
+      "passed": true
+    },
+    {
+      "check": "SIIM independent patient sizes",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "SIIM stratum coverage patients",
+      "observed": 2056,
+      "expected": 2056,
+      "passed": true
+    },
+    {
+      "check": "SIIM stratum coverage images",
+      "observed": 33126,
+      "expected": 33126,
+      "passed": true
+    },
+    {
+      "check": "SIIM age consistency patient partition",
+      "observed": 2056,
+      "expected": 2056,
+      "passed": true
+    },
+    {
+      "check": "SIIM age consistency image partition",
+      "observed": 33126,
+      "expected": 33126,
+      "passed": true
+    },
+    {
+      "check": "SIIM sex consistency patient partition",
+      "observed": 2056,
+      "expected": 2056,
+      "passed": true
+    },
+    {
+      "check": "SIIM sex consistency image partition",
+      "observed": 33126,
+      "expected": 33126,
+      "passed": true
+    },
+    {
+      "check": "SIIM site_raw consistency patient partition",
+      "observed": 2056,
+      "expected": 2056,
+      "passed": true
+    },
+    {
+      "check": "SIIM site_raw consistency image partition",
+      "observed": 33126,
+      "expected": 33126,
+      "passed": true
+    },
+    {
+      "check": "SIIM site_encoded consistency patient partition",
+      "observed": 2056,
+      "expected": 2056,
+      "passed": true
+    },
+    {
+      "check": "SIIM site_encoded consistency image partition",
+      "observed": 33126,
+      "expected": 33126,
+      "passed": true
+    },
+    {
+      "check": "SIIM vector frequency weighted rows",
+      "observed": 33126,
+      "expected": 33126,
+      "passed": true
+    },
+    {
+      "check": "independent patient consistency age/0/all_missing",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "independent patient consistency age/0/values_no_missing",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "independent patient consistency age/0/values_plus_missing",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "independent patient consistency age/1/all_missing",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "independent patient consistency age/1/values_no_missing",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "independent patient consistency age/1/values_plus_missing",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "independent patient consistency age/>1/all_missing",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "independent patient consistency age/>1/values_no_missing",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "independent patient consistency age/>1/values_plus_missing",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "independent patient consistency sex/0/all_missing",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "independent patient consistency sex/0/values_no_missing",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "independent patient consistency sex/0/values_plus_missing",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "independent patient consistency sex/1/all_missing",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "independent patient consistency sex/1/values_no_missing",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "independent patient consistency sex/1/values_plus_missing",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "independent patient consistency sex/>1/all_missing",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "independent patient consistency sex/>1/values_no_missing",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "independent patient consistency sex/>1/values_plus_missing",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "independent patient consistency site_raw/0/all_missing",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "independent patient consistency site_raw/0/values_no_missing",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "independent patient consistency site_raw/0/values_plus_missing",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "independent patient consistency site_raw/1/all_missing",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "independent patient consistency site_raw/1/values_no_missing",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "independent patient consistency site_raw/1/values_plus_missing",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "independent patient consistency site_raw/>1/all_missing",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "independent patient consistency site_raw/>1/values_no_missing",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "independent patient consistency site_raw/>1/values_plus_missing",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "independent patient consistency site_encoded/0/all_missing",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "independent patient consistency site_encoded/0/values_no_missing",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "independent patient consistency site_encoded/0/values_plus_missing",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "independent patient consistency site_encoded/1/all_missing",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "independent patient consistency site_encoded/1/values_no_missing",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "independent patient consistency site_encoded/1/values_plus_missing",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "independent patient consistency site_encoded/>1/all_missing",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "independent patient consistency site_encoded/>1/values_no_missing",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "independent patient consistency site_encoded/>1/values_plus_missing",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "independent within-patient vector variety",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "independent unique vectors",
+      "observed": 167,
+      "expected": 167,
+      "passed": true
+    },
+    {
+      "check": "independent shared vectors",
+      "observed": 159,
+      "expected": 159,
+      "passed": true
+    },
+    {
+      "check": "independent rows with shared vectors",
+      "observed": 33107,
+      "expected": 33107,
+      "passed": true
+    },
+    {
+      "check": "independent patients with shared vectors",
+      "observed": 2055,
+      "expected": 2055,
+      "passed": true
+    },
+    {
+      "check": "independent patient-vector links",
+      "observed": 8694,
+      "expected": 8694,
+      "passed": true
+    },
+    {
+      "check": "independent shared vector links",
+      "observed": 8686,
+      "expected": 8686,
+      "passed": true
+    },
+    {
+      "check": "Derm unique case_num",
+      "observed": 1011,
+      "expected": 1011,
+      "passed": true
+    },
+    {
+      "check": "Derm binding row count",
+      "observed": 1011,
+      "expected": 1011,
+      "passed": true
+    },
+    {
+      "check": "Derm binding case membership",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "Derm exclusions",
+      "observed": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "Derm frozen row/label correspondence",
+      "observed": 1011,
+      "expected": 1011,
+      "passed": true
+    },
+    {
+      "check": "Derm frozen cluster count",
+      "observed": 1011,
+      "expected": 1011,
+      "passed": true
+    },
+    {
+      "check": "Derm same clinic/derm references",
+      "observed": 9,
+      "expected": 9,
+      "passed": true
+    },
+    {
+      "check": "source unchanged at completion: a1_inputs.json",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source unchanged at completion: a1_profile.py",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source unchanged at completion: R5_2_A1_Start_v1_2.zip",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source unchanged at completion: SHA256SUMS.txt",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source unchanged at completion: 00_START_HERE.md",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source unchanged at completion: CODEX_A1_PROFILE_AND_B_DESIGN.txt",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source unchanged at completion: HANDOFF_INFO.json",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source unchanged at completion: PROJECT_MASTER_PLAN_OncoDerm_Frontiers_v1_2.md",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source unchanged at completion: COHORT_FIELDS_AVAILABILITY.csv",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source unchanged at completion: RESULTS_SOURCE_REGISTER.csv",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source unchanged at completion: MANUSCRIPT_BASELINE_MANIFEST.csv",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source unchanged at completion: BRANCH_SEPARATION_REGISTER.md",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source unchanged at completion: freeze_baseline.py",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source unchanged at completion: datasets.py",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source unchanged at completion: METADATA_TOKEN_MAPPING.csv",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source unchanged at completion: B2_FROZEN_PROTOCOL.json",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source unchanged at completion: metadata_mapping.json",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source unchanged at completion: CLINICAL_MAPPING.json",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source unchanged at completion: COHORT_BINDING.json",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source unchanged at completion: FIXED_MODEL_IDENTITIES.json",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source unchanged at completion: ORIGINALCORE_PROTOCOL.json",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source unchanged at completion: core_common.py",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source unchanged at completion: core_prepare.py",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source unchanged at completion: core_data.py",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source unchanged at completion: COHORT_ALIGNMENT.csv",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source unchanged at completion: ham10000_seed42_train.csv",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source unchanged at completion: ham10000_seed42_val.csv",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source unchanged at completion: ham10000_seed42_test.csv",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source unchanged at completion: ISIC_2020_Training_GroundTruth_v2.csv",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    },
+    {
+      "check": "source unchanged at completion: meta.csv",
+      "passed": true,
+      "comparison": "In-memory equality; values withheld; see aggregate tables"
+    }
+  ],
+  "failed_checks": 0,
+  "metadata_sources": 5,
+  "metadata_rows": 44152,
+  "source_files_hashed": 30,
+  "full_526_source_refreeze": false,
+  "independent_checks": "csv.DictReader vs pandas parser; Counter vs pandas value_counts; numpy linear vs sorted interpolation; AST pure encoder vs independent numpy implementation; independently vectorized pandas patient consistency and vector-sharing checks",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "3.0.1"
+  },
+  "no_row_level_output": true,
+  "package_validation_receipt": "DELIVERY_RECEIPT.json (external to ZIP)"
+}

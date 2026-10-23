@@ -1,0 +1,121 @@
+model,head,metric,condition_or_contrast,mean,sample_sd,n_seeds,metric_improvement_direction,interpretation
+R_CLIN,endpoint_MEL,average_precision,NATIVE,0.6935538344691491,0.025643245808796813,3,higher_is_better,descriptive; no confirmatory significance test
+R_CLIN,endpoint_MEL,average_precision,SHIFT_HALF,0.6878379480018618,0.03361555685807146,3,higher_is_better,descriptive; no confirmatory significance test
+R_CLIN,endpoint_MEL,average_precision,PERMUTE_FIXED,0.6883345456430533,0.0337143687312212,3,higher_is_better,descriptive; no confirmatory significance test
+R_CLIN,endpoint_MEL,average_precision,NATIVE_minus_SHIFT_HALF,0.0057158864672872305,0.011150713421915785,3,higher_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_CLIN,endpoint_MEL,average_precision,NATIVE_minus_PERMUTE_FIXED,0.0052192888260957915,0.010897427807106223,3,higher_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_CLIN,endpoint_MEL,roc_auc,NATIVE,0.9234949706798773,0.004375549043693007,3,higher_is_better,descriptive; no confirmatory significance test
+R_CLIN,endpoint_MEL,roc_auc,SHIFT_HALF,0.9255116707949881,0.005201055833665439,3,higher_is_better,descriptive; no confirmatory significance test
+R_CLIN,endpoint_MEL,roc_auc,PERMUTE_FIXED,0.9257851344265852,0.00501169897971286,3,higher_is_better,descriptive; no confirmatory significance test
+R_CLIN,endpoint_MEL,roc_auc,NATIVE_minus_SHIFT_HALF,-0.002016700115110829,0.002100638427284323,3,higher_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_CLIN,endpoint_MEL,roc_auc,NATIVE_minus_PERMUTE_FIXED,-0.002290163746707874,0.0021298937403012135,3,higher_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_CLIN,endpoint_MEL,brier,NATIVE,0.07084277360625321,0.012946345574965323,3,lower_is_better,descriptive; no confirmatory significance test
+R_CLIN,endpoint_MEL,brier,SHIFT_HALF,0.07340654802646407,0.014168729929660501,3,lower_is_better,descriptive; no confirmatory significance test
+R_CLIN,endpoint_MEL,brier,PERMUTE_FIXED,0.07325278892805738,0.01420800825145219,3,lower_is_better,descriptive; no confirmatory significance test
+R_CLIN,endpoint_MEL,brier,NATIVE_minus_SHIFT_HALF,-0.002563774420210848,0.002891853150324848,3,lower_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_CLIN,endpoint_MEL,brier,NATIVE_minus_PERMUTE_FIXED,-0.002410015321804168,0.002997566594958381,3,lower_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_CLIN,endpoint_MEL,binary_nll,NATIVE,0.6742796971392648,0.08690227849187816,3,lower_is_better,descriptive; no confirmatory significance test
+R_CLIN,endpoint_MEL,binary_nll,SHIFT_HALF,0.6644342619002305,0.09089390821145941,3,lower_is_better,descriptive; no confirmatory significance test
+R_CLIN,endpoint_MEL,binary_nll,PERMUTE_FIXED,0.6297830787817947,0.06542258450637473,3,lower_is_better,descriptive; no confirmatory significance test
+R_CLIN,endpoint_MEL,binary_nll,NATIVE_minus_SHIFT_HALF,0.009845435239034436,0.0238032660304045,3,lower_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_CLIN,endpoint_MEL,binary_nll,NATIVE_minus_PERMUTE_FIXED,0.04449661835747006,0.04647065033743817,3,lower_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_CLIN,endpoint_MEL,ece15,NATIVE,0.07121187568842903,0.013519089592233,3,lower_is_better,descriptive; no confirmatory significance test
+R_CLIN,endpoint_MEL,ece15,SHIFT_HALF,0.07313271598921643,0.015334656058012312,3,lower_is_better,descriptive; no confirmatory significance test
+R_CLIN,endpoint_MEL,ece15,PERMUTE_FIXED,0.07359525094834596,0.014267927120220557,3,lower_is_better,descriptive; no confirmatory significance test
+R_CLIN,endpoint_MEL,ece15,NATIVE_minus_SHIFT_HALF,-0.0019208403007873974,0.002894742490666248,3,lower_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_CLIN,endpoint_MEL,ece15,NATIVE_minus_PERMUTE_FIXED,-0.002383375259916926,0.002335743921003558,3,lower_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_CLIN,endpoint_MEL,seven_class_macro_f1,NATIVE,0.7904198458819524,0.008157876806785804,3,higher_is_better,descriptive; no confirmatory significance test
+R_CLIN,endpoint_MEL,seven_class_macro_f1,SHIFT_HALF,0.792234087884113,0.005056215524491517,3,higher_is_better,descriptive; no confirmatory significance test
+R_CLIN,endpoint_MEL,seven_class_macro_f1,PERMUTE_FIXED,0.7880287796836396,0.005567271947266831,3,higher_is_better,descriptive; no confirmatory significance test
+R_CLIN,endpoint_MEL,seven_class_macro_f1,NATIVE_minus_SHIFT_HALF,-0.0018142420021607004,0.0077692779032206335,3,higher_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_CLIN,endpoint_MEL,seven_class_macro_f1,NATIVE_minus_PERMUTE_FIXED,0.002391066198312678,0.01071899812376822,3,higher_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_CLIN,softmax_MEL,average_precision,NATIVE,0.7033862014528282,0.026215913084054465,3,higher_is_better,descriptive; no confirmatory significance test
+R_CLIN,softmax_MEL,average_precision,SHIFT_HALF,0.7011527393485643,0.02661514476717281,3,higher_is_better,descriptive; no confirmatory significance test
+R_CLIN,softmax_MEL,average_precision,PERMUTE_FIXED,0.7059129356548822,0.022645701778850152,3,higher_is_better,descriptive; no confirmatory significance test
+R_CLIN,softmax_MEL,average_precision,NATIVE_minus_SHIFT_HALF,0.002233462104263858,0.0013776300664891962,3,higher_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_CLIN,softmax_MEL,average_precision,NATIVE_minus_PERMUTE_FIXED,-0.0025267342020541448,0.005332199120273125,3,higher_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_CLIN,softmax_MEL,roc_auc,NATIVE,0.9238949959922135,0.004811780819069203,3,higher_is_better,descriptive; no confirmatory significance test
+R_CLIN,softmax_MEL,roc_auc,SHIFT_HALF,0.9258084880700549,0.006045103477617264,3,higher_is_better,descriptive; no confirmatory significance test
+R_CLIN,softmax_MEL,roc_auc,PERMUTE_FIXED,0.9264488299071277,0.005652899515199819,3,higher_is_better,descriptive; no confirmatory significance test
+R_CLIN,softmax_MEL,roc_auc,NATIVE_minus_SHIFT_HALF,-0.0019134920778414537,0.0017549861883692029,3,higher_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_CLIN,softmax_MEL,roc_auc,NATIVE_minus_PERMUTE_FIXED,-0.0025538339149142977,0.001702843756105091,3,higher_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_CLIN,softmax_MEL,brier,NATIVE,0.06684500565900735,0.00941265303857334,3,lower_is_better,descriptive; no confirmatory significance test
+R_CLIN,softmax_MEL,brier,SHIFT_HALF,0.06831034498430168,0.010425374460005406,3,lower_is_better,descriptive; no confirmatory significance test
+R_CLIN,softmax_MEL,brier,PERMUTE_FIXED,0.06797786964249448,0.01011388310959911,3,lower_is_better,descriptive; no confirmatory significance test
+R_CLIN,softmax_MEL,brier,NATIVE_minus_SHIFT_HALF,-0.0014653393252943407,0.0029627546837360423,3,lower_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_CLIN,softmax_MEL,brier,NATIVE_minus_PERMUTE_FIXED,-0.0011328639834871437,0.003399635389814702,3,lower_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_CLIN,softmax_MEL,binary_nll,NATIVE,0.6714166859100487,0.06874546152813575,3,lower_is_better,descriptive; no confirmatory significance test
+R_CLIN,softmax_MEL,binary_nll,SHIFT_HALF,0.6517312695782834,0.06750038969799255,3,lower_is_better,descriptive; no confirmatory significance test
+R_CLIN,softmax_MEL,binary_nll,PERMUTE_FIXED,0.6237762644066702,0.05110340318345259,3,lower_is_better,descriptive; no confirmatory significance test
+R_CLIN,softmax_MEL,binary_nll,NATIVE_minus_SHIFT_HALF,0.019685416331765276,0.014020584681602067,3,lower_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_CLIN,softmax_MEL,binary_nll,NATIVE_minus_PERMUTE_FIXED,0.04764042150337836,0.034896288717547526,3,lower_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_CLIN,softmax_MEL,ece15,NATIVE,0.06727793933450806,0.009527184744841901,3,lower_is_better,descriptive; no confirmatory significance test
+R_CLIN,softmax_MEL,ece15,SHIFT_HALF,0.06825976436552063,0.011134492167316016,3,lower_is_better,descriptive; no confirmatory significance test
+R_CLIN,softmax_MEL,ece15,PERMUTE_FIXED,0.06815049680166213,0.01081270061268903,3,lower_is_better,descriptive; no confirmatory significance test
+R_CLIN,softmax_MEL,ece15,NATIVE_minus_SHIFT_HALF,-0.0009818250310125662,0.0037007242070529857,3,lower_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_CLIN,softmax_MEL,ece15,NATIVE_minus_PERMUTE_FIXED,-0.0008725574671540707,0.0040841522082397845,3,lower_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_CLIN,softmax_MEL,seven_class_macro_f1,NATIVE,0.7904198458819524,0.008157876806785804,3,higher_is_better,descriptive; no confirmatory significance test
+R_CLIN,softmax_MEL,seven_class_macro_f1,SHIFT_HALF,0.792234087884113,0.005056215524491517,3,higher_is_better,descriptive; no confirmatory significance test
+R_CLIN,softmax_MEL,seven_class_macro_f1,PERMUTE_FIXED,0.7880287796836396,0.005567271947266831,3,higher_is_better,descriptive; no confirmatory significance test
+R_CLIN,softmax_MEL,seven_class_macro_f1,NATIVE_minus_SHIFT_HALF,-0.0018142420021607004,0.0077692779032206335,3,higher_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_CLIN,softmax_MEL,seven_class_macro_f1,NATIVE_minus_PERMUTE_FIXED,0.002391066198312678,0.01071899812376822,3,higher_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_IMG,endpoint_MEL,average_precision,NATIVE,0.7002838934582063,0.017111405316107844,3,higher_is_better,descriptive; no confirmatory significance test
+R_IMG,endpoint_MEL,average_precision,SHIFT_HALF,0.701882458395913,0.01646118009636014,3,higher_is_better,descriptive; no confirmatory significance test
+R_IMG,endpoint_MEL,average_precision,PERMUTE_FIXED,0.7039945080011947,0.013155305877601966,3,higher_is_better,descriptive; no confirmatory significance test
+R_IMG,endpoint_MEL,average_precision,NATIVE_minus_SHIFT_HALF,-0.0015985649377066775,0.0031466922757909044,3,higher_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_IMG,endpoint_MEL,average_precision,NATIVE_minus_PERMUTE_FIXED,-0.0037106145429884885,0.010045534263082356,3,higher_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_IMG,endpoint_MEL,roc_auc,NATIVE,0.926955829973422,0.004274665001857578,3,higher_is_better,descriptive; no confirmatory significance test
+R_IMG,endpoint_MEL,roc_auc,SHIFT_HALF,0.9281107053101665,0.005006251143093166,3,higher_is_better,descriptive; no confirmatory significance test
+R_IMG,endpoint_MEL,roc_auc,PERMUTE_FIXED,0.9265618314077878,0.004750430588820901,3,higher_is_better,descriptive; no confirmatory significance test
+R_IMG,endpoint_MEL,roc_auc,NATIVE_minus_SHIFT_HALF,-0.0011548753367444469,0.0010105316756087055,3,higher_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_IMG,endpoint_MEL,roc_auc,NATIVE_minus_PERMUTE_FIXED,0.00039399856563423114,0.001377013740959153,3,higher_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_IMG,endpoint_MEL,brier,NATIVE,0.08143370664944923,0.01165885350536147,3,lower_is_better,descriptive; no confirmatory significance test
+R_IMG,endpoint_MEL,brier,SHIFT_HALF,0.08157467927848669,0.013829058905828888,3,lower_is_better,descriptive; no confirmatory significance test
+R_IMG,endpoint_MEL,brier,PERMUTE_FIXED,0.08194385174869522,0.014920890806394572,3,lower_is_better,descriptive; no confirmatory significance test
+R_IMG,endpoint_MEL,brier,NATIVE_minus_SHIFT_HALF,-0.0001409726290374641,0.0035130340033030436,3,lower_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_IMG,endpoint_MEL,brier,NATIVE_minus_PERMUTE_FIXED,-0.0005101450992459946,0.004634442738118879,3,lower_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_IMG,endpoint_MEL,binary_nll,NATIVE,0.608715563391669,0.22236413427906154,3,lower_is_better,descriptive; no confirmatory significance test
+R_IMG,endpoint_MEL,binary_nll,SHIFT_HALF,0.5811793732713215,0.18270233141939887,3,lower_is_better,descriptive; no confirmatory significance test
+R_IMG,endpoint_MEL,binary_nll,PERMUTE_FIXED,0.5609086349717238,0.15784872887214985,3,lower_is_better,descriptive; no confirmatory significance test
+R_IMG,endpoint_MEL,binary_nll,NATIVE_minus_SHIFT_HALF,0.027536190120347488,0.043180543652498286,3,lower_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_IMG,endpoint_MEL,binary_nll,NATIVE_minus_PERMUTE_FIXED,0.04780692841994516,0.07312701075143549,3,lower_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_IMG,endpoint_MEL,ece15,NATIVE,0.08089505987294021,0.013968940947416625,3,lower_is_better,descriptive; no confirmatory significance test
+R_IMG,endpoint_MEL,ece15,SHIFT_HALF,0.08116217896575374,0.0158793298640656,3,lower_is_better,descriptive; no confirmatory significance test
+R_IMG,endpoint_MEL,ece15,PERMUTE_FIXED,0.08054701384615262,0.015544600962282124,3,lower_is_better,descriptive; no confirmatory significance test
+R_IMG,endpoint_MEL,ece15,NATIVE_minus_SHIFT_HALF,-0.00026711909281352625,0.00343254614247257,3,lower_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_IMG,endpoint_MEL,ece15,NATIVE_minus_PERMUTE_FIXED,0.00034804602678759994,0.003907988887325262,3,lower_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_IMG,endpoint_MEL,seven_class_macro_f1,NATIVE,0.7842835231257906,0.005980207570666458,3,higher_is_better,descriptive; no confirmatory significance test
+R_IMG,endpoint_MEL,seven_class_macro_f1,SHIFT_HALF,0.781255543742701,0.007217167477567497,3,higher_is_better,descriptive; no confirmatory significance test
+R_IMG,endpoint_MEL,seven_class_macro_f1,PERMUTE_FIXED,0.7783344796727132,0.010214109242534113,3,higher_is_better,descriptive; no confirmatory significance test
+R_IMG,endpoint_MEL,seven_class_macro_f1,NATIVE_minus_SHIFT_HALF,0.0030279793830895554,0.0020831893727456803,3,higher_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_IMG,endpoint_MEL,seven_class_macro_f1,NATIVE_minus_PERMUTE_FIXED,0.005949043453077414,0.004828869088504489,3,higher_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_IMG,softmax_MEL,average_precision,NATIVE,0.6988196507466867,0.02430292571081125,3,higher_is_better,descriptive; no confirmatory significance test
+R_IMG,softmax_MEL,average_precision,SHIFT_HALF,0.7017872509944766,0.01989009314637203,3,higher_is_better,descriptive; no confirmatory significance test
+R_IMG,softmax_MEL,average_precision,PERMUTE_FIXED,0.7003412750270227,0.019918275075951397,3,higher_is_better,descriptive; no confirmatory significance test
+R_IMG,softmax_MEL,average_precision,NATIVE_minus_SHIFT_HALF,-0.0029676002477897847,0.005672487141096699,3,higher_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_IMG,softmax_MEL,average_precision,NATIVE_minus_PERMUTE_FIXED,-0.0015216242803359388,0.005088788974013714,3,higher_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_IMG,softmax_MEL,roc_auc,NATIVE,0.9268609087128676,0.002888244966854424,3,higher_is_better,descriptive; no confirmatory significance test
+R_IMG,softmax_MEL,roc_auc,SHIFT_HALF,0.9263561686765867,0.0037786595669386564,3,higher_is_better,descriptive; no confirmatory significance test
+R_IMG,softmax_MEL,roc_auc,PERMUTE_FIXED,0.9242091401640481,0.0060705269997020335,3,higher_is_better,descriptive; no confirmatory significance test
+R_IMG,softmax_MEL,roc_auc,NATIVE_minus_SHIFT_HALF,0.0005047400362809817,0.0012833017466418889,3,higher_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_IMG,softmax_MEL,roc_auc,NATIVE_minus_PERMUTE_FIXED,0.002651768548819655,0.004327206427115991,3,higher_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_IMG,softmax_MEL,brier,NATIVE,0.07442445440522892,0.01181510934735821,3,lower_is_better,descriptive; no confirmatory significance test
+R_IMG,softmax_MEL,brier,SHIFT_HALF,0.07491205897205892,0.013124436262600035,3,lower_is_better,descriptive; no confirmatory significance test
+R_IMG,softmax_MEL,brier,PERMUTE_FIXED,0.0755739846647368,0.013691324085986096,3,lower_is_better,descriptive; no confirmatory significance test
+R_IMG,softmax_MEL,brier,NATIVE_minus_SHIFT_HALF,-0.0004876045668300045,0.0028076673759553374,3,lower_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_IMG,softmax_MEL,brier,NATIVE_minus_PERMUTE_FIXED,-0.0011495302595078995,0.0030558621310301263,3,lower_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_IMG,softmax_MEL,binary_nll,NATIVE,0.5887912122386155,0.23706785904919658,3,lower_is_better,descriptive; no confirmatory significance test
+R_IMG,softmax_MEL,binary_nll,SHIFT_HALF,0.5692382879416825,0.20611402144421737,3,lower_is_better,descriptive; no confirmatory significance test
+R_IMG,softmax_MEL,binary_nll,PERMUTE_FIXED,0.5553076229214211,0.18673814914310244,3,lower_is_better,descriptive; no confirmatory significance test
+R_IMG,softmax_MEL,binary_nll,NATIVE_minus_SHIFT_HALF,0.019552924296932988,0.03325679528733298,3,lower_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_IMG,softmax_MEL,binary_nll,NATIVE_minus_PERMUTE_FIXED,0.03348358931719433,0.054262437206862135,3,lower_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_IMG,softmax_MEL,ece15,NATIVE,0.0724293784208908,0.016230323377192723,3,lower_is_better,descriptive; no confirmatory significance test
+R_IMG,softmax_MEL,ece15,SHIFT_HALF,0.0730538989861923,0.016255526004420193,3,lower_is_better,descriptive; no confirmatory significance test
+R_IMG,softmax_MEL,ece15,PERMUTE_FIXED,0.07417516042457324,0.016885470461387803,3,lower_is_better,descriptive; no confirmatory significance test
+R_IMG,softmax_MEL,ece15,NATIVE_minus_SHIFT_HALF,-0.0006245205653015012,0.003159167591383161,3,lower_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_IMG,softmax_MEL,ece15,NATIVE_minus_PERMUTE_FIXED,-0.0017457820036824376,0.0032875919410121396,3,lower_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_IMG,softmax_MEL,seven_class_macro_f1,NATIVE,0.7842835231257906,0.005980207570666458,3,higher_is_better,descriptive; no confirmatory significance test
+R_IMG,softmax_MEL,seven_class_macro_f1,SHIFT_HALF,0.781255543742701,0.007217167477567497,3,higher_is_better,descriptive; no confirmatory significance test
+R_IMG,softmax_MEL,seven_class_macro_f1,PERMUTE_FIXED,0.7783344796727132,0.010214109242534113,3,higher_is_better,descriptive; no confirmatory significance test
+R_IMG,softmax_MEL,seven_class_macro_f1,NATIVE_minus_SHIFT_HALF,0.0030279793830895554,0.0020831893727456803,3,higher_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test
+R_IMG,softmax_MEL,seven_class_macro_f1,NATIVE_minus_PERMUTE_FIXED,0.005949043453077414,0.004828869088504489,3,higher_is_better,positive favors NATIVE only for higher-is-better metrics; no significance test

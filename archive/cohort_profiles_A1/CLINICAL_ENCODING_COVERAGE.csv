@@ -1,0 +1,16 @@
+cohort,field,denominator,statistical_unit,available_supported,nonempty_unsupported,truly_missing,encoded_unknown,missing_flag_1,raw_vs_flag_disagreement,disagreement_reasons,source_path,source_field,encoder_path,encoder_lines,mapping_source
+HAM_train,age,6982,image,6945,0,37,NA,37,0,[],${R52_PATH_E37E406F66F5},age,${R52_PATH_F2F3C9A97FBA},61-101,Original encoder defaults
+HAM_train,sex,6982,image,6949,0,33,33,33,0,[],${R52_PATH_E37E406F66F5},sex,${R52_PATH_F2F3C9A97FBA},61-101,Original encoder defaults
+HAM_train,site,6982,image,6845,0,137,137,137,0,[],${R52_PATH_E37E406F66F5},localization,${R52_PATH_F2F3C9A97FBA},61-101,Original encoder defaults
+HAM_validation,age,1513,image,1502,0,11,NA,11,0,[],${R52_PATH_A7EDEF14667C},age,${R52_PATH_F2F3C9A97FBA},61-101,Original encoder defaults
+HAM_validation,sex,1513,image,1500,0,13,13,13,0,[],${R52_PATH_A7EDEF14667C},sex,${R52_PATH_F2F3C9A97FBA},61-101,Original encoder defaults
+HAM_validation,site,1513,image,1460,0,53,53,53,0,[],${R52_PATH_A7EDEF14667C},localization,${R52_PATH_F2F3C9A97FBA},61-101,Original encoder defaults
+HAM_internal_test,age,1520,image,1511,0,9,NA,9,0,[],${R52_PATH_1E005046B878},age,${R52_PATH_F2F3C9A97FBA},61-101,Original encoder defaults
+HAM_internal_test,sex,1520,image,1509,0,11,11,11,0,[],${R52_PATH_1E005046B878},sex,${R52_PATH_F2F3C9A97FBA},61-101,Original encoder defaults
+HAM_internal_test,site,1520,image,1476,0,44,44,44,0,[],${R52_PATH_1E005046B878},localization,${R52_PATH_F2F3C9A97FBA},61-101,Original encoder defaults
+SIIM,age,33126,image,33058,0,68,NA,68,0,[],${R52_PATH_83C520ED9A14},age_approx,${R52_PATH_F2F3C9A97FBA},61-101,${R52_PATH_96B8F5206306}
+SIIM,sex,33126,image,33061,0,65,65,65,0,[],${R52_PATH_83C520ED9A14},sex,${R52_PATH_F2F3C9A97FBA},61-101,${R52_PATH_96B8F5206306}
+SIIM,site,33126,image,30245,2354,527,2881,527,0,[],${R52_PATH_83C520ED9A14},anatom_site_general_challenge,${R52_PATH_F2F3C9A97FBA},61-101,${R52_PATH_96B8F5206306}
+Derm7pt,age,1011,dermoscopy case,0,0,1011,NA,1011,0,[],${R52_PATH_CB55B27527EC},age,${R52_PATH_F2F3C9A97FBA},61-101,${R52_PATH_4C5D372C38C9}
+Derm7pt,sex,1011,dermoscopy case,1011,0,0,0,0,0,[],${R52_PATH_CB55B27527EC},sex,${R52_PATH_F2F3C9A97FBA},61-101,${R52_PATH_4C5D372C38C9}
+Derm7pt,site,1011,dermoscopy case,898,113,0,113,0,0,[],${R52_PATH_CB55B27527EC},location,${R52_PATH_F2F3C9A97FBA},61-101,${R52_PATH_4C5D372C38C9}

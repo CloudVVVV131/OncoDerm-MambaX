@@ -1,0 +1,12 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "${R52_PATH_6560E3761747}",
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "precision": "FP32",
+  "TF32": false,
+  "inference_mode": true,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "free_cuda_bytes": 7451181056
+}

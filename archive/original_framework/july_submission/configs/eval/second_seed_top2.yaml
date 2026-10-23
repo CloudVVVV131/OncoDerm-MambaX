@@ -1,0 +1,3 @@
+seed: 2024
+epochs: 30
+models: [best_baseline, lesionmamba_compact]

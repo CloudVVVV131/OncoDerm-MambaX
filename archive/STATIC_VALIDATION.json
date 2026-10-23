@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-10-22T00:57:09.726931+08:00",
+  "scope": "Static text/AST/config/lineage/privacy only; zero project imports",
+  "status": "PASS_WITH_RUNTIME_CONDITIONS",
+  "candidate_files_checked": 982,
+  "parse_checks": 902,
+  "python_files": 461,
+  "parse_failures": [],
+  "source_map_rows": 932,
+  "source_and_path_roundtrip_failures": [],
+  "config_base_references": 81,
+  "unresolved_config_bases": [],
+  "dependency_import_execution": false,
+  "end_to_end_reproduction": "NOT_RUN_THIS_TASK",
+  "privacy_findings_count": 0,
+  "allowed_runtime_conditions": "evidence_index/RUNTIME_ADAPTATION_REQUIRED.csv; licenses and unavailable/private inputs separate"
+}

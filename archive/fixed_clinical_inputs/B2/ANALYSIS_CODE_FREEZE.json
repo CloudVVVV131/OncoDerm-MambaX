@@ -1,0 +1,79 @@
+{
+  "time": "2026-10-12T04:56:25.423419+08:00",
+  "stage": "GPU inference ongoing; before any B2 performance/threshold/calibration analysis",
+  "protocol_sha256": "34971a0d95f7280ade627f6d0275af77456e62b0c6312b34bcef43f4e029a559",
+  "files": [
+    {
+      "path": "${R52_PATH_8D46822A68EE}",
+      "relative_path": "b2_common.py",
+      "bytes": 2469,
+      "sha256": "b7f4619c25259971e9faaa1bb5be1e8876a8fe1b29ae78c52c394e2a7e76de7b"
+    },
+    {
+      "path": "${R52_PATH_71B18275DE7C}",
+      "relative_path": "prepare_b2.py",
+      "bytes": 14092,
+      "sha256": "d729c68eb516ea7fda7e4b21d7992cc28c7ff48c1aae2cd85ce9e3629f3e551a"
+    },
+    {
+      "path": "${R52_PATH_3AD26A1B3DEB}",
+      "relative_path": "b2_inference.py",
+      "bytes": 16141,
+      "sha256": "599a0a97da0bf17a6c26eecc5b1bdef0a6a3a872c104a87f305b4179ee987230"
+    },
+    {
+      "path": "${R52_PATH_26C9342AD51C}",
+      "relative_path": "b2_statistics.py",
+      "bytes": 26820,
+      "sha256": "5a22b098c4e45549757d5d22a42e8dd3563c3520b9a4d170d2c123ff63f7626d"
+    },
+    {
+      "path": "${R52_PATH_E9493CCA28F6}",
+      "relative_path": "B2_FROZEN_PROTOCOL.json",
+      "bytes": 3182,
+      "sha256": "34971a0d95f7280ade627f6d0275af77456e62b0c6312b34bcef43f4e029a559"
+    },
+    {
+      "path": "${R52_PATH_96B8F5206306}",
+      "relative_path": "metadata_mapping.json",
+      "bytes": 1978,
+      "sha256": "67d0b7f2b09003813e8ad20ead76921d20d2c72c15144d404f242bedc55545b5"
+    },
+    {
+      "path": "${R52_PATH_CB57B77FCD2F}",
+      "relative_path": "model_code/lesionmamba/__init__.py",
+      "bytes": 22,
+      "sha256": "56b5e91c3bb77ab933c25fd65eba883419bdc5691cc94cb9dc840e8f4e3674eb"
+    },
+    {
+      "path": "${R52_PATH_8FCF386F0A16}",
+      "relative_path": "model_code/lesionmamba/data/__init__.py",
+      "bytes": 190,
+      "sha256": "78d6dddaf4113248d3df55c21acbd7751075189a56b282833042bc6bd2fb3f62"
+    },
+    {
+      "path": "${R52_PATH_F2F3C9A97FBA}",
+      "relative_path": "model_code/lesionmamba/data/datasets.py",
+      "bytes": 10801,
+      "sha256": "db399b81dbed64eb56130f27f1936089808872260a50fd345ce909f1ed1685e6"
+    },
+    {
+      "path": "${R52_PATH_F42EEDB90B41}",
+      "relative_path": "model_code/lesionmamba/data/transforms.py",
+      "bytes": 2104,
+      "sha256": "4c001f03eca3a93ee3e9a590d46ef0710f66fc88be1512241d3f71a0bc3be6c6"
+    },
+    {
+      "path": "${R52_PATH_4336EFCB08C2}",
+      "relative_path": "model_code/lesionmamba/models/__init__.py",
+      "bytes": 66,
+      "sha256": "c0c19257e4aa5fcff4bf73c6923128029375a903ef71a7b43e0cefa6fc1c0a7d"
+    },
+    {
+      "path": "${R52_PATH_FC7B3FBEA067}",
+      "relative_path": "model_code/lesionmamba/models/oncoderm_mambax.py",
+      "bytes": 13751,
+      "sha256": "7e737a004f69053821628f84b3da9c44a4e4a208a386fa7322c5c7ff9331a0c5"
+    }
+  ]
+}

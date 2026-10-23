@@ -1,0 +1,511 @@
+{
+  "frozen_at": "2026-10-15T19:01:07.231148+08:00",
+  "authorization": "P3 only; old P1/P2 test-disabled records unchanged",
+  "models": [
+    {
+      "model": "M0",
+      "training_seed": 42,
+      "run": "FIM_LPAH_FULL_s42",
+      "path": "${R52_PATH_E1850A84F150}",
+      "sha256": "096913eb3f123747b5dac8b11ca20f0ae594f783dcf8a0398e9390087707dbdd",
+      "bytes": 133832321,
+      "best_epoch": 34,
+      "completed_epochs": 49,
+      "effective_config_path": "${R52_PATH_8D804B22CCA9}",
+      "effective_config_sha256": "3513e3c1df8ca47c85c7d16ba9260075c4da7488844bdd21e8fed72ce8c0a5fd",
+      "config_snapshot": "${R52_PATH_9A71BC9F7A58}",
+      "origin": "existing_fixed_best_no_retraining",
+      "prior_validation_reference": {
+        "macro_f1": 0.8080754752858051,
+        "softmax_MEL_AP": 0.6913517174709254,
+        "softmax_MEL_AUC": 0.9247161402303423
+      }
+    },
+    {
+      "model": "R_IMG",
+      "training_seed": 42,
+      "run": "R_IMG_s42",
+      "path": "${R52_PATH_A43577A49353}",
+      "sha256": "f92283cc46bcc45a59e123364c6cea3da8f4e0377cff4a2b8d54458a622c3c13",
+      "bytes": 137416109,
+      "best_epoch": 23,
+      "completed_epochs": 38,
+      "effective_config_path": "${R52_PATH_D4DACB25116E}",
+      "effective_config_sha256": "aa76ec93e2aec5ebfa1567ce1898acc89bac88b9fc325cdc188d53e26201c8f7",
+      "config_snapshot": "${R52_PATH_9C93A908822E}",
+      "origin": "existing_fixed_best_no_retraining",
+      "prior_validation_reference": {
+        "macro_f1": 0.7862156146710697,
+        "softmax_MEL_AP": 0.7245745283535093,
+        "softmax_MEL_AUC": 0.9301944529823356
+      }
+    },
+    {
+      "model": "R_CLIN",
+      "training_seed": 42,
+      "run": "R_CLIN_s42",
+      "path": "${R52_PATH_9A2FF8F30438}",
+      "sha256": "56af879c23aaa3e741afa0306f55a5e05778c2752a7d699d8ccdb2a85c3cc597",
+      "bytes": 137416109,
+      "best_epoch": 26,
+      "completed_epochs": 41,
+      "effective_config_path": "${R52_PATH_E6E9F56F926F}",
+      "effective_config_sha256": "00ae66e0942cda7c13a2504487f87be292d3edc1bb38cc35df0ae7368807ca07",
+      "config_snapshot": "${R52_PATH_6FE981E7E730}",
+      "origin": "existing_fixed_best_no_retraining",
+      "prior_validation_reference": {
+        "macro_f1": 0.790628506011951,
+        "softmax_MEL_AP": 0.7328620993900526,
+        "softmax_MEL_AUC": 0.9256427525357537
+      }
+    },
+    {
+      "model": "XATTN",
+      "training_seed": 42,
+      "run": "XATTN_s42",
+      "path": "${R52_PATH_29DAA792C12E}",
+      "sha256": "2f12c84b23b56a79d99335bf202991549268dc6aeeffcffc18889f854d3dd25e",
+      "bytes": 137285161,
+      "best_epoch": 13,
+      "completed_epochs": 28,
+      "effective_config_path": "${R52_PATH_95C659399920}",
+      "effective_config_sha256": "aa803c3fa1768e4f55955d03265fac081c56620e6706aa92ae9a4bc9cd50718c",
+      "config_snapshot": "${R52_PATH_7B75A29203A2}",
+      "origin": "existing_fixed_best_no_retraining",
+      "prior_validation_reference": {
+        "macro_f1": 0.7909110860217847,
+        "softmax_MEL_AP": 0.6903650882308635,
+        "softmax_MEL_AUC": 0.9245466379793524
+      }
+    },
+    {
+      "model": "B2S",
+      "training_seed": 42,
+      "run": "FIM_B2S_s42",
+      "path": "${R52_PATH_ECDEEA2C7AC1}",
+      "sha256": "7be3a5b604dd64e075f55c1f10dea9ec4ab909d1a461d7ffd8f78049af5345c5",
+      "bytes": 128149791,
+      "best_epoch": 16,
+      "completed_epochs": 31,
+      "effective_config_path": "${R52_PATH_784B62166696}",
+      "effective_config_sha256": "5ed991c5a8282ef11332b2e9d62c91e22eebfa15cb51840ff8768c73e16a3fd7",
+      "config_snapshot": "${R52_PATH_A7F4D16A4E09}",
+      "origin": "new_P3_B2S_training",
+      "prior_validation_reference": null
+    },
+    {
+      "model": "M0",
+      "training_seed": 2024,
+      "run": "FIM_LPAH_FULL_s2024",
+      "path": "${R52_PATH_CFE37DECDE8B}",
+      "sha256": "d7ddfef5bb3de68cf1d3562a2ad3bd604c454423b963c9fd6c7e2aa568bd5a95",
+      "bytes": 133832897,
+      "best_epoch": 34,
+      "completed_epochs": 49,
+      "effective_config_path": "${R52_PATH_420F1F6AFD59}",
+      "effective_config_sha256": "9ee251b1c8f086972369a1ed2f1ab8f3157f26cb23b94a25b8b5c4009106ff37",
+      "config_snapshot": "${R52_PATH_4DF79FC9A116}",
+      "origin": "existing_fixed_best_no_retraining",
+      "prior_validation_reference": {
+        "macro_f1": 0.7984649521588612,
+        "softmax_MEL_AP": 0.6637083909314526,
+        "softmax_MEL_AUC": 0.8881262543166573
+      }
+    },
+    {
+      "model": "R_IMG",
+      "training_seed": 2024,
+      "run": "R_IMG_s2024",
+      "path": "${R52_PATH_A619576E4C28}",
+      "sha256": "76bb5d4554fcba952ab3cd36a40feda4f29e0f1236443ed7ad97aa54778cb1c4",
+      "bytes": 137416429,
+      "best_epoch": 14,
+      "completed_epochs": 29,
+      "effective_config_path": "${R52_PATH_584FA0DED44A}",
+      "effective_config_sha256": "eb09b2135fd90080b2b4a92c138ea996bfeb63302c6aaa03aac40b2ef0edc069",
+      "config_snapshot": "${R52_PATH_E2FA2F5E8B1F}",
+      "origin": "existing_fixed_best_no_retraining",
+      "prior_validation_reference": {
+        "macro_f1": 0.7890588316606079,
+        "softmax_MEL_AP": 0.6955934765080051,
+        "softmax_MEL_AUC": 0.9251071254226255
+      }
+    },
+    {
+      "model": "R_CLIN",
+      "training_seed": 2024,
+      "run": "R_CLIN_s2024",
+      "path": "${R52_PATH_7E486FDF155F}",
+      "sha256": "dc9d4567cb001365250df5a46b66e99e32796823ab1e69339300b4b707c801d7",
+      "bytes": 137416429,
+      "best_epoch": 32,
+      "completed_epochs": 47,
+      "effective_config_path": "${R52_PATH_F77B96588D51}",
+      "effective_config_sha256": "ae1adfb235d1313da7c9fd2fbeee137a8cfcf0437e55f48976d14b5aface5597",
+      "config_snapshot": "${R52_PATH_716F97B19425}",
+      "origin": "existing_fixed_best_no_retraining",
+      "prior_validation_reference": {
+        "macro_f1": 0.782159640651938,
+        "softmax_MEL_AP": 0.6826772660140887,
+        "softmax_MEL_AUC": 0.9275886383771177
+      }
+    },
+    {
+      "model": "XATTN",
+      "training_seed": 2024,
+      "run": "XATTN_s2024",
+      "path": "${R52_PATH_F235459FC86E}",
+      "sha256": "72e6407e5ca64f46a1c92a439dfb80eb64717f07504ebc6e887446d335dbc757",
+      "bytes": 137285481,
+      "best_epoch": 36,
+      "completed_epochs": 51,
+      "effective_config_path": "${R52_PATH_BC0A344F59EB}",
+      "effective_config_sha256": "a10740c61a7f8e9d9af10c7f83622bc94479dffe9ca766312e6e71e1e9cf97cf",
+      "config_snapshot": "${R52_PATH_6317AAF289ED}",
+      "origin": "existing_fixed_best_no_retraining",
+      "prior_validation_reference": {
+        "macro_f1": 0.7983561590987325,
+        "softmax_MEL_AP": 0.678393196204719,
+        "softmax_MEL_AUC": 0.9142906217794572
+      }
+    },
+    {
+      "model": "B2S",
+      "training_seed": 2024,
+      "run": "FIM_B2S_s2024",
+      "path": "${R52_PATH_6B3E7CA2B354}",
+      "sha256": "7cb8b64419359cc4a8dab0a84c91d2e94f817bb7484a2a386f3a8911ad3998ee",
+      "bytes": 128149791,
+      "best_epoch": 60,
+      "completed_epochs": 75,
+      "effective_config_path": "${R52_PATH_EFEB058AE56C}",
+      "effective_config_sha256": "35530d5311983d13121943db7e25172a2b460fa881c0ac8ff9008b1bc0271e77",
+      "config_snapshot": "${R52_PATH_98897C14E69C}",
+      "origin": "new_P3_B2S_training",
+      "prior_validation_reference": null
+    },
+    {
+      "model": "M0",
+      "training_seed": 3407,
+      "run": "FIM_LPAH_FULL_s3407",
+      "path": "${R52_PATH_33F6E2D0E76F}",
+      "sha256": "a8690c9e7b188011f408880b9401faae2878609931705cae81ee429e749df849",
+      "bytes": 133832897,
+      "best_epoch": 21,
+      "completed_epochs": 36,
+      "effective_config_path": "${R52_PATH_132908A1AFFC}",
+      "effective_config_sha256": "bfc8556eafb25db612722ed8cdacf468b7cf971ec0011079e44f284f0e82e0d1",
+      "config_snapshot": "${R52_PATH_385B54EEC357}",
+      "origin": "existing_fixed_best_no_retraining",
+      "prior_validation_reference": {
+        "macro_f1": 0.7868776541732048,
+        "softmax_MEL_AP": 0.6989389571774267,
+        "softmax_MEL_AUC": 0.919172286607966
+      }
+    },
+    {
+      "model": "R_IMG",
+      "training_seed": 3407,
+      "run": "R_IMG_s3407",
+      "path": "${R52_PATH_C0D2C1E16B34}",
+      "sha256": "4bc4c03e0124ddb73cdb1da0c28cf22a78df6a4183d8e269324288522bae5180",
+      "bytes": 137416429,
+      "best_epoch": 52,
+      "completed_epochs": 67,
+      "effective_config_path": "${R52_PATH_38DD6FA5E0CD}",
+      "effective_config_sha256": "754ba58c799e802ef07ed0d984bdaf1be57622c3f5409ecb31504bd05b708e33",
+      "config_snapshot": "${R52_PATH_EC0A47B66ED8}",
+      "origin": "existing_fixed_best_no_retraining",
+      "prior_validation_reference": {
+        "macro_f1": 0.7775761230456943,
+        "softmax_MEL_AP": 0.676290947378546,
+        "softmax_MEL_AUC": 0.9252811477336418
+      }
+    },
+    {
+      "model": "R_CLIN",
+      "training_seed": 3407,
+      "run": "R_CLIN_s3407",
+      "path": "${R52_PATH_DDF79AC516E8}",
+      "sha256": "5bcdca73e3d273b389cd3086b72b7d11b6b2642ecb0c250ae1be18ec1da0a3fe",
+      "bytes": 137416429,
+      "best_epoch": 29,
+      "completed_epochs": 44,
+      "effective_config_path": "${R52_PATH_1FA8FB2D9786}",
+      "effective_config_sha256": "46d16a2a0708b81c0d0bc5657a1b18d0271933f62885803860c5549e2726803c",
+      "config_snapshot": "${R52_PATH_2CB9009FED86}",
+      "origin": "existing_fixed_best_no_retraining",
+      "prior_validation_reference": {
+        "macro_f1": 0.7984713909819676,
+        "softmax_MEL_AP": 0.6946192389543431,
+        "softmax_MEL_AUC": 0.9184535970637691
+      }
+    },
+    {
+      "model": "XATTN",
+      "training_seed": 3407,
+      "run": "XATTN_s3407",
+      "path": "${R52_PATH_53CCB59D87EF}",
+      "sha256": "9e5ac8680d75480bc767254644d33404372af67020d239a53084bd5b0bafd86b",
+      "bytes": 137285481,
+      "best_epoch": 19,
+      "completed_epochs": 34,
+      "effective_config_path": "${R52_PATH_5DAF7B6EE585}",
+      "effective_config_sha256": "803e28436c8fff542ee532f1fe5f77cf14b9e2ed22f4768488a8af886ab4cff5",
+      "config_snapshot": "${R52_PATH_78B80D608D83}",
+      "origin": "existing_fixed_best_no_retraining",
+      "prior_validation_reference": {
+        "macro_f1": 0.7863046239283739,
+        "softmax_MEL_AP": 0.7328527173170353,
+        "softmax_MEL_AUC": 0.9291570992062774
+      }
+    },
+    {
+      "model": "B2S",
+      "training_seed": 3407,
+      "run": "FIM_B2S_s3407",
+      "path": "${R52_PATH_A744319BB5F2}",
+      "sha256": "7bb760c80638842091a8b44910c3d480ed94bd75cfb6e88c9535bff2c3dcdee1",
+      "bytes": 128149791,
+      "best_epoch": 46,
+      "completed_epochs": 61,
+      "effective_config_path": "${R52_PATH_D985F3C82762}",
+      "effective_config_sha256": "d49492aa1fb908133cc4bb3386e5148cd6131c2c9fb7e99d0818aeb30525af93",
+      "config_snapshot": "${R52_PATH_1A0777674CAA}",
+      "origin": "new_P3_B2S_training",
+      "prior_validation_reference": null
+    }
+  ],
+  "new_training_runs": 3,
+  "existing_forward_only_runs": 12,
+  "candidate_mechanism": "P1/P2 v1 unchanged; forward AST identical; reference readout bytes identical",
+  "cohorts": {
+    "HAM_val": 1513,
+    "HAM_test": 1520,
+    "SIIM": 33126
+  },
+  "external_cohort_note": "Previously used SIIM cohort, not a new independent external cohort",
+  "SIIM_conditions": [
+    "E_REAL",
+    "E_NULL"
+  ],
+  "heads": [
+    "softmax_MEL",
+    "endpoint_MEL"
+  ],
+  "precision": "FP32, eval, inference_mode, TF32 off",
+  "inference_batch": 8,
+  "preprocessing": "original RGB resize short256 / center224 / ImageNet normalization",
+  "cache": "batch-local backbone/fused/mask only; recompute clinical encoder, readout and CMGF per condition; verify full forward atol1e-5 rtol1e-4 per best; otherwise full forward",
+  "validation_reproduction_tolerance": 1e-07,
+  "primary_comparisons": [
+    "R_CLIN_minus_M0",
+    "R_CLIN_minus_XATTN"
+  ],
+  "primary_endpoint": "mean of three per-seed SIIM E_REAL softmax_MEL average_precision differences",
+  "supporting_comparisons": [
+    "R_CLIN_minus_R_IMG",
+    "R_CLIN_minus_B2S"
+  ],
+  "interval_scope": "four prespecified comparisons x two input conditions x both heads x AP/AUC; primary only E_REAL/softmax AP for the first two comparisons",
+  "metrics": {
+    "AP": "sklearn average_precision_score, not trapezoidal PR area",
+    "AUC": "sklearn roc_auc_score",
+    "Brier": "unclipped mean squared error",
+    "binary_NLL": "epsilon1e-7, clipping [epsilon,1-epsilon]",
+    "multiclass_Brier": "mean of sum over seven classes",
+    "multiclass_NLL": "target probability clipped [1e-7,1]",
+    "macro_F1": "labels 0..6, arithmetic macro",
+    "binary_ECE15": "positive-probability equal-width bins [k/15,(k+1)/15), last includes1; sum n_bin/N*abs(mean_probability-observed_positive_rate)",
+    "multiclass_ECE15": "top-label confidence/accuracy, same15bins; empty bins mean/rate null, contribution zero"
+  },
+  "aggregation": "per-model per-seed metrics first, then mean and sample SD ddof1; paired same-seed differences; no pooled predictions or probability ensemble",
+  "bootstrap": {
+    "draws": 10000,
+    "unit": "actual SIIM patient_id",
+    "patient_sort": "ascending lexical string via np.unique",
+    "rng": "PCG64",
+    "seed": 20261016,
+    "paired_across": "all15models,all3seeds,bothconditions,bothheads",
+    "resampling": "sample2056patients with replacement; each patient multiplicityweights all their images",
+    "invalid_draw": "no positive or negative weighted image -> reject/redraw and count",
+    "intervals": "percentile95% for prespecified differences; additionally97.5% individual intervals for two primary AP contrasts (approximate Bonferroni family95%)",
+    "conditional_scope": "three fixed training fits; seed variability separately described; no p-values",
+    "checkpoint_every": 100,
+    "cpu_threads": 2
+  },
+  "thresholds": {
+    "source": "each fixed model/seed/head own HAM_val NATIVE",
+    "targets": [
+      0.9,
+      0.95
+    ],
+    "selection": "max specificity subject to target sensitivity; tie maximum threshold",
+    "positive": "p>=threshold",
+    "transport": "same numeric threshold to HAM_test,SIIM_E_REAL,SIIM_E_NULL",
+    "outputs": [
+      "TP",
+      "FN",
+      "FP",
+      "TN",
+      "sensitivity",
+      "specificity",
+      "PPV",
+      "NPV"
+    ],
+    "CI": false
+  },
+  "curves": "complete ROC/PR per run/condition/head; no smoothing or selection",
+  "prohibited": [
+    "calibration fitting",
+    "TTA",
+    "ensembling",
+    "external threshold tuning",
+    "additional training",
+    "new cohort",
+    "extra localization",
+    "manuscript edits"
+  ],
+  "manifest": [
+    {
+      "path": "${R52_PATH_E37E406F66F5}",
+      "sha256": "f30b240e75191f37d765cefd5f67b352cd89c0c543e0a5e2623204f3ac833816",
+      "bytes": 392747
+    },
+    {
+      "path": "${R52_PATH_A7EDEF14667C}",
+      "sha256": "b1e4982d61df694d6acc64a5c024f9423a110d87489a2731c5e361f183caf4f3",
+      "bytes": 84872
+    },
+    {
+      "path": "${R52_PATH_1E005046B878}",
+      "sha256": "e0805420739e57e029e95ac399b449ba9b91cd1d91226fc9033f18c3cda5cd48",
+      "bytes": 85760
+    },
+    {
+      "path": "${R52_PATH_83C520ED9A14}",
+      "sha256": "a1c7c97c59e5f49232dfe3b6f6817efaaee5dbf9bcb4ce584c1889e641be5c4e",
+      "bytes": 2387418
+    },
+    {
+      "path": "${R52_PATH_0DBC2001FB85}",
+      "sha256": "67d0b7f2b09003813e8ad20ead76921d20d2c72c15144d404f242bedc55545b5",
+      "bytes": 1978
+    },
+    {
+      "path": "${R52_PATH_CA6AFAA8BA1A}",
+      "sha256": "0370d7d71cec2890dab6fd135e4410cec42e4131d245537c08ee1a07d95162ce",
+      "bytes": 5671
+    },
+    {
+      "path": "${R52_PATH_2BCA13B7E7FB}",
+      "sha256": "dac8f201f0b57bc11a3f4260a73b8f3a4865df25e5a44b679e3b4a809f1f6b25",
+      "bytes": 1671
+    },
+    {
+      "path": "${R52_PATH_26CE1CF79C1B}",
+      "sha256": "03dd0f25aed094399c564abe9c3395f24d64d6f88024d3d7f2f26dd301ed769a",
+      "bytes": 16067
+    },
+    {
+      "path": "${R52_PATH_D609F9DC8A20}",
+      "sha256": "8e8cd4e644ab179e484255326d6d5eab4b9f2efad0584f30136692ee7708ed70",
+      "bytes": 5078
+    },
+    {
+      "path": "${R52_PATH_BF70E75BE198}",
+      "sha256": "6d865c6e6fbd96db8889925f8c0768ed316c3dface73937f66445d0b2cc57298",
+      "bytes": 584
+    },
+    {
+      "path": "${R52_PATH_929FAF347E0B}",
+      "sha256": "833e9d9fefc4a92e3390ccdf13a053da86a67637894e71c9d802a40867e69c29",
+      "bytes": 2990
+    },
+    {
+      "path": "${R52_PATH_71A41AA274C3}",
+      "sha256": "c192233fb8ffd7052612ebf97f16bee461747ccfdc5ed1f4bf26b58e31fa2d8c",
+      "bytes": 9397
+    },
+    {
+      "path": "${R52_PATH_A1EE3AAD4370}",
+      "sha256": "7216e4746bd40ba082208ae988c7c14a348ef41facead00fff2d1ae284b32263",
+      "bytes": 1450
+    },
+    {
+      "path": "${R52_PATH_78FA0E9D0468}",
+      "sha256": "e4d3dda0847836020b272ba4a8551e50ca0b5d490b9811a63186eef9c91e6e35",
+      "bytes": 3518
+    },
+    {
+      "path": "${R52_PATH_5A4E9AE122F7}",
+      "sha256": "3e7adfc87586efbf9b5860d12ae2e711f0bb4575c560d63d0d597d45f8fceb30",
+      "bytes": 4568
+    },
+    {
+      "path": "${R52_PATH_90EC977A1F3E}",
+      "sha256": "5ea9abb1382d5c9276e06ddf531690097e7426d790dc041da41f2bc0751a5595",
+      "bytes": 8098
+    },
+    {
+      "path": "${R52_PATH_15320F329C54}",
+      "sha256": "06522e1ec5d02badf258170277bcc0d5104890ed431e877c0b5ec79863e1fe22",
+      "bytes": 4400
+    },
+    {
+      "path": "${R52_PATH_CF37954828BE}",
+      "sha256": "bae2b693dea53b26f7a2f7afa55d3ccd8add028eddeb8f766d733369eddef292",
+      "bytes": 14453
+    },
+    {
+      "path": "${R52_PATH_DA137DC7F3E9}",
+      "sha256": "1c48d82548642d2ee887ed49f578bb5a9972358c917bbfaa452ac874d6c54e4e",
+      "bytes": 460
+    },
+    {
+      "path": "${R52_PATH_9DA1A5DEF7B1}",
+      "sha256": "3a9955516a616b6700913d28c5f5b51797b67401825184bb231a13c6be3ab86e",
+      "bytes": 21546
+    },
+    {
+      "path": "${R52_PATH_A06521C14BC4}",
+      "sha256": "72fa329d8efcd8d31f7f7131c6721fd6662709898ba95fc000e9a2d9fb31fc12",
+      "bytes": 1985
+    },
+    {
+      "path": "${R52_PATH_CC6104BD82EB}",
+      "sha256": "56b5e91c3bb77ab933c25fd65eba883419bdc5691cc94cb9dc840e8f4e3674eb",
+      "bytes": 22
+    },
+    {
+      "path": "${R52_PATH_CF78920A970C}",
+      "sha256": "78d6dddaf4113248d3df55c21acbd7751075189a56b282833042bc6bd2fb3f62",
+      "bytes": 190
+    },
+    {
+      "path": "${R52_PATH_FE596DACC50A}",
+      "sha256": "db399b81dbed64eb56130f27f1936089808872260a50fd345ce909f1ed1685e6",
+      "bytes": 10801
+    },
+    {
+      "path": "${R52_PATH_38DD6A726D7E}",
+      "sha256": "4c001f03eca3a93ee3e9a590d46ef0710f66fc88be1512241d3f71a0bc3be6c6",
+      "bytes": 2104
+    },
+    {
+      "path": "${R52_PATH_72089D8B0038}",
+      "sha256": "c0c19257e4aa5fcff4bf73c6923128029375a903ef71a7b43e0cefa6fc1c0a7d",
+      "bytes": 66
+    },
+    {
+      "path": "${R52_PATH_5BA6EBF9814D}",
+      "sha256": "7e737a004f69053821628f84b3da9c44a4e4a208a386fa7322c5c7ff9331a0c5",
+      "bytes": 13751
+    },
+    {
+      "path": "${R52_PATH_C556C285455D}",
+      "sha256": "5362ba3d8c6815c88321a89e11f528e2e72840d5862837f01f3c87427e1eafdc",
+      "bytes": 7527
+    }
+  ]
+}

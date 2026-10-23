@@ -1,0 +1,26 @@
+{
+  "status": "READY",
+  "candidate_count": 200,
+  "eligible_count": 200,
+  "excluded_count": 0,
+  "selection_seed": 20261012,
+  "generator": "numpy.random.Generator(PCG64)",
+  "pixel_hash_definition": "SHA256 of PIL convert RGB .tobytes(), unresized",
+  "classification_rows": {
+    "train": 6982,
+    "val": 1513,
+    "test": 1520
+  },
+  "existing_perceptual_candidates": 1516,
+  "existing_max_ssim": 0.8530893774421515,
+  "limitation": "No image-ID or exact-hash match is not proof of patient/lesion independence; unknown identifiers remain unknown.",
+  "model_source_path": "${R52_PATH_9A2AE8D21C2F}",
+  "model_source_sha256": "7e737a004f69053821628f84b3da9c44a4e4a208a386fa7322c5c7ff9331a0c5",
+  "completed_at": "2026-10-12T18:22:49.772411+08:00",
+  "selected_count": 100,
+  "selected_manifest_sha256": "ef507cb90b4955b2a9f7dabbdc532a1bf9176899c72c46f646231f795c648a13",
+  "selected_known_lesion_count": 0,
+  "selected_known_patient_count": 0,
+  "selected_allowed_ham_train_id_overlap": 0,
+  "old_localization200_overlap": 100
+}

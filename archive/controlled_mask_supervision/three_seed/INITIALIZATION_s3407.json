@@ -1,0 +1,59 @@
+{
+  "public_weight_path": "${R52_PATH_2EEF09F096AD}",
+  "public_weight_sha256": "a1aefa409b513cf209b085424eb3efffe4e4a9f511491bc2c12ea35209e6bb95",
+  "public_weight_bytes": 114374272,
+  "snapshot_revision": "aa096f03029c7f0ec052013f64c819b34f8ad790",
+  "pretrained_config": {
+    "url": "",
+    "hf_hub_id": "timm/convnext_tiny.in12k_ft_in1k",
+    "architecture": "convnext_tiny",
+    "tag": "in12k_ft_in1k",
+    "custom_load": false,
+    "input_size": [
+      3,
+      224,
+      224
+    ],
+    "test_input_size": [
+      3,
+      288,
+      288
+    ],
+    "fixed_input_size": false,
+    "interpolation": "bicubic",
+    "crop_pct": 0.95,
+    "test_crop_pct": 1.0,
+    "crop_mode": "center",
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "num_classes": 1000,
+    "pool_size": [
+      7,
+      7
+    ],
+    "first_conv": "stem.0",
+    "classifier": "head.fc",
+    "license": "apache-2.0"
+  },
+  "seed": 3407,
+  "training_seed": 3407,
+  "split_seed": 42,
+  "model_source": "${R52_PATH_31F48A66389A}",
+  "timm_version": "1.0.27",
+  "torch_version": "2.8.0+cu128",
+  "status": "READY",
+  "initialization_policy": "new random non-pretrained parameters; fixed local public backbone; no historical state loaded",
+  "initial_state_path": "${R52_PATH_BDAC0D0C8BEC}",
+  "initial_state_sha256": "15223aa8ffec7ddba52868fec1ac7001abfd9300e4cff917fb735ca090c3eb34",
+  "backbone_tensor_sha256": "3f9364a25ab219d4a7cee90ca26e6cb83bd3fee80c005de6b9a0c23bdb7d235e",
+  "nonbackbone_tensor_sha256": "dbd8be1b0fe90464c23292cc2147270b9ed41f32794faa5d8d438bab3a7ef6a1",
+  "parameter_count": 33431726
+}

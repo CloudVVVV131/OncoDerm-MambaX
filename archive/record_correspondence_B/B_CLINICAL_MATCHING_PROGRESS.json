@@ -1,0 +1,84 @@
+{
+  "status": "COMPLETE",
+  "updated_at": "2026-10-20T23:04:07.857140+08:00",
+  "first_execution": "2026-10-20T21:41:01+08:00",
+  "deadline": "2026-10-21T01:41:01+08:00",
+  "training_runs": 0,
+  "fixed_models": 6,
+  "inference_units": [
+    {
+      "tag": "ORIG_B2_s42",
+      "cohort": "SIIM",
+      "complete": true
+    },
+    {
+      "tag": "ORIG_B2_s42",
+      "cohort": "Derm7pt",
+      "complete": true
+    },
+    {
+      "tag": "ORIG_B2_s2024",
+      "cohort": "SIIM",
+      "complete": true
+    },
+    {
+      "tag": "ORIG_B2_s2024",
+      "cohort": "Derm7pt",
+      "complete": true
+    },
+    {
+      "tag": "ORIG_B2_s3407",
+      "cohort": "SIIM",
+      "complete": true
+    },
+    {
+      "tag": "ORIG_B2_s3407",
+      "cohort": "Derm7pt",
+      "complete": true
+    },
+    {
+      "tag": "ORIG_B6_s42",
+      "cohort": "SIIM",
+      "complete": true
+    },
+    {
+      "tag": "ORIG_B6_s42",
+      "cohort": "Derm7pt",
+      "complete": true
+    },
+    {
+      "tag": "ORIG_B6_s2024",
+      "cohort": "SIIM",
+      "complete": true
+    },
+    {
+      "tag": "ORIG_B6_s2024",
+      "cohort": "Derm7pt",
+      "complete": true
+    },
+    {
+      "tag": "ORIG_B6_s3407",
+      "cohort": "SIIM",
+      "complete": true
+    },
+    {
+      "tag": "ORIG_B6_s3407",
+      "cohort": "Derm7pt",
+      "complete": true
+    }
+  ],
+  "point_estimates": {
+    "SIIM": true,
+    "Derm7pt": true
+  },
+  "K_required": 50,
+  "bootstrap_valid_completed": {
+    "SIIM": 2000,
+    "Derm7pt": 2000
+  },
+  "B_required_per_cohort": 2000,
+  "bootstrap_inner_K": 50,
+  "blocker": null,
+  "manuscript_and_historical_sources_modified": false,
+  "next_phase_started": false
+}

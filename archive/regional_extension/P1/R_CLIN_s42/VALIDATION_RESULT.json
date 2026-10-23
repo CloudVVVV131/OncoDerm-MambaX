@@ -1,0 +1,73 @@
+{
+  "status": "COMPLETE",
+  "run": "R_CLIN_s42",
+  "cohort": "HAM_val",
+  "input": "NATIVE",
+  "best_path": "${R52_PATH_9A2FF8F30438}",
+  "best_sha256": "56af879c23aaa3e741afa0306f55a5e05778c2752a7d699d8ccdb2a85c3cc597",
+  "selected_epoch": 26,
+  "dtype": "FP32",
+  "TF32": false,
+  "strict_loading": true,
+  "multiclass": {
+    "macro_f1": 0.790628506011951,
+    "multiclass_brier_sum7": 0.22258933329756,
+    "multiclass_nll": 1.0942797521126613
+  },
+  "binary": [
+    {
+      "head": "softmax_MEL",
+      "roc_auc": 0.9256427525357537,
+      "average_precision": 0.7328620993900526,
+      "brier": 0.056275005183833486,
+      "binary_nll": 0.6031490742025378,
+      "images": 1513,
+      "positive_images": 164
+    },
+    {
+      "head": "endpoint_MEL",
+      "roc_auc": 0.9242889945578477,
+      "average_precision": 0.722554021998628,
+      "brier": 0.05667173814842738,
+      "binary_nll": 0.5958366812969043,
+      "images": 1513,
+      "positive_images": 164
+    }
+  ],
+  "selection_metrics_reproduced": true,
+  "readout_diagnostics": {
+    "validation_region_weights_interior_mean": 0.7859082011615529,
+    "validation_region_weights_interior_sd_within_samples": 0.23829955058035807,
+    "validation_region_weights_interior_max": 0.9991530179977417,
+    "validation_region_weights_boundary_band_mean": 0.14374535741076436,
+    "validation_region_weights_boundary_band_sd_within_samples": 0.16353121238752583,
+    "validation_region_weights_boundary_band_max": 0.9925093650817871,
+    "validation_region_weights_outer_context_mean": 0.07034644229991284,
+    "validation_region_weights_outer_context_sd_within_samples": 0.11725727536401508,
+    "validation_region_weights_outer_context_max": 0.6375517249107361,
+    "validation_region_area_interior_mean": 0.16839634751690513,
+    "validation_region_area_interior_sd_within_samples": 0.13408127095257844,
+    "validation_region_area_interior_max": 0.6801546812057495,
+    "validation_region_area_boundary_band_mean": 0.38520043341828275,
+    "validation_region_area_boundary_band_sd_within_samples": 0.11502640422476854,
+    "validation_region_area_boundary_band_max": 0.8242977261543274,
+    "validation_region_area_outer_context_mean": 0.44640319645207843,
+    "validation_region_area_outer_context_sd_within_samples": 0.22271071016712157,
+    "validation_region_area_outer_context_max": 0.9989650249481201,
+    "validation_region_valid_interior_mean": 0.9735624586913417,
+    "validation_region_valid_interior_sd_within_samples": 0.160432533228804,
+    "validation_region_valid_interior_max": 1.0,
+    "validation_region_valid_boundary_band_mean": 1.0,
+    "validation_region_valid_boundary_band_sd_within_samples": 0.0,
+    "validation_region_valid_boundary_band_max": 1.0,
+    "validation_region_valid_outer_context_mean": 0.9993390614672836,
+    "validation_region_valid_outer_context_sd_within_samples": 0.02570022748872822,
+    "validation_region_valid_outer_context_max": 1.0,
+    "validation_residual_coefficient_mean": 0.020280295982956886,
+    "validation_residual_coefficient_sd_within_samples": 2.88285904836092e-06,
+    "validation_residual_coefficient_max": 0.020280295982956886
+  },
+  "eta_raw": 0.04058285802602768,
+  "evaluation_seconds": 12.114293499995256,
+  "per_example_predictions_exported": false
+}

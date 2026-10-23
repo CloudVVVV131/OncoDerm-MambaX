@@ -1,0 +1,18 @@
+{
+  "time": "2026-10-12T05:31:36.714679+08:00",
+  "status": "COMPLETE",
+  "inference": true,
+  "fixed_checkpoint_count": 6,
+  "external_condition_units": 12,
+  "HAM_native_units": 12,
+  "training": false,
+  "finetuning": false,
+  "cloud_access": false,
+  "B1_rerun": false,
+  "bootstrap_valid": 10000,
+  "threshold_selection": "HAM_val_ONLY",
+  "calibration": "evaluation_only_unpenalized_point_fit_no_probability_transform",
+  "final_QC": "PASS",
+  "manuscripts_modified": false,
+  "phase_C_D_started": false
+}

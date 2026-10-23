@@ -1,0 +1,14 @@
+{
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "GPU": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "device_total_bytes": 8585216000,
+  "TF32": false,
+  "workers": 2,
+  "spawn_entry_stdlib_only": true,
+  "train_count": 6982,
+  "validation_count": 1513,
+  "validation_positive": 164,
+  "actual_model_source": "${R52_PATH_A67B1F19BCEF}",
+  "actual_base_source": "${R52_PATH_0CF6EBE798D1}"
+}

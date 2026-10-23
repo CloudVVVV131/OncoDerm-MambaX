@@ -1,0 +1,116 @@
+[
+  {
+    "model": "R_IMG",
+    "training_seed": 42,
+    "run": "R_IMG_s42",
+    "path": "${R52_PATH_A43577A49353}",
+    "sha256": "f92283cc46bcc45a59e123364c6cea3da8f4e0377cff4a2b8d54458a622c3c13",
+    "bytes": 137416109,
+    "best_epoch": 23,
+    "completed_epochs": 38,
+    "effective_config_path": "${R52_PATH_D4DACB25116E}",
+    "effective_config_sha256": "aa76ec93e2aec5ebfa1567ce1898acc89bac88b9fc325cdc188d53e26201c8f7",
+    "config_snapshot": "${R52_PATH_9C93A908822E}",
+    "origin": "existing_fixed_best_no_retraining",
+    "prior_validation_reference": {
+      "macro_f1": 0.7862156146710697,
+      "softmax_MEL_AP": 0.7245745283535093,
+      "softmax_MEL_AUC": 0.9301944529823356
+    }
+  },
+  {
+    "model": "R_CLIN",
+    "training_seed": 42,
+    "run": "R_CLIN_s42",
+    "path": "${R52_PATH_9A2FF8F30438}",
+    "sha256": "56af879c23aaa3e741afa0306f55a5e05778c2752a7d699d8ccdb2a85c3cc597",
+    "bytes": 137416109,
+    "best_epoch": 26,
+    "completed_epochs": 41,
+    "effective_config_path": "${R52_PATH_E6E9F56F926F}",
+    "effective_config_sha256": "00ae66e0942cda7c13a2504487f87be292d3edc1bb38cc35df0ae7368807ca07",
+    "config_snapshot": "${R52_PATH_6FE981E7E730}",
+    "origin": "existing_fixed_best_no_retraining",
+    "prior_validation_reference": {
+      "macro_f1": 0.790628506011951,
+      "softmax_MEL_AP": 0.7328620993900526,
+      "softmax_MEL_AUC": 0.9256427525357537
+    }
+  },
+  {
+    "model": "R_IMG",
+    "training_seed": 2024,
+    "run": "R_IMG_s2024",
+    "path": "${R52_PATH_A619576E4C28}",
+    "sha256": "76bb5d4554fcba952ab3cd36a40feda4f29e0f1236443ed7ad97aa54778cb1c4",
+    "bytes": 137416429,
+    "best_epoch": 14,
+    "completed_epochs": 29,
+    "effective_config_path": "${R52_PATH_584FA0DED44A}",
+    "effective_config_sha256": "eb09b2135fd90080b2b4a92c138ea996bfeb63302c6aaa03aac40b2ef0edc069",
+    "config_snapshot": "${R52_PATH_E2FA2F5E8B1F}",
+    "origin": "existing_fixed_best_no_retraining",
+    "prior_validation_reference": {
+      "macro_f1": 0.7890588316606079,
+      "softmax_MEL_AP": 0.6955934765080051,
+      "softmax_MEL_AUC": 0.9251071254226255
+    }
+  },
+  {
+    "model": "R_CLIN",
+    "training_seed": 2024,
+    "run": "R_CLIN_s2024",
+    "path": "${R52_PATH_7E486FDF155F}",
+    "sha256": "dc9d4567cb001365250df5a46b66e99e32796823ab1e69339300b4b707c801d7",
+    "bytes": 137416429,
+    "best_epoch": 32,
+    "completed_epochs": 47,
+    "effective_config_path": "${R52_PATH_F77B96588D51}",
+    "effective_config_sha256": "ae1adfb235d1313da7c9fd2fbeee137a8cfcf0437e55f48976d14b5aface5597",
+    "config_snapshot": "${R52_PATH_716F97B19425}",
+    "origin": "existing_fixed_best_no_retraining",
+    "prior_validation_reference": {
+      "macro_f1": 0.782159640651938,
+      "softmax_MEL_AP": 0.6826772660140887,
+      "softmax_MEL_AUC": 0.9275886383771177
+    }
+  },
+  {
+    "model": "R_IMG",
+    "training_seed": 3407,
+    "run": "R_IMG_s3407",
+    "path": "${R52_PATH_C0D2C1E16B34}",
+    "sha256": "4bc4c03e0124ddb73cdb1da0c28cf22a78df6a4183d8e269324288522bae5180",
+    "bytes": 137416429,
+    "best_epoch": 52,
+    "completed_epochs": 67,
+    "effective_config_path": "${R52_PATH_38DD6FA5E0CD}",
+    "effective_config_sha256": "754ba58c799e802ef07ed0d984bdaf1be57622c3f5409ecb31504bd05b708e33",
+    "config_snapshot": "${R52_PATH_EC0A47B66ED8}",
+    "origin": "existing_fixed_best_no_retraining",
+    "prior_validation_reference": {
+      "macro_f1": 0.7775761230456943,
+      "softmax_MEL_AP": 0.676290947378546,
+      "softmax_MEL_AUC": 0.9252811477336418
+    }
+  },
+  {
+    "model": "R_CLIN",
+    "training_seed": 3407,
+    "run": "R_CLIN_s3407",
+    "path": "${R52_PATH_DDF79AC516E8}",
+    "sha256": "5bcdca73e3d273b389cd3086b72b7d11b6b2642ecb0c250ae1be18ec1da0a3fe",
+    "bytes": 137416429,
+    "best_epoch": 29,
+    "completed_epochs": 44,
+    "effective_config_path": "${R52_PATH_1FA8FB2D9786}",
+    "effective_config_sha256": "46d16a2a0708b81c0d0bc5657a1b18d0271933f62885803860c5549e2726803c",
+    "config_snapshot": "${R52_PATH_2CB9009FED86}",
+    "origin": "existing_fixed_best_no_retraining",
+    "prior_validation_reference": {
+      "macro_f1": 0.7984713909819676,
+      "softmax_MEL_AP": 0.6946192389543431,
+      "softmax_MEL_AUC": 0.9184535970637691
+    }
+  }
+]

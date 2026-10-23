@@ -1,0 +1,9 @@
+contrast,training_seed,cohort,input,head,metric,difference,ci_low,ci_high,role,bootstrap_draws,cluster_unit,clusters,CI
+FULL_minus_ZERO,42,SIIM,E_REAL,softmax_MEL,roc_auc,0.03205030927366359,0.012887498493910729,0.0518864207482606,SECONDARY_DESCRIPTIVE,10000,patient,2056,"paired percentile 95%, fixed seed42 model pair"
+FULL_minus_ZERO,42,SIIM,E_REAL,softmax_MEL,average_precision,0.006741820147197777,-0.008256768744927498,0.021461830812669707,PRIMARY,10000,patient,2056,"paired percentile 95%, fixed seed42 model pair"
+FULL_minus_ZERO,42,SIIM,E_REAL,endpoint_MEL,roc_auc,0.023771834796423197,0.004169530044761205,0.044347005010214935,SECONDARY_DESCRIPTIVE,10000,patient,2056,"paired percentile 95%, fixed seed42 model pair"
+FULL_minus_ZERO,42,SIIM,E_REAL,endpoint_MEL,average_precision,0.0035367560751159294,-0.011169588793446553,0.01800702816229147,SECONDARY_DESCRIPTIVE,10000,patient,2056,"paired percentile 95%, fixed seed42 model pair"
+FULL_minus_ZERO,42,SIIM,E_NULL,softmax_MEL,roc_auc,0.04115803349601732,0.023056222600503752,0.059535983247012134,SECONDARY_DESCRIPTIVE,10000,patient,2056,"paired percentile 95%, fixed seed42 model pair"
+FULL_minus_ZERO,42,SIIM,E_NULL,softmax_MEL,average_precision,0.013795358603840069,-0.00131298731962297,0.03024163612992908,SECONDARY_DESCRIPTIVE,10000,patient,2056,"paired percentile 95%, fixed seed42 model pair"
+FULL_minus_ZERO,42,SIIM,E_NULL,endpoint_MEL,roc_auc,0.033622829254165154,0.01461273189548277,0.05321651040881693,SECONDARY_DESCRIPTIVE,10000,patient,2056,"paired percentile 95%, fixed seed42 model pair"
+FULL_minus_ZERO,42,SIIM,E_NULL,endpoint_MEL,average_precision,0.010656654293014808,-0.005394157549803584,0.026788381189456274,SECONDARY_DESCRIPTIVE,10000,patient,2056,"paired percentile 95%, fixed seed42 model pair"

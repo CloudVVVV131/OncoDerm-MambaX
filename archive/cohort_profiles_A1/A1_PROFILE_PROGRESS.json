@@ -1,0 +1,27 @@
+{
+  "status": "COMPLETE",
+  "first_A1_launch": true,
+  "started_at": "2026-10-20T05:43:51+08:00",
+  "completed_at": "2026-10-20T05:43:57+08:00",
+  "A1": "COMPLETE",
+  "B_DESIGN_INPUTS": "COMPLETE",
+  "B_PROTOCOL": "DRAFT_NOT_EXECUTED_NOT_FINAL_FROZEN",
+  "B_INFERENCE": "NOT_STARTED",
+  "NEW_TRAINING": 0,
+  "model_weights_opened": 0,
+  "model_predictions_read": 0,
+  "model_performance_computed": false,
+  "input_metadata_files": 5,
+  "cohorts": {
+    "HAM_train": 6982,
+    "HAM_validation": 1513,
+    "HAM_internal_test": 1520,
+    "SIIM": 33126,
+    "Derm7pt": 1011
+  },
+  "blockers": [],
+  "next_action": "STOP; await ChatGPT protocol review",
+  "output_directory": "${R52_PATH_EDA0A4B2C0A1}",
+  "zip": "R5_2_CLINICAL_PROFILE_RESULTS.zip",
+  "zip_validation_receipt": "DELIVERY_RECEIPT.json (external)"
+}

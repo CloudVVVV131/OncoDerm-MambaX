@@ -1,0 +1,5 @@
+_base_: b6m_true_mamba_seed42.yaml
+project:
+  seed: 2024
+  split_seed: 42
+

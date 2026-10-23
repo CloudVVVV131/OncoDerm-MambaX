@@ -1,0 +1,21 @@
+destination,display_source,authoritative_source,scope,note
+Table_1B,Table_1B.csv,A1/COHORT_CLINICAL_CHARACTERISTICS.csv; COHORT_FIELD_DISTRIBUTIONS.csv,New display formatting; no new model performance or intervals,All rows retained at source precision in Data S3
+Table_4B,Table_4B.csv,B completed aggregate CSVs; protocol FIM_B_ORIGINAL_RECORD_MATCHING_v1.0_20261020,New display formatting; no new model performance or intervals,All rows retained at source precision in Data S3
+Table_S40A,Table_S40A.csv,A1/COHORT_CLINICAL_CHARACTERISTICS.csv; COHORT_FIELD_DISTRIBUTIONS.csv,New display formatting; no new model performance or intervals,All rows retained at source precision in Data S3
+Table_S40B,Table_S40B.csv,A1/COHORT_CLINICAL_CHARACTERISTICS.csv; COHORT_FIELD_DISTRIBUTIONS.csv,New display formatting; no new model performance or intervals,All rows retained at source precision in Data S3
+Table_S40C_diagnosis,Table_S40C_diagnosis.csv,A1/COHORT_CLINICAL_CHARACTERISTICS.csv; COHORT_FIELD_DISTRIBUTIONS.csv,New display formatting; no new model performance or intervals,All rows retained at source precision in Data S3
+Table_S40C_missing,Table_S40C_missing.csv,A1/COHORT_CLINICAL_CHARACTERISTICS.csv; COHORT_FIELD_DISTRIBUTIONS.csv,New display formatting; no new model performance or intervals,All rows retained at source precision in Data S3
+Table_S41,Table_S41.csv,A1/CLINICAL_ENCODING_COVERAGE.csv,New display formatting; no new model performance or intervals,All rows retained at source precision in Data S3
+Table_S42,Table_S42.csv,B completed aggregate CSVs; protocol FIM_B_ORIGINAL_RECORD_MATCHING_v1.0_20261020,New display formatting; no new model performance or intervals,All rows retained at source precision in Data S3
+Table_S43,Table_S43.csv,B completed aggregate CSVs; protocol FIM_B_ORIGINAL_RECORD_MATCHING_v1.0_20261020,New display formatting; no new model performance or intervals,All rows retained at source precision in Data S3
+Table_S44A1,Table_S44A1.csv,B completed aggregate CSVs; protocol FIM_B_ORIGINAL_RECORD_MATCHING_v1.0_20261020,New display formatting; no new model performance or intervals,All rows retained at source precision in Data S3
+Table_S44A2,Table_S44A2.csv,B completed aggregate CSVs; protocol FIM_B_ORIGINAL_RECORD_MATCHING_v1.0_20261020,New display formatting; no new model performance or intervals,All rows retained at source precision in Data S3
+Table_S44B,Table_S44B.csv,B completed aggregate CSVs; protocol FIM_B_ORIGINAL_RECORD_MATCHING_v1.0_20261020,New display formatting; no new model performance or intervals,All rows retained at source precision in Data S3
+Table_S45A,Table_S45A.csv,B completed aggregate CSVs; protocol FIM_B_ORIGINAL_RECORD_MATCHING_v1.0_20261020,New display formatting; no new model performance or intervals,All rows retained at source precision in Data S3
+Table_S45B_Derm7pt,Table_S45B_Derm7pt.csv,B completed aggregate CSVs; protocol FIM_B_ORIGINAL_RECORD_MATCHING_v1.0_20261020,New display formatting; no new model performance or intervals,All rows retained at source precision in Data S3
+Table_S45B_SIIM,Table_S45B_SIIM.csv,B completed aggregate CSVs; protocol FIM_B_ORIGINAL_RECORD_MATCHING_v1.0_20261020,New display formatting; no new model performance or intervals,All rows retained at source precision in Data S3
+Figure3A,Figure_3A_per_run.csv; Figure_3A_intervals.csv,R5.1 existing clinical-input figure sources,Original three-run effects and 97.5% intervals,Data retained byte-identically
+Figure3B,Figure_3B_per_run.csv; Figure_3B_intervals.csv,B/PER_RUN_CONTRASTS.csv; MATCHING_CONTRASTS.csv; MATCHING_INTERVALS.csv,prob_mel; AP; matched_minus_shuffled,SIIM 0.975; Derm7pt 0.95; actual per-run effects
+Abstract; Results4.4.2; Discussion5.2,Table_4B.csv,B common-head three-condition AP and matching contrasts,Original B2/B6; cohorts separately,Not an improvement from retraining; old matched-minus-null intervals retained
+Methods3.6.2/3.8; S18,B_CLINICAL_MATCHING_REPORT.md; B_CLINICAL_MATCHING_PROTOCOL.md,Completed execution and fixed design,50 point maps; 2000 bootstrap draws with inner50,Fixed fits/strata/19 SIIM blocks; donor pool rebuilt
+Old main Tables2/3/4A/5/6,R5.1 corresponding result tables,Unchanged original manuscript tables,Original statistical identity retained,Exact regression check in Verification

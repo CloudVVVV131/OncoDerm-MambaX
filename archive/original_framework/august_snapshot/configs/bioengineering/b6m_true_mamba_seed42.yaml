@@ -1,0 +1,22 @@
+_base_: ../submission_v1/b6_full_oncoderm_mambax.yaml
+project:
+  name: bioengineering_b6m_gate
+  seed: 42
+  split_seed: 42
+model:
+  name: oncoderm_mambax_b6m_true_mamba
+  cssa:
+    enabled: true
+    backend: mamba_ssm
+    stage3_enabled: false
+    adapter_dim: 256
+    d_state: 16
+    d_conv: 4
+    expand: 2
+  lesion_prior:
+    enabled: true
+  metadata_fusion:
+    enabled: true
+  heads:
+    melanoma_endpoint: true
+

@@ -1,0 +1,3 @@
+run,status,completed_epochs,best_epoch,next_epoch,next_batch,global_step,last_checkpoint,elapsed_this_invocation_seconds,validation_complete,parameter_count,readout_parameter_count,sum_epoch_training_validation_seconds,selection_rule_verified_from_full_history,selected_epoch,best_sha256
+FIM_TKEEP_REGION_s42,TRAINING_COMPLETE,33,18,34,0,4818,${R52_PATH_11E31248E2B2},4067.1160781383514,True,34225839,794113,4193.113154411316,True,18,445c0b403cfd21b8fd0bb57c215e7441c4e9913ce7536b7c1f4e71550c3d4aa3
+FIM_TKEEP_GLOBAL_s42,TRAINING_COMPLETE,40,25,41,0,5840,${R52_PATH_71F4C85802C2},5115.62956237793,True,34225839,794113,5092.374980926514,True,25,e6340399e1bbd973ced12f7def97c7a44835665c16b56a71d99a059143ba320b

@@ -1,0 +1,23 @@
+_base_: defaults_oncoderm.yaml
+model:
+  name: oncoderm_mambax_b0_backbone_only
+  multi_scale_fusion: false
+  cssa:
+    enabled: false
+    stage3_enabled: false
+  lesion_prior:
+    enabled: false
+  metadata_fusion:
+    enabled: false
+  heads:
+    melanoma_endpoint: false
+loss:
+  multitask: false
+  name: weighted_ce
+  lambda_sparse: 0.0
+  lambda_tv: 0.0
+data:
+  metadata:
+    enabled: false
+  mask_aux:
+    enabled: false

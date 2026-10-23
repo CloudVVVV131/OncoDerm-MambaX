@@ -1,0 +1,42 @@
+[
+  {
+    "path": "${R52_PATH_E37E406F66F5}",
+    "bytes": 392747,
+    "sha256": "f30b240e75191f37d765cefd5f67b352cd89c0c543e0a5e2623204f3ac833816"
+  },
+  {
+    "path": "${R52_PATH_A7EDEF14667C}",
+    "bytes": 84872,
+    "sha256": "b1e4982d61df694d6acc64a5c024f9423a110d87489a2731c5e361f183caf4f3"
+  },
+  {
+    "path": "${R52_PATH_1E005046B878}",
+    "bytes": 85760,
+    "sha256": "e0805420739e57e029e95ac399b449ba9b91cd1d91226fc9033f18c3cda5cd48"
+  },
+  {
+    "path": "${R52_PATH_332D999CFE2E}",
+    "bytes": 2934483,
+    "sha256": "50c8748e421134ee2dcb3bd3613c1b14b268363443ae314dfd7c6085d5243b8b"
+  },
+  {
+    "path": "${R52_PATH_3691B63AD4FB}",
+    "bytes": 8878637,
+    "sha256": "b83b6c6fadbf0e25005bafa3fd2c46a82301c430d4e178a2cf6722f6717dcb33"
+  },
+  {
+    "path": "${R52_PATH_8177255F37A8}",
+    "bytes": 88999,
+    "sha256": "9049c5aceba5baf642a53b23bed1ff3121b5dbf3fe8a81d8895da26f805237bc"
+  },
+  {
+    "path": "${R52_PATH_944ABBADAEF1}",
+    "bytes": 10286668,
+    "sha256": "92ff9f2f9ce2587264329a7a7c4840da7e2e506786b4b8161ef0814eb8cb5ce6"
+  },
+  {
+    "path": "${R52_PATH_3598D7B71D40}",
+    "bytes": 384360,
+    "sha256": "cc0256bd8edadca12bc5bba71afba7809d2d1e829cedbcc7b34980dc653f4edf"
+  }
+]

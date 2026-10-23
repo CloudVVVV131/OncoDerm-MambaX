@@ -1,0 +1,11 @@
+field,source_value_normalized,normalized_value_passed_to_encoder,encoder_token,missing_flag,status,count
+sex,female,female,female,0,direct_vocabulary_match,15981
+sex,male,male,male,0,direct_vocabulary_match,17080
+sex,unknown,unknown,unknown,1,raw_missing_or_unknown,65
+anatom_site_general_challenge,head/neck,head/neck,unknown,0,unsupported_nonempty,1855
+anatom_site_general_challenge,lower extremity,lower extremity,lower extremity,0,direct_vocabulary_match,8417
+anatom_site_general_challenge,oral/genital,oral/genital,unknown,0,unsupported_nonempty,124
+anatom_site_general_challenge,palms/soles,palms/soles,unknown,0,unsupported_nonempty,375
+anatom_site_general_challenge,torso,trunk,trunk,0,predeclared_synonym,16845
+anatom_site_general_challenge,unknown,unknown,unknown,1,raw_missing_or_unknown,527
+anatom_site_general_challenge,upper extremity,upper extremity,upper extremity,0,direct_vocabulary_match,4983

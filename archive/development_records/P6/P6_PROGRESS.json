@@ -1,0 +1,77 @@
+{
+  "status": "COMPLETE",
+  "updated_at": "2026-10-16T17:53:01.262510+08:00",
+  "window": {
+    "started_at": "2026-10-16T14:58:36.909633+08:00",
+    "deadline": "2026-10-16T20:58:36.909633+08:00",
+    "source_seed42": "${R52_PATH_F74ED8905ECC}",
+    "source_P1": "${R52_PATH_8BF64AF677FF}",
+    "source_P2": "${R52_PATH_A777747B3623}",
+    "source_P3": "${R52_PATH_D326FCF49049}",
+    "new_runs": [
+      "FIM_TKEEP_REGION_s42",
+      "FIM_TKEEP_GLOBAL_s42"
+    ],
+    "D_free_bytes_at_admission": 13525745664,
+    "estimated_required_bytes": 4294967296,
+    "estimate_basis": "Two ~138MB best and ~414MB last checkpoints, atomic save temporaries, shared pre-training state, logs and safety reserve",
+    "allowed_data": [
+      "HAM_train",
+      "HAM_validation",
+      "frozen_aux100"
+    ],
+    "automatic_next_phase": false
+  },
+  "planned_new_training_runs": 2,
+  "training_completed": 2,
+  "selected_best_validation_completed": 2,
+  "runs": [
+    {
+      "run": "FIM_TKEEP_REGION_s42",
+      "status": "TRAINING_COMPLETE",
+      "completed_epochs": 33,
+      "best_epoch": 18,
+      "next_epoch": 34,
+      "next_batch": 0,
+      "global_step": 4818,
+      "last_checkpoint": "${R52_PATH_11E31248E2B2}",
+      "elapsed_this_invocation_seconds": 4067.1160781383514,
+      "validation_complete": true,
+      "parameter_count": 34225839,
+      "readout_parameter_count": 794113,
+      "sum_epoch_training_validation_seconds": 4193.113154411316,
+      "selection_rule_verified_from_full_history": true,
+      "selected_epoch": 18,
+      "best_sha256": "445c0b403cfd21b8fd0bb57c215e7441c4e9913ce7536b7c1f4e71550c3d4aa3"
+    },
+    {
+      "run": "FIM_TKEEP_GLOBAL_s42",
+      "status": "TRAINING_COMPLETE",
+      "completed_epochs": 40,
+      "best_epoch": 25,
+      "next_epoch": 41,
+      "next_batch": 0,
+      "global_step": 5840,
+      "last_checkpoint": "${R52_PATH_71F4C85802C2}",
+      "elapsed_this_invocation_seconds": 5115.62956237793,
+      "validation_complete": true,
+      "parameter_count": 34225839,
+      "readout_parameter_count": 794113,
+      "sum_epoch_training_validation_seconds": 5092.374980926514,
+      "selection_rule_verified_from_full_history": true,
+      "selected_epoch": 25,
+      "best_sha256": "e6340399e1bbd973ced12f7def97c7a44835665c16b56a71d99a059143ba320b"
+    }
+  ],
+  "new_external_inference": 0,
+  "other_training_seeds": 0,
+  "bootstrap": false,
+  "calibrator_fitting": false,
+  "threshold_selection": false,
+  "manuscript_modified": false,
+  "next_action": "STOP; return deliverables, no automatic expansion",
+  "report": "${R52_PATH_2B9889BD533E}",
+  "results_zip": "${R52_PATH_54F560C47180}",
+  "packaging_status": "VERIFIED",
+  "verification": "${R52_PATH_A5E4071A9B14}"
+}

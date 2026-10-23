@@ -1,0 +1,11 @@
+{
+  "started_at": "2026-10-14T02:39:32.3106315+08:00",
+  "deadline": "2026-10-14T14:39:32.3106315+08:00",
+  "source_zip": "${R52_PATH_594A2E133795}",
+  "source_seed42": "${R52_PATH_77BDE2542771}",
+  "source_three_seed": "${R52_PATH_3B164EDAFD4B}",
+  "output": "${R52_PATH_17A062A20759}",
+  "previous_blocked_directory": "${R52_PATH_453D3E44E9C4}",
+  "D_free_bytes": 33901051904,
+  "reserved_estimate_GiB": 6
+}

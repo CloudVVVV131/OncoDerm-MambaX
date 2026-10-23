@@ -1,0 +1,92 @@
+{
+  "status": "COMPLETE",
+  "updated_at": "2026-10-12T22:16:34.896372+08:00",
+  "planned_runs": 6,
+  "authorized_runs": 2,
+  "training_completed": 2,
+  "evaluation_completed": 2,
+  "completed_authorized_runs": 2,
+  "evaluation_status": {
+    "status": "COMPLETE",
+    "models": 2,
+    "cohorts": [
+      "HAM_val",
+      "HAM_test",
+      "SIIM"
+    ],
+    "precision": "FP32",
+    "external_conditions": [
+      "E_REAL",
+      "E_NULL"
+    ],
+    "scores": [
+      "softmax_MEL",
+      "endpoint_MEL"
+    ]
+  },
+  "statistics_status": {
+    "status": "COMPLETE",
+    "accepted_draws": 10000,
+    "rejected_draws": 0,
+    "training_seeds": [
+      42
+    ],
+    "primary": "SIIM E_REAL softmax MEL average precision FULL-ZERO",
+    "secondary_CIs": "descriptive, no multiplicity-adjusted confirmatory claims",
+    "uncertainty_scope": "Patients conditional on two fixed seed42 fits, not three-seed algorithm uncertainty",
+    "calibration_fitted": false,
+    "external_threshold_selection": false
+  },
+  "runs": [
+    {
+      "run": "FIM_LPAH_FULL_s42",
+      "authorized": true,
+      "status": "TRAINING_COMPLETE",
+      "completed_epochs": 49,
+      "best_epoch": 34,
+      "next_epoch": 50,
+      "next_batch": 0,
+      "global_step": 7154,
+      "last_checkpoint": "${R52_PATH_A87CCBE8E6E9}",
+      "elapsed_this_invocation_seconds": 5629.405691385269
+    },
+    {
+      "run": "FIM_LPAH_ZERO_s42",
+      "authorized": true,
+      "status": "TRAINING_COMPLETE",
+      "completed_epochs": 71,
+      "best_epoch": 56,
+      "next_epoch": 72,
+      "next_batch": 0,
+      "global_step": 10366,
+      "last_checkpoint": "${R52_PATH_BF07AB302B09}",
+      "elapsed_this_invocation_seconds": 6757.064013719559
+    },
+    {
+      "run": "FIM_LPAH_FULL_s2024",
+      "authorized": false,
+      "status": "NOT_STARTED",
+      "completed_epochs": 0
+    },
+    {
+      "run": "FIM_LPAH_ZERO_s2024",
+      "authorized": false,
+      "status": "NOT_STARTED",
+      "completed_epochs": 0
+    },
+    {
+      "run": "FIM_LPAH_FULL_s3407",
+      "authorized": false,
+      "status": "NOT_STARTED",
+      "completed_epochs": 0
+    },
+    {
+      "run": "FIM_LPAH_ZERO_s3407",
+      "authorized": false,
+      "status": "NOT_STARTED",
+      "completed_epochs": 0
+    }
+  ],
+  "other_four_runs": "NOT_STARTED_NOT_AUTHORIZED",
+  "unresolved_blocker": null
+}

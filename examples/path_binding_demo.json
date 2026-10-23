@@ -1,0 +1,7 @@
+{
+  "purpose": "Synthetic text-binding demonstration only; not a scientific execution config",
+  "ham_train_members": "${R52_PATH_E37E406F66F5}",
+  "ham_validation_members": "${R52_PATH_A7EDEF14667C}",
+  "siim_official_metadata": "${R52_PATH_83C520ED9A14}",
+  "research_execution": "NOT_RUN"
+}

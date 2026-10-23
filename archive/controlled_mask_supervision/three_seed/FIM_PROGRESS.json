@@ -1,0 +1,146 @@
+{
+  "status": "COMPLETE",
+  "updated_at": "2026-10-13T09:39:15.130280+08:00",
+  "window": {
+    "started_at": "2026-10-13T04:53:12.0286598+08:00",
+    "deadline": "2026-10-13T16:53:12.0286598+08:00",
+    "source_seed42": "${R52_PATH_77BDE2542771}",
+    "new_training_seeds": [
+      2024,
+      3407
+    ],
+    "split_seed": 42,
+    "output": "${R52_PATH_3B164EDAFD4B}",
+    "initial_C_free_bytes": 18919030784
+  },
+  "authorized_new_runs": 4,
+  "reused_seed42_runs": 2,
+  "training_completed": 6,
+  "evaluation_completed": 6,
+  "evaluation_status": {
+    "status": "COMPLETE",
+    "models": 4,
+    "training_seeds": [
+      2024,
+      3407
+    ],
+    "seed42_reinferred": false,
+    "cohorts": [
+      "HAM_val",
+      "HAM_test",
+      "SIIM"
+    ],
+    "precision": "FP32",
+    "external_conditions": [
+      "E_REAL",
+      "E_NULL"
+    ],
+    "scores": [
+      "softmax_MEL",
+      "endpoint_MEL"
+    ]
+  },
+  "statistics_status": {
+    "status": "COMPLETE",
+    "accepted_draws": 10000,
+    "rejected_draws": 0,
+    "training_seeds": [
+      42,
+      2024,
+      3407
+    ],
+    "seed42_original_bootstrap_draws_reproduced": true,
+    "primary": "mean per-seed SIIM E_REAL softmax MEL AP, FULL minus ZERO",
+    "sample_SD_ddof": 1,
+    "calibration_fitted": false,
+    "external_threshold_selection": false,
+    "uncertainty_scope": "Patients conditional on three fixed training pairs; training-seed variation reported separately"
+  },
+  "runs": [
+    {
+      "run": "FIM_LPAH_FULL_s42",
+      "training_seed": 42,
+      "condition": "FULL",
+      "read_only_reuse": true,
+      "status": "TRAINING_COMPLETE",
+      "completed_epochs": 49,
+      "best_epoch": 34,
+      "next_epoch": 50,
+      "next_batch": 0,
+      "global_step": 7154,
+      "last_checkpoint": "${R52_PATH_A87CCBE8E6E9}",
+      "elapsed_this_invocation_seconds": 5629.405691385269
+    },
+    {
+      "run": "FIM_LPAH_ZERO_s42",
+      "training_seed": 42,
+      "condition": "ZERO",
+      "read_only_reuse": true,
+      "status": "TRAINING_COMPLETE",
+      "completed_epochs": 71,
+      "best_epoch": 56,
+      "next_epoch": 72,
+      "next_batch": 0,
+      "global_step": 10366,
+      "last_checkpoint": "${R52_PATH_BF07AB302B09}",
+      "elapsed_this_invocation_seconds": 6757.064013719559
+    },
+    {
+      "run": "FIM_LPAH_FULL_s2024",
+      "training_seed": 2024,
+      "condition": "FULL",
+      "read_only_reuse": false,
+      "status": "TRAINING_COMPLETE",
+      "completed_epochs": 49,
+      "best_epoch": 34,
+      "next_epoch": 50,
+      "next_batch": 0,
+      "global_step": 7154,
+      "last_checkpoint": "${R52_PATH_03180F6C74BD}",
+      "elapsed_this_invocation_seconds": 5227.526245594025
+    },
+    {
+      "run": "FIM_LPAH_ZERO_s2024",
+      "training_seed": 2024,
+      "condition": "ZERO",
+      "read_only_reuse": false,
+      "status": "TRAINING_COMPLETE",
+      "completed_epochs": 53,
+      "best_epoch": 38,
+      "next_epoch": 54,
+      "next_batch": 0,
+      "global_step": 7738,
+      "last_checkpoint": "${R52_PATH_BC2AA53A1681}",
+      "elapsed_this_invocation_seconds": 4290.774203538895
+    },
+    {
+      "run": "FIM_LPAH_FULL_s3407",
+      "training_seed": 3407,
+      "condition": "FULL",
+      "read_only_reuse": false,
+      "status": "TRAINING_COMPLETE",
+      "completed_epochs": 36,
+      "best_epoch": 21,
+      "next_epoch": 37,
+      "next_batch": 0,
+      "global_step": 5256,
+      "last_checkpoint": "${R52_PATH_EF16C2A5E650}",
+      "elapsed_this_invocation_seconds": 2866.5858845710754
+    },
+    {
+      "run": "FIM_LPAH_ZERO_s3407",
+      "training_seed": 3407,
+      "condition": "ZERO",
+      "read_only_reuse": false,
+      "status": "TRAINING_COMPLETE",
+      "completed_epochs": 37,
+      "best_epoch": 22,
+      "next_epoch": 38,
+      "next_batch": 0,
+      "global_step": 5402,
+      "last_checkpoint": "${R52_PATH_330F217CF007}",
+      "elapsed_this_invocation_seconds": 3002.692192554474
+    }
+  ],
+  "blocker": null
+}

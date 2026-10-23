@@ -1,0 +1,91 @@
+{
+  "protocol_id": "FIM_B_ORIGINAL_RECORD_MATCHING_v1.0_20261020",
+  "first_execution": "2026-10-20T21:41:01+08:00",
+  "deadline": "2026-10-21T01:41:01+08:00",
+  "frozen_at": "2026-10-20T21:58:49.527258+08:00",
+  "K": 50,
+  "B": 2000,
+  "seed": 20261020,
+  "phase": [
+    1,
+    2,
+    3
+  ],
+  "models": [
+    "ORIG_B2_s42",
+    "ORIG_B2_s2024",
+    "ORIG_B2_s3407",
+    "ORIG_B6_s42",
+    "ORIG_B6_s2024",
+    "ORIG_B6_s3407"
+  ],
+  "cohorts": [
+    {
+      "cohort": "SIIM",
+      "n": 33126,
+      "positive": 584,
+      "groups": 2056,
+      "observed_types": 167,
+      "grid_types": 168,
+      "null_type": 167,
+      "singleton_size_groups": 19,
+      "singleton_images": 1488,
+      "canonical_order": "patient_id/image_name exact lexical",
+      "grouping_unit": "patient",
+      "private_binding_hashes": {
+        "binding.json": "e4da11e424329133405aab1b5538dae686a75d2d84df81bd3d828c42399ffa1f",
+        "group_ids.npy": "acd3d596edd4fa3aaed10b927923c3b52c8b0137042a4d36bbbec308f4ffd4cd",
+        "images.csv": "b0702e7b934d5f77de0d1179c7a712806a1094caa1a3dec0cfc4a362d6a51b78",
+        "labels.npy": "d88001d2dd00b1870382438c42deb900bdebebc8cc0f748eb1a3a2f777265cd5",
+        "old_order.npy": "9532b1628e902bf02ed3bbe737f3167624dad54e3ee83e9b328f1cb6480e0e73",
+        "strata.npz": "74335272934365bd6f1cc7b367554869905b6a206e85a2029bfdfe5d86a16658",
+        "types.npy": "9381227373ffb3149efadcad11317d3a31e49e71bd45d089c3d0dc793d0b299b",
+        "vectors.npy": "a60158512b45ca55d32313b5c4e17a12bf3df46d14e670aea1fcabc83c363ce3"
+      }
+    },
+    {
+      "cohort": "Derm7pt",
+      "n": 1011,
+      "positive": 252,
+      "groups": 1011,
+      "observed_types": 16,
+      "grid_types": 17,
+      "null_type": 16,
+      "singleton_size_groups": 0,
+      "singleton_images": 0,
+      "canonical_order": "cluster_case_num/case_num numeric and exact derm path",
+      "grouping_unit": "case/same-image cluster, not verified patient",
+      "private_binding_hashes": {
+        "group_ids.npy": "bef3f57e96311a832d184b219d83759c44e21b1c60b2994176b11df997281326",
+        "images.csv": "6db9be2b59a03cb69c450ebb006641960929fbddba488f37a15f70bade21f655",
+        "labels.npy": "27aa9b6cef4f95ab7d2bde5a4f1651cce462d98992ca1460fd22671a86ea59fe",
+        "old_order.npy": "bef3f57e96311a832d184b219d83759c44e21b1c60b2994176b11df997281326",
+        "strata.npz": "3d2e3d49f99320eb7939220fc4ce86aa45a075fcf263931b1a8db73626af5cfe",
+        "types.npy": "845077a55ad9e3ecc6225cd07a5fdf9eeec0e4e5a98bee90062b6922dede66e5",
+        "vectors.npy": "efc0b13f01073f3ef3f15b79e5f25008ab51e9fedf7c6e10e7a8dc33bd009b08"
+      }
+    }
+  ],
+  "precision": "FP32",
+  "TF32": false,
+  "training_runs": 0,
+  "workers_max": 2,
+  "model_sources": {
+    "model_code\\lesionmamba\\__init__.py": "56b5e91c3bb77ab933c25fd65eba883419bdc5691cc94cb9dc840e8f4e3674eb",
+    "model_code\\lesionmamba\\data\\datasets.py": "db399b81dbed64eb56130f27f1936089808872260a50fd345ce909f1ed1685e6",
+    "model_code\\lesionmamba\\data\\transforms.py": "4c001f03eca3a93ee3e9a590d46ef0710f66fc88be1512241d3f71a0bc3be6c6",
+    "model_code\\lesionmamba\\data\\__init__.py": "78d6dddaf4113248d3df55c21acbd7751075189a56b282833042bc6bd2fb3f62",
+    "model_code\\lesionmamba\\models\\oncoderm_mambax.py": "7e737a004f69053821628f84b3da9c44a4e4a208a386fa7322c5c7ff9331a0c5",
+    "model_code\\lesionmamba\\models\\__init__.py": "c0c19257e4aa5fcff4bf73c6923128029375a903ef71a7b43e0cefa6fc1c0a7d"
+  },
+  "code_hashes": {
+    "b_common.py": "8be6771e336beb1f24f68eac3c5c559ae8220ac350502b81bf31ce81168bf1d0",
+    "b_data.py": "a5135755f1a01a1d92be36dc5f5d04b5224c16f93c538d42582a5a01b753aafe",
+    "b_infer.py": "1adaabc744d55bc058be82cbb9b19c73ca54006afcbef82dd41c7c63711c43d1",
+    "b_prepare.py": "05f52dc4cc1aa63afb3e61144a3f2208a9ee1db2f9aa15c14cfbb7cfc27436e9",
+    "clinical_matching_reference.py": "33ded38d229e7203e7cdde042f1554d5cfd99d357ce2142571d257a4c0930d8c",
+    "test_clinical_matching_reference.py": "459caca3bbeba596ba4e49b007452791854b70f43ed021e92df0826a55e67d4f"
+  },
+  "privacy": "All individual records, vectors, grids, maps and predictions stay private",
+  "scientific_protocol_sha256": "7db06c382cafef341c506444a9dfd766edfc4bbf0414db9e15a464913cd35395"
+}

@@ -1,0 +1,50 @@
+{
+  "python": "3.12.3",
+  "platform": "Linux-5.15.0-94-generic-x86_64-with-glibc2.35",
+  "torch": "2.8.0+cu128",
+  "cuda_available": true,
+  "cuda_version": "12.8",
+  "gpu_name": "NVIDIA GeForce RTX 5090",
+  "gpu_count": 1,
+  "timm": "1.0.28",
+  "numpy": "2.3.2",
+  "pandas": "3.0.5",
+  "sklearn": "1.9.0",
+  "torchvision": "0.23.0+cu128",
+  "mamba_ssm": "not_installed",
+  "model_metadata": {
+    "model_name": "dermamamba_architecture_faithful",
+    "source": "clean_room_architecture_faithful_port",
+    "comparison_label": "DermaMamba (resource-matched architecture port)",
+    "paper_doi": "10.3390/bioengineering12101030",
+    "source_repository": "https://github.com/Glow945/Skin_Lesions",
+    "source_file": "https://github.com/Glow945/Skin_Lesions/blob/main/Codes/Model_architecture.py",
+    "source_revision": "2f5542bf30b9c5f6e0cecc6b5ac498cce76ca567",
+    "official_checkpoint_used": false,
+    "official_training_recipe_available": false,
+    "repository_license_file_detected": false,
+    "image_size": 224,
+    "patch_size": 16,
+    "embed_dim": 192,
+    "depth": 6,
+    "declared_source_defaults": {
+      "embed_dim": 768,
+      "depth": 12,
+      "num_classes": 9
+    },
+    "protocol_adaptations": [
+      "seven HAM10000 classes",
+      "fixed lesion-grouped seed42 split",
+      "resource-matched width and depth",
+      "ABCDE features omitted because they are unavailable in the locked cohort"
+    ],
+    "mechanical_source_fixes": [
+      "selective-scan dt_rank is propagated consistently",
+      "state-update tensor broadcasting is corrected"
+    ],
+    "pretrained": true,
+    "melanoma_score_source": "seven_class_softmax_mel",
+    "inference_requires_mask": false
+  },
+  "train_init_checkpoint": null
+}

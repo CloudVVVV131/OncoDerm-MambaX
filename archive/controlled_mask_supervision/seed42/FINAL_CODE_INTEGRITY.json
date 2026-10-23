@@ -1,0 +1,44 @@
+[
+  {
+    "file": "prepare_fim.py",
+    "frozen_sha256": "060617aaa79b9a6a8e51b7de97a89a12d504a17d9e21906294dcc53e5745354b",
+    "final_sha256": "060617aaa79b9a6a8e51b7de97a89a12d504a17d9e21906294dcc53e5745354b",
+    "unchanged": true,
+    "note": ""
+  },
+  {
+    "file": "initialize_fim.py",
+    "frozen_sha256": "1ecb11bb8f327665ed47070c30fbea27ed5261fb0c60981ace76819c96e3cdc5",
+    "final_sha256": "1ecb11bb8f327665ed47070c30fbea27ed5261fb0c60981ace76819c96e3cdc5",
+    "unchanged": true,
+    "note": ""
+  },
+  {
+    "file": "fim_training.py",
+    "frozen_sha256": "a55879cb64a7d59960054427b6a13b6ec93d21ef223d2bd5b95b6752885959a6",
+    "final_sha256": "a55879cb64a7d59960054427b6a13b6ec93d21ef223d2bd5b95b6752885959a6",
+    "unchanged": true,
+    "note": ""
+  },
+  {
+    "file": "fim_evaluation.py",
+    "frozen_sha256": "7522bbb4ab94d362eb895cbc17e03a787e303d371ff4b6165a521a3fbd22dcda",
+    "final_sha256": "7522bbb4ab94d362eb895cbc17e03a787e303d371ff4b6165a521a3fbd22dcda",
+    "unchanged": true,
+    "note": ""
+  },
+  {
+    "file": "fim_statistics.py",
+    "frozen_sha256": "cbcebe13eddef946ee39ab118e743c9008327c24d9b6b8b82e11e4d1d917f6f1",
+    "final_sha256": "cbcebe13eddef946ee39ab118e743c9008327c24d9b6b8b82e11e4d1d917f6f1",
+    "unchanged": true,
+    "note": ""
+  },
+  {
+    "file": "package_fim.py",
+    "frozen_sha256": "08d7a23082b39f28b92ce5cd89696a77f8e66f3302f98d66503254eef4fc2f36",
+    "final_sha256": "b4249b830245c373a338899358271602ebd9aabe3fef43b54a0174367e2ea5b5",
+    "unchanged": false,
+    "note": "Reporting-only timing/summary additions"
+  }
+]

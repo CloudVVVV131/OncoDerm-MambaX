@@ -1,0 +1,20 @@
+{
+  "time": "2026-10-20T21:59:25.241043+08:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "${R52_PATH_6560E3761747}",
+  "torch": "2.8.0+cu128",
+  "numpy": "2.3.2",
+  "pandas": "3.0.3",
+  "torchvision": "0.23.0+cu128",
+  "timm": "1.0.27",
+  "pillow": "12.3.0",
+  "GPU": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "precision": "FP32",
+  "TF32": false,
+  "AMP": false,
+  "eval": true,
+  "inference_mode": true,
+  "actual_model_source": "${R52_PATH_369CCCA42B76}",
+  "checkpoint_loading": "weights_only=True, mmap=True, strict=True",
+  "readonly_historical_sources": true
+}

@@ -1,0 +1,5 @@
+models: [convnext_tiny, swin_tiny, vmamba_tiny, lesionmamba_compact]
+perturbations:
+  gaussian_blur: [3, 5]
+  brightness_shift: [-0.2, 0.2]
+  hair_occlusion_lines: [5, 10]

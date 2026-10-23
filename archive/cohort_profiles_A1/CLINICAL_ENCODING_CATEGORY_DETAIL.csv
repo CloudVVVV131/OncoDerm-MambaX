@@ -1,0 +1,83 @@
+cohort,field,source_category,raw_state,value_passed_to_encoder,encoded_token,missing_flag,coverage_state,n,denominator,percent,source_path,source_field
+HAM_train,age,[blank],blank,missing,NA,1,truly_missing,37,6982,0.5299341162990547,${R52_PATH_E37E406F66F5},age
+HAM_train,age,finite_value,valid,age/100,NA,0,available_supported,6945,6982,99.47006588370094,${R52_PATH_E37E406F66F5},age
+HAM_train,sex,[explicit_unknown],explicit_unknown,unknown,unknown,1,truly_missing,33,6982,0.4726439415640218,${R52_PATH_E37E406F66F5},sex
+HAM_train,sex,female,valid,female,female,0,available_supported,3169,6982,45.388140933829845,${R52_PATH_E37E406F66F5},sex
+HAM_train,sex,male,valid,male,male,0,available_supported,3780,6982,54.13921512460613,${R52_PATH_E37E406F66F5},sex
+HAM_train,site,[explicit_unknown],explicit_unknown,unknown,unknown,1,truly_missing,137,6982,1.9621884846748783,${R52_PATH_E37E406F66F5},localization
+HAM_train,site,abdomen,valid,abdomen,abdomen,0,available_supported,711,6982,10.183328559152105,${R52_PATH_E37E406F66F5},localization
+HAM_train,site,acral,valid,acral,acral,0,available_supported,7,6982,0.10025780578630765,${R52_PATH_E37E406F66F5},localization
+HAM_train,site,back,valid,back,back,0,available_supported,1540,6982,22.056717272987683,${R52_PATH_E37E406F66F5},localization
+HAM_train,site,chest,valid,chest,chest,0,available_supported,291,6982,4.167860211973647,${R52_PATH_E37E406F66F5},localization
+HAM_train,site,ear,valid,ear,ear,0,available_supported,41,6982,0.5872242910340877,${R52_PATH_E37E406F66F5},localization
+HAM_train,site,face,valid,face,face,0,available_supported,501,6982,7.175594385562876,${R52_PATH_E37E406F66F5},localization
+HAM_train,site,foot,valid,foot,foot,0,available_supported,211,6982,3.0220567172729877,${R52_PATH_E37E406F66F5},localization
+HAM_train,site,genital,valid,genital,genital,0,available_supported,32,6982,0.45832139788026355,${R52_PATH_E37E406F66F5},localization
+HAM_train,site,hand,valid,hand,hand,0,available_supported,69,6982,0.9882555141793182,${R52_PATH_E37E406F66F5},localization
+HAM_train,site,lower extremity,valid,lower extremity,lower extremity,0,available_supported,1438,6982,20.595817817244342,${R52_PATH_E37E406F66F5},localization
+HAM_train,site,neck,valid,neck,neck,0,available_supported,121,6982,1.7330277857347465,${R52_PATH_E37E406F66F5},localization
+HAM_train,site,scalp,valid,scalp,scalp,0,available_supported,92,6982,1.3176740189057576,${R52_PATH_E37E406F66F5},localization
+HAM_train,site,trunk,valid,trunk,trunk,0,available_supported,1009,6982,14.45144657691206,${R52_PATH_E37E406F66F5},localization
+HAM_train,site,upper extremity,valid,upper extremity,upper extremity,0,available_supported,782,6982,11.20022916069894,${R52_PATH_E37E406F66F5},localization
+HAM_validation,age,[blank],blank,missing,NA,1,truly_missing,11,1513,0.7270323859881032,${R52_PATH_A7EDEF14667C},age
+HAM_validation,age,finite_value,valid,age/100,NA,0,available_supported,1502,1513,99.2729676140119,${R52_PATH_A7EDEF14667C},age
+HAM_validation,sex,[explicit_unknown],explicit_unknown,unknown,unknown,1,truly_missing,13,1513,0.8592200925313945,${R52_PATH_A7EDEF14667C},sex
+HAM_validation,sex,female,valid,female,female,0,available_supported,660,1513,43.62194315928619,${R52_PATH_A7EDEF14667C},sex
+HAM_validation,sex,male,valid,male,male,0,available_supported,840,1513,55.518836748182416,${R52_PATH_A7EDEF14667C},sex
+HAM_validation,site,[explicit_unknown],explicit_unknown,unknown,unknown,1,truly_missing,53,1513,3.502974223397224,${R52_PATH_A7EDEF14667C},localization
+HAM_validation,site,abdomen,valid,abdomen,abdomen,0,available_supported,170,1513,11.235955056179776,${R52_PATH_A7EDEF14667C},localization
+HAM_validation,site,back,valid,back,back,0,available_supported,335,1513,22.141440846001323,${R52_PATH_A7EDEF14667C},localization
+HAM_validation,site,chest,valid,chest,chest,0,available_supported,66,1513,4.362194315928619,${R52_PATH_A7EDEF14667C},localization
+HAM_validation,site,ear,valid,ear,ear,0,available_supported,7,1513,0.46265697290152014,${R52_PATH_A7EDEF14667C},localization
+HAM_validation,site,face,valid,face,face,0,available_supported,111,1513,7.336417713152676,${R52_PATH_A7EDEF14667C},localization
+HAM_validation,site,foot,valid,foot,foot,0,available_supported,45,1513,2.9742233972240584,${R52_PATH_A7EDEF14667C},localization
+HAM_validation,site,genital,valid,genital,genital,0,available_supported,10,1513,0.6609385327164574,${R52_PATH_A7EDEF14667C},localization
+HAM_validation,site,hand,valid,hand,hand,0,available_supported,9,1513,0.5948446794448117,${R52_PATH_A7EDEF14667C},localization
+HAM_validation,site,lower extremity,valid,lower extremity,lower extremity,0,available_supported,311,1513,20.555188367481826,${R52_PATH_A7EDEF14667C},localization
+HAM_validation,site,neck,valid,neck,neck,0,available_supported,23,1513,1.520158625247852,${R52_PATH_A7EDEF14667C},localization
+HAM_validation,site,scalp,valid,scalp,scalp,0,available_supported,17,1513,1.1235955056179776,${R52_PATH_A7EDEF14667C},localization
+HAM_validation,site,trunk,valid,trunk,trunk,0,available_supported,206,1513,13.615333773959021,${R52_PATH_A7EDEF14667C},localization
+HAM_validation,site,upper extremity,valid,upper extremity,upper extremity,0,available_supported,150,1513,9.914077990746861,${R52_PATH_A7EDEF14667C},localization
+HAM_internal_test,age,[blank],blank,missing,NA,1,truly_missing,9,1520,0.5921052631578947,${R52_PATH_1E005046B878},age
+HAM_internal_test,age,finite_value,valid,age/100,NA,0,available_supported,1511,1520,99.40789473684211,${R52_PATH_1E005046B878},age
+HAM_internal_test,sex,[explicit_unknown],explicit_unknown,unknown,unknown,1,truly_missing,11,1520,0.7236842105263158,${R52_PATH_1E005046B878},sex
+HAM_internal_test,sex,female,valid,female,female,0,available_supported,723,1520,47.56578947368421,${R52_PATH_1E005046B878},sex
+HAM_internal_test,sex,male,valid,male,male,0,available_supported,786,1520,51.71052631578947,${R52_PATH_1E005046B878},sex
+HAM_internal_test,site,[explicit_unknown],explicit_unknown,unknown,unknown,1,truly_missing,44,1520,2.8947368421052633,${R52_PATH_1E005046B878},localization
+HAM_internal_test,site,abdomen,valid,abdomen,abdomen,0,available_supported,141,1520,9.276315789473685,${R52_PATH_1E005046B878},localization
+HAM_internal_test,site,back,valid,back,back,0,available_supported,317,1520,20.855263157894736,${R52_PATH_1E005046B878},localization
+HAM_internal_test,site,chest,valid,chest,chest,0,available_supported,50,1520,3.289473684210526,${R52_PATH_1E005046B878},localization
+HAM_internal_test,site,ear,valid,ear,ear,0,available_supported,8,1520,0.5263157894736842,${R52_PATH_1E005046B878},localization
+HAM_internal_test,site,face,valid,face,face,0,available_supported,133,1520,8.75,${R52_PATH_1E005046B878},localization
+HAM_internal_test,site,foot,valid,foot,foot,0,available_supported,63,1520,4.144736842105263,${R52_PATH_1E005046B878},localization
+HAM_internal_test,site,genital,valid,genital,genital,0,available_supported,6,1520,0.39473684210526316,${R52_PATH_1E005046B878},localization
+HAM_internal_test,site,hand,valid,hand,hand,0,available_supported,12,1520,0.7894736842105263,${R52_PATH_1E005046B878},localization
+HAM_internal_test,site,lower extremity,valid,lower extremity,lower extremity,0,available_supported,328,1520,21.57894736842105,${R52_PATH_1E005046B878},localization
+HAM_internal_test,site,neck,valid,neck,neck,0,available_supported,24,1520,1.5789473684210527,${R52_PATH_1E005046B878},localization
+HAM_internal_test,site,scalp,valid,scalp,scalp,0,available_supported,19,1520,1.25,${R52_PATH_1E005046B878},localization
+HAM_internal_test,site,trunk,valid,trunk,trunk,0,available_supported,189,1520,12.43421052631579,${R52_PATH_1E005046B878},localization
+HAM_internal_test,site,upper extremity,valid,upper extremity,upper extremity,0,available_supported,186,1520,12.236842105263158,${R52_PATH_1E005046B878},localization
+SIIM,age,[blank],blank,missing,NA,1,truly_missing,68,33126,0.20527682183179377,${R52_PATH_83C520ED9A14},age_approx
+SIIM,age,finite_value,valid,age/100,NA,0,available_supported,33058,33126,99.79472317816821,${R52_PATH_83C520ED9A14},age_approx
+SIIM,sex,[blank],blank,unknown,unknown,1,truly_missing,65,33126,0.19622049145686168,${R52_PATH_83C520ED9A14},sex
+SIIM,sex,female,valid,female,female,0,available_supported,15981,33126,48.24307190726318,${R52_PATH_83C520ED9A14},sex
+SIIM,sex,male,valid,male,male,0,available_supported,17080,33126,51.56070760127996,${R52_PATH_83C520ED9A14},sex
+SIIM,site,[blank],blank,unknown,unknown,1,truly_missing,527,33126,1.5908953691964016,${R52_PATH_83C520ED9A14},anatom_site_general_challenge
+SIIM,site,head/neck,valid,head/neck,unknown,0,nonempty_unsupported,1855,33126,5.599830948499668,${R52_PATH_83C520ED9A14},anatom_site_general_challenge
+SIIM,site,lower extremity,valid,lower extremity,lower extremity,0,available_supported,8417,33126,25.409044255267766,${R52_PATH_83C520ED9A14},anatom_site_general_challenge
+SIIM,site,oral/genital,valid,oral/genital,unknown,0,nonempty_unsupported,124,33126,0.3743283221638592,${R52_PATH_83C520ED9A14},anatom_site_general_challenge
+SIIM,site,palms/soles,valid,palms/soles,unknown,0,nonempty_unsupported,375,33126,1.1320412968665097,${R52_PATH_83C520ED9A14},anatom_site_general_challenge
+SIIM,site,torso,valid,trunk,trunk,0,available_supported,16845,33126,50.85129505524362,${R52_PATH_83C520ED9A14},anatom_site_general_challenge
+SIIM,site,upper extremity,valid,upper extremity,upper extremity,0,available_supported,4983,33126,15.04256475276218,${R52_PATH_83C520ED9A14},anatom_site_general_challenge
+Derm7pt,age,[column_absent],column_absent,missing,NA,1,truly_missing,1011,1011,100.0,${R52_PATH_CB55B27527EC},age
+Derm7pt,sex,female,valid,female,female,0,available_supported,522,1011,51.632047477744806,${R52_PATH_CB55B27527EC},sex
+Derm7pt,sex,male,valid,male,male,0,available_supported,489,1011,48.367952522255194,${R52_PATH_CB55B27527EC},sex
+Derm7pt,site,abdomen,valid,abdomen,abdomen,0,available_supported,125,1011,12.363996043521267,${R52_PATH_CB55B27527EC},location
+Derm7pt,site,acral,valid,acral,acral,0,available_supported,62,1011,6.132542037586548,${R52_PATH_CB55B27527EC},location
+Derm7pt,site,back,valid,back,back,0,available_supported,281,1011,27.794263105835807,${R52_PATH_CB55B27527EC},location
+Derm7pt,site,buttocks,valid,buttocks,unknown,0,nonempty_unsupported,21,1011,2.077151335311573,${R52_PATH_CB55B27527EC},location
+Derm7pt,site,chest,valid,chest,chest,0,available_supported,100,1011,9.891196834817013,${R52_PATH_CB55B27527EC},location
+Derm7pt,site,genital areas,valid,genital,genital,0,available_supported,8,1011,0.7912957467853611,${R52_PATH_CB55B27527EC},location
+Derm7pt,site,head neck,valid,head neck,unknown,0,nonempty_unsupported,92,1011,9.099901088031652,${R52_PATH_CB55B27527EC},location
+Derm7pt,site,lower limbs,valid,lower extremity,lower extremity,0,available_supported,200,1011,19.782393669634025,${R52_PATH_CB55B27527EC},location
+Derm7pt,site,upper limbs,valid,upper extremity,upper extremity,0,available_supported,122,1011,12.067260138476756,${R52_PATH_CB55B27527EC},location

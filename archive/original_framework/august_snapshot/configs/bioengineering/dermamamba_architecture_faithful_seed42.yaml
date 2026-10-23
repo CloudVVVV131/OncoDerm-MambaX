@@ -1,0 +1,33 @@
+_base_: defaults_direct.yaml
+train:
+  epochs: 100
+  batch_size: 16
+  optimizer: adam
+  lr: 0.0001
+  weight_decay: 0.00005
+  warmup_epochs: 10
+  early_stopping_patience: 15
+  grad_clip: 1.0
+  selection_metric: macro_f1
+  selection_tie_breaker: mel_auc
+loss:
+  name: ce
+  label_smoothing: 0.0
+  lambda_sparse: 0.0
+  lambda_tv: 0.0
+model:
+  name: dermamamba_architecture_faithful
+  source: dermamamba_architecture_faithful
+  pretrained: true
+  allow_random_init_fallback: false
+  num_classes: 7
+  dermamamba:
+    source_revision: 2f5542bf30b9c5f6e0cecc6b5ac498cce76ca567
+    patch_size: 16
+    embed_dim: 192
+    depth: 6
+    d_state: 16
+    d_conv: 4
+    expand: 2
+    fusion_dim: 1024
+    dropout: 0.2

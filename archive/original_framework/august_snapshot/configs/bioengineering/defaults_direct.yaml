@@ -1,0 +1,34 @@
+_base_: ../defaults.yaml
+project:
+  name: bioengineering_direct_baselines
+  output_dir: outputs
+  seed: 42
+  split_seed: 42
+
+data:
+  input_size: 224
+  resize_short_side: 256
+  metadata:
+    enabled: false
+  mask_aux:
+    enabled: false
+
+train:
+  epochs: 40
+  batch_size: 32
+  num_workers: 8
+  optimizer: adamw
+  lr: 0.0003
+  weight_decay: 0.05
+  warmup_epochs: 3
+  early_stopping_patience: 8
+  selection_metric: macro_f1
+  selection_tie_breaker: mel_auc
+
+loss:
+  name: cb_focal
+  beta: 0.999
+  gamma: 2.0
+  label_smoothing: 0.05
+  multitask: false
+

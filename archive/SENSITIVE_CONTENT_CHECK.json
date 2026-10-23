@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "scope": "All candidate text, filenames, extensions and structured row-shape checks; no credentials/source data sought",
+  "files_checked": 982,
+  "findings": [],
+  "exclusions": [
+    "weights",
+    "raw images",
+    "raw metadata",
+    "individual clinical records",
+    "patient/case membership lists",
+    "per-example predictions",
+    "donor mappings",
+    "score grids",
+    "per-example bootstrap indices",
+    "credentials",
+    ".env",
+    "Git history",
+    "font binaries"
+  ],
+  "limitations": "Pattern/schema and allowlist review is not a universal proof of absence of every conceivable identifying string; only selected current candidate was inspected"
+}

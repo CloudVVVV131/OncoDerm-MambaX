@@ -1,0 +1,4 @@
+ece_bins: 15
+min_temperature: 0.5
+max_temperature: 5.0
+

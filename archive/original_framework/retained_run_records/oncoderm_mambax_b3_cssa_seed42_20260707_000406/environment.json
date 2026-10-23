@@ -1,0 +1,37 @@
+{
+  "python": "3.12.3",
+  "platform": "Linux-5.15.0-78-generic-x86_64-with-glibc2.35",
+  "torch": "2.8.0+cu128",
+  "cuda_available": true,
+  "cuda_version": "12.8",
+  "gpu_name": "NVIDIA GeForce RTX 5090",
+  "gpu_count": 1,
+  "timm": "1.0.27",
+  "numpy": "2.3.2",
+  "pandas": "3.0.3",
+  "sklearn": "1.9.0",
+  "torchvision": "0.23.0+cu128",
+  "model_metadata": {
+    "model_name": "oncoderm_mambax_b3_cssa",
+    "source": "oncoderm_mambax",
+    "backbone_source": "timm_features",
+    "timm_name": "convnext_tiny",
+    "pretrained": true,
+    "out_indices": [
+      1,
+      2,
+      3
+    ],
+    "implementation_variant": "pretrained_backbone_cssa_lpah_cmgf",
+    "cssa_enabled": true,
+    "lpah_enabled": false,
+    "cmgf_enabled": false,
+    "melanoma_endpoint_head": true,
+    "multi_scale_fusion": true,
+    "metadata_dim": 0,
+    "effective_ssm_backend": "torch_fallback_conv1d_scan",
+    "formal_vmamba_baseline": false,
+    "inference_requires_mask": false
+  },
+  "train_init_checkpoint": null
+}

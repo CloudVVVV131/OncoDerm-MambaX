@@ -1,0 +1,70 @@
+[
+  {
+    "path": "${R52_PATH_B6C5E5314E85}",
+    "sha256": "33e3f742a07098814cd58f72a1d334cbd262f51bc8369fdcaf916f8a12c65675"
+  },
+  {
+    "path": "${R52_PATH_449DD220FFF9}",
+    "sha256": "d7466948fc9fbc045382936410c0eaf398590056dcc9890828a8757d52dda96a"
+  },
+  {
+    "path": "${R52_PATH_ECD1D888875C}",
+    "sha256": "e4f88751265929b51b86cd1df080359afa1ea7818244ce6d46493bd9d6efbde5"
+  },
+  {
+    "path": "${R52_PATH_2C3FFD3F11F2}",
+    "sha256": "785be5cf702bcf4c006934150f0fb818c3f69f60d8ad6eb47a6525519cb741a1"
+  },
+  {
+    "path": "${R52_PATH_34E630150B1D}",
+    "sha256": "fb75cc45f96cf07d195c0bf3550ea979625b97bcd92f2f63ed707658d1f04ac4"
+  },
+  {
+    "path": "${R52_PATH_95ED357ACA1B}",
+    "sha256": "502e452cd17c066503ebeb5aaeba9208feebf84f04dc8ba5d4d5639c1ebfda7f"
+  },
+  {
+    "path": "${R52_PATH_FD74D1B64A39}",
+    "sha256": "82a27857a94abcb88f14ed3d8610bf8d101e123840fd85610033229a493b21eb"
+  },
+  {
+    "path": "${R52_PATH_AF52A030D03B}",
+    "sha256": "15d7646daa94c0ff7903d9dc0fad8c0444ccf4a100c7b097141790e0e0eaef72"
+  },
+  {
+    "path": "${R52_PATH_34D2D3526B08}",
+    "sha256": "158794207000ba09b38d3834d77672cc89c9c0ef5343d4cf32edf5125030273d"
+  },
+  {
+    "path": "${R52_PATH_73714F648B93}",
+    "sha256": "e7254392a93a01570a54718e043a81e0515acdd0bce5b32ee7ab319e0689ff8b"
+  },
+  {
+    "path": "${R52_PATH_FB8C768279FD}",
+    "sha256": "56b5e91c3bb77ab933c25fd65eba883419bdc5691cc94cb9dc840e8f4e3674eb"
+  },
+  {
+    "path": "${R52_PATH_FEE577D11004}",
+    "sha256": "78d6dddaf4113248d3df55c21acbd7751075189a56b282833042bc6bd2fb3f62"
+  },
+  {
+    "path": "${R52_PATH_0DCC3489D14C}",
+    "sha256": "db399b81dbed64eb56130f27f1936089808872260a50fd345ce909f1ed1685e6"
+  },
+  {
+    "path": "${R52_PATH_98971C1C21CF}",
+    "sha256": "4c001f03eca3a93ee3e9a590d46ef0710f66fc88be1512241d3f71a0bc3be6c6"
+  },
+  {
+    "path": "${R52_PATH_3E45623841D5}",
+    "sha256": "c0c19257e4aa5fcff4bf73c6923128029375a903ef71a7b43e0cefa6fc1c0a7d"
+  },
+  {
+    "path": "${R52_PATH_B975CD3E10F4}",
+    "sha256": "7e737a004f69053821628f84b3da9c44a4e4a208a386fa7322c5c7ff9331a0c5"
+  },
+  {
+    "path": "${R52_PATH_395F0980D2D5}",
+    "sha256": "5362ba3d8c6815c88321a89e11f528e2e72840d5862837f01f3c87427e1eafdc"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "time": "2026-10-17T18:33:03+08:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "${R52_PATH_6560E3761747}",
+  "torch": "2.8.0+cu128",
+  "torchvision": "0.23.0+cu128",
+  "timm": "1.0.27",
+  "numpy": "2.3.2",
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "cuda_runtime": "12.8",
+  "total_vram": 8585216000,
+  "precision": "FP32",
+  "TF32": false,
+  "disk_free": 6972366848
+}

@@ -1,0 +1,150 @@
+protocol_name: OncoDerm_B1_existing_predictions
+protocol_version: '2026-10-11'
+status: frozen_before_new_performance_computation
+current_authorized_stage_when_sent_to_codex: B1_only
+baseline_manuscript: R3.1
+provenance: supplemental_analysis_of_previously_inspected_cohort
+resource_policy:
+  device: cpu
+  paid_compute_budget: 0
+  max_workers: 4
+  estimated_walltime_review_hours: 4
+  training: false
+  model_inference: false
+  checkpoint_loading: false
+  external_downloads: false
+  cloud_jobs: false
+  manuscript_edits: false
+  old_queue_resumption: false
+inputs:
+  project_root: ${R52_PATH_0F70D48282E5}
+  inventory: Reference_Evidence/Stage_A/PREDICTION_INVENTORY.csv
+  patient_mapping: ${R52_PATH_83C520ED9A14}
+  expected_images: 33126
+  expected_patients: 2056
+  expected_melanoma_images: 584
+  join_key_prediction: image_id
+  join_key_patient_mapping: image_name
+  patient_column: patient_id
+  target_column: target
+  direct_split_seed: 42
+  direct_training_seed: 42
+  direct_score_column: prob_mel
+  repeated_score_columns:
+  - prob_mel
+  - prob_mel_endpoint
+  repeated_training_seeds:
+  - 42
+  - 2024
+  - 3407
+  repeated_models:
+  - B2
+  - B4
+  - B6
+  deduplicate_by_run_and_hash: true
+metrics:
+  primary: average_precision
+  key_secondary: roc_auc
+  positive_label: 1
+  ap_definition: noninterpolated_recall_increment_weighted_precision
+  point_rounding_tolerance_abs: 5.1e-05
+  weighted_test_tolerance_abs: 1.0e-10
+  report_all_planned_comparisons: true
+comparisons:
+- left: B6
+  right: B2
+  role: primary_AP_1
+- left: B6
+  right: EfficientNet-B0
+  role: primary_AP_2
+- left: B6
+  right: DermaMamba port
+  role: supporting
+- left: B2
+  right: EfficientNet-B0
+  role: supporting
+bootstrap:
+  generator: PCG64
+  seed: 20261011
+  n_valid_replicates: 10000
+  cluster: patient_id
+  sampling: uniform_patients_with_replacement
+  sampled_clusters_per_replicate: 2056
+  within_cluster_weight: patient_multiplicity
+  same_resample_for_all_models: true
+  ties: group_identical_scores
+  invalid_one_class: record_and_redraw_same_rng_stream
+  nominal_ci_percentiles:
+  - 2.5
+  - 97.5
+  two_primary_AP_family_ci_percentiles:
+  - 1.25
+  - 98.75
+  emit_p_values: false
+  fixed_three_run_mean_difference_ci: true
+  seed_population_inference: false
+curves:
+  source: current_original_prediction_inputs
+  models:
+  - B1
+  - B2
+  - B4
+  - B6
+  - EfficientNet-B0
+  - Swin-Tiny
+  - DermaMamba port
+  score: prob_mel
+  precision_recall_return_order:
+  - precision
+  - recall
+  - thresholds
+  PR_x: recall
+  PR_y: precision
+  smooth_or_decimate_saved_coordinates: false
+  overwrite_manuscript_figures: false
+outputs:
+- B1_REPORT.md
+- B1_RESULTS.zip
+- B2_READINESS.md
+- B1_FROZEN_PLAN.yaml
+- INPUT_MANIFEST.csv
+- DIRECT_POINT_METRICS.csv
+- PAIRWISE_CLUSTERED_CI.csv
+- REPEATED_RUN_METRICS.csv
+- REPEATED_RUN_SUMMARY.csv
+- FIXED_RUN_MEAN_DIFFERENCE_CI.csv
+- ROC_CURVE_COORDINATES.csv
+- PR_CURVE_COORDINATES.csv
+- METRIC_TESTS.json
+- REUSE_AND_GAP_REGISTER.csv
+handoff_exclusions:
+- patient_level_identifiers_or_clinical_rows
+- original_per_image_predictions
+- model_weights
+- image_datasets
+- credentials_and_dotenv
+stop_after: B1
+frozen_at: '2026-10-11T17:32:24.882488+08:00'
+original_protocol_sha256: f9544644203bfecd0efe488749a48ef687c660fb8d5c152de9003c3f3e569446
+input_manifest_sha256: 4bddcc10b238f458f4cb9cd426bf1de72d8cf37cfee754e16bfbb67d592c4862
+independent_script_sha256: e5a290ffc05cfa9da2e709b0148db3a4e10075d34c9ef7acf8125b4b78d57244
+environment_sha256: fa053f45478ade60c7bdb4e886ed1347789be1b09285af05172339c82aadae64
+interpretation: Supplemental analysis of previously inspected SIIM cohort; not July
+  historical preregistration
+implementation:
+  dtype: float64
+  csv_float_precision: round_trip
+  numpy_quantile_method: linear
+  patient_order: lexicographic exact patient_id strings
+  image_order: lexicographic image_name via exact ID join
+  workers: 1
+  blas_threads: 1
+  pilot_replicates: 100
+  pilot_included_in_total: true
+  validation_rng_seed: 20261012
+  validation_real_draws: 3
+  validation_stream_independent_of_bootstrap: true
+  resume_snapshots: local_only/checkpoint_*.npz and same-number RNG JSON; no patients/predictions
+    saved
+  source_hash_guard: Before analysis and final read-only check
+  plots: coordinates_only_no_image_rendering

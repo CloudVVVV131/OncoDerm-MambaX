@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "paths": {
+    "ham_train_members": {
+      "token": "R52_PATH_E37E406F66F5",
+      "kind": "file",
+      "description": "Original HAM seed42 training member CSV; obtain the exact authorized historical member file, not a new split."
+    },
+    "ham_validation_members": {
+      "token": "R52_PATH_A7EDEF14667C",
+      "kind": "file",
+      "description": "Original HAM seed42 validation member CSV. This package does not redistribute it."
+    },
+    "siim_official_metadata": {
+      "token": "R52_PATH_83C520ED9A14",
+      "kind": "file",
+      "description": "ISIC_2020_Training_GroundTruth_v2.csv from the authorized official source; preserve raw records and original encoding rules."
+    }
+  }
+}

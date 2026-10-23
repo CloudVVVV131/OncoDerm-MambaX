@@ -1,0 +1,26 @@
+{
+  "status": "completed_or_partial",
+  "available_image_mask_pairs": 200,
+  "evaluated_mask_count": 200,
+  "minimum_requested": 200,
+  "runs": [
+    {
+      "run_id": "oncoderm_mambax_b4_lpah_mask_aux_seed42_20260707_002051",
+      "status": "completed",
+      "matched_masks": 200,
+      "generated_saliency_maps": 200,
+      "missing_image_count": 0,
+      "saliency_failure_count": 0,
+      "first_saliency_error": null
+    },
+    {
+      "run_id": "oncoderm_mambax_b6_full_seed42_20260707_004712",
+      "status": "completed",
+      "matched_masks": 200,
+      "generated_saliency_maps": 200,
+      "missing_image_count": 0,
+      "saliency_failure_count": 0,
+      "first_saliency_error": null
+    }
+  ]
+}

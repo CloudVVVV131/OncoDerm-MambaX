@@ -1,0 +1,872 @@
+{
+  "frozen_at": "2026-10-16T05:41:02+08:00",
+  "started_at": "2026-10-16T05:27:36+08:00",
+  "deadline": "2026-10-16T09:27:36+08:00",
+  "scope": "P4 fixed external evaluation only; no training or prior-stage rerun",
+  "usage_history": {
+    "recorded_at": "2026-10-16T05:40:48+08:00",
+    "source": "explicit user confirmation in current conversation, 2026-10-16",
+    "scope": "Current Frontiers M0, R_IMG, R_CLIN, XATTN, B2S and their development process only",
+    "statement": "Derm7pt was not used for training, auxiliary training, development/model design selection, hyperparameter tuning, checkpoint selection, or method changes based on these models performance on Derm7pt.",
+    "basis": "User identifies current training, selection and evaluation records, NOT download date",
+    "other_research_lines": "not covered, not inspected",
+    "independence_limit": "This use-history attestation does not prove absence of cross-dataset patient or lesion overlap."
+  },
+  "cohort": {
+    "candidate_rows": 1011,
+    "candidate_positive": 252,
+    "candidate_negative": 759,
+    "included_rows": 1011,
+    "included_positive": 252,
+    "included_negative": 759,
+    "prevalence": 0.24925816023738873,
+    "excluded_rows": 0,
+    "reference_scope": {
+      "HAM_train": 6982,
+      "HAM_val": 1513,
+      "HAM_test_report_only": 1520,
+      "fixed_aux100": 100
+    },
+    "match_counts": {},
+    "exclusion_counts": {},
+    "clinic_derm_same_row_reference_count": 9,
+    "derm_only": true,
+    "case_num_unique": true,
+    "case_id_used_as_patient": false,
+    "resampling_unit": "case_num, connected components for confirmed same-path/file/RGB-pixel identity",
+    "clusters": 1011,
+    "multi_case_clusters": 0,
+    "patient_level_claim": false,
+    "cluster_order": "ascending numeric representative case_num",
+    "limitations": [
+      "No reliable patient or cross-case lesion linkage is supplied for this evaluation.",
+      "Exact original-file and unresized RGB-pixel hashes plus exact named IDs checked against bounded current-direction manifests only.",
+      "No new perceptual/near-duplicate search; no claim that recompressed/cropped near duplicates or all cross-dataset patients are excluded.",
+      "HAM test-only matches are disclosed but not treated as training/development exclusions.",
+      "non-melanoma includes malignant non-melanoma diagnoses and does not mean all benign."
+    ],
+    "meta_sha256": "471199fb86bcc97cd1521bcc4255bb3f9c563e2ed0ad3ff836392d81a3ed9d3b",
+    "alignment_sha256": "5b04396ea0b20d576c944e4125b2536ed1ee94968b796edf1e4523401446902c",
+    "clinical_tensor_sha256": "aa1a2d88c2252824af51a30e9d0187c30c87b78c7d8366d0ef9a0a878ae46198",
+    "labels_sha256": "27aa9b6cef4f95ab7d2bde5a4f1651cce462d98992ca1460fd22671a86ea59fe",
+    "cluster_tensor_sha256": "bef3f57e96311a832d184b219d83759c44e21b1c60b2994176b11df997281326"
+  },
+  "data_root": "${R52_PATH_AA3C2EDA8C25}",
+  "models": [
+    {
+      "model": "M0",
+      "training_seed": 42,
+      "run": "FIM_LPAH_FULL_s42",
+      "path": "${R52_PATH_E1850A84F150}",
+      "sha256": "096913eb3f123747b5dac8b11ca20f0ae594f783dcf8a0398e9390087707dbdd",
+      "bytes": 133832321,
+      "best_epoch": 34,
+      "completed_epochs": 49,
+      "effective_config_path": "${R52_PATH_8D804B22CCA9}",
+      "effective_config_sha256": "3513e3c1df8ca47c85c7d16ba9260075c4da7488844bdd21e8fed72ce8c0a5fd",
+      "config_snapshot": "${R52_PATH_9A71BC9F7A58}",
+      "origin": "existing_fixed_best_no_retraining",
+      "prior_validation_reference": {
+        "macro_f1": 0.8080754752858051,
+        "softmax_MEL_AP": 0.6913517174709254,
+        "softmax_MEL_AUC": 0.9247161402303423
+      }
+    },
+    {
+      "model": "R_IMG",
+      "training_seed": 42,
+      "run": "R_IMG_s42",
+      "path": "${R52_PATH_A43577A49353}",
+      "sha256": "f92283cc46bcc45a59e123364c6cea3da8f4e0377cff4a2b8d54458a622c3c13",
+      "bytes": 137416109,
+      "best_epoch": 23,
+      "completed_epochs": 38,
+      "effective_config_path": "${R52_PATH_D4DACB25116E}",
+      "effective_config_sha256": "aa76ec93e2aec5ebfa1567ce1898acc89bac88b9fc325cdc188d53e26201c8f7",
+      "config_snapshot": "${R52_PATH_9C93A908822E}",
+      "origin": "existing_fixed_best_no_retraining",
+      "prior_validation_reference": {
+        "macro_f1": 0.7862156146710697,
+        "softmax_MEL_AP": 0.7245745283535093,
+        "softmax_MEL_AUC": 0.9301944529823356
+      }
+    },
+    {
+      "model": "R_CLIN",
+      "training_seed": 42,
+      "run": "R_CLIN_s42",
+      "path": "${R52_PATH_9A2FF8F30438}",
+      "sha256": "56af879c23aaa3e741afa0306f55a5e05778c2752a7d699d8ccdb2a85c3cc597",
+      "bytes": 137416109,
+      "best_epoch": 26,
+      "completed_epochs": 41,
+      "effective_config_path": "${R52_PATH_E6E9F56F926F}",
+      "effective_config_sha256": "00ae66e0942cda7c13a2504487f87be292d3edc1bb38cc35df0ae7368807ca07",
+      "config_snapshot": "${R52_PATH_6FE981E7E730}",
+      "origin": "existing_fixed_best_no_retraining",
+      "prior_validation_reference": {
+        "macro_f1": 0.790628506011951,
+        "softmax_MEL_AP": 0.7328620993900526,
+        "softmax_MEL_AUC": 0.9256427525357537
+      }
+    },
+    {
+      "model": "XATTN",
+      "training_seed": 42,
+      "run": "XATTN_s42",
+      "path": "${R52_PATH_29DAA792C12E}",
+      "sha256": "2f12c84b23b56a79d99335bf202991549268dc6aeeffcffc18889f854d3dd25e",
+      "bytes": 137285161,
+      "best_epoch": 13,
+      "completed_epochs": 28,
+      "effective_config_path": "${R52_PATH_95C659399920}",
+      "effective_config_sha256": "aa803c3fa1768e4f55955d03265fac081c56620e6706aa92ae9a4bc9cd50718c",
+      "config_snapshot": "${R52_PATH_7B75A29203A2}",
+      "origin": "existing_fixed_best_no_retraining",
+      "prior_validation_reference": {
+        "macro_f1": 0.7909110860217847,
+        "softmax_MEL_AP": 0.6903650882308635,
+        "softmax_MEL_AUC": 0.9245466379793524
+      }
+    },
+    {
+      "model": "B2S",
+      "training_seed": 42,
+      "run": "FIM_B2S_s42",
+      "path": "${R52_PATH_ECDEEA2C7AC1}",
+      "sha256": "7be3a5b604dd64e075f55c1f10dea9ec4ab909d1a461d7ffd8f78049af5345c5",
+      "bytes": 128149791,
+      "best_epoch": 16,
+      "completed_epochs": 31,
+      "effective_config_path": "${R52_PATH_784B62166696}",
+      "effective_config_sha256": "5ed991c5a8282ef11332b2e9d62c91e22eebfa15cb51840ff8768c73e16a3fd7",
+      "config_snapshot": "${R52_PATH_A7F4D16A4E09}",
+      "origin": "new_P3_B2S_training",
+      "prior_validation_reference": null
+    },
+    {
+      "model": "M0",
+      "training_seed": 2024,
+      "run": "FIM_LPAH_FULL_s2024",
+      "path": "${R52_PATH_CFE37DECDE8B}",
+      "sha256": "d7ddfef5bb3de68cf1d3562a2ad3bd604c454423b963c9fd6c7e2aa568bd5a95",
+      "bytes": 133832897,
+      "best_epoch": 34,
+      "completed_epochs": 49,
+      "effective_config_path": "${R52_PATH_420F1F6AFD59}",
+      "effective_config_sha256": "9ee251b1c8f086972369a1ed2f1ab8f3157f26cb23b94a25b8b5c4009106ff37",
+      "config_snapshot": "${R52_PATH_4DF79FC9A116}",
+      "origin": "existing_fixed_best_no_retraining",
+      "prior_validation_reference": {
+        "macro_f1": 0.7984649521588612,
+        "softmax_MEL_AP": 0.6637083909314526,
+        "softmax_MEL_AUC": 0.8881262543166573
+      }
+    },
+    {
+      "model": "R_IMG",
+      "training_seed": 2024,
+      "run": "R_IMG_s2024",
+      "path": "${R52_PATH_A619576E4C28}",
+      "sha256": "76bb5d4554fcba952ab3cd36a40feda4f29e0f1236443ed7ad97aa54778cb1c4",
+      "bytes": 137416429,
+      "best_epoch": 14,
+      "completed_epochs": 29,
+      "effective_config_path": "${R52_PATH_584FA0DED44A}",
+      "effective_config_sha256": "eb09b2135fd90080b2b4a92c138ea996bfeb63302c6aaa03aac40b2ef0edc069",
+      "config_snapshot": "${R52_PATH_E2FA2F5E8B1F}",
+      "origin": "existing_fixed_best_no_retraining",
+      "prior_validation_reference": {
+        "macro_f1": 0.7890588316606079,
+        "softmax_MEL_AP": 0.6955934765080051,
+        "softmax_MEL_AUC": 0.9251071254226255
+      }
+    },
+    {
+      "model": "R_CLIN",
+      "training_seed": 2024,
+      "run": "R_CLIN_s2024",
+      "path": "${R52_PATH_7E486FDF155F}",
+      "sha256": "dc9d4567cb001365250df5a46b66e99e32796823ab1e69339300b4b707c801d7",
+      "bytes": 137416429,
+      "best_epoch": 32,
+      "completed_epochs": 47,
+      "effective_config_path": "${R52_PATH_F77B96588D51}",
+      "effective_config_sha256": "ae1adfb235d1313da7c9fd2fbeee137a8cfcf0437e55f48976d14b5aface5597",
+      "config_snapshot": "${R52_PATH_716F97B19425}",
+      "origin": "existing_fixed_best_no_retraining",
+      "prior_validation_reference": {
+        "macro_f1": 0.782159640651938,
+        "softmax_MEL_AP": 0.6826772660140887,
+        "softmax_MEL_AUC": 0.9275886383771177
+      }
+    },
+    {
+      "model": "XATTN",
+      "training_seed": 2024,
+      "run": "XATTN_s2024",
+      "path": "${R52_PATH_F235459FC86E}",
+      "sha256": "72e6407e5ca64f46a1c92a439dfb80eb64717f07504ebc6e887446d335dbc757",
+      "bytes": 137285481,
+      "best_epoch": 36,
+      "completed_epochs": 51,
+      "effective_config_path": "${R52_PATH_BC0A344F59EB}",
+      "effective_config_sha256": "a10740c61a7f8e9d9af10c7f83622bc94479dffe9ca766312e6e71e1e9cf97cf",
+      "config_snapshot": "${R52_PATH_6317AAF289ED}",
+      "origin": "existing_fixed_best_no_retraining",
+      "prior_validation_reference": {
+        "macro_f1": 0.7983561590987325,
+        "softmax_MEL_AP": 0.678393196204719,
+        "softmax_MEL_AUC": 0.9142906217794572
+      }
+    },
+    {
+      "model": "B2S",
+      "training_seed": 2024,
+      "run": "FIM_B2S_s2024",
+      "path": "${R52_PATH_6B3E7CA2B354}",
+      "sha256": "7cb8b64419359cc4a8dab0a84c91d2e94f817bb7484a2a386f3a8911ad3998ee",
+      "bytes": 128149791,
+      "best_epoch": 60,
+      "completed_epochs": 75,
+      "effective_config_path": "${R52_PATH_EFEB058AE56C}",
+      "effective_config_sha256": "35530d5311983d13121943db7e25172a2b460fa881c0ac8ff9008b1bc0271e77",
+      "config_snapshot": "${R52_PATH_98897C14E69C}",
+      "origin": "new_P3_B2S_training",
+      "prior_validation_reference": null
+    },
+    {
+      "model": "M0",
+      "training_seed": 3407,
+      "run": "FIM_LPAH_FULL_s3407",
+      "path": "${R52_PATH_33F6E2D0E76F}",
+      "sha256": "a8690c9e7b188011f408880b9401faae2878609931705cae81ee429e749df849",
+      "bytes": 133832897,
+      "best_epoch": 21,
+      "completed_epochs": 36,
+      "effective_config_path": "${R52_PATH_132908A1AFFC}",
+      "effective_config_sha256": "bfc8556eafb25db612722ed8cdacf468b7cf971ec0011079e44f284f0e82e0d1",
+      "config_snapshot": "${R52_PATH_385B54EEC357}",
+      "origin": "existing_fixed_best_no_retraining",
+      "prior_validation_reference": {
+        "macro_f1": 0.7868776541732048,
+        "softmax_MEL_AP": 0.6989389571774267,
+        "softmax_MEL_AUC": 0.919172286607966
+      }
+    },
+    {
+      "model": "R_IMG",
+      "training_seed": 3407,
+      "run": "R_IMG_s3407",
+      "path": "${R52_PATH_C0D2C1E16B34}",
+      "sha256": "4bc4c03e0124ddb73cdb1da0c28cf22a78df6a4183d8e269324288522bae5180",
+      "bytes": 137416429,
+      "best_epoch": 52,
+      "completed_epochs": 67,
+      "effective_config_path": "${R52_PATH_38DD6FA5E0CD}",
+      "effective_config_sha256": "754ba58c799e802ef07ed0d984bdaf1be57622c3f5409ecb31504bd05b708e33",
+      "config_snapshot": "${R52_PATH_EC0A47B66ED8}",
+      "origin": "existing_fixed_best_no_retraining",
+      "prior_validation_reference": {
+        "macro_f1": 0.7775761230456943,
+        "softmax_MEL_AP": 0.676290947378546,
+        "softmax_MEL_AUC": 0.9252811477336418
+      }
+    },
+    {
+      "model": "R_CLIN",
+      "training_seed": 3407,
+      "run": "R_CLIN_s3407",
+      "path": "${R52_PATH_DDF79AC516E8}",
+      "sha256": "5bcdca73e3d273b389cd3086b72b7d11b6b2642ecb0c250ae1be18ec1da0a3fe",
+      "bytes": 137416429,
+      "best_epoch": 29,
+      "completed_epochs": 44,
+      "effective_config_path": "${R52_PATH_1FA8FB2D9786}",
+      "effective_config_sha256": "46d16a2a0708b81c0d0bc5657a1b18d0271933f62885803860c5549e2726803c",
+      "config_snapshot": "${R52_PATH_2CB9009FED86}",
+      "origin": "existing_fixed_best_no_retraining",
+      "prior_validation_reference": {
+        "macro_f1": 0.7984713909819676,
+        "softmax_MEL_AP": 0.6946192389543431,
+        "softmax_MEL_AUC": 0.9184535970637691
+      }
+    },
+    {
+      "model": "XATTN",
+      "training_seed": 3407,
+      "run": "XATTN_s3407",
+      "path": "${R52_PATH_53CCB59D87EF}",
+      "sha256": "9e5ac8680d75480bc767254644d33404372af67020d239a53084bd5b0bafd86b",
+      "bytes": 137285481,
+      "best_epoch": 19,
+      "completed_epochs": 34,
+      "effective_config_path": "${R52_PATH_5DAF7B6EE585}",
+      "effective_config_sha256": "803e28436c8fff542ee532f1fe5f77cf14b9e2ed22f4768488a8af886ab4cff5",
+      "config_snapshot": "${R52_PATH_78B80D608D83}",
+      "origin": "existing_fixed_best_no_retraining",
+      "prior_validation_reference": {
+        "macro_f1": 0.7863046239283739,
+        "softmax_MEL_AP": 0.7328527173170353,
+        "softmax_MEL_AUC": 0.9291570992062774
+      }
+    },
+    {
+      "model": "B2S",
+      "training_seed": 3407,
+      "run": "FIM_B2S_s3407",
+      "path": "${R52_PATH_A744319BB5F2}",
+      "sha256": "7bb760c80638842091a8b44910c3d480ed94bd75cfb6e88c9535bff2c3dcdee1",
+      "bytes": 128149791,
+      "best_epoch": 46,
+      "completed_epochs": 61,
+      "effective_config_path": "${R52_PATH_D985F3C82762}",
+      "effective_config_sha256": "d49492aa1fb908133cc4bb3386e5148cd6131c2c9fb7e99d0818aeb30525af93",
+      "config_snapshot": "${R52_PATH_1A0777674CAA}",
+      "origin": "new_P3_B2S_training",
+      "prior_validation_reference": null
+    }
+  ],
+  "new_training_runs": 0,
+  "labels": {
+    "positive": [
+      "melanoma",
+      "melanoma (in situ)",
+      "melanoma (less than 0.76 mm)",
+      "melanoma (0.76 to 1.5 mm)",
+      "melanoma (more than 1.5 mm)",
+      "melanoma metastasis"
+    ],
+    "negative": [
+      "basal cell carcinoma",
+      "blue nevus",
+      "clark nevus",
+      "combined nevus",
+      "congenital nevus",
+      "dermal nevus",
+      "dermatofibroma",
+      "lentigo",
+      "melanosis",
+      "miscellaneous",
+      "recurrent nevus",
+      "reed or spitz nevus",
+      "seborrheic keratosis",
+      "vascular lesion"
+    ],
+    "multiclass_HAM_remapping": false
+  },
+  "clinical_mapping": {
+    "token_order": [
+      "age/100",
+      "sex_male",
+      "sex_female",
+      "sex_unknown",
+      "site_abdomen",
+      "site_acral",
+      "site_back",
+      "site_chest",
+      "site_ear",
+      "site_face",
+      "site_foot",
+      "site_genital",
+      "site_hand",
+      "site_lower extremity",
+      "site_neck",
+      "site_scalp",
+      "site_trunk",
+      "site_unknown",
+      "site_upper extremity",
+      "age_missing",
+      "sex_missing",
+      "site_missing"
+    ],
+    "age_value": 0,
+    "age_missing": 1,
+    "sex_vocabulary": [
+      "male",
+      "female",
+      "unknown"
+    ],
+    "site_vocabulary": [
+      "abdomen",
+      "acral",
+      "back",
+      "chest",
+      "ear",
+      "face",
+      "foot",
+      "genital",
+      "hand",
+      "lower extremity",
+      "neck",
+      "scalp",
+      "trunk",
+      "unknown",
+      "upper extremity"
+    ],
+    "location_mapping": {
+      "abdomen": "abdomen",
+      "acral": "acral",
+      "back": "back",
+      "chest": "chest",
+      "lower limbs": "lower extremity",
+      "upper limbs": "upper extremity",
+      "genital areas": "genital",
+      "head neck": "unknown",
+      "buttocks": "unknown"
+    },
+    "unsupported_nonempty": [
+      "head neck",
+      "buttocks"
+    ],
+    "unsupported_nonempty_site_missing": 0,
+    "E_NULL": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1
+    ],
+    "E_AVAILABLE": "Observed sex and location only; age is missing for every case",
+    "forbidden_model_fields": [
+      "diagnosis",
+      "seven_point_score",
+      "seven_point_attributes",
+      "elevation",
+      "management",
+      "difficulty",
+      "case_num",
+      "case_id",
+      "notes",
+      "path",
+      "ground_truth_mask"
+    ]
+  },
+  "conditions": [
+    "E_AVAILABLE",
+    "E_NULL"
+  ],
+  "heads": [
+    "softmax_MEL",
+    "endpoint_MEL"
+  ],
+  "primary_endpoint": "Derm7pt E_AVAILABLE softmax_MEL AP",
+  "primary_comparisons": [
+    "R_CLIN_minus_M0",
+    "R_CLIN_minus_XATTN"
+  ],
+  "supporting_comparisons": [
+    "R_CLIN_minus_R_IMG",
+    "R_CLIN_minus_B2S"
+  ],
+  "interval_scope": "four contrasts x two conditions x two heads x AP/AUC; two primary AP contrasts also 97.5%",
+  "preprocessing": "original RGB resize short256 / center224 / ImageNet normalization",
+  "precision": "FP32, eval, inference_mode, TF32 off",
+  "inference_batch": 8,
+  "workers": 2,
+  "cache": "batch-local backbone/fused/mask only; recompute clinical encoder, readout and CMGF per condition; verify full forward atol1e-5 rtol1e-4 per best; otherwise full forward",
+  "metrics": {
+    "AP": "sklearn average_precision_score, not trapezoidal PR area",
+    "AUC": "sklearn roc_auc_score",
+    "Brier": "unclipped mean squared error",
+    "binary_NLL": "epsilon1e-7, clipping [epsilon,1-epsilon]",
+    "binary_ECE15": "positive-probability equal-width bins [k/15,(k+1)/15), last includes1; sum n_bin/N*abs(mean_probability-observed_positive_rate)"
+  },
+  "aggregation": "per-model per-seed metrics first, then mean and sample SD ddof1; paired same-seed differences; no pooled predictions or probability ensemble",
+  "bootstrap": {
+    "draws": 10000,
+    "rng": "PCG64",
+    "seed": 20261017,
+    "clusters": 1011,
+    "unit": "case_num, connected components for confirmed same-path/file/RGB-pixel identity",
+    "order": "ascending numeric representative case_num",
+    "paired_across": "all models/seeds/conditions/heads",
+    "single_class_draws": "reject, redraw, and count",
+    "intervals": "percentile95%; primary AP additionally97.5% approximate Bonferroni for two comparisons",
+    "scope": "case/same-image-cluster sampling conditional on the three fixed training fits; NOT verified patient-level",
+    "checkpoint_every": 100
+  },
+  "thresholds": {
+    "source": "${R52_PATH_9F3A9CDCDEF8}",
+    "sha256": "90a9a3474e1bb5201dd3c90a1d5cf3ff1ddd7f721ad806813deae4b029fcf5e6",
+    "targets": [
+      0.9,
+      0.95
+    ],
+    "source_cohort": "each original fixed model/seed/head HAM validation NATIVE",
+    "comparison": "p>=threshold",
+    "external_reselection": false,
+    "calibration_fitting": false
+  },
+  "curves": "full unmodified ROC/PR coordinates per run/condition/head",
+  "prohibited": [
+    "training",
+    "fine-tuning",
+    "best reselection",
+    "external threshold tuning",
+    "calibration fitting",
+    "ensembling",
+    "other research lines",
+    "cloud",
+    "manuscript edits"
+  ],
+  "manifest": [
+    {
+      "path": "${R52_PATH_288121512F1C}",
+      "sha256": "50bcb2a55608ced9a0c4877f699cb85791238d8b6685c497286ce6e73c5fd11b",
+      "bytes": 24592
+    },
+    {
+      "path": "${R52_PATH_D157C2667B39}",
+      "sha256": "1e754ae2aa0d2f95fde1cb7ca646f4a37a4ca63bf95c780080a90fd326e59ad2",
+      "bytes": 5513
+    },
+    {
+      "path": "${R52_PATH_B2B3858B8852}",
+      "sha256": "3fe6d81f05fb929bcebfb79f0f2532776ba6fe57c51425caaccbfddd021c0be2",
+      "bytes": 230643
+    },
+    {
+      "path": "${R52_PATH_CB55B27527EC}",
+      "sha256": "471199fb86bcc97cd1521bcc4255bb3f9c563e2ed0ad3ff836392d81a3ed9d3b",
+      "bytes": 156819
+    },
+    {
+      "path": "${R52_PATH_37974E8C707A}",
+      "sha256": "67d0b7f2b09003813e8ad20ead76921d20d2c72c15144d404f242bedc55545b5",
+      "bytes": 1978
+    },
+    {
+      "path": "${R52_PATH_332D999CFE2E}",
+      "sha256": "50c8748e421134ee2dcb3bd3613c1b14b268363443ae314dfd7c6085d5243b8b",
+      "bytes": 2934483
+    },
+    {
+      "path": "${R52_PATH_E37E406F66F5}",
+      "sha256": "f30b240e75191f37d765cefd5f67b352cd89c0c543e0a5e2623204f3ac833816",
+      "bytes": 392747
+    },
+    {
+      "path": "${R52_PATH_A7EDEF14667C}",
+      "sha256": "b1e4982d61df694d6acc64a5c024f9423a110d87489a2731c5e361f183caf4f3",
+      "bytes": 84872
+    },
+    {
+      "path": "${R52_PATH_1E005046B878}",
+      "sha256": "e0805420739e57e029e95ac399b449ba9b91cd1d91226fc9033f18c3cda5cd48",
+      "bytes": 85760
+    },
+    {
+      "path": "${R52_PATH_45C733BBA275}",
+      "sha256": "ef507cb90b4955b2a9f7dabbdc532a1bf9176899c72c46f646231f795c648a13",
+      "bytes": 47471
+    },
+    {
+      "path": "${R52_PATH_E1850A84F150}",
+      "sha256": "096913eb3f123747b5dac8b11ca20f0ae594f783dcf8a0398e9390087707dbdd",
+      "bytes": 133832321
+    },
+    {
+      "path": "${R52_PATH_9A71BC9F7A58}",
+      "sha256": "3513e3c1df8ca47c85c7d16ba9260075c4da7488844bdd21e8fed72ce8c0a5fd",
+      "bytes": 7807
+    },
+    {
+      "path": "${R52_PATH_A43577A49353}",
+      "sha256": "f92283cc46bcc45a59e123364c6cea3da8f4e0377cff4a2b8d54458a622c3c13",
+      "bytes": 137416109
+    },
+    {
+      "path": "${R52_PATH_9C93A908822E}",
+      "sha256": "aa76ec93e2aec5ebfa1567ce1898acc89bac88b9fc325cdc188d53e26201c8f7",
+      "bytes": 10377
+    },
+    {
+      "path": "${R52_PATH_9A2FF8F30438}",
+      "sha256": "56af879c23aaa3e741afa0306f55a5e05778c2752a7d699d8ccdb2a85c3cc597",
+      "bytes": 137416109
+    },
+    {
+      "path": "${R52_PATH_6FE981E7E730}",
+      "sha256": "00ae66e0942cda7c13a2504487f87be292d3edc1bb38cc35df0ae7368807ca07",
+      "bytes": 10380
+    },
+    {
+      "path": "${R52_PATH_29DAA792C12E}",
+      "sha256": "2f12c84b23b56a79d99335bf202991549268dc6aeeffcffc18889f854d3dd25e",
+      "bytes": 137285161
+    },
+    {
+      "path": "${R52_PATH_7B75A29203A2}",
+      "sha256": "aa803c3fa1768e4f55955d03265fac081c56620e6706aa92ae9a4bc9cd50718c",
+      "bytes": 10567
+    },
+    {
+      "path": "${R52_PATH_ECDEEA2C7AC1}",
+      "sha256": "7be3a5b604dd64e075f55c1f10dea9ec4ab909d1a461d7ffd8f78049af5345c5",
+      "bytes": 128149791
+    },
+    {
+      "path": "${R52_PATH_A7F4D16A4E09}",
+      "sha256": "5ed991c5a8282ef11332b2e9d62c91e22eebfa15cb51840ff8768c73e16a3fd7",
+      "bytes": 18779
+    },
+    {
+      "path": "${R52_PATH_CFE37DECDE8B}",
+      "sha256": "d7ddfef5bb3de68cf1d3562a2ad3bd604c454423b963c9fd6c7e2aa568bd5a95",
+      "bytes": 133832897
+    },
+    {
+      "path": "${R52_PATH_4DF79FC9A116}",
+      "sha256": "9ee251b1c8f086972369a1ed2f1ab8f3157f26cb23b94a25b8b5c4009106ff37",
+      "bytes": 8343
+    },
+    {
+      "path": "${R52_PATH_A619576E4C28}",
+      "sha256": "76bb5d4554fcba952ab3cd36a40feda4f29e0f1236443ed7ad97aa54778cb1c4",
+      "bytes": 137416429
+    },
+    {
+      "path": "${R52_PATH_E2FA2F5E8B1F}",
+      "sha256": "eb09b2135fd90080b2b4a92c138ea996bfeb63302c6aaa03aac40b2ef0edc069",
+      "bytes": 10712
+    },
+    {
+      "path": "${R52_PATH_7E486FDF155F}",
+      "sha256": "dc9d4567cb001365250df5a46b66e99e32796823ab1e69339300b4b707c801d7",
+      "bytes": 137416429
+    },
+    {
+      "path": "${R52_PATH_716F97B19425}",
+      "sha256": "ae1adfb235d1313da7c9fd2fbeee137a8cfcf0437e55f48976d14b5aface5597",
+      "bytes": 10715
+    },
+    {
+      "path": "${R52_PATH_F235459FC86E}",
+      "sha256": "72e6407e5ca64f46a1c92a439dfb80eb64717f07504ebc6e887446d335dbc757",
+      "bytes": 137285481
+    },
+    {
+      "path": "${R52_PATH_6317AAF289ED}",
+      "sha256": "a10740c61a7f8e9d9af10c7f83622bc94479dffe9ca766312e6e71e1e9cf97cf",
+      "bytes": 10902
+    },
+    {
+      "path": "${R52_PATH_6B3E7CA2B354}",
+      "sha256": "7cb8b64419359cc4a8dab0a84c91d2e94f817bb7484a2a386f3a8911ad3998ee",
+      "bytes": 128149791
+    },
+    {
+      "path": "${R52_PATH_98897C14E69C}",
+      "sha256": "35530d5311983d13121943db7e25172a2b460fa881c0ac8ff9008b1bc0271e77",
+      "bytes": 18797
+    },
+    {
+      "path": "${R52_PATH_33F6E2D0E76F}",
+      "sha256": "a8690c9e7b188011f408880b9401faae2878609931705cae81ee429e749df849",
+      "bytes": 133832897
+    },
+    {
+      "path": "${R52_PATH_385B54EEC357}",
+      "sha256": "bfc8556eafb25db612722ed8cdacf468b7cf971ec0011079e44f284f0e82e0d1",
+      "bytes": 8343
+    },
+    {
+      "path": "${R52_PATH_C0D2C1E16B34}",
+      "sha256": "4bc4c03e0124ddb73cdb1da0c28cf22a78df6a4183d8e269324288522bae5180",
+      "bytes": 137416429
+    },
+    {
+      "path": "${R52_PATH_EC0A47B66ED8}",
+      "sha256": "754ba58c799e802ef07ed0d984bdaf1be57622c3f5409ecb31504bd05b708e33",
+      "bytes": 10712
+    },
+    {
+      "path": "${R52_PATH_DDF79AC516E8}",
+      "sha256": "5bcdca73e3d273b389cd3086b72b7d11b6b2642ecb0c250ae1be18ec1da0a3fe",
+      "bytes": 137416429
+    },
+    {
+      "path": "${R52_PATH_2CB9009FED86}",
+      "sha256": "46d16a2a0708b81c0d0bc5657a1b18d0271933f62885803860c5549e2726803c",
+      "bytes": 10715
+    },
+    {
+      "path": "${R52_PATH_53CCB59D87EF}",
+      "sha256": "9e5ac8680d75480bc767254644d33404372af67020d239a53084bd5b0bafd86b",
+      "bytes": 137285481
+    },
+    {
+      "path": "${R52_PATH_78B80D608D83}",
+      "sha256": "803e28436c8fff542ee532f1fe5f77cf14b9e2ed22f4768488a8af886ab4cff5",
+      "bytes": 10902
+    },
+    {
+      "path": "${R52_PATH_A744319BB5F2}",
+      "sha256": "7bb760c80638842091a8b44910c3d480ed94bd75cfb6e88c9535bff2c3dcdee1",
+      "bytes": 128149791
+    },
+    {
+      "path": "${R52_PATH_1A0777674CAA}",
+      "sha256": "d49492aa1fb908133cc4bb3386e5148cd6131c2c9fb7e99d0818aeb30525af93",
+      "bytes": 18797
+    },
+    {
+      "path": "${R52_PATH_9F3A9CDCDEF8}",
+      "sha256": "90a9a3474e1bb5201dd3c90a1d5cf3ff1ddd7f721ad806813deae4b029fcf5e6",
+      "bytes": 11161
+    },
+    {
+      "path": "${R52_PATH_37974E8C707A}",
+      "sha256": "67d0b7f2b09003813e8ad20ead76921d20d2c72c15144d404f242bedc55545b5",
+      "bytes": 1978
+    },
+    {
+      "path": "${R52_PATH_E05A2AB36E51}",
+      "sha256": "56b5e91c3bb77ab933c25fd65eba883419bdc5691cc94cb9dc840e8f4e3674eb",
+      "bytes": 22
+    },
+    {
+      "path": "${R52_PATH_A802A79BEA12}",
+      "sha256": "78d6dddaf4113248d3df55c21acbd7751075189a56b282833042bc6bd2fb3f62",
+      "bytes": 190
+    },
+    {
+      "path": "${R52_PATH_BBE94A860527}",
+      "sha256": "db399b81dbed64eb56130f27f1936089808872260a50fd345ce909f1ed1685e6",
+      "bytes": 10801
+    },
+    {
+      "path": "${R52_PATH_2D997A88E20E}",
+      "sha256": "4c001f03eca3a93ee3e9a590d46ef0710f66fc88be1512241d3f71a0bc3be6c6",
+      "bytes": 2104
+    },
+    {
+      "path": "${R52_PATH_5E2F3417EAED}",
+      "sha256": "c0c19257e4aa5fcff4bf73c6923128029375a903ef71a7b43e0cefa6fc1c0a7d",
+      "bytes": 66
+    },
+    {
+      "path": "${R52_PATH_5EFFC4605BDF}",
+      "sha256": "7e737a004f69053821628f84b3da9c44a4e4a208a386fa7322c5c7ff9331a0c5",
+      "bytes": 13751
+    },
+    {
+      "path": "${R52_PATH_08237F94B704}",
+      "sha256": "5362ba3d8c6815c88321a89e11f528e2e72840d5862837f01f3c87427e1eafdc",
+      "bytes": 7527
+    },
+    {
+      "path": "${R52_PATH_E78967959886}",
+      "sha256": "d218836442fa556c6a7793d2994262afc442fe8675528edf9446217562c7d90f",
+      "bytes": 1949
+    },
+    {
+      "path": "${R52_PATH_D3B00ED4C64D}",
+      "sha256": "d903490b352023725e7ce19cea45032c7e54065b59b901ab850b34e2fd151e7c",
+      "bytes": 3087
+    },
+    {
+      "path": "${R52_PATH_264F8D776330}",
+      "sha256": "adeab09b54a2ac5f225a16f5452121d002d36f13a4f450d218efe7aecb434e6a",
+      "bytes": 738
+    },
+    {
+      "path": "${R52_PATH_2437C3990975}",
+      "sha256": "d51a7dd8a0ce1efbfa4600b049ae394898c7dd74dfb5ae346494dba15c296c4e",
+      "bytes": 2990
+    },
+    {
+      "path": "${R52_PATH_56D81D52428D}",
+      "sha256": "43beffe39947e9bedd0bbca72d2ce3b051e691dda2cf7e502967da75bebfa50e",
+      "bytes": 9263
+    },
+    {
+      "path": "${R52_PATH_844B1129692B}",
+      "sha256": "982bf43c3ec4b08ceae637f703e04a5290da435ad169068138dd020d309bc029",
+      "bytes": 4568
+    },
+    {
+      "path": "${R52_PATH_E1E48BC33071}",
+      "sha256": "590f227cadb2feb1e50c4a2abdeefed04d4df7b723a165145c5bef234b639d2a",
+      "bytes": 16407
+    },
+    {
+      "path": "${R52_PATH_DDBFC076CCFE}",
+      "sha256": "3620fe7677a09b142a22420261e6642b5c1fbc4aa639a13567b56fb141e89f4c",
+      "bytes": 13235
+    },
+    {
+      "path": "${R52_PATH_99FDB1D80AF5}",
+      "sha256": "0f8dea3a7aaf5478a18ff62d3b081662430e5c5474261832f7eb1ac0fee363e7",
+      "bytes": 728
+    },
+    {
+      "path": "${R52_PATH_F74954A1A3DE}",
+      "sha256": "f9ca207bb37b6f6446a0c492b9ee837c067cad89919b5c937cdfd7abc5cc9bd1",
+      "bytes": 1771
+    },
+    {
+      "path": "${R52_PATH_B407DB888C95}",
+      "sha256": "ec01b060f613161ded7a65db48938fe46955f0d3330e1dfcaf93cad1439bb0fe",
+      "bytes": 1850
+    },
+    {
+      "path": "${R52_PATH_CA908330E039}",
+      "sha256": "be641883cbd0fe55669a5fcffca259ebc1f72076debf64838b71338263159b8e",
+      "bytes": 335751
+    },
+    {
+      "path": "${R52_PATH_C883E89C911E}",
+      "sha256": "dfff279280cb64c24c83a8c3d417297607c6bbecc22eed7bce02e3a34ed6f39f",
+      "bytes": 769
+    },
+    {
+      "path": "${R52_PATH_3CBB91DEA678}",
+      "sha256": "68226db512d29bbc749049f7678e79d64bcc351e1693abd5ed2142b3f21538f1",
+      "bytes": 318
+    },
+    {
+      "path": "${R52_PATH_2AA77E42B3B3}",
+      "sha256": "90a9a3474e1bb5201dd3c90a1d5cf3ff1ddd7f721ad806813deae4b029fcf5e6",
+      "bytes": 11161
+    },
+    {
+      "path": "${R52_PATH_92927EE73DA5}",
+      "sha256": "5b04396ea0b20d576c944e4125b2536ed1ee94968b796edf1e4523401446902c",
+      "bytes": 196394
+    },
+    {
+      "path": "${R52_PATH_5F9882E94F42}",
+      "sha256": "aa1a2d88c2252824af51a30e9d0187c30c87b78c7d8366d0ef9a0a878ae46198",
+      "bytes": 89096
+    },
+    {
+      "path": "${R52_PATH_A0CDD662B392}",
+      "sha256": "27aa9b6cef4f95ab7d2bde5a4f1651cce462d98992ca1460fd22671a86ea59fe",
+      "bytes": 8216
+    },
+    {
+      "path": "${R52_PATH_BA3F3F331655}",
+      "sha256": "bef3f57e96311a832d184b219d83759c44e21b1c60b2994176b11df997281326",
+      "bytes": 8216
+    }
+  ]
+}

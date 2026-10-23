@@ -1,0 +1,59 @@
+project:
+  name: submission_v1_evidence
+  random_seed: 20260710
+
+paths:
+  result_root: "."
+  predictions_dir: "outputs/predictions"
+  runs_dir: "outputs/runs"
+  results_dir: "results"
+  figures_dir: "figures/evidence"
+
+models:
+  required_models: ["b2", "b4", "b6"]
+  required_seeds: [42, 2024, 3407]
+  run_patterns:
+    b2: "oncoderm_mambax_b2_metadata_cmgf_seed{seed}_*"
+    b4: "oncoderm_mambax_b4_lpah_mask_aux_seed{seed}_*"
+    b6: "oncoderm_mambax_b6_full_seed{seed}_*"
+
+ensembles:
+  b2_seed_ensemble: ["b2:42", "b2:2024", "b2:3407"]
+  b4_seed_ensemble: ["b4:42", "b4:2024", "b4:3407"]
+  b6_seed_ensemble: ["b6:42", "b6:2024", "b6:3407"]
+  b2_b6_all6: ["b2:42", "b2:2024", "b2:3407", "b6:42", "b6:2024", "b6:3407"]
+  b2_b4_b6_all9:
+    - "b2:42"
+    - "b2:2024"
+    - "b2:3407"
+    - "b4:42"
+    - "b4:2024"
+    - "b4:3407"
+    - "b6:42"
+    - "b6:2024"
+    - "b6:3407"
+
+bootstrap:
+  iters: 10000
+  datasets: ["external", "test"]
+  ci: 0.95
+  metrics: ["roc_auc", "pr_auc", "brier", "ece", "nll"]
+  comparisons:
+    - ["b6_seed_ensemble", "b2_seed_ensemble"]
+    - ["b6_seed_ensemble", "b4_seed_ensemble"]
+    - ["b2_seed_ensemble", "b4_seed_ensemble"]
+    - ["b2_b6_all6", "b6_seed_ensemble"]
+    - ["b2_b4_b6_all9", "b6_seed_ensemble"]
+
+thresholds:
+  policies: ["youden", "specificity_90", "specificity_95", "sensitivity_80"]
+  source_split: "val"
+  target_splits: ["val", "test", "external"]
+
+calibration:
+  n_bins: 15
+  adaptive_bins: 15
+
+outputs:
+  make_figures: true
+  overwrite: true

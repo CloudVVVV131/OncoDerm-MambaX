@@ -1,0 +1,5 @@
+samples_per_group: 10
+heatmap_alpha: 0.45
+mask_iou_threshold: top20
+mask_sample_size: 500
+models: [convnext_tiny, swin_tiny, vmamba_tiny, lesionmamba_compact]

@@ -1,0 +1,15 @@
+_base_: defaults_seed3407.yaml
+model:
+  name: oncoderm_mambax_b6_full
+  cssa:
+    enabled: true
+    stage3_enabled: true
+    adapter_dim: 256
+    scan_kernel_size: 7
+  lesion_prior:
+    enabled: true
+  metadata_fusion:
+    enabled: true
+  heads:
+    melanoma_endpoint: true
+

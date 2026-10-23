@@ -1,0 +1,103 @@
+project:
+  name: bioengineering_direct_baselines
+  output_dir: outputs
+  seed: 42
+  split_seed: 42
+data:
+  dataset: HAM10000
+  metadata_csv: data/raw/HAM10000/HAM10000_metadata.csv
+  image_dir: data/raw/HAM10000/images
+  split_dir: splits
+  input_size: 224
+  resize_short_side: 256
+  num_classes: 7
+  label_column: dx
+  image_id_column: image_id
+  group_column: lesion_id
+  patient_id_column: patient_id
+  split:
+    train: 0.7
+    val: 0.15
+    test: 0.15
+    stratify: dx
+    group_policy: lesion_id_first_patient_id_if_complete
+    group_priority:
+    - lesion_id
+    - patient_id
+  transforms:
+    random_resized_crop_scale:
+    - 0.8
+    - 1.0
+    hflip_p: 0.5
+    vflip_p: 0.5
+    rotation_degrees: 30
+    color_jitter:
+    - 0.1
+    - 0.1
+    - 0.08
+    - 0.02
+    gaussian_blur_p: 0.05
+    random_erasing_p: 0.0
+    mixup_alpha: 0.0
+    cutmix_alpha: 0.0
+  metadata:
+    enabled: false
+  mask_aux:
+    enabled: false
+train:
+  epochs: 100
+  batch_size: 16
+  batch_size_candidates:
+  - 64
+  - 128
+  num_workers: 8
+  optimizer: adam
+  lr: 0.0001
+  weight_decay: 5.0e-05
+  warmup_epochs: 10
+  scheduler: cosine
+  amp: true
+  grad_clip: 1.0
+  early_stopping_patience: 15
+  selection_metric: macro_f1
+  selection_tie_breaker: mel_auc
+loss:
+  name: ce
+  beta: 0.999
+  gamma: 2.0
+  label_smoothing: 0.0
+  lambda_sparse: 0.0
+  lambda_tv: 0.0
+  multitask: false
+eval:
+  bootstrap_iters: 1000
+  bootstrap_min_iters_if_time_limited: 500
+  ece_bins: 15
+  threshold_source: validation
+  save_logits: true
+  save_val_predictions: true
+  save_test_predictions: true
+  save_attention: true
+  report_ci_metrics:
+  - macro_f1
+  - macro_auc
+  - mel_auc
+  - sensitivity
+  - specificity
+model:
+  name: dermamamba_architecture_faithful
+  source: dermamamba_architecture_faithful
+  timm_name: resnet50
+  pretrained: true
+  num_classes: 7
+  allow_random_init_fallback: false
+  dermamamba:
+    source_revision: 2f5542bf30b9c5f6e0cecc6b5ac498cce76ca567
+    patch_size: 16
+    embed_dim: 192
+    depth: 6
+    d_state: 16
+    d_conv: 4
+    expand: 2
+    fusion_dim: 1024
+    dropout: 0.2

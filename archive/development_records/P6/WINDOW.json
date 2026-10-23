@@ -1,0 +1,21 @@
+{
+  "started_at": "2026-10-16T14:58:36.909633+08:00",
+  "deadline": "2026-10-16T20:58:36.909633+08:00",
+  "source_seed42": "${R52_PATH_F74ED8905ECC}",
+  "source_P1": "${R52_PATH_8BF64AF677FF}",
+  "source_P2": "${R52_PATH_A777747B3623}",
+  "source_P3": "${R52_PATH_D326FCF49049}",
+  "new_runs": [
+    "FIM_TKEEP_REGION_s42",
+    "FIM_TKEEP_GLOBAL_s42"
+  ],
+  "D_free_bytes_at_admission": 13525745664,
+  "estimated_required_bytes": 4294967296,
+  "estimate_basis": "Two ~138MB best and ~414MB last checkpoints, atomic save temporaries, shared pre-training state, logs and safety reserve",
+  "allowed_data": [
+    "HAM_train",
+    "HAM_validation",
+    "frozen_aux100"
+  ],
+  "automatic_next_phase": false
+}

@@ -1,0 +1,16 @@
+{
+  "status": "COMPLETE",
+  "completed_valid": 10000,
+  "attempts": 10000,
+  "rejected_single_class": 0,
+  "elapsed_seconds": 212.18876120005734,
+  "generator": "PCG64",
+  "seed": 20261011,
+  "resample_shared_across_all_score_vectors": true,
+  "score_vectors": 17,
+  "pairwise_rows": 8,
+  "fixed_run_mean_rows": 4,
+  "blocked": [],
+  "input_problems": [],
+  "overall_status": "COMPLETE"
+}

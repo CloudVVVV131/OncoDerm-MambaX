@@ -1,0 +1,17 @@
+_base_: defaults_seed2024.yaml
+model:
+  name: oncoderm_mambax_b4_lpah_mask_aux
+  multi_scale_fusion: false
+  cssa:
+    enabled: false
+    stage3_enabled: false
+  lesion_prior:
+    enabled: true
+  metadata_fusion:
+    enabled: false
+  heads:
+    melanoma_endpoint: true
+data:
+  metadata:
+    enabled: false
+

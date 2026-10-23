@@ -1,0 +1,736 @@
+{
+  "frozen_at": "2026-10-17T18:28:51+08:00",
+  "started_at": "2026-10-17T18:04:50+08:00",
+  "deadline": "2026-10-17T20:04:50+08:00",
+  "status": "FROZEN_BEFORE_INFERENCE",
+  "purpose": "Additional original-core evaluation after P1-P6/P4 review, NOT originally preregistered confirmation; P3/P4 comparisons unchanged",
+  "new_training_runs": 0,
+  "usage_history": {
+    "recorded_at": "2026-10-17T18:28:35+08:00",
+    "source": "Explicit user reply in current conversation on 2026-10-17",
+    "scope": "Six original manuscript B2/B6 runs, training seeds42/2024/3407, and their development process",
+    "user_statement": "确认六个原模型及其开发过程均未主动使用 Derm7pt",
+    "question_scope": [
+      "training",
+      "auxiliary training",
+      "development/model selection",
+      "hyperparameter tuning",
+      "checkpoint selection"
+    ],
+    "not_a_guarantee_of_unknown_cross_dataset_overlap": true
+  },
+  "models": [
+    {
+      "model": "ORIG_B2",
+      "training_seed": 42,
+      "tag": "ORIG_B2_s42",
+      "run_id": "oncoderm_mambax_b2_metadata_cmgf_seed42_20260706_234933",
+      "checkpoint_path": "${R52_PATH_18BE2956B7C9}",
+      "bytes": 360781827,
+      "sha256": "7d3b060e46add18b7df02014e1df9869133ddca2dfd8d5fafb36feeb725bd16b",
+      "config_path": "${R52_PATH_A5984FD5E278}",
+      "config_copy": "${R52_PATH_9D473AF507E3}",
+      "config_sha256": "fe69bb5a726e46bfa5806460328b0cb887a55486ac70c30256919a71c9ba59e4",
+      "original_selected_epoch": 41,
+      "B2_HAM_val_prediction_index": {
+        "path": "${R52_PATH_66141EADEF3F}",
+        "sha256": "c917085d13e04136da3cb42c5b71b3b7b9bb3a3e4f3cf2de99785284821790b8",
+        "bytes": 664813,
+        "run_id": "oncoderm_mambax_b2_metadata_cmgf_seed42_20260706_234933",
+        "model": "B2",
+        "training_seed": 42,
+        "dataset": "HAM_val",
+        "conditions": [
+          "NATIVE"
+        ],
+        "images": 1513,
+        "prediction_rows": 1513,
+        "batch": 8,
+        "checkpoint_sha256": "7d3b060e46add18b7df02014e1df9869133ddca2dfd8d5fafb36feeb725bd16b",
+        "precision": "FP32_TF32_off",
+        "reuse_features": true,
+        "image_hash_and_decode_checked": 1513,
+        "seconds": 23.506354299839586,
+        "completed_at": "2026-10-12T04:45:12.219351+08:00"
+      },
+      "technical_source": "${R52_PATH_F6521D5E2E5C}"
+    },
+    {
+      "model": "ORIG_B2",
+      "training_seed": 2024,
+      "tag": "ORIG_B2_s2024",
+      "run_id": "oncoderm_mambax_b2_metadata_cmgf_seed2024_20260708_160522",
+      "checkpoint_path": "${R52_PATH_951141DA5E64}",
+      "bytes": 360781891,
+      "sha256": "bd9300f6fed9f9cb71796cf25d8bc5468a1003a169be137d7a95e96bd8c4181a",
+      "config_path": "${R52_PATH_BAB304CA31C5}",
+      "config_copy": "${R52_PATH_DCFA83694E1D}",
+      "config_sha256": "e19411221cb49584642ca326298d32d6e537be277d0a4a296fe41fcf7146a1a9",
+      "original_selected_epoch": 31,
+      "B2_HAM_val_prediction_index": {
+        "path": "${R52_PATH_74DEDDF33ED2}",
+        "sha256": "a1b7029457294eea4f25e472d9e24765842639940adda9949a0398e3750f04a0",
+        "bytes": 673120,
+        "run_id": "oncoderm_mambax_b2_metadata_cmgf_seed2024_20260708_160522",
+        "model": "B2",
+        "training_seed": 2024,
+        "dataset": "HAM_val",
+        "conditions": [
+          "NATIVE"
+        ],
+        "images": 1513,
+        "prediction_rows": 1513,
+        "batch": 32,
+        "checkpoint_sha256": "bd9300f6fed9f9cb71796cf25d8bc5468a1003a169be137d7a95e96bd8c4181a",
+        "precision": "FP32_TF32_off",
+        "reuse_features": true,
+        "image_hash_and_decode_checked": 1513,
+        "seconds": 20.310276500182226,
+        "completed_at": "2026-10-12T04:52:38.877056+08:00"
+      },
+      "technical_source": "${R52_PATH_638D68E0BBE5}"
+    },
+    {
+      "model": "ORIG_B2",
+      "training_seed": 3407,
+      "tag": "ORIG_B2_s3407",
+      "run_id": "oncoderm_mambax_b2_metadata_cmgf_seed3407_20260708_230453",
+      "checkpoint_path": "${R52_PATH_F980C8318B1B}",
+      "bytes": 360781891,
+      "sha256": "c9173f33ff787eb5533a7abfb0987dd6577618a15f6f51fff847d5d06beaabf5",
+      "config_path": "${R52_PATH_EF6601205512}",
+      "config_copy": "${R52_PATH_B203B53A78CB}",
+      "config_sha256": "88625ffab949045758246086bc8422e3164a128f32f7fef3bc5030f06663e94c",
+      "original_selected_epoch": 35,
+      "B2_HAM_val_prediction_index": {
+        "path": "${R52_PATH_FF5CF29BC240}",
+        "sha256": "b94eb518b147d9900d59abaed3d9d558dbe7558a1803c962626f5a0988eaec8a",
+        "bytes": 671377,
+        "run_id": "oncoderm_mambax_b2_metadata_cmgf_seed3407_20260708_230453",
+        "model": "B2",
+        "training_seed": 3407,
+        "dataset": "HAM_val",
+        "conditions": [
+          "NATIVE"
+        ],
+        "images": 1513,
+        "prediction_rows": 1513,
+        "batch": 32,
+        "checkpoint_sha256": "c9173f33ff787eb5533a7abfb0987dd6577618a15f6f51fff847d5d06beaabf5",
+        "precision": "FP32_TF32_off",
+        "reuse_features": true,
+        "image_hash_and_decode_checked": 1513,
+        "seconds": 19.529880800051615,
+        "completed_at": "2026-10-12T04:59:54.667998+08:00"
+      },
+      "technical_source": "${R52_PATH_9788F988D381}"
+    },
+    {
+      "model": "ORIG_B6",
+      "training_seed": 42,
+      "tag": "ORIG_B6_s42",
+      "run_id": "oncoderm_mambax_b6_full_seed42_20260707_004712",
+      "checkpoint_path": "${R52_PATH_B652D771A076}",
+      "bytes": 401499163,
+      "sha256": "525302d30405b75229c428d5b1a8d1f282de0e0d25ac98ef13c84fd91b5f923c",
+      "config_path": "${R52_PATH_421291CFC79F}",
+      "config_copy": "${R52_PATH_996F5516AD81}",
+      "config_sha256": "4de61041c03e49a0d8ca03437a73f21317b0ed65a95d38f5d173bfd3c190995a",
+      "original_selected_epoch": 22,
+      "B2_HAM_val_prediction_index": {
+        "path": "${R52_PATH_DB2863E86273}",
+        "sha256": "c16d0e6b5483a08b7347935dc7db863d534ea0670160909ef4dbf7bfe39639da",
+        "bytes": 657678,
+        "run_id": "oncoderm_mambax_b6_full_seed42_20260707_004712",
+        "model": "B6",
+        "training_seed": 42,
+        "dataset": "HAM_val",
+        "conditions": [
+          "NATIVE"
+        ],
+        "images": 1513,
+        "prediction_rows": 1513,
+        "batch": 8,
+        "checkpoint_sha256": "525302d30405b75229c428d5b1a8d1f282de0e0d25ac98ef13c84fd91b5f923c",
+        "precision": "FP32_TF32_off",
+        "reuse_features": true,
+        "image_hash_and_decode_checked": 1513,
+        "seconds": 23.52204059995711,
+        "completed_at": "2026-10-12T05:06:28.028202+08:00"
+      },
+      "technical_source": "${R52_PATH_15695FA3805F}"
+    },
+    {
+      "model": "ORIG_B6",
+      "training_seed": 2024,
+      "tag": "ORIG_B6_s2024",
+      "run_id": "oncoderm_mambax_b6_full_seed2024_20260708_163051",
+      "checkpoint_path": "${R52_PATH_E0EF02D41C52}",
+      "bytes": 401499163,
+      "sha256": "4772ae5d3ef772c58438ce35915326f10a01d8fcd416999e6f274ecfd005abfa",
+      "config_path": "${R52_PATH_522BC59FAEE1}",
+      "config_copy": "${R52_PATH_2AC5AD144A49}",
+      "config_sha256": "ff645eef1ae41a799741ced8672013eb71078fecce14b994a093ddea4b1d96cc",
+      "original_selected_epoch": 32,
+      "B2_HAM_val_prediction_index": {
+        "path": "${R52_PATH_D1BF2B095C10}",
+        "sha256": "a9f540c4dcf9bcd53e0d1330616d5966c6a30da514935e176970f93d0ade04c9",
+        "bytes": 657935,
+        "run_id": "oncoderm_mambax_b6_full_seed2024_20260708_163051",
+        "model": "B6",
+        "training_seed": 2024,
+        "dataset": "HAM_val",
+        "conditions": [
+          "NATIVE"
+        ],
+        "images": 1513,
+        "prediction_rows": 1513,
+        "batch": 32,
+        "checkpoint_sha256": "4772ae5d3ef772c58438ce35915326f10a01d8fcd416999e6f274ecfd005abfa",
+        "precision": "FP32_TF32_off",
+        "reuse_features": true,
+        "image_hash_and_decode_checked": 1513,
+        "seconds": 19.265437299851328,
+        "completed_at": "2026-10-12T05:14:01.762431+08:00"
+      },
+      "technical_source": "${R52_PATH_26DA5A475044}"
+    },
+    {
+      "model": "ORIG_B6",
+      "training_seed": 3407,
+      "tag": "ORIG_B6_s3407",
+      "run_id": "oncoderm_mambax_b6_full_seed3407_20260708_232735",
+      "checkpoint_path": "${R52_PATH_37F048076158}",
+      "bytes": 401499163,
+      "sha256": "d27998a562ccafeed44bf731674dec95943b3276db80bd1239af645a8c006ef9",
+      "config_path": "${R52_PATH_A622294BF8B6}",
+      "config_copy": "${R52_PATH_7F7F317463D8}",
+      "config_sha256": "b7fac1ae5c446eb4bbc83b87d4a7f609413b777fb86cc850376b225dcd564894",
+      "original_selected_epoch": 18,
+      "B2_HAM_val_prediction_index": {
+        "path": "${R52_PATH_329885B0056D}",
+        "sha256": "da170b198cd2e3cae15f3814f913eba6ecf46528d31c2eb67c185eec1e3b520a",
+        "bytes": 669165,
+        "run_id": "oncoderm_mambax_b6_full_seed3407_20260708_232735",
+        "model": "B6",
+        "training_seed": 3407,
+        "dataset": "HAM_val",
+        "conditions": [
+          "NATIVE"
+        ],
+        "images": 1513,
+        "prediction_rows": 1513,
+        "batch": 32,
+        "checkpoint_sha256": "d27998a562ccafeed44bf731674dec95943b3276db80bd1239af645a8c006ef9",
+        "precision": "FP32_TF32_off",
+        "reuse_features": true,
+        "image_hash_and_decode_checked": 1513,
+        "seconds": 19.59311050013639,
+        "completed_at": "2026-10-12T05:21:12.996292+08:00"
+      },
+      "technical_source": "${R52_PATH_45D0C3016587}"
+    }
+  ],
+  "cohort": {
+    "candidate_rows": 1011,
+    "included_rows": 1011,
+    "positive": 252,
+    "negative": 759,
+    "prevalence": 0.24925816023738873,
+    "excluded_rows": 0,
+    "clusters": 1011,
+    "resampling_unit": "case_num / confirmed same-image clusters; NOT verified patients",
+    "cluster_order": "numeric representative case_num ascending",
+    "clinic_derm_same_reference_count": 9,
+    "HAM_train_val_checks": [
+      {
+        "split": "train",
+        "path": "${R52_PATH_E37E406F66F5}",
+        "sha256": "f30b240e75191f37d765cefd5f67b352cd89c0c543e0a5e2623204f3ac833816",
+        "members": 6982,
+        "P4_same_sha256": true,
+        "origin": "original manuscript split42; B2 original validation reference and configs"
+      },
+      {
+        "split": "val",
+        "path": "${R52_PATH_A7EDEF14667C}",
+        "sha256": "b1e4982d61df694d6acc64a5c024f9423a110d87489a2731c5e361f183caf4f3",
+        "members": 1513,
+        "P4_same_sha256": true,
+        "origin": "original manuscript split42; B2 original validation reference and configs"
+      }
+    ],
+    "exact_duplicate_matches": 0,
+    "coverage": "Exact named IDs and prior file/RGB-pixel hashes for original HAM train/val. Current derm file SHA rechecked; P4 same-image clusters and pixel fingerprints reused.",
+    "original_B6_auxiliary100": "UNKNOWN membership; not traced or reconstructed; no claim of verified nonoverlap. New FIM auxiliary100 is NOT a substitute.",
+    "limitations": [
+      "No verified patient/cross-case lesion linkage.",
+      "No near-duplicate/perceptual search; unknown cross-dataset relationships may remain.",
+      "non-melanoma is not synonymous with benign."
+    ],
+    "alignment_sha256": "5b04396ea0b20d576c944e4125b2536ed1ee94968b796edf1e4523401446902c",
+    "clinical_sha256": "aa1a2d88c2252824af51a30e9d0187c30c87b78c7d8366d0ef9a0a878ae46198",
+    "labels_sha256": "27aa9b6cef4f95ab7d2bde5a4f1651cce462d98992ca1460fd22671a86ea59fe",
+    "clusters_sha256": "bef3f57e96311a832d184b219d83759c44e21b1c60b2994176b11df997281326"
+  },
+  "clinical_mapping": {
+    "token_order": [
+      "age/100",
+      "sex_male",
+      "sex_female",
+      "sex_unknown",
+      "site_abdomen",
+      "site_acral",
+      "site_back",
+      "site_chest",
+      "site_ear",
+      "site_face",
+      "site_foot",
+      "site_genital",
+      "site_hand",
+      "site_lower extremity",
+      "site_neck",
+      "site_scalp",
+      "site_trunk",
+      "site_unknown",
+      "site_upper extremity",
+      "age_missing",
+      "sex_missing",
+      "site_missing"
+    ],
+    "age_value": 0,
+    "age_missing": 1,
+    "sex_vocabulary": [
+      "male",
+      "female",
+      "unknown"
+    ],
+    "site_vocabulary": [
+      "abdomen",
+      "acral",
+      "back",
+      "chest",
+      "ear",
+      "face",
+      "foot",
+      "genital",
+      "hand",
+      "lower extremity",
+      "neck",
+      "scalp",
+      "trunk",
+      "unknown",
+      "upper extremity"
+    ],
+    "location_mapping": {
+      "abdomen": "abdomen",
+      "acral": "acral",
+      "back": "back",
+      "chest": "chest",
+      "lower limbs": "lower extremity",
+      "upper limbs": "upper extremity",
+      "genital areas": "genital",
+      "head neck": "unknown",
+      "buttocks": "unknown"
+    },
+    "unsupported_nonempty": [
+      "head neck",
+      "buttocks"
+    ],
+    "unsupported_nonempty_site_missing": 0,
+    "E_NULL": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1
+    ],
+    "E_AVAILABLE": "Observed sex and location only; age is missing for every case",
+    "forbidden_model_fields": [
+      "diagnosis",
+      "seven_point_score",
+      "seven_point_attributes",
+      "elevation",
+      "management",
+      "difficulty",
+      "case_num",
+      "case_id",
+      "notes",
+      "path",
+      "ground_truth_mask"
+    ]
+  },
+  "labels": {
+    "positive": [
+      "melanoma",
+      "melanoma (in situ)",
+      "melanoma (less than 0.76 mm)",
+      "melanoma (0.76 to 1.5 mm)",
+      "melanoma (more than 1.5 mm)",
+      "melanoma metastasis"
+    ],
+    "negative": [
+      "basal cell carcinoma",
+      "blue nevus",
+      "clark nevus",
+      "combined nevus",
+      "congenital nevus",
+      "dermal nevus",
+      "dermatofibroma",
+      "lentigo",
+      "melanosis",
+      "miscellaneous",
+      "recurrent nevus",
+      "reed or spitz nevus",
+      "seborrheic keratosis",
+      "vascular lesion"
+    ],
+    "multiclass_HAM_remapping": false
+  },
+  "conditions": [
+    "E_AVAILABLE",
+    "E_NULL"
+  ],
+  "heads": [
+    "prob_mel",
+    "prob_mel_endpoint"
+  ],
+  "preprocessing": "RGB; shorter side256 BILINEAR antialias=True; center224; ImageNet mean/std",
+  "precision": "FP32 eval/inference_mode, TF32 off",
+  "batch": 8,
+  "workers": 2,
+  "cache_equivalence": {
+    "atol": 1e-05,
+    "rtol": 0.0001,
+    "max_images": 8,
+    "fallback": "full forward"
+  },
+  "metrics": [
+    "average_precision",
+    "roc_auc",
+    "unclipped_brier",
+    "binary_nll_eps1e-7",
+    "ece15_equal_width_last_includes1"
+  ],
+  "aggregation": "Per-run metric -> mean and sample SD ddof1; no pooled probabilities/ensembles",
+  "fixed_model_intervals": "E_AVAILABLE prob_mel family mean AP/AUC 95%",
+  "input_effects": [
+    "ORIG_B2 E_AVAILABLE minus E_NULL",
+    "ORIG_B6 E_AVAILABLE minus E_NULL"
+  ],
+  "input_effect_intervals": "both heads AP/AUC 95%; only two prob_mel AP effects also97.5%, approximate Bonferroni reference, still additional analysis",
+  "config_comparison": "ORIG_B6 minus ORIG_B2; both conditions/heads AP/AUC95% supporting only, NOT single-factor ablation",
+  "bootstrap": {
+    "valid_draws": 10000,
+    "rng": "PCG64",
+    "seed": 20261021,
+    "quantile_method": "linear",
+    "cluster_order": "numeric representative case_num ascending",
+    "single_class": "redraw and count",
+    "same_sample_all": true,
+    "resample_training_seed": false,
+    "conditional_on_fixed_models": true,
+    "checkpoint_every": 100
+  },
+  "thresholds": {
+    "source": "${R52_PATH_DDC319274460}",
+    "sha256": "d85a3e028d910d6a7bf52767dfb5baf96860f3653c5b2d20bde091648168226d",
+    "status": "SOURCE_VERIFIED",
+    "source_rows": 24,
+    "run_id_binding": "B2 PREDICTION_MANIFEST validated unique family/seed -> full run_id and checkpoint SHA; not inferred from generic names"
+  },
+  "threshold_application": "Original value, p>=t, both inputs; no reselection or calibration fit",
+  "curves": "24 full unsmoothed ROC/PR score vectors",
+  "cross_cohort": "B2 executed FP32 SIIM aggregates and current FP32 Derm7pt; no AP subtraction across prevalence/age coverage",
+  "disk_free_at_preparation": 6973771776,
+  "estimated_new_disk_reserve": 1073741824,
+  "evidence": [
+    {
+      "path": "${R52_PATH_6BD5C1E1D1A0}",
+      "sha256": "2375efe0ba3e7328f35c871efcfb38f1a42327f89acc5f508fa1951c8153d42c",
+      "bytes": 13696,
+      "mtime_ns": 1792231177504751100
+    },
+    {
+      "path": "${R52_PATH_D433BC7D81D3}",
+      "sha256": "a02b2301f33397a6950cf892b6d9999507216245650d7b3e6ed1ec4a08e9e3e1",
+      "bytes": 10213,
+      "mtime_ns": 1791751234770098800
+    },
+    {
+      "path": "${R52_PATH_E9493CCA28F6}",
+      "sha256": "34971a0d95f7280ade627f6d0275af77456e62b0c6312b34bcef43f4e029a559",
+      "bytes": 3182,
+      "mtime_ns": 1791751234784704000
+    },
+    {
+      "path": "${R52_PATH_5C0934E9B841}",
+      "sha256": "97cb2da28bd02ecd72ba353e8e0a911d419276bb5b913ec4ec6b9d3f6f38ed1b",
+      "bytes": 1575,
+      "mtime_ns": 1791751226355526200
+    },
+    {
+      "path": "${R52_PATH_563921C54B15}",
+      "sha256": "f7e915b85d81262f18eb4ef9f951fa3354808bc717ab843fe6540df1631092b9",
+      "bytes": 11432,
+      "mtime_ns": 1791754296557876600
+    },
+    {
+      "path": "${R52_PATH_96B8F5206306}",
+      "sha256": "67d0b7f2b09003813e8ad20ead76921d20d2c72c15144d404f242bedc55545b5",
+      "bytes": 1978,
+      "mtime_ns": 1791751230269614800
+    },
+    {
+      "path": "${R52_PATH_375A9BE9B2BE}",
+      "sha256": "e54730dea5995fc6a243008836094bb251b920c30c6472420e87227e64d70c27",
+      "bytes": 14563,
+      "mtime_ns": 1791754044465837800
+    },
+    {
+      "path": "${R52_PATH_86A5B50DF29E}",
+      "sha256": "2647c619c0f26fb273c9e3bebaa9013876fea150163a29c3004210bd74789771",
+      "bytes": 39159,
+      "mtime_ns": 1792100462675692300
+    },
+    {
+      "path": "${R52_PATH_B407DB888C95}",
+      "sha256": "ec01b060f613161ded7a65db48938fe46955f0d3330e1dfcaf93cad1439bb0fe",
+      "bytes": 1850,
+      "mtime_ns": 1792100460756116100
+    },
+    {
+      "path": "${R52_PATH_F74954A1A3DE}",
+      "sha256": "f9ca207bb37b6f6446a0c492b9ee837c067cad89919b5c937cdfd7abc5cc9bd1",
+      "bytes": 1771,
+      "mtime_ns": 1792100448562383600
+    },
+    {
+      "path": "${R52_PATH_CB57B77FCD2F}",
+      "sha256": "56b5e91c3bb77ab933c25fd65eba883419bdc5691cc94cb9dc840e8f4e3674eb",
+      "bytes": 22,
+      "mtime_ns": 1782714366552564800
+    },
+    {
+      "path": "${R52_PATH_8FCF386F0A16}",
+      "sha256": "78d6dddaf4113248d3df55c21acbd7751075189a56b282833042bc6bd2fb3f62",
+      "bytes": 190,
+      "mtime_ns": 1783159446930015900
+    },
+    {
+      "path": "${R52_PATH_F2F3C9A97FBA}",
+      "sha256": "db399b81dbed64eb56130f27f1936089808872260a50fd345ce909f1ed1685e6",
+      "bytes": 10801,
+      "mtime_ns": 1783144203864959400
+    },
+    {
+      "path": "${R52_PATH_F42EEDB90B41}",
+      "sha256": "4c001f03eca3a93ee3e9a590d46ef0710f66fc88be1512241d3f71a0bc3be6c6",
+      "bytes": 2104,
+      "mtime_ns": 1782714609179767200
+    },
+    {
+      "path": "${R52_PATH_FC7B3FBEA067}",
+      "sha256": "7e737a004f69053821628f84b3da9c44a4e4a208a386fa7322c5c7ff9331a0c5",
+      "bytes": 13751,
+      "mtime_ns": 1786754859042165100
+    },
+    {
+      "path": "${R52_PATH_4336EFCB08C2}",
+      "sha256": "c0c19257e4aa5fcff4bf73c6923128029375a903ef71a7b43e0cefa6fc1c0a7d",
+      "bytes": 66,
+      "mtime_ns": 1791751226337255300
+    },
+    {
+      "path": "${R52_PATH_18BE2956B7C9}",
+      "sha256": "7d3b060e46add18b7df02014e1df9869133ddca2dfd8d5fafb36feeb725bd16b",
+      "bytes": 360781827,
+      "mtime_ns": 1783353622000000000
+    },
+    {
+      "path": "${R52_PATH_A5984FD5E278}",
+      "sha256": "fe69bb5a726e46bfa5806460328b0cb887a55486ac70c30256919a71c9ba59e4",
+      "bytes": 2875,
+      "mtime_ns": 1783352973000000000
+    },
+    {
+      "path": "${R52_PATH_F6521D5E2E5C}",
+      "sha256": "36542940fd1dc6485121b0b3c0a3c76528f17830207584104e986d99bfd8af8b",
+      "bytes": 2283,
+      "mtime_ns": 1791751441625155200
+    },
+    {
+      "path": "${R52_PATH_951141DA5E64}",
+      "sha256": "bd9300f6fed9f9cb71796cf25d8bc5468a1003a169be137d7a95e96bd8c4181a",
+      "bytes": 360781891,
+      "mtime_ns": 1783498417000000000
+    },
+    {
+      "path": "${R52_PATH_BAB304CA31C5}",
+      "sha256": "e19411221cb49584642ca326298d32d6e537be277d0a4a296fe41fcf7146a1a9",
+      "bytes": 2904,
+      "mtime_ns": 1783497922000000000
+    },
+    {
+      "path": "${R52_PATH_638D68E0BBE5}",
+      "sha256": "43a0d051fbab7d27178427a3ee6e3f2f5c9f2cac620293bb11d4a7469330fb18",
+      "bytes": 2292,
+      "mtime_ns": 1791751445024658400
+    },
+    {
+      "path": "${R52_PATH_F980C8318B1B}",
+      "sha256": "c9173f33ff787eb5533a7abfb0987dd6577618a15f6f51fff847d5d06beaabf5",
+      "bytes": 360781891,
+      "mtime_ns": 1783523630000000000
+    },
+    {
+      "path": "${R52_PATH_EF6601205512}",
+      "sha256": "88625ffab949045758246086bc8422e3164a128f32f7fef3bc5030f06663e94c",
+      "bytes": 2904,
+      "mtime_ns": 1783523093000000000
+    },
+    {
+      "path": "${R52_PATH_9788F988D381}",
+      "sha256": "2430b89a5b5bf137b037abd7256febb35c0668060e8fd70107f1d7b5fc46c408",
+      "bytes": 2292,
+      "mtime_ns": 1791751448326965600
+    },
+    {
+      "path": "${R52_PATH_B652D771A076}",
+      "sha256": "525302d30405b75229c428d5b1a8d1f282de0e0d25ac98ef13c84fd91b5f923c",
+      "bytes": 401499163,
+      "mtime_ns": 1783356933000000000
+    },
+    {
+      "path": "${R52_PATH_421291CFC79F}",
+      "sha256": "4de61041c03e49a0d8ca03437a73f21317b0ed65a95d38f5d173bfd3c190995a",
+      "bytes": 2861,
+      "mtime_ns": 1783356432000000000
+    },
+    {
+      "path": "${R52_PATH_15695FA3805F}",
+      "sha256": "156364a1239f009d59db79043b2e2a665eca32e55527ac3ef45fb9e235a9b944",
+      "bytes": 2277,
+      "mtime_ns": 1791751452787831400
+    },
+    {
+      "path": "${R52_PATH_E0EF02D41C52}",
+      "sha256": "4772ae5d3ef772c58438ce35915326f10a01d8fcd416999e6f274ecfd005abfa",
+      "bytes": 401499163,
+      "mtime_ns": 1783500125000000000
+    },
+    {
+      "path": "${R52_PATH_522BC59FAEE1}",
+      "sha256": "ff645eef1ae41a799741ced8672013eb71078fecce14b994a093ddea4b1d96cc",
+      "bytes": 2890,
+      "mtime_ns": 1783499451000000000
+    },
+    {
+      "path": "${R52_PATH_26DA5A475044}",
+      "sha256": "381600fde92f9a75bbcc4dc9d112956e15a0cdccb9b69d9498148b07564ec67c",
+      "bytes": 2284,
+      "mtime_ns": 1791751456230645700
+    },
+    {
+      "path": "${R52_PATH_37F048076158}",
+      "sha256": "d27998a562ccafeed44bf731674dec95943b3276db80bd1239af645a8c006ef9",
+      "bytes": 401499163,
+      "mtime_ns": 1783524863000000000
+    },
+    {
+      "path": "${R52_PATH_A622294BF8B6}",
+      "sha256": "b7fac1ae5c446eb4bbc83b87d4a7f609413b777fb86cc850376b225dcd564894",
+      "bytes": 2890,
+      "mtime_ns": 1783524455000000000
+    },
+    {
+      "path": "${R52_PATH_45D0C3016587}",
+      "sha256": "0a0e3e1bd592d82bf3755e73c6142132d72ef0783f4d9a16c163bd8460186ba6",
+      "bytes": 2285,
+      "mtime_ns": 1791751459710600100
+    },
+    {
+      "path": "${R52_PATH_CB55B27527EC}",
+      "sha256": "471199fb86bcc97cd1521bcc4255bb3f9c563e2ed0ad3ff836392d81a3ed9d3b",
+      "bytes": 156819,
+      "mtime_ns": 1792078950034082300
+    },
+    {
+      "path": "${R52_PATH_92927EE73DA5}",
+      "sha256": "5b04396ea0b20d576c944e4125b2536ed1ee94968b796edf1e4523401446902c",
+      "bytes": 196394,
+      "mtime_ns": 1792100460704990100
+    },
+    {
+      "path": "${R52_PATH_5F9882E94F42}",
+      "sha256": "aa1a2d88c2252824af51a30e9d0187c30c87b78c7d8366d0ef9a0a878ae46198",
+      "bytes": 89096,
+      "mtime_ns": 1792100460699906800
+    },
+    {
+      "path": "${R52_PATH_A0CDD662B392}",
+      "sha256": "27aa9b6cef4f95ab7d2bde5a4f1651cce462d98992ca1460fd22671a86ea59fe",
+      "bytes": 8216,
+      "mtime_ns": 1792100460699906800
+    },
+    {
+      "path": "${R52_PATH_BA3F3F331655}",
+      "sha256": "bef3f57e96311a832d184b219d83759c44e21b1c60b2994176b11df997281326",
+      "bytes": 8216,
+      "mtime_ns": 1792100460700906300
+    },
+    {
+      "path": "${R52_PATH_332D999CFE2E}",
+      "sha256": "50c8748e421134ee2dcb3bd3613c1b14b268363443ae314dfd7c6085d5243b8b",
+      "bytes": 2934483,
+      "mtime_ns": 1790985528229598700
+    },
+    {
+      "path": "${R52_PATH_E37E406F66F5}",
+      "sha256": "f30b240e75191f37d765cefd5f67b352cd89c0c543e0a5e2623204f3ac833816",
+      "bytes": 392747,
+      "mtime_ns": 1783351554000000000
+    },
+    {
+      "path": "${R52_PATH_A7EDEF14667C}",
+      "sha256": "b1e4982d61df694d6acc64a5c024f9423a110d87489a2731c5e361f183caf4f3",
+      "bytes": 84872,
+      "mtime_ns": 1783351554000000000
+    },
+    {
+      "path": "${R52_PATH_DDC319274460}",
+      "sha256": "d85a3e028d910d6a7bf52767dfb5baf96860f3653c5b2d20bde091648168226d",
+      "bytes": 5239,
+      "mtime_ns": 1791754122762743700
+    },
+    {
+      "path": "${R52_PATH_844B1129692B}",
+      "sha256": "982bf43c3ec4b08ceae637f703e04a5290da435ad169068138dd020d309bc029",
+      "bytes": 4568,
+      "mtime_ns": 1792099960001135200
+    },
+    {
+      "path": "${R52_PATH_8C0092CFE944}",
+      "sha256": "d5b6c784d4e604dcf547a853587c160b716500cab7eb4b283eecc8ccc278a644",
+      "bytes": 12372,
+      "mtime_ns": 1791754122758109600
+    }
+  ]
+}

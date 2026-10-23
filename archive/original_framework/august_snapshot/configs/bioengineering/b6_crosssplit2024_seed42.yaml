@@ -1,0 +1,8 @@
+_base_: ../submission_v1/b6_full_oncoderm_mambax.yaml
+project:
+  name: bioengineering_b6_crosssplit2024
+  seed: 42
+  split_seed: 2024
+model:
+  name: oncoderm_mambax_b6_full_crosssplit2024
+  source: oncoderm_mambax

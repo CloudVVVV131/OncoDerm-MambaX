@@ -1,0 +1,115 @@
+{
+  "frozen_at": "2026-10-12T04:40:34.770098+08:00",
+  "task_sha256": "e5fa4d2f4cfaa17b45bf07b6ac0c51a3c34171ee746f94dd15bd6b7b552f16b7",
+  "scope": "B2_only",
+  "training": false,
+  "cloud": false,
+  "precision": "FP32_TF32_off_eval_inference_mode",
+  "models": [
+    "B2",
+    "B6"
+  ],
+  "training_seeds": [
+    42,
+    2024,
+    3407
+  ],
+  "split_seed": 42,
+  "conditions": {
+    "SIIM": [
+      "E_NULL",
+      "E_REAL"
+    ],
+    "HAM_val": [
+      "NATIVE"
+    ],
+    "HAM_test": [
+      "NATIVE"
+    ]
+  },
+  "scoring": {
+    "primary": "prob_mel=softmax(logits7)[:,4]",
+    "secondary": "prob_mel_endpoint=sigmoid(mel_logit)"
+  },
+  "metrics": [
+    "AP",
+    "ROC_AUC",
+    "Brier",
+    "binary_NLL",
+    "ECE_15_equal_width",
+    "unpenalized_logit_calibration_intercept_slope_point_only"
+  ],
+  "probability_clipping": {
+    "epsilon": 1e-07,
+    "only_for": [
+      "NLL",
+      "calibration_logit"
+    ],
+    "AP_AUC": "raw_probabilities"
+  },
+  "ECE_bins": "15 equal width on [0,1]; [lo,hi) except final includes1",
+  "calibration": "Binomial logistic MLE without penalty; evaluation only; failure recorded, no recalibrated probabilities",
+  "bootstrap": {
+    "generator": "PCG64",
+    "seed": 20261013,
+    "valid_replicates": 10000,
+    "patient_order": "lexicographic exact strings",
+    "draws_per_replicate": 2056,
+    "same_resample_all_vectors": true,
+    "invalid_one_class": "redraw same RNG stream",
+    "metrics": [
+      "AP",
+      "ROC_AUC",
+      "Brier",
+      "fixed_threshold_sensitivity",
+      "fixed_threshold_specificity"
+    ],
+    "CI95": [
+      2.5,
+      97.5
+    ],
+    "primary_common_AP_three_seed_mean_CI975": [
+      1.25,
+      98.75
+    ],
+    "quantile_method": "linear",
+    "primary_comparisons": [
+      "model_B2_mean(E_REAL-E_NULL)_3_fixed_seeds",
+      "model_B6_mean(E_REAL-E_NULL)_3_fixed_seeds"
+    ],
+    "conditional_on_fixed_three_runs": true,
+    "resample_training_seed": false,
+    "refit_calibration": false,
+    "reselect_threshold": false,
+    "p_values": false
+  },
+  "thresholds": {
+    "source": "same_run_same_score_HAM_val_NATIVE",
+    "target_sensitivity": [
+      0.9,
+      0.95
+    ],
+    "optimize": "maximum specificity among observed-score thresholds meeting sensitivity; tie largest numeric threshold",
+    "positive": "p>=threshold",
+    "shared_across_SIIM_conditions": true,
+    "test_reselection": false,
+    "uncertainty": "conditional on chosen validation threshold"
+  },
+  "technical": {
+    "start_batch": 8,
+    "candidates": [
+      8,
+      16,
+      32
+    ],
+    "selection": "memory and time only; not SIIM performance",
+    "cache_equivalence_atol": 1e-05,
+    "cache_equivalence_rtol": 0.0001,
+    "validation_sample": "first96 lexicographic original validation image IDs",
+    "no_cuda": "stop",
+    "max_total_estimated_seconds": 14400,
+    "statistical_allowance_seconds": 1800
+  },
+  "input_manifest_sha256": "a02b2301f33397a6950cf892b6d9999507216245650d7b3e6ed1ec4a08e9e3e1",
+  "mapping_sha256": "67d0b7f2b09003813e8ad20ead76921d20d2c72c15144d404f242bedc55545b5"
+}

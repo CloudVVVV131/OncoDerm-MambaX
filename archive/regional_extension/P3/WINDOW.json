@@ -1,0 +1,13 @@
+{
+  "started_at": "2026-10-15T13:42:54+08:00",
+  "deadline": "2026-10-16T01:42:54+08:00",
+  "source_seed42": "${R52_PATH_F74ED8905ECC}",
+  "source_three_seed": "${R52_PATH_2235AC964AA6}",
+  "source_P1": "${R52_PATH_8BF64AF677FF}",
+  "source_P2": "${R52_PATH_A777747B3623}",
+  "source_P2_delivery": "${R52_PATH_9574E1D723C3}",
+  "scope": "3 B2S training; 15 fixed-best evaluations; prespecified CPU statistics",
+  "initial_D_free_GiB": 14.69,
+  "estimated_disk_budget_GiB": 6,
+  "disk_budget_note": "Three B2S best+full last checkpoints, one atomic temporary checkpoint, private inference arrays, curve tables and archive; no old-weight or image copies"
+}

@@ -1,0 +1,37 @@
+{
+  "frozen_at": "2026-10-20T22:31:16.503642+08:00",
+  "K": 50,
+  "B": 2000,
+  "scientific_protocol_unchanged": true,
+  "revision_reason": "Added final aggregate-accounting QC before packaging. Numerical kernels, RNG, estimands and counts unchanged. No formal point reassignments or bootstrap draws have run.",
+  "previous_freeze": {
+    "frozen_at": "2026-10-20T22:08:21.879135+08:00",
+    "K": 50,
+    "B": 2000,
+    "scientific_protocol_unchanged": true,
+    "source_hashes": {
+      "b_common.py": "8be6771e336beb1f24f68eac3c5c559ae8220ac350502b81bf31ce81168bf1d0",
+      "b_continue.py": "481bdb6d72f98f98c8865e286ef19f6c1c882dbd65031fab2efb2e898d0a5a0d",
+      "b_data.py": "a5135755f1a01a1d92be36dc5f5d04b5224c16f93c538d42582a5a01b753aafe",
+      "b_finalize.py": "e1f5ecbddd1980809d645711967f37c5aa18e4536e9c32e61e4ea14ba65f9cf4",
+      "b_infer.py": "1adaabc744d55bc058be82cbb9b19c73ca54006afcbef82dd41c7c63711c43d1",
+      "b_prepare.py": "05f52dc4cc1aa63afb3e61144a3f2208a9ee1db2f9aa15c14cfbb7cfc27436e9",
+      "b_statistics.py": "a80ada3d3705078d309ee6669961c076e6f068ecc8130f7fbc70831f726d1ffa",
+      "clinical_matching_reference.py": "33ded38d229e7203e7cdde042f1554d5cfd99d357ce2142571d257a4c0930d8c",
+      "test_clinical_matching_reference.py": "459caca3bbeba596ba4e49b007452791854b70f43ed021e92df0826a55e67d4f"
+    }
+  },
+  "source_hashes": {
+    "b_common.py": "8be6771e336beb1f24f68eac3c5c559ae8220ac350502b81bf31ce81168bf1d0",
+    "b_continue.py": "481bdb6d72f98f98c8865e286ef19f6c1c882dbd65031fab2efb2e898d0a5a0d",
+    "b_data.py": "a5135755f1a01a1d92be36dc5f5d04b5224c16f93c538d42582a5a01b753aafe",
+    "b_finalize.py": "536aacf5c1b469c2310fdd92a207b5eca88e0f60d6471eb070791bf78da04fe6",
+    "b_freeze_statistics.py": "0814013d9dcae396582432f9c6c7e752b4aff6a2e4e924ac0ec9a4f95b41d160",
+    "b_infer.py": "1adaabc744d55bc058be82cbb9b19c73ca54006afcbef82dd41c7c63711c43d1",
+    "b_prepare.py": "05f52dc4cc1aa63afb3e61144a3f2208a9ee1db2f9aa15c14cfbb7cfc27436e9",
+    "b_statistics.py": "2c42eb3fc21e58066f8ba1185c7e74f97285618be66dcce89f253b54fd49453d",
+    "b_verify.py": "555bde5ac1a536cb160f14015c8588e3005315c028c62071b41bcc5b26b47945",
+    "clinical_matching_reference.py": "33ded38d229e7203e7cdde042f1554d5cfd99d357ce2142571d257a4c0930d8c",
+    "test_clinical_matching_reference.py": "459caca3bbeba596ba4e49b007452791854b70f43ed021e92df0826a55e67d4f"
+  }
+}

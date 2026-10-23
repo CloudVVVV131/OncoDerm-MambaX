@@ -1,0 +1,2819 @@
+{
+  "status": "DESIGN_INPUTS_COMPLETE_PROTOCOL_NOT_FROZEN",
+  "computed_at": "2026-10-20T05:43:51+08:00",
+  "inference_executed": false,
+  "donor_mapping_created": false,
+  "metadata_read_once_and_shared": true,
+  "original_models": [
+    {
+      "model": "ORIG_B2",
+      "training_seed": 42,
+      "run_id": "oncoderm_mambax_b2_metadata_cmgf_seed42_20260706_234933",
+      "sha256": "7d3b060e46add18b7df02014e1df9869133ddca2dfd8d5fafb36feeb725bd16b"
+    },
+    {
+      "model": "ORIG_B2",
+      "training_seed": 2024,
+      "run_id": "oncoderm_mambax_b2_metadata_cmgf_seed2024_20260708_160522",
+      "sha256": "bd9300f6fed9f9cb71796cf25d8bc5468a1003a169be137d7a95e96bd8c4181a"
+    },
+    {
+      "model": "ORIG_B2",
+      "training_seed": 3407,
+      "run_id": "oncoderm_mambax_b2_metadata_cmgf_seed3407_20260708_230453",
+      "sha256": "c9173f33ff787eb5533a7abfb0987dd6577618a15f6f51fff847d5d06beaabf5"
+    },
+    {
+      "model": "ORIG_B6",
+      "training_seed": 42,
+      "run_id": "oncoderm_mambax_b6_full_seed42_20260707_004712",
+      "sha256": "525302d30405b75229c428d5b1a8d1f282de0e0d25ac98ef13c84fd91b5f923c"
+    },
+    {
+      "model": "ORIG_B6",
+      "training_seed": 2024,
+      "run_id": "oncoderm_mambax_b6_full_seed2024_20260708_163051",
+      "sha256": "4772ae5d3ef772c58438ce35915326f10a01d8fcd416999e6f274ecfd005abfa"
+    },
+    {
+      "model": "ORIG_B6",
+      "training_seed": 3407,
+      "run_id": "oncoderm_mambax_b6_full_seed3407_20260708_232735",
+      "sha256": "d27998a562ccafeed44bf731674dec95943b3276db80bd1239af645a8c006ef9"
+    }
+  ],
+  "checkpoint_hash_status": "Historical identity references only; weights not opened",
+  "encoder": {
+    "path": "${R52_PATH_F2F3C9A97FBA}",
+    "functions_and_lines": {
+      "DEFAULT_SEX_VALUES": [
+        23,
+        23
+      ],
+      "DEFAULT_LOCALIZATION_VALUES": [
+        24,
+        40
+      ],
+      "metadata_dim": [
+        43,
+        51
+      ],
+      "_norm_text": [
+        54,
+        58
+      ],
+      "encode_metadata": [
+        61,
+        101
+      ]
+    },
+    "dimension": 22,
+    "token_order": [
+      "age/100",
+      "sex_male",
+      "sex_female",
+      "sex_unknown",
+      "site_abdomen",
+      "site_acral",
+      "site_back",
+      "site_chest",
+      "site_ear",
+      "site_face",
+      "site_foot",
+      "site_genital",
+      "site_hand",
+      "site_lower extremity",
+      "site_neck",
+      "site_scalp",
+      "site_trunk",
+      "site_unknown",
+      "site_upper extremity",
+      "age_missing",
+      "sex_missing",
+      "site_missing"
+    ],
+    "null_vector": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1
+    ],
+    "age_scale": 100,
+    "vector_equality": "Exact float32 component equality; includes missing flags"
+  },
+  "SIIM": {
+    "overview": {
+      "n_images": 33126,
+      "n_patients": 2056,
+      "images_per_patient": {
+        "n": 2056,
+        "min": 2.0,
+        "q1": 5.0,
+        "median": 12.0,
+        "q3": 22.0,
+        "max": 115.0
+      },
+      "n_size_strata": 84,
+      "candidate_equal_size_exchange_patients": 2037,
+      "candidate_equal_size_exchange_patient_percent": 99.07587548638132,
+      "candidate_equal_size_exchange_images": 31638,
+      "candidate_equal_size_exchange_image_percent": 95.50806013403368,
+      "singleton_size_strata": 19,
+      "singleton_stratum_patients": 19,
+      "singleton_stratum_images": 1488,
+      "singleton_stratum_image_percent": 4.491939865966311,
+      "coverage_only_no_exchange_executed": true
+    },
+    "group_size_frequency": [
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 2,
+        "n_patients": 1,
+        "n_images_in_bin": 2,
+        "denominator_patients": 2056,
+        "percent_patients": 0.048638132295719845,
+        "denominator_images": 33126,
+        "percent_images": 0.006037553583288052,
+        "candidate_same_size_exchange_stratum": false
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 3,
+        "n_patients": 296,
+        "n_images_in_bin": 888,
+        "denominator_patients": 2056,
+        "percent_patients": 14.396887159533074,
+        "denominator_images": 33126,
+        "percent_images": 2.680673790979895,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 4,
+        "n_patients": 188,
+        "n_images_in_bin": 752,
+        "denominator_patients": 2056,
+        "percent_patients": 9.14396887159533,
+        "denominator_images": 33126,
+        "percent_images": 2.2701201473163075,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 5,
+        "n_patients": 120,
+        "n_images_in_bin": 600,
+        "denominator_patients": 2056,
+        "percent_patients": 5.836575875486381,
+        "denominator_images": 33126,
+        "percent_images": 1.8112660749864156,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 6,
+        "n_patients": 85,
+        "n_images_in_bin": 510,
+        "denominator_patients": 2056,
+        "percent_patients": 4.134241245136187,
+        "denominator_images": 33126,
+        "percent_images": 1.539576163738453,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 7,
+        "n_patients": 102,
+        "n_images_in_bin": 714,
+        "denominator_patients": 2056,
+        "percent_patients": 4.961089494163424,
+        "denominator_images": 33126,
+        "percent_images": 2.1554066292338345,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 8,
+        "n_patients": 43,
+        "n_images_in_bin": 344,
+        "denominator_patients": 2056,
+        "percent_patients": 2.0914396887159534,
+        "denominator_images": 33126,
+        "percent_images": 1.0384592163255448,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 9,
+        "n_patients": 78,
+        "n_images_in_bin": 702,
+        "denominator_patients": 2056,
+        "percent_patients": 3.7937743190661477,
+        "denominator_images": 33126,
+        "percent_images": 2.119181307734106,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 10,
+        "n_patients": 46,
+        "n_images_in_bin": 460,
+        "denominator_patients": 2056,
+        "percent_patients": 2.237354085603113,
+        "denominator_images": 33126,
+        "percent_images": 1.388637324156252,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 11,
+        "n_patients": 42,
+        "n_images_in_bin": 462,
+        "denominator_patients": 2056,
+        "percent_patients": 2.0428015564202333,
+        "denominator_images": 33126,
+        "percent_images": 1.39467487773954,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 12,
+        "n_patients": 67,
+        "n_images_in_bin": 804,
+        "denominator_patients": 2056,
+        "percent_patients": 3.2587548638132295,
+        "denominator_images": 33126,
+        "percent_images": 2.427096540481797,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 13,
+        "n_patients": 67,
+        "n_images_in_bin": 871,
+        "denominator_patients": 2056,
+        "percent_patients": 3.2587548638132295,
+        "denominator_images": 33126,
+        "percent_images": 2.6293545855219467,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 14,
+        "n_patients": 71,
+        "n_images_in_bin": 994,
+        "denominator_patients": 2056,
+        "percent_patients": 3.453307392996109,
+        "denominator_images": 33126,
+        "percent_images": 3.0006641308941617,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 15,
+        "n_patients": 72,
+        "n_images_in_bin": 1080,
+        "denominator_patients": 2056,
+        "percent_patients": 3.501945525291829,
+        "denominator_images": 33126,
+        "percent_images": 3.260278934975548,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 16,
+        "n_patients": 41,
+        "n_images_in_bin": 656,
+        "denominator_patients": 2056,
+        "percent_patients": 1.9941634241245136,
+        "denominator_images": 33126,
+        "percent_images": 1.980317575318481,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 17,
+        "n_patients": 50,
+        "n_images_in_bin": 850,
+        "denominator_patients": 2056,
+        "percent_patients": 2.431906614785992,
+        "denominator_images": 33126,
+        "percent_images": 2.565960272897422,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 18,
+        "n_patients": 32,
+        "n_images_in_bin": 576,
+        "denominator_patients": 2056,
+        "percent_patients": 1.556420233463035,
+        "denominator_images": 33126,
+        "percent_images": 1.7388154319869589,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 19,
+        "n_patients": 46,
+        "n_images_in_bin": 874,
+        "denominator_patients": 2056,
+        "percent_patients": 2.237354085603113,
+        "denominator_images": 33126,
+        "percent_images": 2.6384109158968787,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 20,
+        "n_patients": 44,
+        "n_images_in_bin": 880,
+        "denominator_patients": 2056,
+        "percent_patients": 2.140077821011673,
+        "denominator_images": 33126,
+        "percent_images": 2.6565235766467428,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 21,
+        "n_patients": 42,
+        "n_images_in_bin": 882,
+        "denominator_patients": 2056,
+        "percent_patients": 2.0428015564202333,
+        "denominator_images": 33126,
+        "percent_images": 2.662561130230031,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 22,
+        "n_patients": 43,
+        "n_images_in_bin": 946,
+        "denominator_patients": 2056,
+        "percent_patients": 2.0914396887159534,
+        "denominator_images": 33126,
+        "percent_images": 2.8557628448952483,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 23,
+        "n_patients": 44,
+        "n_images_in_bin": 1012,
+        "denominator_patients": 2056,
+        "percent_patients": 2.140077821011673,
+        "denominator_images": 33126,
+        "percent_images": 3.0550021131437544,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 24,
+        "n_patients": 24,
+        "n_images_in_bin": 576,
+        "denominator_patients": 2056,
+        "percent_patients": 1.1673151750972763,
+        "denominator_images": 33126,
+        "percent_images": 1.7388154319869589,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 25,
+        "n_patients": 30,
+        "n_images_in_bin": 750,
+        "denominator_patients": 2056,
+        "percent_patients": 1.4591439688715953,
+        "denominator_images": 33126,
+        "percent_images": 2.2640825937330193,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 26,
+        "n_patients": 20,
+        "n_images_in_bin": 520,
+        "denominator_patients": 2056,
+        "percent_patients": 0.9727626459143969,
+        "denominator_images": 33126,
+        "percent_images": 1.5697639316548935,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 27,
+        "n_patients": 20,
+        "n_images_in_bin": 540,
+        "denominator_patients": 2056,
+        "percent_patients": 0.9727626459143969,
+        "denominator_images": 33126,
+        "percent_images": 1.630139467487774,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 28,
+        "n_patients": 19,
+        "n_images_in_bin": 532,
+        "denominator_patients": 2056,
+        "percent_patients": 0.9241245136186771,
+        "denominator_images": 33126,
+        "percent_images": 1.6059892531546218,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 29,
+        "n_patients": 27,
+        "n_images_in_bin": 783,
+        "denominator_patients": 2056,
+        "percent_patients": 1.3132295719844358,
+        "denominator_images": 33126,
+        "percent_images": 2.363702227857272,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 30,
+        "n_patients": 21,
+        "n_images_in_bin": 630,
+        "denominator_patients": 2056,
+        "percent_patients": 1.0214007782101167,
+        "denominator_images": 33126,
+        "percent_images": 1.9018293787357363,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 31,
+        "n_patients": 11,
+        "n_images_in_bin": 341,
+        "denominator_patients": 2056,
+        "percent_patients": 0.5350194552529183,
+        "denominator_images": 33126,
+        "percent_images": 1.0294028859506128,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 32,
+        "n_patients": 13,
+        "n_images_in_bin": 416,
+        "denominator_patients": 2056,
+        "percent_patients": 0.632295719844358,
+        "denominator_images": 33126,
+        "percent_images": 1.2558111453239147,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 33,
+        "n_patients": 13,
+        "n_images_in_bin": 429,
+        "denominator_patients": 2056,
+        "percent_patients": 0.632295719844358,
+        "denominator_images": 33126,
+        "percent_images": 1.2950552436152871,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 34,
+        "n_patients": 20,
+        "n_images_in_bin": 680,
+        "denominator_patients": 2056,
+        "percent_patients": 0.9727626459143969,
+        "denominator_images": 33126,
+        "percent_images": 2.0527682183179374,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 35,
+        "n_patients": 19,
+        "n_images_in_bin": 665,
+        "denominator_patients": 2056,
+        "percent_patients": 0.9241245136186771,
+        "denominator_images": 33126,
+        "percent_images": 2.0074865664432773,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 36,
+        "n_patients": 11,
+        "n_images_in_bin": 396,
+        "denominator_patients": 2056,
+        "percent_patients": 0.5350194552529183,
+        "denominator_images": 33126,
+        "percent_images": 1.1954356094910343,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 37,
+        "n_patients": 15,
+        "n_images_in_bin": 555,
+        "denominator_patients": 2056,
+        "percent_patients": 0.7295719844357976,
+        "denominator_images": 33126,
+        "percent_images": 1.6754211193624344,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 38,
+        "n_patients": 18,
+        "n_images_in_bin": 684,
+        "denominator_patients": 2056,
+        "percent_patients": 0.8754863813229572,
+        "denominator_images": 33126,
+        "percent_images": 2.0648433254845138,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 39,
+        "n_patients": 7,
+        "n_images_in_bin": 273,
+        "denominator_patients": 2056,
+        "percent_patients": 0.3404669260700389,
+        "denominator_images": 33126,
+        "percent_images": 0.8241260641188191,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 40,
+        "n_patients": 11,
+        "n_images_in_bin": 440,
+        "denominator_patients": 2056,
+        "percent_patients": 0.5350194552529183,
+        "denominator_images": 33126,
+        "percent_images": 1.3282617883233714,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 41,
+        "n_patients": 9,
+        "n_images_in_bin": 369,
+        "denominator_patients": 2056,
+        "percent_patients": 0.4377431906614786,
+        "denominator_images": 33126,
+        "percent_images": 1.1139286361166456,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 42,
+        "n_patients": 14,
+        "n_images_in_bin": 588,
+        "denominator_patients": 2056,
+        "percent_patients": 0.6809338521400778,
+        "denominator_images": 33126,
+        "percent_images": 1.7750407534866872,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 43,
+        "n_patients": 4,
+        "n_images_in_bin": 172,
+        "denominator_patients": 2056,
+        "percent_patients": 0.19455252918287938,
+        "denominator_images": 33126,
+        "percent_images": 0.5192296081627724,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 44,
+        "n_patients": 7,
+        "n_images_in_bin": 308,
+        "denominator_patients": 2056,
+        "percent_patients": 0.3404669260700389,
+        "denominator_images": 33126,
+        "percent_images": 0.92978325182636,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 45,
+        "n_patients": 10,
+        "n_images_in_bin": 450,
+        "denominator_patients": 2056,
+        "percent_patients": 0.48638132295719844,
+        "denominator_images": 33126,
+        "percent_images": 1.3584495562398116,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 46,
+        "n_patients": 4,
+        "n_images_in_bin": 184,
+        "denominator_patients": 2056,
+        "percent_patients": 0.19455252918287938,
+        "denominator_images": 33126,
+        "percent_images": 0.5554549296625008,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 47,
+        "n_patients": 4,
+        "n_images_in_bin": 188,
+        "denominator_patients": 2056,
+        "percent_patients": 0.19455252918287938,
+        "denominator_images": 33126,
+        "percent_images": 0.5675300368290769,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 48,
+        "n_patients": 7,
+        "n_images_in_bin": 336,
+        "denominator_patients": 2056,
+        "percent_patients": 0.3404669260700389,
+        "denominator_images": 33126,
+        "percent_images": 1.0143090019923926,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 49,
+        "n_patients": 3,
+        "n_images_in_bin": 147,
+        "denominator_patients": 2056,
+        "percent_patients": 0.14591439688715954,
+        "denominator_images": 33126,
+        "percent_images": 0.4437601883716718,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 50,
+        "n_patients": 6,
+        "n_images_in_bin": 300,
+        "denominator_patients": 2056,
+        "percent_patients": 0.2918287937743191,
+        "denominator_images": 33126,
+        "percent_images": 0.9056330374932078,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 51,
+        "n_patients": 3,
+        "n_images_in_bin": 153,
+        "denominator_patients": 2056,
+        "percent_patients": 0.14591439688715954,
+        "denominator_images": 33126,
+        "percent_images": 0.461872849121536,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 52,
+        "n_patients": 8,
+        "n_images_in_bin": 416,
+        "denominator_patients": 2056,
+        "percent_patients": 0.38910505836575876,
+        "denominator_images": 33126,
+        "percent_images": 1.2558111453239147,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 53,
+        "n_patients": 3,
+        "n_images_in_bin": 159,
+        "denominator_patients": 2056,
+        "percent_patients": 0.14591439688715954,
+        "denominator_images": 33126,
+        "percent_images": 0.4799855098714001,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 54,
+        "n_patients": 3,
+        "n_images_in_bin": 162,
+        "denominator_patients": 2056,
+        "percent_patients": 0.14591439688715954,
+        "denominator_images": 33126,
+        "percent_images": 0.4890418402463322,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 55,
+        "n_patients": 2,
+        "n_images_in_bin": 110,
+        "denominator_patients": 2056,
+        "percent_patients": 0.09727626459143969,
+        "denominator_images": 33126,
+        "percent_images": 0.33206544708084285,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 56,
+        "n_patients": 1,
+        "n_images_in_bin": 56,
+        "denominator_patients": 2056,
+        "percent_patients": 0.048638132295719845,
+        "denominator_images": 33126,
+        "percent_images": 0.16905150033206545,
+        "candidate_same_size_exchange_stratum": false
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 58,
+        "n_patients": 3,
+        "n_images_in_bin": 174,
+        "denominator_patients": 2056,
+        "percent_patients": 0.14591439688715954,
+        "denominator_images": 33126,
+        "percent_images": 0.5252671617460605,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 59,
+        "n_patients": 3,
+        "n_images_in_bin": 177,
+        "denominator_patients": 2056,
+        "percent_patients": 0.14591439688715954,
+        "denominator_images": 33126,
+        "percent_images": 0.5343234921209926,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 60,
+        "n_patients": 2,
+        "n_images_in_bin": 120,
+        "denominator_patients": 2056,
+        "percent_patients": 0.09727626459143969,
+        "denominator_images": 33126,
+        "percent_images": 0.3622532149972831,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 61,
+        "n_patients": 1,
+        "n_images_in_bin": 61,
+        "denominator_patients": 2056,
+        "percent_patients": 0.048638132295719845,
+        "denominator_images": 33126,
+        "percent_images": 0.18414538429028557,
+        "candidate_same_size_exchange_stratum": false
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 63,
+        "n_patients": 1,
+        "n_images_in_bin": 63,
+        "denominator_patients": 2056,
+        "percent_patients": 0.048638132295719845,
+        "denominator_images": 33126,
+        "percent_images": 0.19018293787357363,
+        "candidate_same_size_exchange_stratum": false
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 64,
+        "n_patients": 2,
+        "n_images_in_bin": 128,
+        "denominator_patients": 2056,
+        "percent_patients": 0.09727626459143969,
+        "denominator_images": 33126,
+        "percent_images": 0.3864034293304353,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 65,
+        "n_patients": 1,
+        "n_images_in_bin": 65,
+        "denominator_patients": 2056,
+        "percent_patients": 0.048638132295719845,
+        "denominator_images": 33126,
+        "percent_images": 0.19622049145686168,
+        "candidate_same_size_exchange_stratum": false
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 66,
+        "n_patients": 2,
+        "n_images_in_bin": 132,
+        "denominator_patients": 2056,
+        "percent_patients": 0.09727626459143969,
+        "denominator_images": 33126,
+        "percent_images": 0.3984785364970114,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 67,
+        "n_patients": 1,
+        "n_images_in_bin": 67,
+        "denominator_patients": 2056,
+        "percent_patients": 0.048638132295719845,
+        "denominator_images": 33126,
+        "percent_images": 0.20225804504014974,
+        "candidate_same_size_exchange_stratum": false
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 70,
+        "n_patients": 3,
+        "n_images_in_bin": 210,
+        "denominator_patients": 2056,
+        "percent_patients": 0.14591439688715954,
+        "denominator_images": 33126,
+        "percent_images": 0.6339431262452454,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 71,
+        "n_patients": 2,
+        "n_images_in_bin": 142,
+        "denominator_patients": 2056,
+        "percent_patients": 0.09727626459143969,
+        "denominator_images": 33126,
+        "percent_images": 0.42866630441345166,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 72,
+        "n_patients": 2,
+        "n_images_in_bin": 144,
+        "denominator_patients": 2056,
+        "percent_patients": 0.09727626459143969,
+        "denominator_images": 33126,
+        "percent_images": 0.4347038579967397,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 73,
+        "n_patients": 1,
+        "n_images_in_bin": 73,
+        "denominator_patients": 2056,
+        "percent_patients": 0.048638132295719845,
+        "denominator_images": 33126,
+        "percent_images": 0.2203707057900139,
+        "candidate_same_size_exchange_stratum": false
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 74,
+        "n_patients": 2,
+        "n_images_in_bin": 148,
+        "denominator_patients": 2056,
+        "percent_patients": 0.09727626459143969,
+        "denominator_images": 33126,
+        "percent_images": 0.44677896516331583,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 76,
+        "n_patients": 1,
+        "n_images_in_bin": 76,
+        "denominator_patients": 2056,
+        "percent_patients": 0.048638132295719845,
+        "denominator_images": 33126,
+        "percent_images": 0.22942703616494597,
+        "candidate_same_size_exchange_stratum": false
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 78,
+        "n_patients": 1,
+        "n_images_in_bin": 78,
+        "denominator_patients": 2056,
+        "percent_patients": 0.048638132295719845,
+        "denominator_images": 33126,
+        "percent_images": 0.235464589748234,
+        "candidate_same_size_exchange_stratum": false
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 83,
+        "n_patients": 1,
+        "n_images_in_bin": 83,
+        "denominator_patients": 2056,
+        "percent_patients": 0.048638132295719845,
+        "denominator_images": 33126,
+        "percent_images": 0.2505584737064541,
+        "candidate_same_size_exchange_stratum": false
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 84,
+        "n_patients": 1,
+        "n_images_in_bin": 84,
+        "denominator_patients": 2056,
+        "percent_patients": 0.048638132295719845,
+        "denominator_images": 33126,
+        "percent_images": 0.25357725049809815,
+        "candidate_same_size_exchange_stratum": false
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 85,
+        "n_patients": 1,
+        "n_images_in_bin": 85,
+        "denominator_patients": 2056,
+        "percent_patients": 0.048638132295719845,
+        "denominator_images": 33126,
+        "percent_images": 0.2565960272897422,
+        "candidate_same_size_exchange_stratum": false
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 87,
+        "n_patients": 1,
+        "n_images_in_bin": 87,
+        "denominator_patients": 2056,
+        "percent_patients": 0.048638132295719845,
+        "denominator_images": 33126,
+        "percent_images": 0.26263358087303024,
+        "candidate_same_size_exchange_stratum": false
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 91,
+        "n_patients": 1,
+        "n_images_in_bin": 91,
+        "denominator_patients": 2056,
+        "percent_patients": 0.048638132295719845,
+        "denominator_images": 33126,
+        "percent_images": 0.27470868803960635,
+        "candidate_same_size_exchange_stratum": false
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 92,
+        "n_patients": 2,
+        "n_images_in_bin": 184,
+        "denominator_patients": 2056,
+        "percent_patients": 0.09727626459143969,
+        "denominator_images": 33126,
+        "percent_images": 0.5554549296625008,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 98,
+        "n_patients": 1,
+        "n_images_in_bin": 98,
+        "denominator_patients": 2056,
+        "percent_patients": 0.048638132295719845,
+        "denominator_images": 33126,
+        "percent_images": 0.29584012558111455,
+        "candidate_same_size_exchange_stratum": false
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 100,
+        "n_patients": 1,
+        "n_images_in_bin": 100,
+        "denominator_patients": 2056,
+        "percent_patients": 0.048638132295719845,
+        "denominator_images": 33126,
+        "percent_images": 0.30187767916440256,
+        "candidate_same_size_exchange_stratum": false
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 101,
+        "n_patients": 1,
+        "n_images_in_bin": 101,
+        "denominator_patients": 2056,
+        "percent_patients": 0.048638132295719845,
+        "denominator_images": 33126,
+        "percent_images": 0.3048964559560466,
+        "candidate_same_size_exchange_stratum": false
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 102,
+        "n_patients": 5,
+        "n_images_in_bin": 510,
+        "denominator_patients": 2056,
+        "percent_patients": 0.24319066147859922,
+        "denominator_images": 33126,
+        "percent_images": 1.539576163738453,
+        "candidate_same_size_exchange_stratum": true
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 104,
+        "n_patients": 1,
+        "n_images_in_bin": 104,
+        "denominator_patients": 2056,
+        "percent_patients": 0.048638132295719845,
+        "denominator_images": 33126,
+        "percent_images": 0.3139527863309787,
+        "candidate_same_size_exchange_stratum": false
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 114,
+        "n_patients": 1,
+        "n_images_in_bin": 114,
+        "denominator_patients": 2056,
+        "percent_patients": 0.048638132295719845,
+        "denominator_images": 33126,
+        "percent_images": 0.34414055424741896,
+        "candidate_same_size_exchange_stratum": false
+      },
+      {
+        "record_type": "group_size_frequency",
+        "field": "patient_block_size",
+        "n_images_per_patient": 115,
+        "n_patients": 4,
+        "n_images_in_bin": 460,
+        "denominator_patients": 2056,
+        "percent_patients": 0.19455252918287938,
+        "denominator_images": 33126,
+        "percent_images": 1.388637324156252,
+        "candidate_same_size_exchange_stratum": true
+      }
+    ],
+    "within_patient_consistency": {
+      "age": [
+        {
+          "unique_valid_values": "0",
+          "missing_pattern": "all_missing",
+          "n_patients": 3,
+          "n_images": 68,
+          "denominator_patients": 2056,
+          "percent_patients": 0.14591439688715954
+        },
+        {
+          "unique_valid_values": "0",
+          "missing_pattern": "values_no_missing",
+          "n_patients": 0,
+          "n_images": 0,
+          "denominator_patients": 2056,
+          "percent_patients": 0.0
+        },
+        {
+          "unique_valid_values": "0",
+          "missing_pattern": "values_plus_missing",
+          "n_patients": 0,
+          "n_images": 0,
+          "denominator_patients": 2056,
+          "percent_patients": 0.0
+        },
+        {
+          "unique_valid_values": "1",
+          "missing_pattern": "all_missing",
+          "n_patients": 0,
+          "n_images": 0,
+          "denominator_patients": 2056,
+          "percent_patients": 0.0
+        },
+        {
+          "unique_valid_values": "1",
+          "missing_pattern": "values_no_missing",
+          "n_patients": 1056,
+          "n_images": 16448,
+          "denominator_patients": 2056,
+          "percent_patients": 51.36186770428016
+        },
+        {
+          "unique_valid_values": "1",
+          "missing_pattern": "values_plus_missing",
+          "n_patients": 0,
+          "n_images": 0,
+          "denominator_patients": 2056,
+          "percent_patients": 0.0
+        },
+        {
+          "unique_valid_values": ">1",
+          "missing_pattern": "all_missing",
+          "n_patients": 0,
+          "n_images": 0,
+          "denominator_patients": 2056,
+          "percent_patients": 0.0
+        },
+        {
+          "unique_valid_values": ">1",
+          "missing_pattern": "values_no_missing",
+          "n_patients": 997,
+          "n_images": 16610,
+          "denominator_patients": 2056,
+          "percent_patients": 48.492217898832685
+        },
+        {
+          "unique_valid_values": ">1",
+          "missing_pattern": "values_plus_missing",
+          "n_patients": 0,
+          "n_images": 0,
+          "denominator_patients": 2056,
+          "percent_patients": 0.0
+        }
+      ],
+      "sex": [
+        {
+          "unique_valid_values": "0",
+          "missing_pattern": "all_missing",
+          "n_patients": 2,
+          "n_images": 65,
+          "denominator_patients": 2056,
+          "percent_patients": 0.09727626459143969
+        },
+        {
+          "unique_valid_values": "0",
+          "missing_pattern": "values_no_missing",
+          "n_patients": 0,
+          "n_images": 0,
+          "denominator_patients": 2056,
+          "percent_patients": 0.0
+        },
+        {
+          "unique_valid_values": "0",
+          "missing_pattern": "values_plus_missing",
+          "n_patients": 0,
+          "n_images": 0,
+          "denominator_patients": 2056,
+          "percent_patients": 0.0
+        },
+        {
+          "unique_valid_values": "1",
+          "missing_pattern": "all_missing",
+          "n_patients": 0,
+          "n_images": 0,
+          "denominator_patients": 2056,
+          "percent_patients": 0.0
+        },
+        {
+          "unique_valid_values": "1",
+          "missing_pattern": "values_no_missing",
+          "n_patients": 2054,
+          "n_images": 33061,
+          "denominator_patients": 2056,
+          "percent_patients": 99.90272373540856
+        },
+        {
+          "unique_valid_values": "1",
+          "missing_pattern": "values_plus_missing",
+          "n_patients": 0,
+          "n_images": 0,
+          "denominator_patients": 2056,
+          "percent_patients": 0.0
+        },
+        {
+          "unique_valid_values": ">1",
+          "missing_pattern": "all_missing",
+          "n_patients": 0,
+          "n_images": 0,
+          "denominator_patients": 2056,
+          "percent_patients": 0.0
+        },
+        {
+          "unique_valid_values": ">1",
+          "missing_pattern": "values_no_missing",
+          "n_patients": 0,
+          "n_images": 0,
+          "denominator_patients": 2056,
+          "percent_patients": 0.0
+        },
+        {
+          "unique_valid_values": ">1",
+          "missing_pattern": "values_plus_missing",
+          "n_patients": 0,
+          "n_images": 0,
+          "denominator_patients": 2056,
+          "percent_patients": 0.0
+        }
+      ],
+      "site_raw": [
+        {
+          "unique_valid_values": "0",
+          "missing_pattern": "all_missing",
+          "n_patients": 2,
+          "n_images": 132,
+          "denominator_patients": 2056,
+          "percent_patients": 0.09727626459143969
+        },
+        {
+          "unique_valid_values": "0",
+          "missing_pattern": "values_no_missing",
+          "n_patients": 0,
+          "n_images": 0,
+          "denominator_patients": 2056,
+          "percent_patients": 0.0
+        },
+        {
+          "unique_valid_values": "0",
+          "missing_pattern": "values_plus_missing",
+          "n_patients": 0,
+          "n_images": 0,
+          "denominator_patients": 2056,
+          "percent_patients": 0.0
+        },
+        {
+          "unique_valid_values": "1",
+          "missing_pattern": "all_missing",
+          "n_patients": 0,
+          "n_images": 0,
+          "denominator_patients": 2056,
+          "percent_patients": 0.0
+        },
+        {
+          "unique_valid_values": "1",
+          "missing_pattern": "values_no_missing",
+          "n_patients": 152,
+          "n_images": 609,
+          "denominator_patients": 2056,
+          "percent_patients": 7.392996108949417
+        },
+        {
+          "unique_valid_values": "1",
+          "missing_pattern": "values_plus_missing",
+          "n_patients": 5,
+          "n_images": 34,
+          "denominator_patients": 2056,
+          "percent_patients": 0.24319066147859922
+        },
+        {
+          "unique_valid_values": ">1",
+          "missing_pattern": "all_missing",
+          "n_patients": 0,
+          "n_images": 0,
+          "denominator_patients": 2056,
+          "percent_patients": 0.0
+        },
+        {
+          "unique_valid_values": ">1",
+          "missing_pattern": "values_no_missing",
+          "n_patients": 1684,
+          "n_images": 26574,
+          "denominator_patients": 2056,
+          "percent_patients": 81.90661478599222
+        },
+        {
+          "unique_valid_values": ">1",
+          "missing_pattern": "values_plus_missing",
+          "n_patients": 213,
+          "n_images": 5777,
+          "denominator_patients": 2056,
+          "percent_patients": 10.359922178988327
+        }
+      ],
+      "site_encoded": [
+        {
+          "unique_valid_values": "0",
+          "missing_pattern": "all_missing",
+          "n_patients": 2,
+          "n_images": 132,
+          "denominator_patients": 2056,
+          "percent_patients": 0.09727626459143969
+        },
+        {
+          "unique_valid_values": "0",
+          "missing_pattern": "values_no_missing",
+          "n_patients": 0,
+          "n_images": 0,
+          "denominator_patients": 2056,
+          "percent_patients": 0.0
+        },
+        {
+          "unique_valid_values": "0",
+          "missing_pattern": "values_plus_missing",
+          "n_patients": 0,
+          "n_images": 0,
+          "denominator_patients": 2056,
+          "percent_patients": 0.0
+        },
+        {
+          "unique_valid_values": "1",
+          "missing_pattern": "all_missing",
+          "n_patients": 0,
+          "n_images": 0,
+          "denominator_patients": 2056,
+          "percent_patients": 0.0
+        },
+        {
+          "unique_valid_values": "1",
+          "missing_pattern": "values_no_missing",
+          "n_patients": 153,
+          "n_images": 612,
+          "denominator_patients": 2056,
+          "percent_patients": 7.441634241245136
+        },
+        {
+          "unique_valid_values": "1",
+          "missing_pattern": "values_plus_missing",
+          "n_patients": 5,
+          "n_images": 34,
+          "denominator_patients": 2056,
+          "percent_patients": 0.24319066147859922
+        },
+        {
+          "unique_valid_values": ">1",
+          "missing_pattern": "all_missing",
+          "n_patients": 0,
+          "n_images": 0,
+          "denominator_patients": 2056,
+          "percent_patients": 0.0
+        },
+        {
+          "unique_valid_values": ">1",
+          "missing_pattern": "values_no_missing",
+          "n_patients": 1683,
+          "n_images": 26571,
+          "denominator_patients": 2056,
+          "percent_patients": 81.8579766536965
+        },
+        {
+          "unique_valid_values": ">1",
+          "missing_pattern": "values_plus_missing",
+          "n_patients": 213,
+          "n_images": 5777,
+          "denominator_patients": 2056,
+          "percent_patients": 10.359922178988327
+        }
+      ]
+    },
+    "uniquely_determined_patient_fields": {
+      "age": {
+        "eligible_patients": 1056,
+        "all_patients": 2056,
+        "percent_eligible": 51.36186770428016,
+        "definition": "Exactly one valid value AND no missing rows within patient; mixed missingness excluded, not resolved",
+        "age_years": {
+          "n": 1056,
+          "min": 15.0,
+          "q1": 45.0,
+          "median": 55.0,
+          "q3": 65.0,
+          "max": 90.0
+        }
+      },
+      "sex": {
+        "eligible_patients": 2054,
+        "all_patients": 2056,
+        "percent_eligible": 99.90272373540856,
+        "definition": "Exactly one valid value AND no missing rows within patient; mixed missingness excluded, not resolved",
+        "sex_counts": {
+          "female": 977,
+          "male": 1077
+        }
+      }
+    },
+    "within_patient_full_vector_frequency": [
+      {
+        "n_unique_full_vectors_per_patient": 1,
+        "n_patients": 116,
+        "n_images": 544,
+        "denominator_patients": 2056,
+        "percent_patients": 5.642023346303502
+      },
+      {
+        "n_unique_full_vectors_per_patient": 2,
+        "n_patients": 328,
+        "n_images": 1650,
+        "denominator_patients": 2056,
+        "percent_patients": 15.95330739299611
+      },
+      {
+        "n_unique_full_vectors_per_patient": 3,
+        "n_patients": 460,
+        "n_images": 5162,
+        "denominator_patients": 2056,
+        "percent_patients": 22.373540856031127
+      },
+      {
+        "n_unique_full_vectors_per_patient": 4,
+        "n_patients": 519,
+        "n_images": 11064,
+        "denominator_patients": 2056,
+        "percent_patients": 25.2431906614786
+      },
+      {
+        "n_unique_full_vectors_per_patient": 5,
+        "n_patients": 260,
+        "n_images": 4970,
+        "denominator_patients": 2056,
+        "percent_patients": 12.645914396887159
+      },
+      {
+        "n_unique_full_vectors_per_patient": 6,
+        "n_patients": 119,
+        "n_images": 2492,
+        "denominator_patients": 2056,
+        "percent_patients": 5.787937743190661
+      },
+      {
+        "n_unique_full_vectors_per_patient": 7,
+        "n_patients": 67,
+        "n_images": 1551,
+        "denominator_patients": 2056,
+        "percent_patients": 3.2587548638132295
+      },
+      {
+        "n_unique_full_vectors_per_patient": 8,
+        "n_patients": 38,
+        "n_images": 918,
+        "denominator_patients": 2056,
+        "percent_patients": 1.8482490272373542
+      },
+      {
+        "n_unique_full_vectors_per_patient": 9,
+        "n_patients": 35,
+        "n_images": 972,
+        "denominator_patients": 2056,
+        "percent_patients": 1.7023346303501945
+      },
+      {
+        "n_unique_full_vectors_per_patient": 10,
+        "n_patients": 34,
+        "n_images": 830,
+        "denominator_patients": 2056,
+        "percent_patients": 1.6536964980544746
+      },
+      {
+        "n_unique_full_vectors_per_patient": 11,
+        "n_patients": 18,
+        "n_images": 524,
+        "denominator_patients": 2056,
+        "percent_patients": 0.8754863813229572
+      },
+      {
+        "n_unique_full_vectors_per_patient": 12,
+        "n_patients": 19,
+        "n_images": 644,
+        "denominator_patients": 2056,
+        "percent_patients": 0.9241245136186771
+      },
+      {
+        "n_unique_full_vectors_per_patient": 13,
+        "n_patients": 19,
+        "n_images": 727,
+        "denominator_patients": 2056,
+        "percent_patients": 0.9241245136186771
+      },
+      {
+        "n_unique_full_vectors_per_patient": 14,
+        "n_patients": 16,
+        "n_images": 644,
+        "denominator_patients": 2056,
+        "percent_patients": 0.7782101167315175
+      },
+      {
+        "n_unique_full_vectors_per_patient": 15,
+        "n_patients": 3,
+        "n_images": 122,
+        "denominator_patients": 2056,
+        "percent_patients": 0.14591439688715954
+      },
+      {
+        "n_unique_full_vectors_per_patient": 16,
+        "n_patients": 3,
+        "n_images": 204,
+        "denominator_patients": 2056,
+        "percent_patients": 0.14591439688715954
+      },
+      {
+        "n_unique_full_vectors_per_patient": 17,
+        "n_patients": 2,
+        "n_images": 108,
+        "denominator_patients": 2056,
+        "percent_patients": 0.09727626459143969
+      }
+    ],
+    "cross_patient_repeated_vectors": {
+      "n_distinct_full_vectors": 167,
+      "n_vectors_shared_across_patients": 159,
+      "percent_vectors_shared": 95.20958083832335,
+      "n_images_with_shared_vectors": 33107,
+      "percent_images_with_shared_vectors": 99.94264324095876,
+      "n_patients_with_any_shared_vector": 2055,
+      "percent_patients_with_any_shared_vector": 99.95136186770428,
+      "n_unique_patient_vector_links": 8694,
+      "n_links_to_shared_vectors": 8686,
+      "percent_links_to_shared_vectors": 99.90798251667817,
+      "interpretation": "Shared vector values can make a changed donor yield unchanged input; no donor mapping created"
+    },
+    "cross_patient_vector_frequency": [
+      {
+        "n_patients_per_vector": 1,
+        "n_images_per_vector": 1,
+        "n_distinct_vectors": 3,
+        "n_patient_vector_links": 3,
+        "n_images_in_bin": 3
+      },
+      {
+        "n_patients_per_vector": 1,
+        "n_images_per_vector": 2,
+        "n_distinct_vectors": 4,
+        "n_patient_vector_links": 4,
+        "n_images_in_bin": 8
+      },
+      {
+        "n_patients_per_vector": 1,
+        "n_images_per_vector": 8,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 1,
+        "n_images_in_bin": 8
+      },
+      {
+        "n_patients_per_vector": 2,
+        "n_images_per_vector": 2,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 2,
+        "n_images_in_bin": 2
+      },
+      {
+        "n_patients_per_vector": 2,
+        "n_images_per_vector": 3,
+        "n_distinct_vectors": 3,
+        "n_patient_vector_links": 6,
+        "n_images_in_bin": 9
+      },
+      {
+        "n_patients_per_vector": 2,
+        "n_images_per_vector": 4,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 2,
+        "n_images_in_bin": 4
+      },
+      {
+        "n_patients_per_vector": 2,
+        "n_images_per_vector": 18,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 2,
+        "n_images_in_bin": 18
+      },
+      {
+        "n_patients_per_vector": 2,
+        "n_images_per_vector": 19,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 2,
+        "n_images_in_bin": 19
+      },
+      {
+        "n_patients_per_vector": 2,
+        "n_images_per_vector": 20,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 2,
+        "n_images_in_bin": 20
+      },
+      {
+        "n_patients_per_vector": 3,
+        "n_images_per_vector": 3,
+        "n_distinct_vectors": 2,
+        "n_patient_vector_links": 6,
+        "n_images_in_bin": 6
+      },
+      {
+        "n_patients_per_vector": 3,
+        "n_images_per_vector": 4,
+        "n_distinct_vectors": 4,
+        "n_patient_vector_links": 12,
+        "n_images_in_bin": 16
+      },
+      {
+        "n_patients_per_vector": 3,
+        "n_images_per_vector": 5,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 3,
+        "n_images_in_bin": 5
+      },
+      {
+        "n_patients_per_vector": 3,
+        "n_images_per_vector": 6,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 3,
+        "n_images_in_bin": 6
+      },
+      {
+        "n_patients_per_vector": 3,
+        "n_images_per_vector": 12,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 3,
+        "n_images_in_bin": 12
+      },
+      {
+        "n_patients_per_vector": 4,
+        "n_images_per_vector": 9,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 4,
+        "n_images_in_bin": 9
+      },
+      {
+        "n_patients_per_vector": 5,
+        "n_images_per_vector": 5,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 5,
+        "n_images_in_bin": 5
+      },
+      {
+        "n_patients_per_vector": 5,
+        "n_images_per_vector": 10,
+        "n_distinct_vectors": 2,
+        "n_patient_vector_links": 10,
+        "n_images_in_bin": 20
+      },
+      {
+        "n_patients_per_vector": 6,
+        "n_images_per_vector": 8,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 6,
+        "n_images_in_bin": 8
+      },
+      {
+        "n_patients_per_vector": 6,
+        "n_images_per_vector": 9,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 6,
+        "n_images_in_bin": 9
+      },
+      {
+        "n_patients_per_vector": 6,
+        "n_images_per_vector": 13,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 6,
+        "n_images_in_bin": 13
+      },
+      {
+        "n_patients_per_vector": 6,
+        "n_images_per_vector": 18,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 6,
+        "n_images_in_bin": 18
+      },
+      {
+        "n_patients_per_vector": 6,
+        "n_images_per_vector": 19,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 6,
+        "n_images_in_bin": 19
+      },
+      {
+        "n_patients_per_vector": 7,
+        "n_images_per_vector": 9,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 7,
+        "n_images_in_bin": 9
+      },
+      {
+        "n_patients_per_vector": 7,
+        "n_images_per_vector": 12,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 7,
+        "n_images_in_bin": 12
+      },
+      {
+        "n_patients_per_vector": 7,
+        "n_images_per_vector": 15,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 7,
+        "n_images_in_bin": 15
+      },
+      {
+        "n_patients_per_vector": 7,
+        "n_images_per_vector": 19,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 7,
+        "n_images_in_bin": 19
+      },
+      {
+        "n_patients_per_vector": 7,
+        "n_images_per_vector": 25,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 7,
+        "n_images_in_bin": 25
+      },
+      {
+        "n_patients_per_vector": 7,
+        "n_images_per_vector": 32,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 7,
+        "n_images_in_bin": 32
+      },
+      {
+        "n_patients_per_vector": 8,
+        "n_images_per_vector": 9,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 8,
+        "n_images_in_bin": 9
+      },
+      {
+        "n_patients_per_vector": 8,
+        "n_images_per_vector": 12,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 8,
+        "n_images_in_bin": 12
+      },
+      {
+        "n_patients_per_vector": 8,
+        "n_images_per_vector": 16,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 8,
+        "n_images_in_bin": 16
+      },
+      {
+        "n_patients_per_vector": 8,
+        "n_images_per_vector": 36,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 8,
+        "n_images_in_bin": 36
+      },
+      {
+        "n_patients_per_vector": 9,
+        "n_images_per_vector": 12,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 9,
+        "n_images_in_bin": 12
+      },
+      {
+        "n_patients_per_vector": 9,
+        "n_images_per_vector": 15,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 9,
+        "n_images_in_bin": 15
+      },
+      {
+        "n_patients_per_vector": 10,
+        "n_images_per_vector": 16,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 10,
+        "n_images_in_bin": 16
+      },
+      {
+        "n_patients_per_vector": 10,
+        "n_images_per_vector": 22,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 10,
+        "n_images_in_bin": 22
+      },
+      {
+        "n_patients_per_vector": 10,
+        "n_images_per_vector": 147,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 10,
+        "n_images_in_bin": 147
+      },
+      {
+        "n_patients_per_vector": 11,
+        "n_images_per_vector": 13,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 11,
+        "n_images_in_bin": 13
+      },
+      {
+        "n_patients_per_vector": 11,
+        "n_images_per_vector": 14,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 11,
+        "n_images_in_bin": 14
+      },
+      {
+        "n_patients_per_vector": 12,
+        "n_images_per_vector": 16,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 12,
+        "n_images_in_bin": 16
+      },
+      {
+        "n_patients_per_vector": 12,
+        "n_images_per_vector": 18,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 12,
+        "n_images_in_bin": 18
+      },
+      {
+        "n_patients_per_vector": 12,
+        "n_images_per_vector": 19,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 12,
+        "n_images_in_bin": 19
+      },
+      {
+        "n_patients_per_vector": 12,
+        "n_images_per_vector": 23,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 12,
+        "n_images_in_bin": 23
+      },
+      {
+        "n_patients_per_vector": 13,
+        "n_images_per_vector": 22,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 13,
+        "n_images_in_bin": 22
+      },
+      {
+        "n_patients_per_vector": 14,
+        "n_images_per_vector": 18,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 14,
+        "n_images_in_bin": 18
+      },
+      {
+        "n_patients_per_vector": 14,
+        "n_images_per_vector": 21,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 14,
+        "n_images_in_bin": 21
+      },
+      {
+        "n_patients_per_vector": 14,
+        "n_images_per_vector": 29,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 14,
+        "n_images_in_bin": 29
+      },
+      {
+        "n_patients_per_vector": 14,
+        "n_images_per_vector": 32,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 14,
+        "n_images_in_bin": 32
+      },
+      {
+        "n_patients_per_vector": 14,
+        "n_images_per_vector": 33,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 14,
+        "n_images_in_bin": 33
+      },
+      {
+        "n_patients_per_vector": 14,
+        "n_images_per_vector": 37,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 14,
+        "n_images_in_bin": 37
+      },
+      {
+        "n_patients_per_vector": 15,
+        "n_images_per_vector": 20,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 15,
+        "n_images_in_bin": 20
+      },
+      {
+        "n_patients_per_vector": 15,
+        "n_images_per_vector": 22,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 15,
+        "n_images_in_bin": 22
+      },
+      {
+        "n_patients_per_vector": 15,
+        "n_images_per_vector": 54,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 15,
+        "n_images_in_bin": 54
+      },
+      {
+        "n_patients_per_vector": 15,
+        "n_images_per_vector": 77,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 15,
+        "n_images_in_bin": 77
+      },
+      {
+        "n_patients_per_vector": 16,
+        "n_images_per_vector": 31,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 16,
+        "n_images_in_bin": 31
+      },
+      {
+        "n_patients_per_vector": 16,
+        "n_images_per_vector": 41,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 16,
+        "n_images_in_bin": 41
+      },
+      {
+        "n_patients_per_vector": 16,
+        "n_images_per_vector": 46,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 16,
+        "n_images_in_bin": 46
+      },
+      {
+        "n_patients_per_vector": 18,
+        "n_images_per_vector": 36,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 18,
+        "n_images_in_bin": 36
+      },
+      {
+        "n_patients_per_vector": 18,
+        "n_images_per_vector": 50,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 18,
+        "n_images_in_bin": 50
+      },
+      {
+        "n_patients_per_vector": 18,
+        "n_images_per_vector": 61,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 18,
+        "n_images_in_bin": 61
+      },
+      {
+        "n_patients_per_vector": 18,
+        "n_images_per_vector": 93,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 18,
+        "n_images_in_bin": 93
+      },
+      {
+        "n_patients_per_vector": 20,
+        "n_images_per_vector": 28,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 20,
+        "n_images_in_bin": 28
+      },
+      {
+        "n_patients_per_vector": 20,
+        "n_images_per_vector": 34,
+        "n_distinct_vectors": 2,
+        "n_patient_vector_links": 40,
+        "n_images_in_bin": 68
+      },
+      {
+        "n_patients_per_vector": 20,
+        "n_images_per_vector": 61,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 20,
+        "n_images_in_bin": 61
+      },
+      {
+        "n_patients_per_vector": 21,
+        "n_images_per_vector": 69,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 21,
+        "n_images_in_bin": 69
+      },
+      {
+        "n_patients_per_vector": 23,
+        "n_images_per_vector": 47,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 23,
+        "n_images_in_bin": 47
+      },
+      {
+        "n_patients_per_vector": 23,
+        "n_images_per_vector": 108,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 23,
+        "n_images_in_bin": 108
+      },
+      {
+        "n_patients_per_vector": 26,
+        "n_images_per_vector": 171,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 26,
+        "n_images_in_bin": 171
+      },
+      {
+        "n_patients_per_vector": 28,
+        "n_images_per_vector": 58,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 28,
+        "n_images_in_bin": 58
+      },
+      {
+        "n_patients_per_vector": 31,
+        "n_images_per_vector": 58,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 31,
+        "n_images_in_bin": 58
+      },
+      {
+        "n_patients_per_vector": 32,
+        "n_images_per_vector": 127,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 32,
+        "n_images_in_bin": 127
+      },
+      {
+        "n_patients_per_vector": 33,
+        "n_images_per_vector": 61,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 33,
+        "n_images_in_bin": 61
+      },
+      {
+        "n_patients_per_vector": 35,
+        "n_images_per_vector": 84,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 35,
+        "n_images_in_bin": 84
+      },
+      {
+        "n_patients_per_vector": 38,
+        "n_images_per_vector": 66,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 38,
+        "n_images_in_bin": 66
+      },
+      {
+        "n_patients_per_vector": 38,
+        "n_images_per_vector": 85,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 38,
+        "n_images_in_bin": 85
+      },
+      {
+        "n_patients_per_vector": 40,
+        "n_images_per_vector": 74,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 40,
+        "n_images_in_bin": 74
+      },
+      {
+        "n_patients_per_vector": 40,
+        "n_images_per_vector": 78,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 40,
+        "n_images_in_bin": 78
+      },
+      {
+        "n_patients_per_vector": 40,
+        "n_images_per_vector": 122,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 40,
+        "n_images_in_bin": 122
+      },
+      {
+        "n_patients_per_vector": 40,
+        "n_images_per_vector": 186,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 40,
+        "n_images_in_bin": 186
+      },
+      {
+        "n_patients_per_vector": 43,
+        "n_images_per_vector": 116,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 43,
+        "n_images_in_bin": 116
+      },
+      {
+        "n_patients_per_vector": 44,
+        "n_images_per_vector": 88,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 44,
+        "n_images_in_bin": 88
+      },
+      {
+        "n_patients_per_vector": 45,
+        "n_images_per_vector": 118,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 45,
+        "n_images_in_bin": 118
+      },
+      {
+        "n_patients_per_vector": 45,
+        "n_images_per_vector": 274,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 45,
+        "n_images_in_bin": 274
+      },
+      {
+        "n_patients_per_vector": 48,
+        "n_images_per_vector": 146,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 48,
+        "n_images_in_bin": 146
+      },
+      {
+        "n_patients_per_vector": 50,
+        "n_images_per_vector": 102,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 50,
+        "n_images_in_bin": 102
+      },
+      {
+        "n_patients_per_vector": 51,
+        "n_images_per_vector": 94,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 51,
+        "n_images_in_bin": 94
+      },
+      {
+        "n_patients_per_vector": 51,
+        "n_images_per_vector": 103,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 51,
+        "n_images_in_bin": 103
+      },
+      {
+        "n_patients_per_vector": 54,
+        "n_images_per_vector": 119,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 54,
+        "n_images_in_bin": 119
+      },
+      {
+        "n_patients_per_vector": 55,
+        "n_images_per_vector": 154,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 55,
+        "n_images_in_bin": 154
+      },
+      {
+        "n_patients_per_vector": 55,
+        "n_images_per_vector": 179,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 55,
+        "n_images_in_bin": 179
+      },
+      {
+        "n_patients_per_vector": 57,
+        "n_images_per_vector": 456,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 57,
+        "n_images_in_bin": 456
+      },
+      {
+        "n_patients_per_vector": 58,
+        "n_images_per_vector": 157,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 58,
+        "n_images_in_bin": 157
+      },
+      {
+        "n_patients_per_vector": 59,
+        "n_images_per_vector": 134,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 59,
+        "n_images_in_bin": 134
+      },
+      {
+        "n_patients_per_vector": 61,
+        "n_images_per_vector": 104,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 61,
+        "n_images_in_bin": 104
+      },
+      {
+        "n_patients_per_vector": 61,
+        "n_images_per_vector": 148,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 61,
+        "n_images_in_bin": 148
+      },
+      {
+        "n_patients_per_vector": 61,
+        "n_images_per_vector": 183,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 61,
+        "n_images_in_bin": 183
+      },
+      {
+        "n_patients_per_vector": 61,
+        "n_images_per_vector": 302,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 61,
+        "n_images_in_bin": 302
+      },
+      {
+        "n_patients_per_vector": 62,
+        "n_images_per_vector": 135,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 62,
+        "n_images_in_bin": 135
+      },
+      {
+        "n_patients_per_vector": 63,
+        "n_images_per_vector": 97,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 63,
+        "n_images_in_bin": 97
+      },
+      {
+        "n_patients_per_vector": 65,
+        "n_images_per_vector": 222,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 65,
+        "n_images_in_bin": 222
+      },
+      {
+        "n_patients_per_vector": 67,
+        "n_images_per_vector": 221,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 67,
+        "n_images_in_bin": 221
+      },
+      {
+        "n_patients_per_vector": 68,
+        "n_images_per_vector": 128,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 68,
+        "n_images_in_bin": 128
+      },
+      {
+        "n_patients_per_vector": 69,
+        "n_images_per_vector": 120,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 69,
+        "n_images_in_bin": 120
+      },
+      {
+        "n_patients_per_vector": 69,
+        "n_images_per_vector": 133,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 69,
+        "n_images_in_bin": 133
+      },
+      {
+        "n_patients_per_vector": 70,
+        "n_images_per_vector": 146,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 70,
+        "n_images_in_bin": 146
+      },
+      {
+        "n_patients_per_vector": 72,
+        "n_images_per_vector": 326,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 72,
+        "n_images_in_bin": 326
+      },
+      {
+        "n_patients_per_vector": 73,
+        "n_images_per_vector": 169,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 73,
+        "n_images_in_bin": 169
+      },
+      {
+        "n_patients_per_vector": 78,
+        "n_images_per_vector": 193,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 78,
+        "n_images_in_bin": 193
+      },
+      {
+        "n_patients_per_vector": 79,
+        "n_images_per_vector": 217,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 79,
+        "n_images_in_bin": 217
+      },
+      {
+        "n_patients_per_vector": 79,
+        "n_images_per_vector": 250,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 79,
+        "n_images_in_bin": 250
+      },
+      {
+        "n_patients_per_vector": 82,
+        "n_images_per_vector": 200,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 82,
+        "n_images_in_bin": 200
+      },
+      {
+        "n_patients_per_vector": 82,
+        "n_images_per_vector": 267,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 82,
+        "n_images_in_bin": 267
+      },
+      {
+        "n_patients_per_vector": 83,
+        "n_images_per_vector": 349,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 83,
+        "n_images_in_bin": 349
+      },
+      {
+        "n_patients_per_vector": 84,
+        "n_images_per_vector": 183,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 84,
+        "n_images_in_bin": 183
+      },
+      {
+        "n_patients_per_vector": 85,
+        "n_images_per_vector": 302,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 85,
+        "n_images_in_bin": 302
+      },
+      {
+        "n_patients_per_vector": 87,
+        "n_images_per_vector": 251,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 87,
+        "n_images_in_bin": 251
+      },
+      {
+        "n_patients_per_vector": 88,
+        "n_images_per_vector": 399,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 88,
+        "n_images_in_bin": 399
+      },
+      {
+        "n_patients_per_vector": 93,
+        "n_images_per_vector": 453,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 93,
+        "n_images_in_bin": 453
+      },
+      {
+        "n_patients_per_vector": 93,
+        "n_images_per_vector": 782,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 93,
+        "n_images_in_bin": 782
+      },
+      {
+        "n_patients_per_vector": 96,
+        "n_images_per_vector": 545,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 96,
+        "n_images_in_bin": 545
+      },
+      {
+        "n_patients_per_vector": 99,
+        "n_images_per_vector": 391,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 99,
+        "n_images_in_bin": 391
+      },
+      {
+        "n_patients_per_vector": 103,
+        "n_images_per_vector": 264,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 103,
+        "n_images_in_bin": 264
+      },
+      {
+        "n_patients_per_vector": 103,
+        "n_images_per_vector": 313,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 103,
+        "n_images_in_bin": 313
+      },
+      {
+        "n_patients_per_vector": 107,
+        "n_images_per_vector": 260,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 107,
+        "n_images_in_bin": 260
+      },
+      {
+        "n_patients_per_vector": 111,
+        "n_images_per_vector": 327,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 111,
+        "n_images_in_bin": 327
+      },
+      {
+        "n_patients_per_vector": 115,
+        "n_images_per_vector": 294,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 115,
+        "n_images_in_bin": 294
+      },
+      {
+        "n_patients_per_vector": 116,
+        "n_images_per_vector": 405,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 116,
+        "n_images_in_bin": 405
+      },
+      {
+        "n_patients_per_vector": 119,
+        "n_images_per_vector": 429,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 119,
+        "n_images_in_bin": 429
+      },
+      {
+        "n_patients_per_vector": 120,
+        "n_images_per_vector": 287,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 120,
+        "n_images_in_bin": 287
+      },
+      {
+        "n_patients_per_vector": 120,
+        "n_images_per_vector": 768,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 120,
+        "n_images_in_bin": 768
+      },
+      {
+        "n_patients_per_vector": 123,
+        "n_images_per_vector": 418,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 123,
+        "n_images_in_bin": 418
+      },
+      {
+        "n_patients_per_vector": 123,
+        "n_images_per_vector": 779,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 123,
+        "n_images_in_bin": 779
+      },
+      {
+        "n_patients_per_vector": 125,
+        "n_images_per_vector": 682,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 125,
+        "n_images_in_bin": 682
+      },
+      {
+        "n_patients_per_vector": 127,
+        "n_images_per_vector": 791,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 127,
+        "n_images_in_bin": 791
+      },
+      {
+        "n_patients_per_vector": 131,
+        "n_images_per_vector": 345,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 131,
+        "n_images_in_bin": 345
+      },
+      {
+        "n_patients_per_vector": 131,
+        "n_images_per_vector": 348,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 131,
+        "n_images_in_bin": 348
+      },
+      {
+        "n_patients_per_vector": 131,
+        "n_images_per_vector": 697,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 131,
+        "n_images_in_bin": 697
+      },
+      {
+        "n_patients_per_vector": 132,
+        "n_images_per_vector": 345,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 132,
+        "n_images_in_bin": 345
+      },
+      {
+        "n_patients_per_vector": 132,
+        "n_images_per_vector": 491,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 132,
+        "n_images_in_bin": 491
+      },
+      {
+        "n_patients_per_vector": 139,
+        "n_images_per_vector": 550,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 139,
+        "n_images_in_bin": 550
+      },
+      {
+        "n_patients_per_vector": 143,
+        "n_images_per_vector": 440,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 143,
+        "n_images_in_bin": 440
+      },
+      {
+        "n_patients_per_vector": 145,
+        "n_images_per_vector": 412,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 145,
+        "n_images_in_bin": 412
+      },
+      {
+        "n_patients_per_vector": 145,
+        "n_images_per_vector": 584,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 145,
+        "n_images_in_bin": 584
+      },
+      {
+        "n_patients_per_vector": 155,
+        "n_images_per_vector": 942,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 155,
+        "n_images_in_bin": 942
+      },
+      {
+        "n_patients_per_vector": 157,
+        "n_images_per_vector": 871,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 157,
+        "n_images_in_bin": 871
+      },
+      {
+        "n_patients_per_vector": 160,
+        "n_images_per_vector": 570,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 160,
+        "n_images_in_bin": 570
+      },
+      {
+        "n_patients_per_vector": 161,
+        "n_images_per_vector": 969,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 161,
+        "n_images_in_bin": 969
+      },
+      {
+        "n_patients_per_vector": 171,
+        "n_images_per_vector": 616,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 171,
+        "n_images_in_bin": 616
+      },
+      {
+        "n_patients_per_vector": 180,
+        "n_images_per_vector": 960,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 180,
+        "n_images_in_bin": 960
+      },
+      {
+        "n_patients_per_vector": 180,
+        "n_images_per_vector": 996,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 180,
+        "n_images_in_bin": 996
+      },
+      {
+        "n_patients_per_vector": 185,
+        "n_images_per_vector": 928,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 185,
+        "n_images_in_bin": 928
+      },
+      {
+        "n_patients_per_vector": 202,
+        "n_images_per_vector": 967,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 202,
+        "n_images_in_bin": 967
+      },
+      {
+        "n_patients_per_vector": 208,
+        "n_images_per_vector": 1352,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 208,
+        "n_images_in_bin": 1352
+      },
+      {
+        "n_patients_per_vector": 212,
+        "n_images_per_vector": 1259,
+        "n_distinct_vectors": 1,
+        "n_patient_vector_links": 212,
+        "n_images_in_bin": 1259
+      }
+    ],
+    "patient_ids_exported": false,
+    "sites_unified": false
+  },
+  "Derm7pt": {
+    "overview": {
+      "n_rows": 1011,
+      "n_clusters": 1011,
+      "n_distinct_full_vectors": 16,
+      "reliable_patient_grouping": false,
+      "statistical_unit": "case_num / original confirmed same-image clusters; not verified patients",
+      "clinic_derm_same_reference_count": 9
+    },
+    "cluster_size_frequency": [
+      {
+        "n_rows_per_cluster": 1,
+        "n_clusters": 1011,
+        "n_rows_in_bin": 1011
+      }
+    ],
+    "within_cluster_full_vector_frequency": [
+      {
+        "n_unique_full_vectors_per_cluster": 1,
+        "n_clusters": 1011
+      }
+    ],
+    "full_vector_multiplicity_frequency": [
+      {
+        "n_rows_per_vector": 3,
+        "n_distinct_vectors": 1,
+        "n_rows_in_bin": 3
+      },
+      {
+        "n_rows_per_vector": 5,
+        "n_distinct_vectors": 1,
+        "n_rows_in_bin": 5
+      },
+      {
+        "n_rows_per_vector": 26,
+        "n_distinct_vectors": 1,
+        "n_rows_in_bin": 26
+      },
+      {
+        "n_rows_per_vector": 36,
+        "n_distinct_vectors": 1,
+        "n_rows_in_bin": 36
+      },
+      {
+        "n_rows_per_vector": 47,
+        "n_distinct_vectors": 1,
+        "n_rows_in_bin": 47
+      },
+      {
+        "n_rows_per_vector": 48,
+        "n_distinct_vectors": 2,
+        "n_rows_in_bin": 96
+      },
+      {
+        "n_rows_per_vector": 52,
+        "n_distinct_vectors": 1,
+        "n_rows_in_bin": 52
+      },
+      {
+        "n_rows_per_vector": 56,
+        "n_distinct_vectors": 1,
+        "n_rows_in_bin": 56
+      },
+      {
+        "n_rows_per_vector": 66,
+        "n_distinct_vectors": 1,
+        "n_rows_in_bin": 66
+      },
+      {
+        "n_rows_per_vector": 69,
+        "n_distinct_vectors": 1,
+        "n_rows_in_bin": 69
+      },
+      {
+        "n_rows_per_vector": 71,
+        "n_distinct_vectors": 1,
+        "n_rows_in_bin": 71
+      },
+      {
+        "n_rows_per_vector": 74,
+        "n_distinct_vectors": 1,
+        "n_rows_in_bin": 74
+      },
+      {
+        "n_rows_per_vector": 105,
+        "n_distinct_vectors": 1,
+        "n_rows_in_bin": 105
+      },
+      {
+        "n_rows_per_vector": 129,
+        "n_distinct_vectors": 1,
+        "n_rows_in_bin": 129
+      },
+      {
+        "n_rows_per_vector": 176,
+        "n_distinct_vectors": 1,
+        "n_rows_in_bin": 176
+      }
+    ],
+    "metadata_sha256": "471199fb86bcc97cd1521bcc4255bb3f9c563e2ed0ad3ff836392d81a3ed9d3b",
+    "binding_summary_sha256": "ecbe4e48de90176899387916800771037426140d7f30cee4f483a2a59c757dc4",
+    "alignment_sha256": "5b04396ea0b20d576c944e4125b2536ed1ee94968b796edf1e4523401446902c",
+    "binding_source": "OriginalCore COHORT_BINDING.json + private_predictions/COHORT_ALIGNMENT.csv (metadata only)",
+    "alignment_rows_verified": true,
+    "repeat_image_audit_performed": false,
+    "patient_identity_inferred": false
+  },
+  "raw_vs_encoder_discrepancies": [],
+  "pending_protocol_parameters": [
+    "Exchange unit and algorithm",
+    "Within-patient multi-lesion ordering and correspondence",
+    "Unequal block sizes and singleton size strata",
+    "Self-donor/fixed-point handling",
+    "Repeated vector handling and actual-change reporting",
+    "Missingness-mode movement/stratification",
+    "Fixed K and RNG",
+    "Mapping sharing across six models and heads",
+    "Primary family/cohort estimands and multiplicity",
+    "Uncertainty intervals and donor dependence",
+    "Resource budget and checkpoints"
+  ],
+  "scope": "Metadata-only inputs; no performance, donor mapping, random sampling or inference",
+  "blockers": []
+}

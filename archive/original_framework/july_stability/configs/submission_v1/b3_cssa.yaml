@@ -1,0 +1,20 @@
+_base_: defaults_oncoderm.yaml
+model:
+  name: oncoderm_mambax_b3_cssa
+  cssa:
+    enabled: true
+    stage3_enabled: true
+    adapter_dim: 256
+    scan_kernel_size: 7
+  lesion_prior:
+    enabled: false
+  metadata_fusion:
+    enabled: false
+  heads:
+    melanoma_endpoint: true
+data:
+  metadata:
+    enabled: false
+  mask_aux:
+    enabled: false
+

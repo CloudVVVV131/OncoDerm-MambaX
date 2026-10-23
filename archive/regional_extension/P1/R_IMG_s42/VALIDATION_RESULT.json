@@ -1,0 +1,73 @@
+{
+  "status": "COMPLETE",
+  "run": "R_IMG_s42",
+  "cohort": "HAM_val",
+  "input": "NATIVE",
+  "best_path": "${R52_PATH_A43577A49353}",
+  "best_sha256": "f92283cc46bcc45a59e123364c6cea3da8f4e0377cff4a2b8d54458a622c3c13",
+  "selected_epoch": 23,
+  "dtype": "FP32",
+  "TF32": false,
+  "strict_loading": true,
+  "multiclass": {
+    "macro_f1": 0.7862156146710697,
+    "multiclass_brier_sum7": 0.28128282994265796,
+    "multiclass_nll": 1.0235758262750332
+  },
+  "binary": [
+    {
+      "head": "softmax_MEL",
+      "roc_auc": 0.9301944529823356,
+      "average_precision": 0.7245745283535093,
+      "brier": 0.08388466918392834,
+      "binary_nll": 0.5537161550959137,
+      "images": 1513,
+      "positive_images": 164
+    },
+    {
+      "head": "endpoint_MEL",
+      "roc_auc": 0.9312815274186841,
+      "average_precision": 0.7197606407743143,
+      "brier": 0.09334338131091457,
+      "binary_nll": 0.6017555487322906,
+      "images": 1513,
+      "positive_images": 164
+    }
+  ],
+  "selection_metrics_reproduced": true,
+  "readout_diagnostics": {
+    "validation_region_weights_interior_mean": 0.8079830664557806,
+    "validation_region_weights_interior_sd_within_samples": 0.1959033508552964,
+    "validation_region_weights_interior_max": 0.9999113082885742,
+    "validation_region_weights_boundary_band_mean": 0.17131409568555767,
+    "validation_region_weights_boundary_band_sd_within_samples": 0.17698702156686255,
+    "validation_region_weights_boundary_band_max": 0.999783456325531,
+    "validation_region_weights_outer_context_mean": 0.020702836445866058,
+    "validation_region_weights_outer_context_sd_within_samples": 0.053129972149293464,
+    "validation_region_weights_outer_context_max": 0.5646963715553284,
+    "validation_region_area_interior_mean": 0.1664473792514656,
+    "validation_region_area_interior_sd_within_samples": 0.1268809829461835,
+    "validation_region_area_interior_max": 0.6271184086799622,
+    "validation_region_area_boundary_band_mean": 0.37781759552898897,
+    "validation_region_area_boundary_band_sd_within_samples": 0.1109065218137812,
+    "validation_region_area_boundary_band_max": 0.7507873773574829,
+    "validation_region_area_outer_context_mean": 0.45573500080449014,
+    "validation_region_area_outer_context_sd_within_samples": 0.21785980249774933,
+    "validation_region_area_outer_context_max": 0.9585018157958984,
+    "validation_region_valid_interior_mean": 0.9781890284203569,
+    "validation_region_valid_interior_sd_within_samples": 0.14606592038663613,
+    "validation_region_valid_interior_max": 1.0,
+    "validation_region_valid_boundary_band_mean": 1.0,
+    "validation_region_valid_boundary_band_sd_within_samples": 0.0,
+    "validation_region_valid_boundary_band_max": 1.0,
+    "validation_region_valid_outer_context_mean": 1.0,
+    "validation_region_valid_outer_context_sd_within_samples": 0.0,
+    "validation_region_valid_outer_context_max": 1.0,
+    "validation_residual_coefficient_mean": 0.017881503328680992,
+    "validation_residual_coefficient_sd_within_samples": 0.0,
+    "validation_residual_coefficient_max": 0.017881503328680992
+  },
+  "eta_raw": 0.035778265446424484,
+  "evaluation_seconds": 15.494258600010653,
+  "per_example_predictions_exported": false
+}

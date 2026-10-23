@@ -1,0 +1,116 @@
+{
+  "keys": [
+    [
+      "B1",
+      42,
+      "prob_mel"
+    ],
+    [
+      "B2",
+      42,
+      "prob_mel"
+    ],
+    [
+      "B4",
+      42,
+      "prob_mel"
+    ],
+    [
+      "B6",
+      42,
+      "prob_mel"
+    ],
+    [
+      "EfficientNet-B0",
+      42,
+      "prob_mel"
+    ],
+    [
+      "Swin-Tiny",
+      42,
+      "prob_mel"
+    ],
+    [
+      "DermaMamba port",
+      42,
+      "prob_mel"
+    ],
+    [
+      "B2",
+      2024,
+      "prob_mel"
+    ],
+    [
+      "B2",
+      3407,
+      "prob_mel"
+    ],
+    [
+      "B6",
+      2024,
+      "prob_mel"
+    ],
+    [
+      "B6",
+      3407,
+      "prob_mel"
+    ],
+    [
+      "B2",
+      42,
+      "prob_mel_endpoint"
+    ],
+    [
+      "B2",
+      2024,
+      "prob_mel_endpoint"
+    ],
+    [
+      "B2",
+      3407,
+      "prob_mel_endpoint"
+    ],
+    [
+      "B6",
+      42,
+      "prob_mel_endpoint"
+    ],
+    [
+      "B6",
+      2024,
+      "prob_mel_endpoint"
+    ],
+    [
+      "B6",
+      3407,
+      "prob_mel_endpoint"
+    ]
+  ],
+  "comparisons": [
+    {
+      "left": "B6",
+      "right": "B2",
+      "role": "primary_AP_1"
+    },
+    {
+      "left": "B6",
+      "right": "EfficientNet-B0",
+      "role": "primary_AP_2"
+    },
+    {
+      "left": "B6",
+      "right": "DermaMamba port",
+      "role": "supporting"
+    },
+    {
+      "left": "B2",
+      "right": "EfficientNet-B0",
+      "role": "supporting"
+    }
+  ],
+  "fixed_heads": [
+    "prob_mel",
+    "prob_mel_endpoint"
+  ],
+  "blocked": []
+}

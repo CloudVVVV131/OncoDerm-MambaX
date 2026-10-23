@@ -1,0 +1,98 @@
+{
+  "frozen_at": "2026-10-12T04:40:30.254860+08:00",
+  "cohort": "SIIM_ISIC2020",
+  "dimension": 22,
+  "age": {
+    "source": "age_approx",
+    "destination": "age",
+    "scale": 100,
+    "invalid": "missing",
+    "outliers": "reported_not_clipped"
+  },
+  "sex": {
+    "source": "sex",
+    "vocabulary": [
+      "male",
+      "female",
+      "unknown"
+    ]
+  },
+  "site": {
+    "source": "anatom_site_general_challenge",
+    "destination": "localization",
+    "vocabulary": [
+      "abdomen",
+      "acral",
+      "back",
+      "chest",
+      "ear",
+      "face",
+      "foot",
+      "genital",
+      "hand",
+      "lower extremity",
+      "neck",
+      "scalp",
+      "trunk",
+      "unknown",
+      "upper extremity"
+    ],
+    "synonyms": {
+      "torso": "trunk"
+    }
+  },
+  "token_order": [
+    "age/100",
+    "sex_male",
+    "sex_female",
+    "sex_unknown",
+    "site_abdomen",
+    "site_acral",
+    "site_back",
+    "site_chest",
+    "site_ear",
+    "site_face",
+    "site_foot",
+    "site_genital",
+    "site_hand",
+    "site_lower extremity",
+    "site_neck",
+    "site_scalp",
+    "site_trunk",
+    "site_unknown",
+    "site_upper extremity",
+    "age_missing",
+    "sex_missing",
+    "site_missing"
+  ],
+  "normalization": "strip/lower/collapse whitespace; actual missing/empty/unknown -> unknown",
+  "unsupported_nonempty": "unknown one-hot with missing flag 0; preserve normalized input to historical encoder",
+  "E_NULL": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    1,
+    1
+  ],
+  "labels_patient_image_ids_never_model_inputs": true,
+  "source_hash": "a1c7c97c59e5f49232dfe3b6f6817efaaee5dbf9bcb4ce584c1889e641be5c4e",
+  "private_tensor_sha256": "59f007bb3347219b68bdcae19ea1da540e3a4db82a6024e4772257c72136dac8",
+  "mapping_selected_without_predictions": true
+}

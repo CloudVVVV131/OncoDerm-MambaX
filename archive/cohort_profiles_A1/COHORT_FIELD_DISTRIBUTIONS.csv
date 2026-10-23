@@ -1,0 +1,204 @@
+cohort,field,row_type,category,n,denominator,percent,valid_denominator,percent_of_valid,statistical_unit,source_path,source_field,missing_reason
+HAM_train,age,missing_reason,column_absent,0,6982,0.0,6945,NA,image,${R52_PATH_E37E406F66F5},age,
+HAM_train,age,missing_reason,blank,37,6982,0.5299341162990547,6945,NA,image,${R52_PATH_E37E406F66F5},age,
+HAM_train,age,missing_reason,NA_token,0,6982,0.0,6945,NA,image,${R52_PATH_E37E406F66F5},age,
+HAM_train,age,missing_reason,explicit_unknown,0,6982,0.0,6945,NA,image,${R52_PATH_E37E406F66F5},age,
+HAM_train,age,missing_reason,invalid_or_nonfinite_numeric,0,6982,0.0,6945,NA,image,${R52_PATH_E37E406F66F5},age,
+HAM_train,sex,missing_reason,column_absent,0,6982,0.0,6949,NA,image,${R52_PATH_E37E406F66F5},sex,
+HAM_train,sex,missing_reason,blank,0,6982,0.0,6949,NA,image,${R52_PATH_E37E406F66F5},sex,
+HAM_train,sex,missing_reason,NA_token,0,6982,0.0,6949,NA,image,${R52_PATH_E37E406F66F5},sex,
+HAM_train,sex,missing_reason,explicit_unknown,33,6982,0.4726439415640218,6949,NA,image,${R52_PATH_E37E406F66F5},sex,
+HAM_train,sex,missing_reason,invalid_or_nonfinite_numeric,0,6982,0.0,6949,NA,image,${R52_PATH_E37E406F66F5},sex,
+HAM_train,site,missing_reason,column_absent,0,6982,0.0,6845,NA,image,${R52_PATH_E37E406F66F5},localization,
+HAM_train,site,missing_reason,blank,0,6982,0.0,6845,NA,image,${R52_PATH_E37E406F66F5},localization,
+HAM_train,site,missing_reason,NA_token,0,6982,0.0,6845,NA,image,${R52_PATH_E37E406F66F5},localization,
+HAM_train,site,missing_reason,explicit_unknown,137,6982,1.9621884846748783,6845,NA,image,${R52_PATH_E37E406F66F5},localization,
+HAM_train,site,missing_reason,invalid_or_nonfinite_numeric,0,6982,0.0,6845,NA,image,${R52_PATH_E37E406F66F5},localization,
+HAM_train,sex,source_category,female,3169,6982,45.388140933829845,6949,45.60368398330695,image,${R52_PATH_E37E406F66F5},sex,valid
+HAM_train,sex,source_category,male,3780,6982,54.13921512460613,6949,54.39631601669305,image,${R52_PATH_E37E406F66F5},sex,valid
+HAM_train,sex,source_category,unknown,33,6982,0.4726439415640218,6949,NA,image,${R52_PATH_E37E406F66F5},sex,explicit_unknown
+HAM_train,site,source_category,abdomen,711,6982,10.183328559152105,6845,10.387143900657414,image,${R52_PATH_E37E406F66F5},localization,valid
+HAM_train,site,source_category,acral,7,6982,0.10025780578630765,6845,0.10226442658875091,image,${R52_PATH_E37E406F66F5},localization,valid
+HAM_train,site,source_category,back,1540,6982,22.056717272987683,6845,22.4981738495252,image,${R52_PATH_E37E406F66F5},localization,valid
+HAM_train,site,source_category,chest,291,6982,4.167860211973647,6845,4.2512783053323595,image,${R52_PATH_E37E406F66F5},localization,valid
+HAM_train,site,source_category,ear,41,6982,0.5872242910340877,6845,0.5989773557341125,image,${R52_PATH_E37E406F66F5},localization,valid
+HAM_train,site,source_category,face,501,6982,7.175594385562876,6845,7.3192111029948865,image,${R52_PATH_E37E406F66F5},localization,valid
+HAM_train,site,source_category,foot,211,6982,3.0220567172729877,6845,3.0825420014609204,image,${R52_PATH_E37E406F66F5},localization,valid
+HAM_train,site,source_category,genital,32,6982,0.45832139788026355,6845,0.4674945215485756,image,${R52_PATH_E37E406F66F5},localization,valid
+HAM_train,site,source_category,hand,69,6982,0.9882555141793182,6845,1.008035062089116,image,${R52_PATH_E37E406F66F5},localization,valid
+HAM_train,site,source_category,lower extremity,1438,6982,20.595817817244342,6845,21.008035062089117,image,${R52_PATH_E37E406F66F5},localization,valid
+HAM_train,site,source_category,neck,121,6982,1.7330277857347465,6845,1.7677136596055516,image,${R52_PATH_E37E406F66F5},localization,valid
+HAM_train,site,source_category,scalp,92,6982,1.3176740189057576,6845,1.3440467494521549,image,${R52_PATH_E37E406F66F5},localization,valid
+HAM_train,site,source_category,trunk,1009,6982,14.45144657691206,6845,14.740686632578525,image,${R52_PATH_E37E406F66F5},localization,valid
+HAM_train,site,source_category,unknown,137,6982,1.9621884846748783,6845,NA,image,${R52_PATH_E37E406F66F5},localization,explicit_unknown
+HAM_train,site,source_category,upper extremity,782,6982,11.20022916069894,6845,11.424397370343316,image,${R52_PATH_E37E406F66F5},localization,valid
+HAM_train,diagnosis,source_category,akiec,235,6982,3.3657977656831854,6982,3.3657977656831854,image,${R52_PATH_E37E406F66F5},dx,label_or_method
+HAM_train,diagnosis,source_category,bcc,351,6982,5.02721283299914,6982,5.02721283299914,image,${R52_PATH_E37E406F66F5},dx,label_or_method
+HAM_train,diagnosis,source_category,bkl,777,6982,11.12861644228015,6982,11.12861644228015,image,${R52_PATH_E37E406F66F5},dx,label_or_method
+HAM_train,diagnosis,source_category,df,83,6982,1.1887711257519336,6982,1.1887711257519336,image,${R52_PATH_E37E406F66F5},dx,label_or_method
+HAM_train,diagnosis,source_category,mel,775,6982,11.099971354912633,6982,11.099971354912633,image,${R52_PATH_E37E406F66F5},dx,label_or_method
+HAM_train,diagnosis,source_category,nv,4663,6982,66.78602119736465,6982,66.78602119736465,image,${R52_PATH_E37E406F66F5},dx,label_or_method
+HAM_train,diagnosis,source_category,vasc,98,6982,1.4036092810083072,6982,1.4036092810083072,image,${R52_PATH_E37E406F66F5},dx,label_or_method
+HAM_train,diagnosis_method,source_category,confocal,49,6982,0.7018046405041536,6982,0.7018046405041536,image,${R52_PATH_E37E406F66F5},dx_type,label_or_method
+HAM_train,diagnosis_method,source_category,consensus,631,6982,9.037525064451447,6982,9.037525064451447,image,${R52_PATH_E37E406F66F5},dx_type,label_or_method
+HAM_train,diagnosis_method,source_category,follow_up,2620,6982,37.525064451446575,6982,37.525064451446575,image,${R52_PATH_E37E406F66F5},dx_type,label_or_method
+HAM_train,diagnosis_method,source_category,histo,3682,6982,52.735605843597824,6982,52.735605843597824,image,${R52_PATH_E37E406F66F5},dx_type,label_or_method
+HAM_validation,age,missing_reason,column_absent,0,1513,0.0,1502,NA,image,${R52_PATH_A7EDEF14667C},age,
+HAM_validation,age,missing_reason,blank,11,1513,0.7270323859881032,1502,NA,image,${R52_PATH_A7EDEF14667C},age,
+HAM_validation,age,missing_reason,NA_token,0,1513,0.0,1502,NA,image,${R52_PATH_A7EDEF14667C},age,
+HAM_validation,age,missing_reason,explicit_unknown,0,1513,0.0,1502,NA,image,${R52_PATH_A7EDEF14667C},age,
+HAM_validation,age,missing_reason,invalid_or_nonfinite_numeric,0,1513,0.0,1502,NA,image,${R52_PATH_A7EDEF14667C},age,
+HAM_validation,sex,missing_reason,column_absent,0,1513,0.0,1500,NA,image,${R52_PATH_A7EDEF14667C},sex,
+HAM_validation,sex,missing_reason,blank,0,1513,0.0,1500,NA,image,${R52_PATH_A7EDEF14667C},sex,
+HAM_validation,sex,missing_reason,NA_token,0,1513,0.0,1500,NA,image,${R52_PATH_A7EDEF14667C},sex,
+HAM_validation,sex,missing_reason,explicit_unknown,13,1513,0.8592200925313945,1500,NA,image,${R52_PATH_A7EDEF14667C},sex,
+HAM_validation,sex,missing_reason,invalid_or_nonfinite_numeric,0,1513,0.0,1500,NA,image,${R52_PATH_A7EDEF14667C},sex,
+HAM_validation,site,missing_reason,column_absent,0,1513,0.0,1460,NA,image,${R52_PATH_A7EDEF14667C},localization,
+HAM_validation,site,missing_reason,blank,0,1513,0.0,1460,NA,image,${R52_PATH_A7EDEF14667C},localization,
+HAM_validation,site,missing_reason,NA_token,0,1513,0.0,1460,NA,image,${R52_PATH_A7EDEF14667C},localization,
+HAM_validation,site,missing_reason,explicit_unknown,53,1513,3.502974223397224,1460,NA,image,${R52_PATH_A7EDEF14667C},localization,
+HAM_validation,site,missing_reason,invalid_or_nonfinite_numeric,0,1513,0.0,1460,NA,image,${R52_PATH_A7EDEF14667C},localization,
+HAM_validation,sex,source_category,female,660,1513,43.62194315928619,1500,44.0,image,${R52_PATH_A7EDEF14667C},sex,valid
+HAM_validation,sex,source_category,male,840,1513,55.518836748182416,1500,56.0,image,${R52_PATH_A7EDEF14667C},sex,valid
+HAM_validation,sex,source_category,unknown,13,1513,0.8592200925313945,1500,NA,image,${R52_PATH_A7EDEF14667C},sex,explicit_unknown
+HAM_validation,site,source_category,abdomen,170,1513,11.235955056179776,1460,11.643835616438356,image,${R52_PATH_A7EDEF14667C},localization,valid
+HAM_validation,site,source_category,back,335,1513,22.141440846001323,1460,22.945205479452056,image,${R52_PATH_A7EDEF14667C},localization,valid
+HAM_validation,site,source_category,chest,66,1513,4.362194315928619,1460,4.52054794520548,image,${R52_PATH_A7EDEF14667C},localization,valid
+HAM_validation,site,source_category,ear,7,1513,0.46265697290152014,1460,0.4794520547945205,image,${R52_PATH_A7EDEF14667C},localization,valid
+HAM_validation,site,source_category,face,111,1513,7.336417713152676,1460,7.602739726027397,image,${R52_PATH_A7EDEF14667C},localization,valid
+HAM_validation,site,source_category,foot,45,1513,2.9742233972240584,1460,3.0821917808219177,image,${R52_PATH_A7EDEF14667C},localization,valid
+HAM_validation,site,source_category,genital,10,1513,0.6609385327164574,1460,0.684931506849315,image,${R52_PATH_A7EDEF14667C},localization,valid
+HAM_validation,site,source_category,hand,9,1513,0.5948446794448117,1460,0.6164383561643836,image,${R52_PATH_A7EDEF14667C},localization,valid
+HAM_validation,site,source_category,lower extremity,311,1513,20.555188367481826,1460,21.301369863013697,image,${R52_PATH_A7EDEF14667C},localization,valid
+HAM_validation,site,source_category,neck,23,1513,1.520158625247852,1460,1.5753424657534247,image,${R52_PATH_A7EDEF14667C},localization,valid
+HAM_validation,site,source_category,scalp,17,1513,1.1235955056179776,1460,1.1643835616438356,image,${R52_PATH_A7EDEF14667C},localization,valid
+HAM_validation,site,source_category,trunk,206,1513,13.615333773959021,1460,14.10958904109589,image,${R52_PATH_A7EDEF14667C},localization,valid
+HAM_validation,site,source_category,unknown,53,1513,3.502974223397224,1460,NA,image,${R52_PATH_A7EDEF14667C},localization,explicit_unknown
+HAM_validation,site,source_category,upper extremity,150,1513,9.914077990746861,1460,10.273972602739725,image,${R52_PATH_A7EDEF14667C},localization,valid
+HAM_validation,diagnosis,source_category,akiec,47,1513,3.10641110376735,1513,3.10641110376735,image,${R52_PATH_A7EDEF14667C},dx,label_or_method
+HAM_validation,diagnosis,source_category,bcc,85,1513,5.617977528089888,1513,5.617977528089888,image,${R52_PATH_A7EDEF14667C},dx,label_or_method
+HAM_validation,diagnosis,source_category,bkl,160,1513,10.575016523463319,1513,10.575016523463319,image,${R52_PATH_A7EDEF14667C},dx,label_or_method
+HAM_validation,diagnosis,source_category,df,18,1513,1.1896893588896233,1513,1.1896893588896233,image,${R52_PATH_A7EDEF14667C},dx,label_or_method
+HAM_validation,diagnosis,source_category,mel,164,1513,10.839391936549902,1513,10.839391936549902,image,${R52_PATH_A7EDEF14667C},dx,label_or_method
+HAM_validation,diagnosis,source_category,nv,1014,1513,67.01916721744878,1513,67.01916721744878,image,${R52_PATH_A7EDEF14667C},dx,label_or_method
+HAM_validation,diagnosis,source_category,vasc,25,1513,1.6523463317911433,1513,1.6523463317911433,image,${R52_PATH_A7EDEF14667C},dx,label_or_method
+HAM_validation,diagnosis_method,source_category,confocal,5,1513,0.3304692663582287,1513,0.3304692663582287,image,${R52_PATH_A7EDEF14667C},dx_type,label_or_method
+HAM_validation,diagnosis_method,source_category,consensus,135,1513,8.922670191672175,1513,8.922670191672175,image,${R52_PATH_A7EDEF14667C},dx_type,label_or_method
+HAM_validation,diagnosis_method,source_category,follow_up,544,1513,35.95505617977528,1513,35.95505617977528,image,${R52_PATH_A7EDEF14667C},dx_type,label_or_method
+HAM_validation,diagnosis_method,source_category,histo,829,1513,54.79180436219431,1513,54.79180436219431,image,${R52_PATH_A7EDEF14667C},dx_type,label_or_method
+HAM_internal_test,age,missing_reason,column_absent,0,1520,0.0,1511,NA,image,${R52_PATH_1E005046B878},age,
+HAM_internal_test,age,missing_reason,blank,9,1520,0.5921052631578947,1511,NA,image,${R52_PATH_1E005046B878},age,
+HAM_internal_test,age,missing_reason,NA_token,0,1520,0.0,1511,NA,image,${R52_PATH_1E005046B878},age,
+HAM_internal_test,age,missing_reason,explicit_unknown,0,1520,0.0,1511,NA,image,${R52_PATH_1E005046B878},age,
+HAM_internal_test,age,missing_reason,invalid_or_nonfinite_numeric,0,1520,0.0,1511,NA,image,${R52_PATH_1E005046B878},age,
+HAM_internal_test,sex,missing_reason,column_absent,0,1520,0.0,1509,NA,image,${R52_PATH_1E005046B878},sex,
+HAM_internal_test,sex,missing_reason,blank,0,1520,0.0,1509,NA,image,${R52_PATH_1E005046B878},sex,
+HAM_internal_test,sex,missing_reason,NA_token,0,1520,0.0,1509,NA,image,${R52_PATH_1E005046B878},sex,
+HAM_internal_test,sex,missing_reason,explicit_unknown,11,1520,0.7236842105263158,1509,NA,image,${R52_PATH_1E005046B878},sex,
+HAM_internal_test,sex,missing_reason,invalid_or_nonfinite_numeric,0,1520,0.0,1509,NA,image,${R52_PATH_1E005046B878},sex,
+HAM_internal_test,site,missing_reason,column_absent,0,1520,0.0,1476,NA,image,${R52_PATH_1E005046B878},localization,
+HAM_internal_test,site,missing_reason,blank,0,1520,0.0,1476,NA,image,${R52_PATH_1E005046B878},localization,
+HAM_internal_test,site,missing_reason,NA_token,0,1520,0.0,1476,NA,image,${R52_PATH_1E005046B878},localization,
+HAM_internal_test,site,missing_reason,explicit_unknown,44,1520,2.8947368421052633,1476,NA,image,${R52_PATH_1E005046B878},localization,
+HAM_internal_test,site,missing_reason,invalid_or_nonfinite_numeric,0,1520,0.0,1476,NA,image,${R52_PATH_1E005046B878},localization,
+HAM_internal_test,sex,source_category,female,723,1520,47.56578947368421,1509,47.912524850894634,image,${R52_PATH_1E005046B878},sex,valid
+HAM_internal_test,sex,source_category,male,786,1520,51.71052631578947,1509,52.087475149105366,image,${R52_PATH_1E005046B878},sex,valid
+HAM_internal_test,sex,source_category,unknown,11,1520,0.7236842105263158,1509,NA,image,${R52_PATH_1E005046B878},sex,explicit_unknown
+HAM_internal_test,site,source_category,abdomen,141,1520,9.276315789473685,1476,9.552845528455284,image,${R52_PATH_1E005046B878},localization,valid
+HAM_internal_test,site,source_category,back,317,1520,20.855263157894736,1476,21.476964769647697,image,${R52_PATH_1E005046B878},localization,valid
+HAM_internal_test,site,source_category,chest,50,1520,3.289473684210526,1476,3.3875338753387534,image,${R52_PATH_1E005046B878},localization,valid
+HAM_internal_test,site,source_category,ear,8,1520,0.5263157894736842,1476,0.5420054200542005,image,${R52_PATH_1E005046B878},localization,valid
+HAM_internal_test,site,source_category,face,133,1520,8.75,1476,9.010840108401084,image,${R52_PATH_1E005046B878},localization,valid
+HAM_internal_test,site,source_category,foot,63,1520,4.144736842105263,1476,4.2682926829268295,image,${R52_PATH_1E005046B878},localization,valid
+HAM_internal_test,site,source_category,genital,6,1520,0.39473684210526316,1476,0.4065040650406504,image,${R52_PATH_1E005046B878},localization,valid
+HAM_internal_test,site,source_category,hand,12,1520,0.7894736842105263,1476,0.8130081300813008,image,${R52_PATH_1E005046B878},localization,valid
+HAM_internal_test,site,source_category,lower extremity,328,1520,21.57894736842105,1476,22.22222222222222,image,${R52_PATH_1E005046B878},localization,valid
+HAM_internal_test,site,source_category,neck,24,1520,1.5789473684210527,1476,1.6260162601626016,image,${R52_PATH_1E005046B878},localization,valid
+HAM_internal_test,site,source_category,scalp,19,1520,1.25,1476,1.2872628726287263,image,${R52_PATH_1E005046B878},localization,valid
+HAM_internal_test,site,source_category,trunk,189,1520,12.43421052631579,1476,12.804878048780488,image,${R52_PATH_1E005046B878},localization,valid
+HAM_internal_test,site,source_category,unknown,44,1520,2.8947368421052633,1476,NA,image,${R52_PATH_1E005046B878},localization,explicit_unknown
+HAM_internal_test,site,source_category,upper extremity,186,1520,12.236842105263158,1476,12.601626016260163,image,${R52_PATH_1E005046B878},localization,valid
+HAM_internal_test,diagnosis,source_category,akiec,45,1520,2.960526315789474,1520,2.960526315789474,image,${R52_PATH_1E005046B878},dx,label_or_method
+HAM_internal_test,diagnosis,source_category,bcc,78,1520,5.131578947368421,1520,5.131578947368421,image,${R52_PATH_1E005046B878},dx,label_or_method
+HAM_internal_test,diagnosis,source_category,bkl,162,1520,10.657894736842104,1520,10.657894736842104,image,${R52_PATH_1E005046B878},dx,label_or_method
+HAM_internal_test,diagnosis,source_category,df,14,1520,0.9210526315789473,1520,0.9210526315789473,image,${R52_PATH_1E005046B878},dx,label_or_method
+HAM_internal_test,diagnosis,source_category,mel,174,1520,11.447368421052632,1520,11.447368421052632,image,${R52_PATH_1E005046B878},dx,label_or_method
+HAM_internal_test,diagnosis,source_category,nv,1028,1520,67.63157894736842,1520,67.63157894736842,image,${R52_PATH_1E005046B878},dx,label_or_method
+HAM_internal_test,diagnosis,source_category,vasc,19,1520,1.25,1520,1.25,image,${R52_PATH_1E005046B878},dx,label_or_method
+HAM_internal_test,diagnosis_method,source_category,confocal,15,1520,0.9868421052631579,1520,0.9868421052631579,image,${R52_PATH_1E005046B878},dx_type,label_or_method
+HAM_internal_test,diagnosis_method,source_category,consensus,136,1520,8.947368421052632,1520,8.947368421052632,image,${R52_PATH_1E005046B878},dx_type,label_or_method
+HAM_internal_test,diagnosis_method,source_category,follow_up,540,1520,35.526315789473685,1520,35.526315789473685,image,${R52_PATH_1E005046B878},dx_type,label_or_method
+HAM_internal_test,diagnosis_method,source_category,histo,829,1520,54.53947368421053,1520,54.53947368421053,image,${R52_PATH_1E005046B878},dx_type,label_or_method
+SIIM,age,missing_reason,column_absent,0,33126,0.0,33058,NA,image,${R52_PATH_83C520ED9A14},age_approx,
+SIIM,age,missing_reason,blank,68,33126,0.20527682183179377,33058,NA,image,${R52_PATH_83C520ED9A14},age_approx,
+SIIM,age,missing_reason,NA_token,0,33126,0.0,33058,NA,image,${R52_PATH_83C520ED9A14},age_approx,
+SIIM,age,missing_reason,explicit_unknown,0,33126,0.0,33058,NA,image,${R52_PATH_83C520ED9A14},age_approx,
+SIIM,age,missing_reason,invalid_or_nonfinite_numeric,0,33126,0.0,33058,NA,image,${R52_PATH_83C520ED9A14},age_approx,
+SIIM,sex,missing_reason,column_absent,0,33126,0.0,33061,NA,image,${R52_PATH_83C520ED9A14},sex,
+SIIM,sex,missing_reason,blank,65,33126,0.19622049145686168,33061,NA,image,${R52_PATH_83C520ED9A14},sex,
+SIIM,sex,missing_reason,NA_token,0,33126,0.0,33061,NA,image,${R52_PATH_83C520ED9A14},sex,
+SIIM,sex,missing_reason,explicit_unknown,0,33126,0.0,33061,NA,image,${R52_PATH_83C520ED9A14},sex,
+SIIM,sex,missing_reason,invalid_or_nonfinite_numeric,0,33126,0.0,33061,NA,image,${R52_PATH_83C520ED9A14},sex,
+SIIM,site,missing_reason,column_absent,0,33126,0.0,32599,NA,image,${R52_PATH_83C520ED9A14},anatom_site_general_challenge,
+SIIM,site,missing_reason,blank,527,33126,1.5908953691964016,32599,NA,image,${R52_PATH_83C520ED9A14},anatom_site_general_challenge,
+SIIM,site,missing_reason,NA_token,0,33126,0.0,32599,NA,image,${R52_PATH_83C520ED9A14},anatom_site_general_challenge,
+SIIM,site,missing_reason,explicit_unknown,0,33126,0.0,32599,NA,image,${R52_PATH_83C520ED9A14},anatom_site_general_challenge,
+SIIM,site,missing_reason,invalid_or_nonfinite_numeric,0,33126,0.0,32599,NA,image,${R52_PATH_83C520ED9A14},anatom_site_general_challenge,
+SIIM,sex,source_category,[blank],65,33126,0.19622049145686168,33061,NA,image,${R52_PATH_83C520ED9A14},sex,blank
+SIIM,sex,source_category,female,15981,33126,48.24307190726318,33061,48.33792081304256,image,${R52_PATH_83C520ED9A14},sex,valid
+SIIM,sex,source_category,male,17080,33126,51.56070760127996,33061,51.66207918695744,image,${R52_PATH_83C520ED9A14},sex,valid
+SIIM,site,source_category,[blank],527,33126,1.5908953691964016,32599,NA,image,${R52_PATH_83C520ED9A14},anatom_site_general_challenge,blank
+SIIM,site,source_category,head/neck,1855,33126,5.599830948499668,32599,5.690358599957054,image,${R52_PATH_83C520ED9A14},anatom_site_general_challenge,valid
+SIIM,site,source_category,lower extremity,8417,33126,25.409044255267766,32599,25.819810423632628,image,${R52_PATH_83C520ED9A14},anatom_site_general_challenge,valid
+SIIM,site,source_category,oral/genital,124,33126,0.3743283221638592,32599,0.38037976625049846,image,${R52_PATH_83C520ED9A14},anatom_site_general_challenge,valid
+SIIM,site,source_category,palms/soles,375,33126,1.1320412968665097,32599,1.1503420350317495,image,${R52_PATH_83C520ED9A14},anatom_site_general_challenge,valid
+SIIM,site,source_category,torso,16845,33126,50.85129505524362,32599,51.673364213626186,image,${R52_PATH_83C520ED9A14},anatom_site_general_challenge,valid
+SIIM,site,source_category,upper extremity,4983,33126,15.04256475276218,32599,15.285744961501887,image,${R52_PATH_83C520ED9A14},anatom_site_general_challenge,valid
+SIIM,diagnosis,source_category,0,32542,33126,98.23703435367989,33126,98.23703435367989,image,${R52_PATH_83C520ED9A14},target,label_or_method
+SIIM,diagnosis,source_category,1,584,33126,1.762965646320111,33126,1.762965646320111,image,${R52_PATH_83C520ED9A14},target,label_or_method
+Derm7pt,age,missing_reason,column_absent,1011,1011,100.0,0,NA,dermoscopy case,${R52_PATH_CB55B27527EC},age,
+Derm7pt,age,missing_reason,blank,0,1011,0.0,0,NA,dermoscopy case,${R52_PATH_CB55B27527EC},age,
+Derm7pt,age,missing_reason,NA_token,0,1011,0.0,0,NA,dermoscopy case,${R52_PATH_CB55B27527EC},age,
+Derm7pt,age,missing_reason,explicit_unknown,0,1011,0.0,0,NA,dermoscopy case,${R52_PATH_CB55B27527EC},age,
+Derm7pt,age,missing_reason,invalid_or_nonfinite_numeric,0,1011,0.0,0,NA,dermoscopy case,${R52_PATH_CB55B27527EC},age,
+Derm7pt,sex,missing_reason,column_absent,0,1011,0.0,1011,NA,dermoscopy case,${R52_PATH_CB55B27527EC},sex,
+Derm7pt,sex,missing_reason,blank,0,1011,0.0,1011,NA,dermoscopy case,${R52_PATH_CB55B27527EC},sex,
+Derm7pt,sex,missing_reason,NA_token,0,1011,0.0,1011,NA,dermoscopy case,${R52_PATH_CB55B27527EC},sex,
+Derm7pt,sex,missing_reason,explicit_unknown,0,1011,0.0,1011,NA,dermoscopy case,${R52_PATH_CB55B27527EC},sex,
+Derm7pt,sex,missing_reason,invalid_or_nonfinite_numeric,0,1011,0.0,1011,NA,dermoscopy case,${R52_PATH_CB55B27527EC},sex,
+Derm7pt,site,missing_reason,column_absent,0,1011,0.0,1011,NA,dermoscopy case,${R52_PATH_CB55B27527EC},location,
+Derm7pt,site,missing_reason,blank,0,1011,0.0,1011,NA,dermoscopy case,${R52_PATH_CB55B27527EC},location,
+Derm7pt,site,missing_reason,NA_token,0,1011,0.0,1011,NA,dermoscopy case,${R52_PATH_CB55B27527EC},location,
+Derm7pt,site,missing_reason,explicit_unknown,0,1011,0.0,1011,NA,dermoscopy case,${R52_PATH_CB55B27527EC},location,
+Derm7pt,site,missing_reason,invalid_or_nonfinite_numeric,0,1011,0.0,1011,NA,dermoscopy case,${R52_PATH_CB55B27527EC},location,
+Derm7pt,sex,source_category,female,522,1011,51.632047477744806,1011,51.632047477744806,dermoscopy case,${R52_PATH_CB55B27527EC},sex,valid
+Derm7pt,sex,source_category,male,489,1011,48.367952522255194,1011,48.367952522255194,dermoscopy case,${R52_PATH_CB55B27527EC},sex,valid
+Derm7pt,site,source_category,abdomen,125,1011,12.363996043521267,1011,12.363996043521267,dermoscopy case,${R52_PATH_CB55B27527EC},location,valid
+Derm7pt,site,source_category,acral,62,1011,6.132542037586548,1011,6.132542037586548,dermoscopy case,${R52_PATH_CB55B27527EC},location,valid
+Derm7pt,site,source_category,back,281,1011,27.794263105835807,1011,27.794263105835807,dermoscopy case,${R52_PATH_CB55B27527EC},location,valid
+Derm7pt,site,source_category,buttocks,21,1011,2.077151335311573,1011,2.077151335311573,dermoscopy case,${R52_PATH_CB55B27527EC},location,valid
+Derm7pt,site,source_category,chest,100,1011,9.891196834817013,1011,9.891196834817013,dermoscopy case,${R52_PATH_CB55B27527EC},location,valid
+Derm7pt,site,source_category,genital areas,8,1011,0.7912957467853611,1011,0.7912957467853611,dermoscopy case,${R52_PATH_CB55B27527EC},location,valid
+Derm7pt,site,source_category,head neck,92,1011,9.099901088031652,1011,9.099901088031652,dermoscopy case,${R52_PATH_CB55B27527EC},location,valid
+Derm7pt,site,source_category,lower limbs,200,1011,19.782393669634025,1011,19.782393669634025,dermoscopy case,${R52_PATH_CB55B27527EC},location,valid
+Derm7pt,site,source_category,upper limbs,122,1011,12.067260138476756,1011,12.067260138476756,dermoscopy case,${R52_PATH_CB55B27527EC},location,valid
+Derm7pt,diagnosis,source_category,basal cell carcinoma,42,1011,4.154302670623146,1011,4.154302670623146,dermoscopy case,${R52_PATH_CB55B27527EC},diagnosis,label_or_method
+Derm7pt,diagnosis,source_category,blue nevus,28,1011,2.7695351137487636,1011,2.7695351137487636,dermoscopy case,${R52_PATH_CB55B27527EC},diagnosis,label_or_method
+Derm7pt,diagnosis,source_category,clark nevus,399,1011,39.46587537091988,1011,39.46587537091988,dermoscopy case,${R52_PATH_CB55B27527EC},diagnosis,label_or_method
+Derm7pt,diagnosis,source_category,combined nevus,13,1011,1.2858555885262117,1011,1.2858555885262117,dermoscopy case,${R52_PATH_CB55B27527EC},diagnosis,label_or_method
+Derm7pt,diagnosis,source_category,congenital nevus,17,1011,1.6815034619188922,1011,1.6815034619188922,dermoscopy case,${R52_PATH_CB55B27527EC},diagnosis,label_or_method
+Derm7pt,diagnosis,source_category,dermal nevus,33,1011,3.264094955489614,1011,3.264094955489614,dermoscopy case,${R52_PATH_CB55B27527EC},diagnosis,label_or_method
+Derm7pt,diagnosis,source_category,dermatofibroma,20,1011,1.9782393669634026,1011,1.9782393669634026,dermoscopy case,${R52_PATH_CB55B27527EC},diagnosis,label_or_method
+Derm7pt,diagnosis,source_category,lentigo,24,1011,2.373887240356083,1011,2.373887240356083,dermoscopy case,${R52_PATH_CB55B27527EC},diagnosis,label_or_method
+Derm7pt,diagnosis,source_category,melanoma,1,1011,0.09891196834817013,1011,0.09891196834817013,dermoscopy case,${R52_PATH_CB55B27527EC},diagnosis,label_or_method
+Derm7pt,diagnosis,source_category,melanoma (0.76 to 1.5 mm),53,1011,5.242334322453017,1011,5.242334322453017,dermoscopy case,${R52_PATH_CB55B27527EC},diagnosis,label_or_method
+Derm7pt,diagnosis,source_category,melanoma (in situ),64,1011,6.330365974282889,1011,6.330365974282889,dermoscopy case,${R52_PATH_CB55B27527EC},diagnosis,label_or_method
+Derm7pt,diagnosis,source_category,melanoma (less than 0.76 mm),102,1011,10.089020771513352,1011,10.089020771513352,dermoscopy case,${R52_PATH_CB55B27527EC},diagnosis,label_or_method
+Derm7pt,diagnosis,source_category,melanoma (more than 1.5 mm),28,1011,2.7695351137487636,1011,2.7695351137487636,dermoscopy case,${R52_PATH_CB55B27527EC},diagnosis,label_or_method
+Derm7pt,diagnosis,source_category,melanoma metastasis,4,1011,0.39564787339268054,1011,0.39564787339268054,dermoscopy case,${R52_PATH_CB55B27527EC},diagnosis,label_or_method
+Derm7pt,diagnosis,source_category,melanosis,16,1011,1.5825914935707222,1011,1.5825914935707222,dermoscopy case,${R52_PATH_CB55B27527EC},diagnosis,label_or_method
+Derm7pt,diagnosis,source_category,miscellaneous,8,1011,0.7912957467853611,1011,0.7912957467853611,dermoscopy case,${R52_PATH_CB55B27527EC},diagnosis,label_or_method
+Derm7pt,diagnosis,source_category,recurrent nevus,6,1011,0.5934718100890207,1011,0.5934718100890207,dermoscopy case,${R52_PATH_CB55B27527EC},diagnosis,label_or_method
+Derm7pt,diagnosis,source_category,reed or spitz nevus,79,1011,7.81404549950544,1011,7.81404549950544,dermoscopy case,${R52_PATH_CB55B27527EC},diagnosis,label_or_method
+Derm7pt,diagnosis,source_category,seborrheic keratosis,45,1011,4.451038575667655,1011,4.451038575667655,dermoscopy case,${R52_PATH_CB55B27527EC},diagnosis,label_or_method
+Derm7pt,diagnosis,source_category,vascular lesion,29,1011,2.868447082096934,1011,2.868447082096934,dermoscopy case,${R52_PATH_CB55B27527EC},diagnosis,label_or_method

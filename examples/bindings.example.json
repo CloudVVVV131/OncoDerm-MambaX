@@ -1,0 +1,7 @@
+{
+  "paths": {
+    "ham_train_members": "/your-authorized-inputs/ham10000_seed42_train.csv",
+    "ham_validation_members": "/your-authorized-inputs/ham10000_seed42_val.csv",
+    "siim_official_metadata": "/your-authorized-inputs/ISIC_2020_Training_GroundTruth_v2.csv"
+  }
+}

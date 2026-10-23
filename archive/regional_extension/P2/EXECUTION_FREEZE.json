@@ -1,0 +1,549 @@
+{
+  "created_at": "2026-10-14T17:18:15.715553+08:00",
+  "files": [
+    {
+      "path": "${R52_PATH_3466E634939E}",
+      "role": "read_only_P1",
+      "sha256": "07b0df19ea05bf1f6ef56f60cbf1b453aa0dd8a433d1357cdcbd83d9ab71712c",
+      "bytes": 7545
+    },
+    {
+      "path": "${R52_PATH_C9E6B9285B9C}",
+      "role": "read_only_P1",
+      "sha256": "e0888f959e60bac29b3ff2f683fbfff81c829609a9fe7e5b132c6ae53364d928",
+      "bytes": 3545
+    },
+    {
+      "path": "${R52_PATH_4675512A5DFA}",
+      "role": "read_only_P1",
+      "sha256": "b4c5db2b67579aab7c3868356885a9a2e53b9a8bbf9aed64314e008de739e359",
+      "bytes": 25879
+    },
+    {
+      "path": "${R52_PATH_FD96EEB3CD47}",
+      "role": "read_only_P1",
+      "sha256": "7411d3b6f0b291434577baa68c4cfccc3dd035f72e3592e008031fe9fd40d683",
+      "bytes": 2915
+    },
+    {
+      "path": "${R52_PATH_DE99940273CA}",
+      "role": "read_only_P1",
+      "sha256": "b4e48b53e2e6851c6b4ce8470e7def135818ace378d881fe1eaa9afbdc6948b6",
+      "bytes": 12464
+    },
+    {
+      "path": "${R52_PATH_793EE46F1002}",
+      "role": "read_only_P1",
+      "sha256": "51b06111d9be9a21ceea58184798cf425ca18f508de21cc168f9b13052724107",
+      "bytes": 22347
+    },
+    {
+      "path": "${R52_PATH_344369C7A080}",
+      "role": "read_only_P1",
+      "sha256": "0988729a137f6f5848b00084cb4f9e91d9340e5afed2a5aded62389b526b3700",
+      "bytes": 1790
+    },
+    {
+      "path": "${R52_PATH_7BDBFFC0E197}",
+      "role": "read_only_P1",
+      "sha256": "92ba9affb1d2436ae06fe33b3f9dbf29325658ce4337b56d3b2c1029ff27c8c3",
+      "bytes": 13390
+    },
+    {
+      "path": "${R52_PATH_A738169AFAC6}",
+      "role": "read_only_P1",
+      "sha256": "5a02c3992f8e45d80b56c5e6d3622f86e4f26efc330cb80f7266cd4b0fe01d6d",
+      "bytes": 690
+    },
+    {
+      "path": "${R52_PATH_9269A7E7FD19}",
+      "role": "unchanged_P1_reference",
+      "sha256": "5d828e54e0442cf23409886feebd6f2e2dfa45554313c1a88fe960f5501cf785",
+      "bytes": 2243
+    },
+    {
+      "path": "${R52_PATH_8C7C01C2042E}",
+      "role": "byte_identical_P2_reference",
+      "sha256": "5d828e54e0442cf23409886feebd6f2e2dfa45554313c1a88fe960f5501cf785",
+      "bytes": 2243
+    },
+    {
+      "path": "${R52_PATH_E71BCB1A0D1F}",
+      "role": "unchanged_P1_reference",
+      "sha256": "d317069cfa381e44eb12ea0ad5b16f3b4ef64fc5096ab3d0e5a04bd1ed94bd37",
+      "bytes": 2351
+    },
+    {
+      "path": "${R52_PATH_12A2D05AFDDF}",
+      "role": "byte_identical_P2_reference",
+      "sha256": "d317069cfa381e44eb12ea0ad5b16f3b4ef64fc5096ab3d0e5a04bd1ed94bd37",
+      "bytes": 2351
+    },
+    {
+      "path": "${R52_PATH_30772E310E83}",
+      "role": "unchanged_P1_reference",
+      "sha256": "4de61041c03e49a0d8ca03437a73f21317b0ed65a95d38f5d173bfd3c190995a",
+      "bytes": 2861
+    },
+    {
+      "path": "${R52_PATH_43E1507FE5E6}",
+      "role": "byte_identical_P2_reference",
+      "sha256": "4de61041c03e49a0d8ca03437a73f21317b0ed65a95d38f5d173bfd3c190995a",
+      "bytes": 2861
+    },
+    {
+      "path": "${R52_PATH_2F6DFAE1A83B}",
+      "role": "unchanged_P1_reference",
+      "sha256": "56b5e91c3bb77ab933c25fd65eba883419bdc5691cc94cb9dc840e8f4e3674eb",
+      "bytes": 22
+    },
+    {
+      "path": "${R52_PATH_1F43440B6EBC}",
+      "role": "byte_identical_P2_reference",
+      "sha256": "56b5e91c3bb77ab933c25fd65eba883419bdc5691cc94cb9dc840e8f4e3674eb",
+      "bytes": 22
+    },
+    {
+      "path": "${R52_PATH_38CF1A1C264A}",
+      "role": "unchanged_P1_reference",
+      "sha256": "78d6dddaf4113248d3df55c21acbd7751075189a56b282833042bc6bd2fb3f62",
+      "bytes": 190
+    },
+    {
+      "path": "${R52_PATH_8BAB2F2A9171}",
+      "role": "byte_identical_P2_reference",
+      "sha256": "78d6dddaf4113248d3df55c21acbd7751075189a56b282833042bc6bd2fb3f62",
+      "bytes": 190
+    },
+    {
+      "path": "${R52_PATH_4357FF65B644}",
+      "role": "unchanged_P1_reference",
+      "sha256": "db399b81dbed64eb56130f27f1936089808872260a50fd345ce909f1ed1685e6",
+      "bytes": 10801
+    },
+    {
+      "path": "${R52_PATH_EF2E9026515F}",
+      "role": "byte_identical_P2_reference",
+      "sha256": "db399b81dbed64eb56130f27f1936089808872260a50fd345ce909f1ed1685e6",
+      "bytes": 10801
+    },
+    {
+      "path": "${R52_PATH_ECBE6C0B0E8A}",
+      "role": "unchanged_P1_reference",
+      "sha256": "4c001f03eca3a93ee3e9a590d46ef0710f66fc88be1512241d3f71a0bc3be6c6",
+      "bytes": 2104
+    },
+    {
+      "path": "${R52_PATH_B49BD0B62485}",
+      "role": "byte_identical_P2_reference",
+      "sha256": "4c001f03eca3a93ee3e9a590d46ef0710f66fc88be1512241d3f71a0bc3be6c6",
+      "bytes": 2104
+    },
+    {
+      "path": "${R52_PATH_EBE79CEEE116}",
+      "role": "unchanged_P1_reference",
+      "sha256": "c0c19257e4aa5fcff4bf73c6923128029375a903ef71a7b43e0cefa6fc1c0a7d",
+      "bytes": 66
+    },
+    {
+      "path": "${R52_PATH_ED8038E8A5FA}",
+      "role": "byte_identical_P2_reference",
+      "sha256": "c0c19257e4aa5fcff4bf73c6923128029375a903ef71a7b43e0cefa6fc1c0a7d",
+      "bytes": 66
+    },
+    {
+      "path": "${R52_PATH_C24FF195556B}",
+      "role": "unchanged_P1_reference",
+      "sha256": "7e737a004f69053821628f84b3da9c44a4e4a208a386fa7322c5c7ff9331a0c5",
+      "bytes": 13751
+    },
+    {
+      "path": "${R52_PATH_5FF90A46D2A3}",
+      "role": "byte_identical_P2_reference",
+      "sha256": "7e737a004f69053821628f84b3da9c44a4e4a208a386fa7322c5c7ff9331a0c5",
+      "bytes": 13751
+    },
+    {
+      "path": "${R52_PATH_B41D07AA597C}",
+      "role": "unchanged_P1_reference",
+      "sha256": "5362ba3d8c6815c88321a89e11f528e2e72840d5862837f01f3c87427e1eafdc",
+      "bytes": 7527
+    },
+    {
+      "path": "${R52_PATH_11E3AFF04D18}",
+      "role": "byte_identical_P2_reference",
+      "sha256": "5362ba3d8c6815c88321a89e11f528e2e72840d5862837f01f3c87427e1eafdc",
+      "bytes": 7527
+    },
+    {
+      "path": "${R52_PATH_D578A86959BF}",
+      "role": "unchanged_P1_reference",
+      "sha256": "680b6ae3efc2a6ec5b6e204751ce5e4713a8bfbf9a04db980f4d31670e3f6c82",
+      "bytes": 3154
+    },
+    {
+      "path": "${R52_PATH_FF05943593E0}",
+      "role": "byte_identical_P2_reference",
+      "sha256": "680b6ae3efc2a6ec5b6e204751ce5e4713a8bfbf9a04db980f4d31670e3f6c82",
+      "bytes": 3154
+    },
+    {
+      "path": "${R52_PATH_C24FF195556B}",
+      "role": "unchanged_P1_data_identity",
+      "sha256": "7e737a004f69053821628f84b3da9c44a4e4a208a386fa7322c5c7ff9331a0c5",
+      "bytes": 13751
+    },
+    {
+      "path": "${R52_PATH_E37E406F66F5}",
+      "role": "unchanged_P1_data_identity",
+      "sha256": "f30b240e75191f37d765cefd5f67b352cd89c0c543e0a5e2623204f3ac833816",
+      "bytes": 392747
+    },
+    {
+      "path": "${R52_PATH_A7EDEF14667C}",
+      "role": "unchanged_P1_data_identity",
+      "sha256": "b1e4982d61df694d6acc64a5c024f9423a110d87489a2731c5e361f183caf4f3",
+      "bytes": 84872
+    },
+    {
+      "path": "${R52_PATH_D99FBAEDF7E0}",
+      "role": "unchanged_P1_data_identity",
+      "sha256": "ef507cb90b4955b2a9f7dabbdc532a1bf9176899c72c46f646231f795c648a13",
+      "bytes": 47471
+    },
+    {
+      "path": "${R52_PATH_FD334715E81C}",
+      "role": "private_frozen_membership_not_for_ZIP",
+      "sha256": "ef507cb90b4955b2a9f7dabbdc532a1bf9176899c72c46f646231f795c648a13",
+      "bytes": 47471
+    },
+    {
+      "path": "${R52_PATH_46CC1DCF6D43}",
+      "role": "original_seed_initialization",
+      "sha256": "600c77c16573862278c7a6f697858067fc9183bb6654bdf3e9b279e3de3d6da0",
+      "bytes": 2107
+    },
+    {
+      "path": "${R52_PATH_C6D0EE9E2C04}",
+      "role": "original_pretraining_state_not_for_ZIP",
+      "sha256": "d696ba15991c1d53a4018bef481179fb30989560e7f0a8abce78400c118cf890",
+      "bytes": 133846175
+    },
+    {
+      "path": "${R52_PATH_1583AD1E152B}",
+      "role": "original_seed_initialization",
+      "sha256": "e05ccf74aa2451a89af6ffb85aed18b1076dd9383fedfdc651f01fb176e7a85f",
+      "bytes": 2107
+    },
+    {
+      "path": "${R52_PATH_BDAC0D0C8BEC}",
+      "role": "original_pretraining_state_not_for_ZIP",
+      "sha256": "15223aa8ffec7ddba52868fec1ac7001abfd9300e4cff917fb735ca090c3eb34",
+      "bytes": 133846175
+    },
+    {
+      "path": "${R52_PATH_A43577A49353}",
+      "role": "P1_best_hashed_only_not_loaded",
+      "sha256": "f92283cc46bcc45a59e123364c6cea3da8f4e0377cff4a2b8d54458a622c3c13",
+      "bytes": 137416109
+    },
+    {
+      "path": "${R52_PATH_E0155DED6097}",
+      "role": "P1_seed42_reused_no_execution",
+      "sha256": "f30c11fd3f2de069b2985fb65f8bd0bf51ed4f70d0afdb40ec607daff210e1f3",
+      "bytes": 3357
+    },
+    {
+      "path": "${R52_PATH_49DB2FCB13F6}",
+      "role": "P1_reused_copy",
+      "sha256": "f30c11fd3f2de069b2985fb65f8bd0bf51ed4f70d0afdb40ec607daff210e1f3",
+      "bytes": 3357
+    },
+    {
+      "path": "${R52_PATH_D4DACB25116E}",
+      "role": "P1_seed42_reused_no_execution",
+      "sha256": "aa76ec93e2aec5ebfa1567ce1898acc89bac88b9fc325cdc188d53e26201c8f7",
+      "bytes": 10377
+    },
+    {
+      "path": "${R52_PATH_1358E8E16B9A}",
+      "role": "P1_reused_copy",
+      "sha256": "aa76ec93e2aec5ebfa1567ce1898acc89bac88b9fc325cdc188d53e26201c8f7",
+      "bytes": 10377
+    },
+    {
+      "path": "${R52_PATH_56E3D116B525}",
+      "role": "P1_seed42_reused_no_execution",
+      "sha256": "b8bdfb3adaafd28fd5440625ffd858c7aa0d42f2e818e9fc3e9712cd4b2e6d7e",
+      "bytes": 308
+    },
+    {
+      "path": "${R52_PATH_BB98ABFE0B98}",
+      "role": "P1_reused_copy",
+      "sha256": "b8bdfb3adaafd28fd5440625ffd858c7aa0d42f2e818e9fc3e9712cd4b2e6d7e",
+      "bytes": 308
+    },
+    {
+      "path": "${R52_PATH_F1E060830B27}",
+      "role": "P1_seed42_reused_no_execution",
+      "sha256": "6d903fe55a898427c634f4f8a490ce108e1ecaa6dbce51a7e907aa842d4358ad",
+      "bytes": 5002
+    },
+    {
+      "path": "${R52_PATH_917585FF04DA}",
+      "role": "P1_reused_copy",
+      "sha256": "6d903fe55a898427c634f4f8a490ce108e1ecaa6dbce51a7e907aa842d4358ad",
+      "bytes": 5002
+    },
+    {
+      "path": "${R52_PATH_EE5822E03903}",
+      "role": "P1_seed42_reused_no_execution",
+      "sha256": "94b4966406186a1eea5712714d0ca0ea3c767542823a3c5a52883479c60323a7",
+      "bytes": 64091
+    },
+    {
+      "path": "${R52_PATH_AE079332A5DC}",
+      "role": "P1_reused_copy",
+      "sha256": "94b4966406186a1eea5712714d0ca0ea3c767542823a3c5a52883479c60323a7",
+      "bytes": 64091
+    },
+    {
+      "path": "${R52_PATH_9A2FF8F30438}",
+      "role": "P1_best_hashed_only_not_loaded",
+      "sha256": "56af879c23aaa3e741afa0306f55a5e05778c2752a7d699d8ccdb2a85c3cc597",
+      "bytes": 137416109
+    },
+    {
+      "path": "${R52_PATH_4746A6A5256C}",
+      "role": "P1_seed42_reused_no_execution",
+      "sha256": "40f4bfb36b38be7516aed16e2958f7990afdcd1ebb679696053d5e27e59bcba8",
+      "bytes": 3403
+    },
+    {
+      "path": "${R52_PATH_D804585858B1}",
+      "role": "P1_reused_copy",
+      "sha256": "40f4bfb36b38be7516aed16e2958f7990afdcd1ebb679696053d5e27e59bcba8",
+      "bytes": 3403
+    },
+    {
+      "path": "${R52_PATH_E6E9F56F926F}",
+      "role": "P1_seed42_reused_no_execution",
+      "sha256": "00ae66e0942cda7c13a2504487f87be292d3edc1bb38cc35df0ae7368807ca07",
+      "bytes": 10380
+    },
+    {
+      "path": "${R52_PATH_789B94FAF00C}",
+      "role": "P1_reused_copy",
+      "sha256": "00ae66e0942cda7c13a2504487f87be292d3edc1bb38cc35df0ae7368807ca07",
+      "bytes": 10380
+    },
+    {
+      "path": "${R52_PATH_EF5A47312651}",
+      "role": "P1_seed42_reused_no_execution",
+      "sha256": "1412fc7b632f5939ebd5a0ebd257b2788319b1574ae4989154c652080d3cb698",
+      "bytes": 309
+    },
+    {
+      "path": "${R52_PATH_C1BFF9CA5905}",
+      "role": "P1_reused_copy",
+      "sha256": "1412fc7b632f5939ebd5a0ebd257b2788319b1574ae4989154c652080d3cb698",
+      "bytes": 309
+    },
+    {
+      "path": "${R52_PATH_4D432C36E066}",
+      "role": "P1_seed42_reused_no_execution",
+      "sha256": "799578424be305b69db57b5c4c70ebf21a16a5c676e2261186edc9d5a36125b7",
+      "bytes": 5396
+    },
+    {
+      "path": "${R52_PATH_45129C22777F}",
+      "role": "P1_reused_copy",
+      "sha256": "799578424be305b69db57b5c4c70ebf21a16a5c676e2261186edc9d5a36125b7",
+      "bytes": 5396
+    },
+    {
+      "path": "${R52_PATH_BCB632D92F54}",
+      "role": "P1_seed42_reused_no_execution",
+      "sha256": "7801875717fccd33c900e113c10470b09a8973df1abffca39fe355647a78d258",
+      "bytes": 69172
+    },
+    {
+      "path": "${R52_PATH_A91D0F826ECC}",
+      "role": "P1_reused_copy",
+      "sha256": "7801875717fccd33c900e113c10470b09a8973df1abffca39fe355647a78d258",
+      "bytes": 69172
+    },
+    {
+      "path": "${R52_PATH_29DAA792C12E}",
+      "role": "P1_best_hashed_only_not_loaded",
+      "sha256": "2f12c84b23b56a79d99335bf202991549268dc6aeeffcffc18889f854d3dd25e",
+      "bytes": 137285161
+    },
+    {
+      "path": "${R52_PATH_18D48B981A8A}",
+      "role": "P1_seed42_reused_no_execution",
+      "sha256": "53efafcffd8afe2c3ae9af4afdb7ec100e589c58b6d92ab828cc58168b63c74f",
+      "bytes": 1467
+    },
+    {
+      "path": "${R52_PATH_CA6F43F345AA}",
+      "role": "P1_reused_copy",
+      "sha256": "53efafcffd8afe2c3ae9af4afdb7ec100e589c58b6d92ab828cc58168b63c74f",
+      "bytes": 1467
+    },
+    {
+      "path": "${R52_PATH_95C659399920}",
+      "role": "P1_seed42_reused_no_execution",
+      "sha256": "aa803c3fa1768e4f55955d03265fac081c56620e6706aa92ae9a4bc9cd50718c",
+      "bytes": 10567
+    },
+    {
+      "path": "${R52_PATH_5E29663A3F93}",
+      "role": "P1_reused_copy",
+      "sha256": "aa803c3fa1768e4f55955d03265fac081c56620e6706aa92ae9a4bc9cd50718c",
+      "bytes": 10567
+    },
+    {
+      "path": "${R52_PATH_B43884F5442B}",
+      "role": "P1_seed42_reused_no_execution",
+      "sha256": "870ca0159311f8a311654488fefe0f330444c504a03827545de65c63a525921d",
+      "bytes": 308
+    },
+    {
+      "path": "${R52_PATH_C38F349B2C88}",
+      "role": "P1_reused_copy",
+      "sha256": "870ca0159311f8a311654488fefe0f330444c504a03827545de65c63a525921d",
+      "bytes": 308
+    },
+    {
+      "path": "${R52_PATH_214A918C9912}",
+      "role": "P1_seed42_reused_no_execution",
+      "sha256": "2d6751d3e39d061086d102823322c320938dfb274d528dca67f43f0c10a590b1",
+      "bytes": 3693
+    },
+    {
+      "path": "${R52_PATH_C3739729B554}",
+      "role": "P1_reused_copy",
+      "sha256": "2d6751d3e39d061086d102823322c320938dfb274d528dca67f43f0c10a590b1",
+      "bytes": 3693
+    },
+    {
+      "path": "${R52_PATH_535752B1236E}",
+      "role": "P1_seed42_reused_no_execution",
+      "sha256": "21aa30f0d4f9e65a5eb89756f9e55d6d94fdc5125c62bcb37d77749f24043576",
+      "bytes": 9897
+    },
+    {
+      "path": "${R52_PATH_1F496F64EA9A}",
+      "role": "P1_reused_copy",
+      "sha256": "21aa30f0d4f9e65a5eb89756f9e55d6d94fdc5125c62bcb37d77749f24043576",
+      "bytes": 9897
+    },
+    {
+      "path": "${R52_PATH_EE25DE5894E3}",
+      "role": "M0_seed42_validation_only",
+      "sha256": "15b41e9888080af8bd79c13c78a0cb82ef07885a8d5318d8e1351cd3aea54771",
+      "bytes": 2357
+    },
+    {
+      "path": "${R52_PATH_BBCEE1A60D55}",
+      "role": "M0_recorded_identity_no_weight_load",
+      "sha256": "9f68460e0f414f3af4122e016574711ae2e222f55c7e47067c22c7573a2be751",
+      "bytes": 526
+    },
+    {
+      "path": "${R52_PATH_CFEC508E72DF}",
+      "role": "M0_completed_status",
+      "sha256": "7b3ba1725fa6ae5d7726a2a35e4625de75a93b916465417060e39bf5306dfbab",
+      "bytes": 326
+    },
+    {
+      "path": "${R52_PATH_11F3309CEF4E}",
+      "role": "M0_recorded_identity_no_weight_load",
+      "sha256": "e15d48e18765efb868bcc753bcedb427d200f8e555ce05a0ecbc9cc7d461b066",
+      "bytes": 526
+    },
+    {
+      "path": "${R52_PATH_BCA9F97C5437}",
+      "role": "M0_completed_status",
+      "sha256": "7079da9cca3c499e7f57958514dcb4dea3f2d942d1ea9e37e67ad50eda24a20e",
+      "bytes": 327
+    },
+    {
+      "path": "${R52_PATH_96C4C52DFE23}",
+      "role": "new_P2_code",
+      "sha256": "76cb8157f28c52de3195f24d6d68ff5979f7d111dda78d35b692d61ea6a07fa3",
+      "bytes": 9519
+    },
+    {
+      "path": "${R52_PATH_1C77D693B796}",
+      "role": "new_P2_code",
+      "sha256": "3d1c5cb06c104593123d34190d09a0ae404c03b5c7dee163e1ab28e0834f591f",
+      "bytes": 22409
+    },
+    {
+      "path": "${R52_PATH_484B621214B5}",
+      "role": "new_P2_code",
+      "sha256": "82090a9a5cccc42db346a84cb2f39ffd9ed68faa8e7c8704a7bfa50902581f14",
+      "bytes": 3252
+    },
+    {
+      "path": "${R52_PATH_B9319489F772}",
+      "role": "new_P2_code",
+      "sha256": "e6acead98477b41b7b3b0d89c7d6b201233f477e0b00f05c5c3038d0230c17d7",
+      "bytes": 9673
+    },
+    {
+      "path": "${R52_PATH_9BED16061755}",
+      "role": "new_P2_code",
+      "sha256": "f0e33cd1a209fe77c4e5d795a6a418fc357742a19230a7157c57b3586f8ffa2b",
+      "bytes": 602
+    },
+    {
+      "path": "${R52_PATH_16FF92BB0C8A}",
+      "role": "new_P2_code",
+      "sha256": "261fc6c423280ce494ebccc8761f4e72fdb79846caf59033bcc143faadae6aa9",
+      "bytes": 26705
+    },
+    {
+      "path": "${R52_PATH_07CAC72F609B}",
+      "role": "frozen_P2_record",
+      "sha256": "537a70bfa2ea5e19a710955c33623c7d57c8cc4fc83d2ae61e6778980e7336ef",
+      "bytes": 676
+    },
+    {
+      "path": "${R52_PATH_3C2738298C79}",
+      "role": "frozen_P2_record",
+      "sha256": "ffdb35541b9a9a2e8157681a49c320df5345a17e9d306c2eae24ddade7f7e27f",
+      "bytes": 2619
+    },
+    {
+      "path": "${R52_PATH_ED02E0DBFFC1}",
+      "role": "frozen_P2_record",
+      "sha256": "7afe6975d722bebc54f2f51c33948e1572b6dfdb152bfa48f55e97d1e6997983",
+      "bytes": 8212
+    },
+    {
+      "path": "${R52_PATH_C5F36CE930E5}",
+      "role": "frozen_P2_record",
+      "sha256": "67e84ad5e35ad8c353337562691b8849dcb8c2478146a186a5d0c4009bf91d5f",
+      "bytes": 485
+    },
+    {
+      "path": "${R52_PATH_39738DDE5C33}",
+      "role": "frozen_P2_record",
+      "sha256": "537de19068efe63cf0d2b5baca144b8f6748eb900c1295e8ad4b6ed5550dd405",
+      "bytes": 2540
+    },
+    {
+      "path": "${R52_PATH_4A9FC9506DEF}",
+      "role": "frozen_P2_record",
+      "sha256": "23d1927c507714a57f7dcde180258ea80c51521b1b7b26755c8c89b572b66f5e",
+      "bytes": 2540
+    }
+  ],
+  "new_runs": 6,
+  "reused_P1_runs": 3,
+  "readonly_M0_runs": 3,
+  "data_and_source_scan_scope": "explicit required paths only"
+}

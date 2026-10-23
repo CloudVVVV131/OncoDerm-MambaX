@@ -1,0 +1,20 @@
+{
+  "python": "3.12.3",
+  "platform": "Linux-5.15.0-78-generic-x86_64-with-glibc2.35",
+  "torch": "2.8.0+cu128",
+  "cuda_available": true,
+  "cuda_version": "12.8",
+  "gpu_name": "NVIDIA GeForce RTX 5090",
+  "gpu_count": 1,
+  "timm": "1.0.27",
+  "numpy": "2.3.2",
+  "pandas": "3.0.3",
+  "sklearn": "1.9.0",
+  "torchvision": "0.23.0+cu128",
+  "model_metadata": {
+    "source": "timm",
+    "timm_name": "efficientnet_b0",
+    "pretrained": true
+  },
+  "train_init_checkpoint": null
+}

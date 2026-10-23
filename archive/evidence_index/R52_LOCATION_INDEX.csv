@@ -1,0 +1,102 @@
+﻿document,block,text
+OncoDerm_Frontiers_MAIN_R5_2.docx,29,3. Materials and Methods
+OncoDerm_Frontiers_MAIN_R5_2.docx,30,3.1 Study Design and Evaluation Strategy
+OncoDerm_Frontiers_MAIN_R5_2.docx,36,Figure 1 summarizes the original framework and the development and external-evaluation cohorts.
+OncoDerm_Frontiers_MAIN_R5_2.docx,37,3.2 Data Sources and Cohort Construction
+OncoDerm_Frontiers_MAIN_R5_2.docx,45,3.3 OncoDerm-MambaX Framework
+OncoDerm_Frontiers_MAIN_R5_2.docx,47,3.3.1 Visual Backbone and Directional Context Adapter
+OncoDerm_Frontiers_MAIN_R5_2.docx,54,3.3.2 Lesion Prior Auxiliary Head
+OncoDerm_Frontiers_MAIN_R5_2.docx,58,3.3.3 Clinical Metadata Gated Fusion
+OncoDerm_Frontiers_MAIN_R5_2.docx,65,3.3.4 Multi-Task Heads and Objective
+OncoDerm_Frontiers_MAIN_R5_2.docx,74,3.4 Training Strategy and Configuration Study
+OncoDerm_Frontiers_MAIN_R5_2.docx,79,3.5 Contemporary Baselines and Statistical Comparison
+OncoDerm_Frontiers_MAIN_R5_2.docx,82,3.6 Fixed-Checkpoint Clinical Inputs and Original-Model External Evaluation
+OncoDerm_Frontiers_MAIN_R5_2.docx,83,3.6.1 Clinical-Field Availability and External Evaluation
+OncoDerm_Frontiers_MAIN_R5_2.docx,88,3.6.2 Clinical-Record Correspondence
+OncoDerm_Frontiers_MAIN_R5_2.docx,92,3.7 Controlled Spatial-Supervision and Readout Studies
+OncoDerm_Frontiers_MAIN_R5_2.docx,99,"3.8 Evaluation, Statistical Analysis, and Exploratory Score Integration"
+OncoDerm_Frontiers_MAIN_R5_2.docx,107,3.9 Probability Quality and Development-Derived Thresholds
+OncoDerm_Frontiers_MAIN_R5_2.docx,110,3.10 Supporting Spatial Analysis and Computational Profiling
+OncoDerm_Frontiers_MAIN_R5_2.docx,113,4. Results
+OncoDerm_Frontiers_MAIN_R5_2.docx,114,4.1 Cohort Profiles and Original Configurations
+OncoDerm_Frontiers_MAIN_R5_2.docx,117,4.2 Reference-Model Comparison
+OncoDerm_Frontiers_MAIN_R5_2.docx,120,4.3 Original Models Across Training Runs and External Sources
+OncoDerm_Frontiers_MAIN_R5_2.docx,125,4.4 Clinical-Input Availability and Record Correspondence
+OncoDerm_Frontiers_MAIN_R5_2.docx,126,4.4.1 Available versus Structured-Missing Inputs
+OncoDerm_Frontiers_MAIN_R5_2.docx,131,4.4.2 Matched versus Reassigned Records
+OncoDerm_Frontiers_MAIN_R5_2.docx,135,4.5 Probability Quality and Development-Derived Operating Points
+OncoDerm_Frontiers_MAIN_R5_2.docx,140,4.6 Controlled Spatial Supervision and Regional Readout
+OncoDerm_Frontiers_MAIN_R5_2.docx,145,"4.7 Supporting Configuration, Spatial, and Computational Findings"
+OncoDerm_Frontiers_MAIN_R5_2.docx,189,"3. Tschandl P, Rinner C, Apalla Z, Argenziano G, Codella N, Halpern A, et al. Human–computer collaboration for skin cancer recognition. Nat Med. 2020;26:1229–1234. doi:10.1038/s41591-020-0942-0."
+OncoDerm_Frontiers_MAIN_R5_2.docx,190,"4. Combalia M, Codella N, Rotemberg V, Carrera C, Dusza S, Gutman D, et al. Validation of artificial intelligence prediction models for skin cancer diagnosis using dermoscopy images: the 2019 International Skin Imaging Collaboration Grand Challenge. Lancet Digit Health. 2022;4(5):e330–e339. doi:10.1016/S2589-7500(22)00021-8."
+OncoDerm_Frontiers_MAIN_R5_2.docx,239,Table 1. Cohorts and clinical information. A: roles and inputs.
+OncoDerm_Frontiers_MAIN_R5_2.docx,242,Table 1 (continued). B: observed clinical characteristics.
+OncoDerm_Frontiers_MAIN_R5_2.docx,245,Table 2. Original framework performance. A: seed-42 reference comparison.
+OncoDerm_Frontiers_MAIN_R5_2.docx,248,Table 2 (continued). B: three-run original-family summary.
+OncoDerm_Frontiers_MAIN_R5_2.docx,252,Table 2 (continued). C: original seed-42 AP differences on SIIM.
+OncoDerm_Frontiers_MAIN_R5_2.docx,255,Table 3. Original B2/B6 across external sources under paired FP32 input policies.
+OncoDerm_Frontiers_MAIN_R5_2.docx,258,Table 4. Fixed-model clinical-input effects. A: available minus structured missing.
+OncoDerm_Frontiers_MAIN_R5_2.docx,261,Table 4 (continued). B: clinical-record correspondence under fixed original checkpoints.
+OncoDerm_Frontiers_MAIN_R5_2.docx,265,"Table 5. Controlled spatial studies. A: matched mask-loss contrast, SIIM E_REAL."
+OncoDerm_Frontiers_MAIN_R5_2.docx,268,Table 5 (continued). B: primary regional-readout AP comparisons.
+OncoDerm_Frontiers_MAIN_R5_2.docx,271,Table 6. Original-model operating points with available clinical inputs.
+OncoDerm_Frontiers_MAIN_R5_2.docx,275,Figure 1
+OncoDerm_Frontiers_MAIN_R5_2.docx,279,Figure 2
+OncoDerm_Frontiers_MAIN_R5_2.docx,283,Figure 3
+OncoDerm_Frontiers_MAIN_R5_2.docx,287,Figure 4
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,2,Supplementary Table S1 compares the information pathways and evaluation designs of selected dermoscopic and dermatology AI studies. The comparison emphasizes where spatial supervision and clinical information enter a model and how its predictions are assessed.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,3,Supplementary Table S1. Information pathways and evaluation designs in selected dermatology AI studies.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,8,Supplementary Table S2. Cohort roles and class distribution.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,34,Supplementary Table S3. Seed-42 configuration performance and computational characteristics.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,40,"Supplementary Figure S3. Controlled perturbation sensitivity and B6 class-level error structure. (a) Change from clean-input performance under prespecified blur, brightness, and hair-like perturbations for B0, B3, and B6; positive values denote performance loss. (b) Row-normalized B6 internal-test confusion matrix with raw counts in parentheses."
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,45,Supplementary Table S4. Score definitions for the direct-comparison models.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,50,Supplementary Table S5. System-specific melanoma-score comparison.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,52,Supplementary Table S6. Expanded internal multiclass metrics for the seed-42 direct-comparison systems.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,54,Supplementary Table S7. Computational profile.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,70,"Supplementary Table S8. Validation-derived all6 operating thresholds across validation, internal test, and SIIM–ISIC 2020."
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,72,Supplementary Table S9. External performance in the post hoc aggregate-score candidate comparison.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,74,Supplementary Table S10. External calibration intercept and slope using the system-specific melanoma scores defined in Supplementary Table S4.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,76,"Supplementary Table S11. Validation-fitted internal seven-class temperature-scaling analysis for B2, B4, and B6."
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,81,Supplementary Table S12. Sequential computational requirements for all6.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,85,Supplementary Table S13. Seed-wise B2/B4/B6 results.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,91,Supplementary Table S14. Performance and auxiliary-supervision settings of the main and additional B6 configurations.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,95,"Supplementary Figure S6. Additional training-configuration comparisons. (A) B6-M versus axial-CSSA B6. (B) B6 on split seed 2024 versus split seed 42, with training seed 42 in both. Both additional settings use 200 auxiliary pairs, compared with 100 for the main B6 setting (Table S14)."
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,101,Supplementary Table S15. Descriptive localization metrics across 200 matched image–mask pairs.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,107,Supplementary Table S16. Training settings for the direct-comparison models.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,114,Supplementary Table S17. Experimental series and evaluation interfaces.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,117,Supplementary Table S18. Original-series external results for both prediction heads.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,125,Supplementary Table S19. Coverage and mapping of actual SIIM clinical inputs.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,128,Supplementary Table S20. Per-run clinical-input results using seven-class MEL probabilities.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,131,Supplementary Table S21. Mean clinical-input effects and uncertainty for both heads.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,134,Supplementary Table S22. External operation of fixed-checkpoint models at development-derived thresholds.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,145,Supplementary Table S23. Completed paired-training runs and validation-selected checkpoints.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,148,Supplementary Table S24. New FULL/ZERO per-run external common-score results.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,151,Supplementary Table S25. Paired mask-loss effects under both clinical inputs and prediction heads.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,154,Supplementary Table S26. Threshold behavior of new FULL/ZERO models on SIIM.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,157,Supplementary Table S27. Internal results for the new matched-training models.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,160,Supplementary Table S28. Original three-run summary using dedicated external melanoma heads.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,163,Supplementary Figure S8
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,166,Supplementary Figure S9
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,171,Supplementary Table S29. Original seed-42 paired reference comparisons.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,182,Supplementary Table S30. Derm7pt source and clinical-field mapping.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,188,Supplementary Table S31. Original-model Derm7pt run-level results.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,194,Supplementary Table S32. Original-model Derm7pt clinical-input effects.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,197,Supplementary Table S33. Original-model Derm7pt threshold transport.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,206,Supplementary Table S34. Controlled regional-readout configurations.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,217,Supplementary Table S35. Same-protocol regional systems across test settings.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,220,Supplementary Table S36. Regional primary and supporting common-score contrasts.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,225,Supplementary Table S37. Additional R_IMG AP comparisons.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,230,Supplementary Table S38. Validation-set spatial correspondence intervention.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,236,Supplementary Table S39. Single-seed token-preserving development trial.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,244,Supplementary Table S40. Clinical profiles. A: cohort composition and observed age/sex.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,247,Supplementary Table S40 (continued). B: complete anatomical-site distributions as recorded.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,250,Supplementary Table S40 (continued). C: missingness reasons and HAM reference-label sources.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,255,Supplementary Table S41. Coverage of the original clinical encoder.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,274,Supplementary Table S42. Record-reassignment and uncertainty coverage.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,277,Supplementary Table S43. Common-head record-correspondence contrasts and prescribed intervals.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,280,"Supplementary Table S44. A1: per-run discrimination, common MEL head."
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,283,"Supplementary Table S44 (continued). A2: per-run discrimination, dedicated melanoma head."
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,286,Supplementary Table S44 (continued). B: distinct sources of effect variability.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,289,Supplementary Table S45. A: probability quality under the three clinical-input conditions.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,292,Supplementary Table S45 (continued). B: unchanged development-threshold transport on SIIM.
+OncoDerm_Frontiers_SUPPLEMENTARY_R5_2.docx,295,Supplementary Table S45 (continued). B: unchanged development-threshold transport on Derm7pt.

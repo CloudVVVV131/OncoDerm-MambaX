@@ -1,0 +1,10 @@
+{
+  "status": "TRAINING_COMPLETE",
+  "completed_epochs": 28,
+  "best_epoch": 13,
+  "next_epoch": 29,
+  "next_batch": 0,
+  "global_step": 4088,
+  "last_checkpoint": "${R52_PATH_4D52024E4710}",
+  "elapsed_this_invocation_seconds": 2336.3183279037476
+}

@@ -1,0 +1,43 @@
+{
+  "recorded_at": "2026-10-11T17:32:24.813999+08:00",
+  "executable": "${R52_PATH_07EFDCD4B820}",
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "sklearn": "1.7.2",
+    "yaml": "6.0.3"
+  },
+  "workers": 1,
+  "blas_threads": 1,
+  "cuda_visible_devices": "",
+  "threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "mkl",
+      "num_threads": 1,
+      "prefix": "mkl_rt",
+      "filepath": "${R52_PATH_676C8DFF2FD3}",
+      "version": "2025.0-Product",
+      "threading_layer": "intel"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 1,
+      "prefix": "libiomp",
+      "filepath": "${R52_PATH_0EB5C27AA5C3}",
+      "version": null
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 1,
+      "prefix": "vcomp",
+      "filepath": "${R52_PATH_A54C13E51591}",
+      "version": null
+    }
+  ]
+}

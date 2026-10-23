@@ -1,0 +1,95 @@
+{
+  "status": "PASSED",
+  "source_initialization": {
+    "pretrained_config": {
+      "url": "",
+      "hf_hub_id": "timm/convnext_tiny.in12k_ft_in1k",
+      "architecture": "convnext_tiny",
+      "tag": "in12k_ft_in1k",
+      "custom_load": false,
+      "input_size": [
+        3,
+        224,
+        224
+      ],
+      "test_input_size": [
+        3,
+        288,
+        288
+      ],
+      "fixed_input_size": false,
+      "interpolation": "bicubic",
+      "crop_pct": 0.95,
+      "test_crop_pct": 1.0,
+      "crop_mode": "center",
+      "mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "std": [
+        0.229,
+        0.224,
+        0.225
+      ],
+      "num_classes": 1000,
+      "pool_size": [
+        7,
+        7
+      ],
+      "first_conv": "stem.0",
+      "classifier": "head.fc",
+      "license": "apache-2.0"
+    },
+    "timm_version": "1.0.27",
+    "torch_version": "2.8.0+cu128",
+    "model_source": "${R52_PATH_9A2AE8D21C2F}",
+    "status": "READY",
+    "public_weight_path": "${R52_PATH_2EEF09F096AD}",
+    "public_weight_sha256": "a1aefa409b513cf209b085424eb3efffe4e4a9f511491bc2c12ea35209e6bb95",
+    "public_weight_bytes": 114374272,
+    "download_source": "https://huggingface.co/timm/convnext_tiny.in12k_ft_in1k/resolve/main/model.safetensors",
+    "snapshot_revision": "aa096f03029c7f0ec052013f64c819b34f8ad790",
+    "initial_state_path": "${R52_PATH_79B160D4C521}",
+    "initial_state_sha256": "cb1dc95021bb234e039a1819ab1aca3519c175fc0dc9555b1963c5914d0b8fcc",
+    "parameter_count": 33431726,
+    "seed": 42
+  },
+  "shared_initial_state": "${R52_PATH_BF15195B7FEE}",
+  "shared_initial_state_sha256": "d32628612f8350886d55f4ae55d7fa955ebe7afbb240bb8e82111ffd79415bde",
+  "state_tensor_sha256": "b8e90e145d7642cde41e2727dee1165e98446a1f9f4bacd74f7b4fa645c8db1e",
+  "new_readout_tensor_sha256": "25b31e502da343a24236af4bd649c8a0cabb224b327213fb99e9c7b9298121cb",
+  "new_readout_seed": 6042,
+  "shared_base_exact": true,
+  "all_new_parameters_exact": true,
+  "state_dict_keys_shapes_values_identical": true,
+  "original_model_tensor_count": 252,
+  "new_readout_hashes": {
+    "eta": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+    "slots.0.0.weight": "9107f3ba55602154349710bf6dfd7b861c4c17f8b61b9f542e5d3301ef6f9a5a",
+    "slots.0.0.bias": "e80232b4d18d0bb7e794be263ba937626f383f9917d4b8a737ba893a8f752293",
+    "slots.0.1.weight": "553c7efcd603b8e667e7631c51bce8240a2081f0d8c1976da21d04de5a3daf17",
+    "slots.0.1.bias": "716c0ec34931cbf969bfdbc3ea4d5b739271b98aee0333dd275b41c160ca029f",
+    "slots.1.0.weight": "9107f3ba55602154349710bf6dfd7b861c4c17f8b61b9f542e5d3301ef6f9a5a",
+    "slots.1.0.bias": "e80232b4d18d0bb7e794be263ba937626f383f9917d4b8a737ba893a8f752293",
+    "slots.1.1.weight": "f77e370ec13c07ad4c0d3f6c822c07a0a68684ef4de9ccc89556a92167b19f04",
+    "slots.1.1.bias": "58eda17e162938466fbe5876ec9e15ea22e22463b27e53d2bda14c199de44e48",
+    "slots.2.0.weight": "9107f3ba55602154349710bf6dfd7b861c4c17f8b61b9f542e5d3301ef6f9a5a",
+    "slots.2.0.bias": "e80232b4d18d0bb7e794be263ba937626f383f9917d4b8a737ba893a8f752293",
+    "slots.2.1.weight": "233bec6d5ae03e1f111f705b06f35e991b53fd7d16c909256af243b48f1ac713",
+    "slots.2.1.bias": "30ed6fe03ce0bfb270e370c7ddc80fb40e96db8a994b2eceb914823d9979360f",
+    "slots.3.0.weight": "9107f3ba55602154349710bf6dfd7b861c4c17f8b61b9f542e5d3301ef6f9a5a",
+    "slots.3.0.bias": "e80232b4d18d0bb7e794be263ba937626f383f9917d4b8a737ba893a8f752293",
+    "slots.3.1.weight": "b7676990b35093197ace7ac57b50ce9daaa27c9986b29e3e8ea9e57c40fa4773",
+    "slots.3.1.bias": "26cf82d1f31906150891dc98cd5f3c05c1c235536ad637eb461394c20d1d6c27",
+    "output.0.weight": "fef951e6c76ad6a01b208af650ca6d95769bec840e009981c5ae1316a42c90b1",
+    "output.0.bias": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad",
+    "output.1.weight": "8ce566d3415470670a9afcb37bccc56c2f7a48f327c4e6037e41dd1aa78d8206"
+  },
+  "parameter_count": 34225839,
+  "readout_parameter_count": 794113,
+  "readout_rng_restored": true,
+  "model_source": "${R52_PATH_A67B1F19BCEF}",
+  "base_source": "${R52_PATH_0CF6EBE798D1}",
+  "worker_source": "${R52_PATH_1632DE166419}"
+}

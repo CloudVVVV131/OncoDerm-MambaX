@@ -1,0 +1,8 @@
+_base_: ../defaults.yaml
+model:
+  name: vmamba_tiny
+  source: vmamba
+  pretrained: true
+  num_classes: 7
+  fallback_timm_name: swin_tiny_patch4_window7_224
+  record_fallback: true

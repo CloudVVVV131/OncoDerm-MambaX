@@ -1,0 +1,7 @@
+_base_: ../models/lesionmamba_compact.yaml
+model:
+  name: lesionmamba_ablation_a3
+  ablation_id: A3
+train:
+  epochs: 30
+  early_stopping_patience: 6

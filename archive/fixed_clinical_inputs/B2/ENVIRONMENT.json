@@ -1,0 +1,23 @@
+{
+  "time": "2026-10-12T04:43:11.134444+08:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "${R52_PATH_6560E3761747}",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "torch": "2.8.0+cu128",
+  "torchvision": "0.23.0+cu128",
+  "timm": "1.0.27",
+  "pillow": "12.3.0",
+  "numpy": "2.3.2",
+  "pandas": "3.0.3",
+  "CUDA_runtime": "12.8",
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "device_total_bytes": 8585216000,
+  "precision": "FP32",
+  "TF32": false,
+  "autocast": false,
+  "eval": true,
+  "inference_mode": true,
+  "threads": 4,
+  "safe_loading": "weights_only=True; explicit allowlist only torch.torch_version.TorchVersion; no unrestricted pickle",
+  "network_policy": "no download; offline flags; constructor pretrained=False, then full strict state_dict restore"
+}

@@ -1,0 +1,7 @@
+_base_: ../models/lesionmamba_compact.yaml
+model:
+  name: lesionmamba_loss_weighted_ce
+loss:
+  name: weighted_ce
+  lambda_sparse: 0.0
+  lambda_tv: 0.0

@@ -1,0 +1,305 @@
+﻿record_type,field,n_images_per_patient,n_patients,n_images_in_bin,denominator_patients,percent_patients,denominator_images,percent_images,candidate_same_size_exchange_stratum,statistic,value,unique_valid_values,missing_pattern,n_images,interpretation,all_patients,category,n_unique_full_vectors_per_patient,n_patients_per_vector,n_images_per_vector,n_distinct_vectors,n_patient_vector_links
+group_size_frequency,patient_block_size,2,1,2,2056,0.048638132295719845,33126,0.006037553583288052,False,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,3,296,888,2056,14.396887159533074,33126,2.680673790979895,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,4,188,752,2056,9.14396887159533,33126,2.2701201473163075,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,5,120,600,2056,5.836575875486381,33126,1.8112660749864156,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,6,85,510,2056,4.134241245136187,33126,1.539576163738453,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,7,102,714,2056,4.961089494163424,33126,2.1554066292338345,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,8,43,344,2056,2.0914396887159534,33126,1.0384592163255448,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,9,78,702,2056,3.7937743190661477,33126,2.119181307734106,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,10,46,460,2056,2.237354085603113,33126,1.388637324156252,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,11,42,462,2056,2.0428015564202333,33126,1.39467487773954,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,12,67,804,2056,3.2587548638132295,33126,2.427096540481797,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,13,67,871,2056,3.2587548638132295,33126,2.6293545855219467,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,14,71,994,2056,3.453307392996109,33126,3.0006641308941617,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,15,72,1080,2056,3.501945525291829,33126,3.260278934975548,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,16,41,656,2056,1.9941634241245136,33126,1.980317575318481,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,17,50,850,2056,2.431906614785992,33126,2.565960272897422,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,18,32,576,2056,1.556420233463035,33126,1.7388154319869589,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,19,46,874,2056,2.237354085603113,33126,2.6384109158968787,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,20,44,880,2056,2.140077821011673,33126,2.6565235766467428,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,21,42,882,2056,2.0428015564202333,33126,2.662561130230031,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,22,43,946,2056,2.0914396887159534,33126,2.8557628448952483,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,23,44,1012,2056,2.140077821011673,33126,3.0550021131437544,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,24,24,576,2056,1.1673151750972763,33126,1.7388154319869589,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,25,30,750,2056,1.4591439688715953,33126,2.2640825937330193,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,26,20,520,2056,0.9727626459143969,33126,1.5697639316548935,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,27,20,540,2056,0.9727626459143969,33126,1.630139467487774,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,28,19,532,2056,0.9241245136186771,33126,1.6059892531546218,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,29,27,783,2056,1.3132295719844358,33126,2.363702227857272,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,30,21,630,2056,1.0214007782101167,33126,1.9018293787357363,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,31,11,341,2056,0.5350194552529183,33126,1.0294028859506128,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,32,13,416,2056,0.632295719844358,33126,1.2558111453239147,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,33,13,429,2056,0.632295719844358,33126,1.2950552436152871,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,34,20,680,2056,0.9727626459143969,33126,2.0527682183179374,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,35,19,665,2056,0.9241245136186771,33126,2.0074865664432773,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,36,11,396,2056,0.5350194552529183,33126,1.1954356094910343,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,37,15,555,2056,0.7295719844357976,33126,1.6754211193624344,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,38,18,684,2056,0.8754863813229572,33126,2.0648433254845138,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,39,7,273,2056,0.3404669260700389,33126,0.8241260641188191,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,40,11,440,2056,0.5350194552529183,33126,1.3282617883233714,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,41,9,369,2056,0.4377431906614786,33126,1.1139286361166456,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,42,14,588,2056,0.6809338521400778,33126,1.7750407534866872,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,43,4,172,2056,0.19455252918287938,33126,0.5192296081627724,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,44,7,308,2056,0.3404669260700389,33126,0.92978325182636,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,45,10,450,2056,0.48638132295719844,33126,1.3584495562398116,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,46,4,184,2056,0.19455252918287938,33126,0.5554549296625008,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,47,4,188,2056,0.19455252918287938,33126,0.5675300368290769,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,48,7,336,2056,0.3404669260700389,33126,1.0143090019923926,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,49,3,147,2056,0.14591439688715954,33126,0.4437601883716718,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,50,6,300,2056,0.2918287937743191,33126,0.9056330374932078,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,51,3,153,2056,0.14591439688715954,33126,0.461872849121536,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,52,8,416,2056,0.38910505836575876,33126,1.2558111453239147,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,53,3,159,2056,0.14591439688715954,33126,0.4799855098714001,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,54,3,162,2056,0.14591439688715954,33126,0.4890418402463322,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,55,2,110,2056,0.09727626459143969,33126,0.33206544708084285,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,56,1,56,2056,0.048638132295719845,33126,0.16905150033206545,False,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,58,3,174,2056,0.14591439688715954,33126,0.5252671617460605,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,59,3,177,2056,0.14591439688715954,33126,0.5343234921209926,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,60,2,120,2056,0.09727626459143969,33126,0.3622532149972831,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,61,1,61,2056,0.048638132295719845,33126,0.18414538429028557,False,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,63,1,63,2056,0.048638132295719845,33126,0.19018293787357363,False,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,64,2,128,2056,0.09727626459143969,33126,0.3864034293304353,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,65,1,65,2056,0.048638132295719845,33126,0.19622049145686168,False,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,66,2,132,2056,0.09727626459143969,33126,0.3984785364970114,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,67,1,67,2056,0.048638132295719845,33126,0.20225804504014974,False,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,70,3,210,2056,0.14591439688715954,33126,0.6339431262452454,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,71,2,142,2056,0.09727626459143969,33126,0.42866630441345166,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,72,2,144,2056,0.09727626459143969,33126,0.4347038579967397,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,73,1,73,2056,0.048638132295719845,33126,0.2203707057900139,False,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,74,2,148,2056,0.09727626459143969,33126,0.44677896516331583,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,76,1,76,2056,0.048638132295719845,33126,0.22942703616494597,False,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,78,1,78,2056,0.048638132295719845,33126,0.235464589748234,False,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,83,1,83,2056,0.048638132295719845,33126,0.2505584737064541,False,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,84,1,84,2056,0.048638132295719845,33126,0.25357725049809815,False,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,85,1,85,2056,0.048638132295719845,33126,0.2565960272897422,False,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,87,1,87,2056,0.048638132295719845,33126,0.26263358087303024,False,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,91,1,91,2056,0.048638132295719845,33126,0.27470868803960635,False,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,92,2,184,2056,0.09727626459143969,33126,0.5554549296625008,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,98,1,98,2056,0.048638132295719845,33126,0.29584012558111455,False,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,100,1,100,2056,0.048638132295719845,33126,0.30187767916440256,False,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,101,1,101,2056,0.048638132295719845,33126,0.3048964559560466,False,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,102,5,510,2056,0.24319066147859922,33126,1.539576163738453,True,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,104,1,104,2056,0.048638132295719845,33126,0.3139527863309787,False,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,114,1,114,2056,0.048638132295719845,33126,0.34414055424741896,False,,,,,,,,,,,,,
+group_size_frequency,patient_block_size,115,4,460,2056,0.19455252918287938,33126,1.388637324156252,True,,,,,,,,,,,,,
+group_size_summary,images_per_patient,,,,2056,,,,,min,2.0,,,,,,,,,,,
+group_size_summary,images_per_patient,,,,2056,,,,,q1,5.0,,,,,,,,,,,
+group_size_summary,images_per_patient,,,,2056,,,,,median,12.0,,,,,,,,,,,
+group_size_summary,images_per_patient,,,,2056,,,,,q3,22.0,,,,,,,,,,,
+group_size_summary,images_per_patient,,,,2056,,,,,max,115.0,,,,,,,,,,,
+within_patient_consistency,age,,3,,2056,0.14591439688715954,,,,,,0,all_missing,68,Source missingness rules,,,,,,,
+within_patient_consistency,age,,0,,2056,0.0,,,,,,0,values_no_missing,0,Source missingness rules,,,,,,,
+within_patient_consistency,age,,0,,2056,0.0,,,,,,0,values_plus_missing,0,Source missingness rules,,,,,,,
+within_patient_consistency,age,,0,,2056,0.0,,,,,,1,all_missing,0,Source missingness rules,,,,,,,
+within_patient_consistency,age,,1056,,2056,51.36186770428016,,,,,,1,values_no_missing,16448,Source missingness rules,,,,,,,
+within_patient_consistency,age,,0,,2056,0.0,,,,,,1,values_plus_missing,0,Source missingness rules,,,,,,,
+within_patient_consistency,age,,0,,2056,0.0,,,,,,>1,all_missing,0,Source missingness rules,,,,,,,
+within_patient_consistency,age,,997,,2056,48.492217898832685,,,,,,>1,values_no_missing,16610,Source missingness rules,,,,,,,
+within_patient_consistency,age,,0,,2056,0.0,,,,,,>1,values_plus_missing,0,Source missingness rules,,,,,,,
+uniquely_determined_patient_summary,age,,,,1056,,,,,n,1056,,,,"Exactly one valid value AND no missing rows within patient; mixed missingness excluded, not resolved",2056,,,,,,
+uniquely_determined_patient_summary,age,,,,1056,,,,,min,15.0,,,,"Exactly one valid value AND no missing rows within patient; mixed missingness excluded, not resolved",2056,,,,,,
+uniquely_determined_patient_summary,age,,,,1056,,,,,q1,45.0,,,,"Exactly one valid value AND no missing rows within patient; mixed missingness excluded, not resolved",2056,,,,,,
+uniquely_determined_patient_summary,age,,,,1056,,,,,median,55.0,,,,"Exactly one valid value AND no missing rows within patient; mixed missingness excluded, not resolved",2056,,,,,,
+uniquely_determined_patient_summary,age,,,,1056,,,,,q3,65.0,,,,"Exactly one valid value AND no missing rows within patient; mixed missingness excluded, not resolved",2056,,,,,,
+uniquely_determined_patient_summary,age,,,,1056,,,,,max,90.0,,,,"Exactly one valid value AND no missing rows within patient; mixed missingness excluded, not resolved",2056,,,,,,
+within_patient_consistency,sex,,2,,2056,0.09727626459143969,,,,,,0,all_missing,65,Source missingness rules,,,,,,,
+within_patient_consistency,sex,,0,,2056,0.0,,,,,,0,values_no_missing,0,Source missingness rules,,,,,,,
+within_patient_consistency,sex,,0,,2056,0.0,,,,,,0,values_plus_missing,0,Source missingness rules,,,,,,,
+within_patient_consistency,sex,,0,,2056,0.0,,,,,,1,all_missing,0,Source missingness rules,,,,,,,
+within_patient_consistency,sex,,2054,,2056,99.90272373540856,,,,,,1,values_no_missing,33061,Source missingness rules,,,,,,,
+within_patient_consistency,sex,,0,,2056,0.0,,,,,,1,values_plus_missing,0,Source missingness rules,,,,,,,
+within_patient_consistency,sex,,0,,2056,0.0,,,,,,>1,all_missing,0,Source missingness rules,,,,,,,
+within_patient_consistency,sex,,0,,2056,0.0,,,,,,>1,values_no_missing,0,Source missingness rules,,,,,,,
+within_patient_consistency,sex,,0,,2056,0.0,,,,,,>1,values_plus_missing,0,Source missingness rules,,,,,,,
+uniquely_determined_patient_distribution,sex,,977,,2054,47.56572541382668,,,,,,,,,"Exactly one valid value AND no missing rows within patient; mixed missingness excluded, not resolved",2056,female,,,,,
+uniquely_determined_patient_distribution,sex,,1077,,2054,52.43427458617332,,,,,,,,,"Exactly one valid value AND no missing rows within patient; mixed missingness excluded, not resolved",2056,male,,,,,
+within_patient_consistency,site_raw,,2,,2056,0.09727626459143969,,,,,,0,all_missing,132,Source missingness rules,,,,,,,
+within_patient_consistency,site_raw,,0,,2056,0.0,,,,,,0,values_no_missing,0,Source missingness rules,,,,,,,
+within_patient_consistency,site_raw,,0,,2056,0.0,,,,,,0,values_plus_missing,0,Source missingness rules,,,,,,,
+within_patient_consistency,site_raw,,0,,2056,0.0,,,,,,1,all_missing,0,Source missingness rules,,,,,,,
+within_patient_consistency,site_raw,,152,,2056,7.392996108949417,,,,,,1,values_no_missing,609,Source missingness rules,,,,,,,
+within_patient_consistency,site_raw,,5,,2056,0.24319066147859922,,,,,,1,values_plus_missing,34,Source missingness rules,,,,,,,
+within_patient_consistency,site_raw,,0,,2056,0.0,,,,,,>1,all_missing,0,Source missingness rules,,,,,,,
+within_patient_consistency,site_raw,,1684,,2056,81.90661478599222,,,,,,>1,values_no_missing,26574,Source missingness rules,,,,,,,
+within_patient_consistency,site_raw,,213,,2056,10.359922178988327,,,,,,>1,values_plus_missing,5777,Source missingness rules,,,,,,,
+within_patient_consistency,site_encoded,,2,,2056,0.09727626459143969,,,,,,0,all_missing,132,encoded unknown with site_missing=0 remains an observed category,,,,,,,
+within_patient_consistency,site_encoded,,0,,2056,0.0,,,,,,0,values_no_missing,0,encoded unknown with site_missing=0 remains an observed category,,,,,,,
+within_patient_consistency,site_encoded,,0,,2056,0.0,,,,,,0,values_plus_missing,0,encoded unknown with site_missing=0 remains an observed category,,,,,,,
+within_patient_consistency,site_encoded,,0,,2056,0.0,,,,,,1,all_missing,0,encoded unknown with site_missing=0 remains an observed category,,,,,,,
+within_patient_consistency,site_encoded,,153,,2056,7.441634241245136,,,,,,1,values_no_missing,612,encoded unknown with site_missing=0 remains an observed category,,,,,,,
+within_patient_consistency,site_encoded,,5,,2056,0.24319066147859922,,,,,,1,values_plus_missing,34,encoded unknown with site_missing=0 remains an observed category,,,,,,,
+within_patient_consistency,site_encoded,,0,,2056,0.0,,,,,,>1,all_missing,0,encoded unknown with site_missing=0 remains an observed category,,,,,,,
+within_patient_consistency,site_encoded,,1683,,2056,81.8579766536965,,,,,,>1,values_no_missing,26571,encoded unknown with site_missing=0 remains an observed category,,,,,,,
+within_patient_consistency,site_encoded,,213,,2056,10.359922178988327,,,,,,>1,values_plus_missing,5777,encoded unknown with site_missing=0 remains an observed category,,,,,,,
+within_patient_full_vector_frequency,full_22dim_vector,,116,,2056,5.642023346303502,,,,,,,,544,,,,1,,,,
+within_patient_full_vector_frequency,full_22dim_vector,,328,,2056,15.95330739299611,,,,,,,,1650,,,,2,,,,
+within_patient_full_vector_frequency,full_22dim_vector,,460,,2056,22.373540856031127,,,,,,,,5162,,,,3,,,,
+within_patient_full_vector_frequency,full_22dim_vector,,519,,2056,25.2431906614786,,,,,,,,11064,,,,4,,,,
+within_patient_full_vector_frequency,full_22dim_vector,,260,,2056,12.645914396887159,,,,,,,,4970,,,,5,,,,
+within_patient_full_vector_frequency,full_22dim_vector,,119,,2056,5.787937743190661,,,,,,,,2492,,,,6,,,,
+within_patient_full_vector_frequency,full_22dim_vector,,67,,2056,3.2587548638132295,,,,,,,,1551,,,,7,,,,
+within_patient_full_vector_frequency,full_22dim_vector,,38,,2056,1.8482490272373542,,,,,,,,918,,,,8,,,,
+within_patient_full_vector_frequency,full_22dim_vector,,35,,2056,1.7023346303501945,,,,,,,,972,,,,9,,,,
+within_patient_full_vector_frequency,full_22dim_vector,,34,,2056,1.6536964980544746,,,,,,,,830,,,,10,,,,
+within_patient_full_vector_frequency,full_22dim_vector,,18,,2056,0.8754863813229572,,,,,,,,524,,,,11,,,,
+within_patient_full_vector_frequency,full_22dim_vector,,19,,2056,0.9241245136186771,,,,,,,,644,,,,12,,,,
+within_patient_full_vector_frequency,full_22dim_vector,,19,,2056,0.9241245136186771,,,,,,,,727,,,,13,,,,
+within_patient_full_vector_frequency,full_22dim_vector,,16,,2056,0.7782101167315175,,,,,,,,644,,,,14,,,,
+within_patient_full_vector_frequency,full_22dim_vector,,3,,2056,0.14591439688715954,,,,,,,,122,,,,15,,,,
+within_patient_full_vector_frequency,full_22dim_vector,,3,,2056,0.14591439688715954,,,,,,,,204,,,,16,,,,
+within_patient_full_vector_frequency,full_22dim_vector,,2,,2056,0.09727626459143969,,,,,,,,108,,,,17,,,,
+cross_patient_vector_frequency,full_22dim_vector,,,3,,,,,,,,,,,,,,,1,1,3,3
+cross_patient_vector_frequency,full_22dim_vector,,,8,,,,,,,,,,,,,,,1,2,4,4
+cross_patient_vector_frequency,full_22dim_vector,,,8,,,,,,,,,,,,,,,1,8,1,1
+cross_patient_vector_frequency,full_22dim_vector,,,2,,,,,,,,,,,,,,,2,2,1,2
+cross_patient_vector_frequency,full_22dim_vector,,,9,,,,,,,,,,,,,,,2,3,3,6
+cross_patient_vector_frequency,full_22dim_vector,,,4,,,,,,,,,,,,,,,2,4,1,2
+cross_patient_vector_frequency,full_22dim_vector,,,18,,,,,,,,,,,,,,,2,18,1,2
+cross_patient_vector_frequency,full_22dim_vector,,,19,,,,,,,,,,,,,,,2,19,1,2
+cross_patient_vector_frequency,full_22dim_vector,,,20,,,,,,,,,,,,,,,2,20,1,2
+cross_patient_vector_frequency,full_22dim_vector,,,6,,,,,,,,,,,,,,,3,3,2,6
+cross_patient_vector_frequency,full_22dim_vector,,,16,,,,,,,,,,,,,,,3,4,4,12
+cross_patient_vector_frequency,full_22dim_vector,,,5,,,,,,,,,,,,,,,3,5,1,3
+cross_patient_vector_frequency,full_22dim_vector,,,6,,,,,,,,,,,,,,,3,6,1,3
+cross_patient_vector_frequency,full_22dim_vector,,,12,,,,,,,,,,,,,,,3,12,1,3
+cross_patient_vector_frequency,full_22dim_vector,,,9,,,,,,,,,,,,,,,4,9,1,4
+cross_patient_vector_frequency,full_22dim_vector,,,5,,,,,,,,,,,,,,,5,5,1,5
+cross_patient_vector_frequency,full_22dim_vector,,,20,,,,,,,,,,,,,,,5,10,2,10
+cross_patient_vector_frequency,full_22dim_vector,,,8,,,,,,,,,,,,,,,6,8,1,6
+cross_patient_vector_frequency,full_22dim_vector,,,9,,,,,,,,,,,,,,,6,9,1,6
+cross_patient_vector_frequency,full_22dim_vector,,,13,,,,,,,,,,,,,,,6,13,1,6
+cross_patient_vector_frequency,full_22dim_vector,,,18,,,,,,,,,,,,,,,6,18,1,6
+cross_patient_vector_frequency,full_22dim_vector,,,19,,,,,,,,,,,,,,,6,19,1,6
+cross_patient_vector_frequency,full_22dim_vector,,,9,,,,,,,,,,,,,,,7,9,1,7
+cross_patient_vector_frequency,full_22dim_vector,,,12,,,,,,,,,,,,,,,7,12,1,7
+cross_patient_vector_frequency,full_22dim_vector,,,15,,,,,,,,,,,,,,,7,15,1,7
+cross_patient_vector_frequency,full_22dim_vector,,,19,,,,,,,,,,,,,,,7,19,1,7
+cross_patient_vector_frequency,full_22dim_vector,,,25,,,,,,,,,,,,,,,7,25,1,7
+cross_patient_vector_frequency,full_22dim_vector,,,32,,,,,,,,,,,,,,,7,32,1,7
+cross_patient_vector_frequency,full_22dim_vector,,,9,,,,,,,,,,,,,,,8,9,1,8
+cross_patient_vector_frequency,full_22dim_vector,,,12,,,,,,,,,,,,,,,8,12,1,8
+cross_patient_vector_frequency,full_22dim_vector,,,16,,,,,,,,,,,,,,,8,16,1,8
+cross_patient_vector_frequency,full_22dim_vector,,,36,,,,,,,,,,,,,,,8,36,1,8
+cross_patient_vector_frequency,full_22dim_vector,,,12,,,,,,,,,,,,,,,9,12,1,9
+cross_patient_vector_frequency,full_22dim_vector,,,15,,,,,,,,,,,,,,,9,15,1,9
+cross_patient_vector_frequency,full_22dim_vector,,,16,,,,,,,,,,,,,,,10,16,1,10
+cross_patient_vector_frequency,full_22dim_vector,,,22,,,,,,,,,,,,,,,10,22,1,10
+cross_patient_vector_frequency,full_22dim_vector,,,147,,,,,,,,,,,,,,,10,147,1,10
+cross_patient_vector_frequency,full_22dim_vector,,,13,,,,,,,,,,,,,,,11,13,1,11
+cross_patient_vector_frequency,full_22dim_vector,,,14,,,,,,,,,,,,,,,11,14,1,11
+cross_patient_vector_frequency,full_22dim_vector,,,16,,,,,,,,,,,,,,,12,16,1,12
+cross_patient_vector_frequency,full_22dim_vector,,,18,,,,,,,,,,,,,,,12,18,1,12
+cross_patient_vector_frequency,full_22dim_vector,,,19,,,,,,,,,,,,,,,12,19,1,12
+cross_patient_vector_frequency,full_22dim_vector,,,23,,,,,,,,,,,,,,,12,23,1,12
+cross_patient_vector_frequency,full_22dim_vector,,,22,,,,,,,,,,,,,,,13,22,1,13
+cross_patient_vector_frequency,full_22dim_vector,,,18,,,,,,,,,,,,,,,14,18,1,14
+cross_patient_vector_frequency,full_22dim_vector,,,21,,,,,,,,,,,,,,,14,21,1,14
+cross_patient_vector_frequency,full_22dim_vector,,,29,,,,,,,,,,,,,,,14,29,1,14
+cross_patient_vector_frequency,full_22dim_vector,,,32,,,,,,,,,,,,,,,14,32,1,14
+cross_patient_vector_frequency,full_22dim_vector,,,33,,,,,,,,,,,,,,,14,33,1,14
+cross_patient_vector_frequency,full_22dim_vector,,,37,,,,,,,,,,,,,,,14,37,1,14
+cross_patient_vector_frequency,full_22dim_vector,,,20,,,,,,,,,,,,,,,15,20,1,15
+cross_patient_vector_frequency,full_22dim_vector,,,22,,,,,,,,,,,,,,,15,22,1,15
+cross_patient_vector_frequency,full_22dim_vector,,,54,,,,,,,,,,,,,,,15,54,1,15
+cross_patient_vector_frequency,full_22dim_vector,,,77,,,,,,,,,,,,,,,15,77,1,15
+cross_patient_vector_frequency,full_22dim_vector,,,31,,,,,,,,,,,,,,,16,31,1,16
+cross_patient_vector_frequency,full_22dim_vector,,,41,,,,,,,,,,,,,,,16,41,1,16
+cross_patient_vector_frequency,full_22dim_vector,,,46,,,,,,,,,,,,,,,16,46,1,16
+cross_patient_vector_frequency,full_22dim_vector,,,36,,,,,,,,,,,,,,,18,36,1,18
+cross_patient_vector_frequency,full_22dim_vector,,,50,,,,,,,,,,,,,,,18,50,1,18
+cross_patient_vector_frequency,full_22dim_vector,,,61,,,,,,,,,,,,,,,18,61,1,18
+cross_patient_vector_frequency,full_22dim_vector,,,93,,,,,,,,,,,,,,,18,93,1,18
+cross_patient_vector_frequency,full_22dim_vector,,,28,,,,,,,,,,,,,,,20,28,1,20
+cross_patient_vector_frequency,full_22dim_vector,,,68,,,,,,,,,,,,,,,20,34,2,40
+cross_patient_vector_frequency,full_22dim_vector,,,61,,,,,,,,,,,,,,,20,61,1,20
+cross_patient_vector_frequency,full_22dim_vector,,,69,,,,,,,,,,,,,,,21,69,1,21
+cross_patient_vector_frequency,full_22dim_vector,,,47,,,,,,,,,,,,,,,23,47,1,23
+cross_patient_vector_frequency,full_22dim_vector,,,108,,,,,,,,,,,,,,,23,108,1,23
+cross_patient_vector_frequency,full_22dim_vector,,,171,,,,,,,,,,,,,,,26,171,1,26
+cross_patient_vector_frequency,full_22dim_vector,,,58,,,,,,,,,,,,,,,28,58,1,28
+cross_patient_vector_frequency,full_22dim_vector,,,58,,,,,,,,,,,,,,,31,58,1,31
+cross_patient_vector_frequency,full_22dim_vector,,,127,,,,,,,,,,,,,,,32,127,1,32
+cross_patient_vector_frequency,full_22dim_vector,,,61,,,,,,,,,,,,,,,33,61,1,33
+cross_patient_vector_frequency,full_22dim_vector,,,84,,,,,,,,,,,,,,,35,84,1,35
+cross_patient_vector_frequency,full_22dim_vector,,,66,,,,,,,,,,,,,,,38,66,1,38
+cross_patient_vector_frequency,full_22dim_vector,,,85,,,,,,,,,,,,,,,38,85,1,38
+cross_patient_vector_frequency,full_22dim_vector,,,74,,,,,,,,,,,,,,,40,74,1,40
+cross_patient_vector_frequency,full_22dim_vector,,,78,,,,,,,,,,,,,,,40,78,1,40
+cross_patient_vector_frequency,full_22dim_vector,,,122,,,,,,,,,,,,,,,40,122,1,40
+cross_patient_vector_frequency,full_22dim_vector,,,186,,,,,,,,,,,,,,,40,186,1,40
+cross_patient_vector_frequency,full_22dim_vector,,,116,,,,,,,,,,,,,,,43,116,1,43
+cross_patient_vector_frequency,full_22dim_vector,,,88,,,,,,,,,,,,,,,44,88,1,44
+cross_patient_vector_frequency,full_22dim_vector,,,118,,,,,,,,,,,,,,,45,118,1,45
+cross_patient_vector_frequency,full_22dim_vector,,,274,,,,,,,,,,,,,,,45,274,1,45
+cross_patient_vector_frequency,full_22dim_vector,,,146,,,,,,,,,,,,,,,48,146,1,48
+cross_patient_vector_frequency,full_22dim_vector,,,102,,,,,,,,,,,,,,,50,102,1,50
+cross_patient_vector_frequency,full_22dim_vector,,,94,,,,,,,,,,,,,,,51,94,1,51
+cross_patient_vector_frequency,full_22dim_vector,,,103,,,,,,,,,,,,,,,51,103,1,51
+cross_patient_vector_frequency,full_22dim_vector,,,119,,,,,,,,,,,,,,,54,119,1,54
+cross_patient_vector_frequency,full_22dim_vector,,,154,,,,,,,,,,,,,,,55,154,1,55
+cross_patient_vector_frequency,full_22dim_vector,,,179,,,,,,,,,,,,,,,55,179,1,55
+cross_patient_vector_frequency,full_22dim_vector,,,456,,,,,,,,,,,,,,,57,456,1,57
+cross_patient_vector_frequency,full_22dim_vector,,,157,,,,,,,,,,,,,,,58,157,1,58
+cross_patient_vector_frequency,full_22dim_vector,,,134,,,,,,,,,,,,,,,59,134,1,59
+cross_patient_vector_frequency,full_22dim_vector,,,104,,,,,,,,,,,,,,,61,104,1,61
+cross_patient_vector_frequency,full_22dim_vector,,,148,,,,,,,,,,,,,,,61,148,1,61
+cross_patient_vector_frequency,full_22dim_vector,,,183,,,,,,,,,,,,,,,61,183,1,61
+cross_patient_vector_frequency,full_22dim_vector,,,302,,,,,,,,,,,,,,,61,302,1,61
+cross_patient_vector_frequency,full_22dim_vector,,,135,,,,,,,,,,,,,,,62,135,1,62
+cross_patient_vector_frequency,full_22dim_vector,,,97,,,,,,,,,,,,,,,63,97,1,63
+cross_patient_vector_frequency,full_22dim_vector,,,222,,,,,,,,,,,,,,,65,222,1,65
+cross_patient_vector_frequency,full_22dim_vector,,,221,,,,,,,,,,,,,,,67,221,1,67
+cross_patient_vector_frequency,full_22dim_vector,,,128,,,,,,,,,,,,,,,68,128,1,68
+cross_patient_vector_frequency,full_22dim_vector,,,120,,,,,,,,,,,,,,,69,120,1,69
+cross_patient_vector_frequency,full_22dim_vector,,,133,,,,,,,,,,,,,,,69,133,1,69
+cross_patient_vector_frequency,full_22dim_vector,,,146,,,,,,,,,,,,,,,70,146,1,70
+cross_patient_vector_frequency,full_22dim_vector,,,326,,,,,,,,,,,,,,,72,326,1,72
+cross_patient_vector_frequency,full_22dim_vector,,,169,,,,,,,,,,,,,,,73,169,1,73
+cross_patient_vector_frequency,full_22dim_vector,,,193,,,,,,,,,,,,,,,78,193,1,78
+cross_patient_vector_frequency,full_22dim_vector,,,217,,,,,,,,,,,,,,,79,217,1,79
+cross_patient_vector_frequency,full_22dim_vector,,,250,,,,,,,,,,,,,,,79,250,1,79
+cross_patient_vector_frequency,full_22dim_vector,,,200,,,,,,,,,,,,,,,82,200,1,82
+cross_patient_vector_frequency,full_22dim_vector,,,267,,,,,,,,,,,,,,,82,267,1,82
+cross_patient_vector_frequency,full_22dim_vector,,,349,,,,,,,,,,,,,,,83,349,1,83
+cross_patient_vector_frequency,full_22dim_vector,,,183,,,,,,,,,,,,,,,84,183,1,84
+cross_patient_vector_frequency,full_22dim_vector,,,302,,,,,,,,,,,,,,,85,302,1,85
+cross_patient_vector_frequency,full_22dim_vector,,,251,,,,,,,,,,,,,,,87,251,1,87
+cross_patient_vector_frequency,full_22dim_vector,,,399,,,,,,,,,,,,,,,88,399,1,88
+cross_patient_vector_frequency,full_22dim_vector,,,453,,,,,,,,,,,,,,,93,453,1,93
+cross_patient_vector_frequency,full_22dim_vector,,,782,,,,,,,,,,,,,,,93,782,1,93
+cross_patient_vector_frequency,full_22dim_vector,,,545,,,,,,,,,,,,,,,96,545,1,96
+cross_patient_vector_frequency,full_22dim_vector,,,391,,,,,,,,,,,,,,,99,391,1,99
+cross_patient_vector_frequency,full_22dim_vector,,,264,,,,,,,,,,,,,,,103,264,1,103
+cross_patient_vector_frequency,full_22dim_vector,,,313,,,,,,,,,,,,,,,103,313,1,103
+cross_patient_vector_frequency,full_22dim_vector,,,260,,,,,,,,,,,,,,,107,260,1,107
+cross_patient_vector_frequency,full_22dim_vector,,,327,,,,,,,,,,,,,,,111,327,1,111
+cross_patient_vector_frequency,full_22dim_vector,,,294,,,,,,,,,,,,,,,115,294,1,115
+cross_patient_vector_frequency,full_22dim_vector,,,405,,,,,,,,,,,,,,,116,405,1,116
+cross_patient_vector_frequency,full_22dim_vector,,,429,,,,,,,,,,,,,,,119,429,1,119
+cross_patient_vector_frequency,full_22dim_vector,,,287,,,,,,,,,,,,,,,120,287,1,120
+cross_patient_vector_frequency,full_22dim_vector,,,768,,,,,,,,,,,,,,,120,768,1,120
+cross_patient_vector_frequency,full_22dim_vector,,,418,,,,,,,,,,,,,,,123,418,1,123
+cross_patient_vector_frequency,full_22dim_vector,,,779,,,,,,,,,,,,,,,123,779,1,123
+cross_patient_vector_frequency,full_22dim_vector,,,682,,,,,,,,,,,,,,,125,682,1,125
+cross_patient_vector_frequency,full_22dim_vector,,,791,,,,,,,,,,,,,,,127,791,1,127
+cross_patient_vector_frequency,full_22dim_vector,,,345,,,,,,,,,,,,,,,131,345,1,131
+cross_patient_vector_frequency,full_22dim_vector,,,348,,,,,,,,,,,,,,,131,348,1,131
+cross_patient_vector_frequency,full_22dim_vector,,,697,,,,,,,,,,,,,,,131,697,1,131
+cross_patient_vector_frequency,full_22dim_vector,,,345,,,,,,,,,,,,,,,132,345,1,132
+cross_patient_vector_frequency,full_22dim_vector,,,491,,,,,,,,,,,,,,,132,491,1,132
+cross_patient_vector_frequency,full_22dim_vector,,,550,,,,,,,,,,,,,,,139,550,1,139
+cross_patient_vector_frequency,full_22dim_vector,,,440,,,,,,,,,,,,,,,143,440,1,143
+cross_patient_vector_frequency,full_22dim_vector,,,412,,,,,,,,,,,,,,,145,412,1,145
+cross_patient_vector_frequency,full_22dim_vector,,,584,,,,,,,,,,,,,,,145,584,1,145
+cross_patient_vector_frequency,full_22dim_vector,,,942,,,,,,,,,,,,,,,155,942,1,155
+cross_patient_vector_frequency,full_22dim_vector,,,871,,,,,,,,,,,,,,,157,871,1,157
+cross_patient_vector_frequency,full_22dim_vector,,,570,,,,,,,,,,,,,,,160,570,1,160
+cross_patient_vector_frequency,full_22dim_vector,,,969,,,,,,,,,,,,,,,161,969,1,161
+cross_patient_vector_frequency,full_22dim_vector,,,616,,,,,,,,,,,,,,,171,616,1,171
+cross_patient_vector_frequency,full_22dim_vector,,,960,,,,,,,,,,,,,,,180,960,1,180
+cross_patient_vector_frequency,full_22dim_vector,,,996,,,,,,,,,,,,,,,180,996,1,180
+cross_patient_vector_frequency,full_22dim_vector,,,928,,,,,,,,,,,,,,,185,928,1,185
+cross_patient_vector_frequency,full_22dim_vector,,,967,,,,,,,,,,,,,,,202,967,1,202
+cross_patient_vector_frequency,full_22dim_vector,,,1352,,,,,,,,,,,,,,,208,1352,1,208
+cross_patient_vector_frequency,full_22dim_vector,,,1259,,,,,,,,,,,,,,,212,1259,1,212

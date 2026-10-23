@@ -1,0 +1,7 @@
+_base_: ../defaults.yaml
+model:
+  name: efficientnet_b0
+  source: timm
+  timm_name: efficientnet_b0
+  pretrained: true
+  num_classes: 7

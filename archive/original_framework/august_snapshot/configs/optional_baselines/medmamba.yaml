@@ -1,0 +1,7 @@
+_base_: ../defaults.yaml
+model:
+  name: medmamba
+  source: medmamba
+  pretrained: true
+  num_classes: 7
+  status: optional_requires_external_code

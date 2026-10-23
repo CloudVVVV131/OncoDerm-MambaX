@@ -1,0 +1,7 @@
+_base_: ../defaults.yaml
+model:
+  name: resnet50
+  source: timm
+  timm_name: resnet50
+  pretrained: true
+  num_classes: 7

@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-10-17T18:04:50+08:00",
+  "deadline": "2026-10-17T20:04:50+08:00",
+  "new_training_runs": 0,
+  "identity": "PASS",
+  "inference": "COMPLETE",
+  "statistics": "COMPLETE",
+  "thresholds": "COMPLETE",
+  "packaging": "COMPLETE",
+  "completed_models": 6,
+  "valid_bootstrap": 10000,
+  "status": "COMPLETE",
+  "updated_at": "2026-10-17T18:49:12+08:00",
+  "cohort_rows": 1011,
+  "threshold_source_rows": 24,
+  "threshold_application_rows": 48,
+  "finished_at": "2026-10-17T18:49:12+08:00",
+  "final_QC": "PASS",
+  "score_vectors": 24,
+  "source_unchanged": true,
+  "elapsed_minutes": 44.37352438333333
+}

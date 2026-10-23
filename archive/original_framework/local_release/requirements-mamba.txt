@@ -1,0 +1,7 @@
+# Optional Linux/CUDA backend for B6-M.
+# Install into a separate environment; see docs/ENVIRONMENT.md.
+mamba-ssm[causal-conv1d]==2.3.2.post1
+causal-conv1d==1.6.2.post1
+transformers==4.57.1
+ninja
+packaging

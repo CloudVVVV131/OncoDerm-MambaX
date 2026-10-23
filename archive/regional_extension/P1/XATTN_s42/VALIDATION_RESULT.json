@@ -1,0 +1,46 @@
+{
+  "status": "COMPLETE",
+  "run": "XATTN_s42",
+  "cohort": "HAM_val",
+  "input": "NATIVE",
+  "best_path": "${R52_PATH_29DAA792C12E}",
+  "best_sha256": "2f12c84b23b56a79d99335bf202991549268dc6aeeffcffc18889f854d3dd25e",
+  "selected_epoch": 13,
+  "dtype": "FP32",
+  "TF32": false,
+  "strict_loading": true,
+  "multiclass": {
+    "macro_f1": 0.7909110860217847,
+    "multiclass_brier_sum7": 0.22919178944966176,
+    "multiclass_nll": 0.6058007989370815
+  },
+  "binary": [
+    {
+      "head": "softmax_MEL",
+      "roc_auc": 0.9245466379793524,
+      "average_precision": 0.6903650882308635,
+      "brier": 0.06286395327936917,
+      "binary_nll": 0.3190448551539297,
+      "images": 1513,
+      "positive_images": 164
+    },
+    {
+      "head": "endpoint_MEL",
+      "roc_auc": 0.9196514129707641,
+      "average_precision": 0.6678616339310844,
+      "brier": 0.07310826589028754,
+      "binary_nll": 0.35167639795467887,
+      "images": 1513,
+      "positive_images": 164
+    }
+  ],
+  "selection_metrics_reproduced": true,
+  "readout_diagnostics": {
+    "validation_residual_coefficient_mean": -0.003541439538821578,
+    "validation_residual_coefficient_sd_within_samples": 0.0,
+    "validation_residual_coefficient_max": -0.003541439538821578
+  },
+  "eta_raw": -0.007082997355610132,
+  "evaluation_seconds": 12.03785209999478,
+  "per_example_predictions_exported": false
+}

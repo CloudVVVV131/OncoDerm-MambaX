@@ -1,0 +1,16 @@
+_base_: ../models/lesionmamba_compact.yaml
+model:
+  name: lesionmamba_ablation_a2
+  ablation_id: A2
+  use_lesion_pooling: false
+  stages:
+    stage1: {use_mple: true, scan_mode: basic_global, use_dpmss: false, use_lmgf: false}
+    stage2: {use_mple: true, scan_mode: dual_path, use_dpmss: true, use_lmgf: false, window_size: 7}
+    stage3: {use_mple: true, scan_mode: dual_path, use_dpmss: true, use_lmgf: false, window_size: 7}
+    stage4: {use_mple: simplified, scan_mode: global_cross, use_dpmss: global_only, use_lmgf: false}
+train:
+  epochs: 30
+  early_stopping_patience: 6
+loss:
+  lambda_sparse: 0.0
+  lambda_tv: 0.0

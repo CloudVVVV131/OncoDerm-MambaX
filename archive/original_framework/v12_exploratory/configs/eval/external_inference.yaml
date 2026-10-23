@@ -1,0 +1,4 @@
+labels_csv: data/raw/ISIC_external/labels_harmonized.csv
+image_dir: data/raw/ISIC_external/images
+endpoint: melanoma
+threshold_source: validation

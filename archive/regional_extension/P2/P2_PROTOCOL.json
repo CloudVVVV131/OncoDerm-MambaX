@@ -1,0 +1,103 @@
+{
+  "protocol": "FIM_REGION_CLINICAL_P2_frozen_v1",
+  "created": "2026-10-13",
+  "status": "FROZEN_BEFORE_TRAINING",
+  "scope": {
+    "phase": "P2",
+    "new_training_runs": [
+      "R_IMG_s2024",
+      "R_CLIN_s2024",
+      "XATTN_s2024",
+      "R_IMG_s3407",
+      "R_CLIN_s3407",
+      "XATTN_s3407"
+    ],
+    "reference": "current_FIM_FULL_s42_s2024_s3407_HAM_val_NATIVE_only",
+    "allowed_data_roles": [
+      "HAM_train",
+      "HAM_val",
+      "frozen_aux_train100"
+    ],
+    "forbidden_eval_roles": [
+      "HAM_test",
+      "SIIM",
+      "new_external"
+    ],
+    "no_cloud": true,
+    "no_other_workstream": true,
+    "active_window_hours": 12,
+    "reused_P1_runs": [
+      "R_IMG_s42",
+      "R_CLIN_s42",
+      "XATTN_s42"
+    ]
+  },
+  "data": {
+    "ham_split_seed": 42,
+    "auxiliary_members": "reuse fim_mask_train100.csv unchanged",
+    "input_size": 224,
+    "eval_resize_short_side": 256,
+    "metadata": "original22dim"
+  },
+  "training": {
+    "max_epochs": 80,
+    "patience": 15,
+    "warmup_epochs": 5,
+    "optimizer": "AdamW",
+    "backbone_lr": 3e-05,
+    "other_lr": 0.0003,
+    "weight_decay": 0.05,
+    "effective_batch": 48,
+    "aux_effective_batch": 32,
+    "microbatch": 8,
+    "workers": 2,
+    "amp_training": true,
+    "eval_precision": "FP32",
+    "tf32": false,
+    "grad_clip": 1.0,
+    "selection": [
+      "max_val_macro_f1",
+      "max_val_softmax_mel_auc",
+      "earliest_exact_tie"
+    ],
+    "mask_loss_weight": 0.1,
+    "label_smoothing_effective": 0.0,
+    "inherit_other_losses": true,
+    "training_seeds": [
+      2024,
+      3407
+    ],
+    "new_module_seed_rule": "training_seed + 1000"
+  },
+  "readout": {
+    "region_names": [
+      "interior",
+      "boundary_band",
+      "outer_context"
+    ],
+    "morphology_kernel": 3,
+    "padding": "replicate",
+    "mask_weights_stop_gradient": true,
+    "cross_attention_heads": 4,
+    "new_dropout": 0.0,
+    "residual_limit": 0.5,
+    "eta_initial": 0.0,
+    "region_out_projection_initial": "identity",
+    "mass_fraction_floor": 0.0001,
+    "denominator_floor": 1e-06,
+    "retain_original_CMGF": true,
+    "region_score_hidden": 128,
+    "cross_attention_hidden": 256
+  },
+  "decision": {
+    "checkpoint_rule_unchanged": true,
+    "mechanism_v1_frozen": true,
+    "no_automatic_next_phase": true,
+    "summary": "per-run metrics, arithmetic mean, sample SD(ddof=1), within-seed differences; no bootstrap"
+  },
+  "delivery": [
+    "P2_TRAIN_REPORT.md",
+    "P2_TRAIN_RESULTS.zip",
+    "P2_PROGRESS.json"
+  ]
+}

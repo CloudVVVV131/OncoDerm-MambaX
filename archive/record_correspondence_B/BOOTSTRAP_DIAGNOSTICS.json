@@ -1,0 +1,26 @@
+{
+  "SIIM": {
+    "valid_completed": 2000,
+    "required": 2000,
+    "inner_K": 50,
+    "single_class_rejections": 0,
+    "duplicate_original_donor_fraction_exchangeable_mean": 0.07689784183576712,
+    "unit": "patient",
+    "conditional_on": "six fixed models, observed block-size strata and singleton-size blocks",
+    "bootstrap_copy_slots_are_distinct": true,
+    "donor_pool_rebuilt_every_draw": true,
+    "no_old_matched_minus_null_interval_replaced": true
+  },
+  "Derm7pt": {
+    "valid_completed": 2000,
+    "required": 2000,
+    "inner_K": 50,
+    "single_class_rejections": 0,
+    "duplicate_original_donor_fraction_exchangeable_mean": 0.0009857962413452027,
+    "unit": "case/same-image cluster, not verified patient",
+    "conditional_on": "six fixed models, observed block-size strata and singleton-size blocks",
+    "bootstrap_copy_slots_are_distinct": true,
+    "donor_pool_rebuilt_every_draw": true,
+    "no_old_matched_minus_null_interval_replaced": true
+  }
+}

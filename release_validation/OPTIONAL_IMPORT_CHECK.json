@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "scope": "AST-extracted dispatcher with inert stubs only",
+  "project_imports": 0,
+  "models_constructed": 0,
+  "own_branches_reachable": true,
+  "excluded_port_fails_explicitly": true,
+  "unchanged_archive_registry_sha256": "269409f15681a39899c1d0e21d8c230d14d18c41e79fe0c32a0c8e85714f1f18"
+}

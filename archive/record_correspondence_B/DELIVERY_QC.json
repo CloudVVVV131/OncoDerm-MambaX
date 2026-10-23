@@ -1,0 +1,570 @@
+{
+  "status": "PASS",
+  "time": "2026-10-20T23:04:07.085487+08:00",
+  "checks": [
+    {
+      "check": "historical source unchanged: task package 00_START_HERE.md",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: task package A1_ACCEPTANCE_RECEIPT.json",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: task package A1_COHORT_TABLE_FOR_MANUSCRIPT.md",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: task package B_CLINICAL_MATCHING_PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: task package B_PROTOCOL_PARAMETERS.json",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: task package CODEX_RUN_B_CLINICAL_MATCHING.txt",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: task package MASTER_STATE_UPDATE.md",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: task package ORIGINAL_SIX_IDENTITIES.json",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: task package PROJECT_MASTER_PLAN_OncoDerm_Frontiers_v1_2.md",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: task package SYNTHETIC_SCALE_NOTE.json",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: task package SYNTHETIC_TEST_REPORT.json",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: task package clinical_matching_reference.py",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: task package test_clinical_matching_reference.py",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: executed original model source __init__.py",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: executed original model source __init__.py",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: executed original model source datasets.py",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: executed original model source transforms.py",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: executed original model source oncoderm_mambax.py",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: executed original model source __init__.py",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: authoritative model identity FIXED_MODEL_IDENTITIES.json",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: fixed original best best_val_macro_f1.pth",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: original config config.yaml",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: executed config ORIG_B2_s42.yaml",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: fixed original best best_val_macro_f1.pth",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: original config config.yaml",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: executed config ORIG_B2_s2024.yaml",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: fixed original best best_val_macro_f1.pth",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: original config config.yaml",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: executed config ORIG_B2_s3407.yaml",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: fixed original best best_val_macro_f1.pth",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: original config config.yaml",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: executed config ORIG_B6_s42.yaml",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: fixed original best best_val_macro_f1.pth",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: original config config.yaml",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: executed config ORIG_B6_s2024.yaml",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: fixed original best best_val_macro_f1.pth",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: original config config.yaml",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: executed config ORIG_B6_s3407.yaml",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: accepted SIIM metadata ISIC_2020_Training_GroundTruth_v2.csv",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: accepted Derm binding COHORT_ALIGNMENT.csv",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: accepted Derm binding E_AVAILABLE.npy",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: accepted Derm binding labels.npy",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: accepted Derm binding clusters.npy",
+      "passed": true
+    },
+    {
+      "check": "historical source unchanged: original six HAM validation fixed thresholds DEVELOPMENT_THRESHOLDS.csv",
+      "passed": true
+    },
+    {
+      "check": "isolated original source unchanged: model_code\\lesionmamba\\__init__.py",
+      "passed": true
+    },
+    {
+      "check": "isolated original source unchanged: model_code\\lesionmamba\\data\\datasets.py",
+      "passed": true
+    },
+    {
+      "check": "isolated original source unchanged: model_code\\lesionmamba\\data\\transforms.py",
+      "passed": true
+    },
+    {
+      "check": "isolated original source unchanged: model_code\\lesionmamba\\data\\__init__.py",
+      "passed": true
+    },
+    {
+      "check": "isolated original source unchanged: model_code\\lesionmamba\\models\\oncoderm_mambax.py",
+      "passed": true
+    },
+    {
+      "check": "isolated original source unchanged: model_code\\lesionmamba\\models\\__init__.py",
+      "passed": true
+    },
+    {
+      "check": "frozen numerical code: b_data.py",
+      "passed": true
+    },
+    {
+      "check": "frozen numerical code: b_infer.py",
+      "passed": true
+    },
+    {
+      "check": "frozen numerical code: b_statistics.py",
+      "passed": true
+    },
+    {
+      "check": "frozen numerical code: clinical_matching_reference.py",
+      "passed": true
+    },
+    {
+      "check": "reference tests",
+      "passed": true
+    },
+    {
+      "check": "optimized kernel tests",
+      "passed": true
+    },
+    {
+      "check": "ORIG_B2_s42_SIIM_COMPLETE probability compatibility",
+      "passed": true
+    },
+    {
+      "check": "ORIG_B2_s42_SIIM_COMPLETE metrics compatibility",
+      "passed": true
+    },
+    {
+      "check": "ORIG_B2_s2024_SIIM_COMPLETE probability compatibility",
+      "passed": true
+    },
+    {
+      "check": "ORIG_B2_s2024_SIIM_COMPLETE metrics compatibility",
+      "passed": true
+    },
+    {
+      "check": "ORIG_B2_s3407_SIIM_COMPLETE probability compatibility",
+      "passed": true
+    },
+    {
+      "check": "ORIG_B2_s3407_SIIM_COMPLETE metrics compatibility",
+      "passed": true
+    },
+    {
+      "check": "ORIG_B6_s42_SIIM_COMPLETE probability compatibility",
+      "passed": true
+    },
+    {
+      "check": "ORIG_B6_s42_SIIM_COMPLETE metrics compatibility",
+      "passed": true
+    },
+    {
+      "check": "ORIG_B6_s2024_SIIM_COMPLETE probability compatibility",
+      "passed": true
+    },
+    {
+      "check": "ORIG_B6_s2024_SIIM_COMPLETE metrics compatibility",
+      "passed": true
+    },
+    {
+      "check": "ORIG_B6_s3407_SIIM_COMPLETE probability compatibility",
+      "passed": true
+    },
+    {
+      "check": "ORIG_B6_s3407_SIIM_COMPLETE metrics compatibility",
+      "passed": true
+    },
+    {
+      "check": "SIIM complete point rows",
+      "passed": true
+    },
+    {
+      "check": "SIIM all two families/seeds/heads",
+      "passed": true
+    },
+    {
+      "check": "SIIM all 50 remappings",
+      "passed": true
+    },
+    {
+      "check": "SIIM donor coverage",
+      "passed": true
+    },
+    {
+      "check": "SIIM joint multiplicity preserved",
+      "passed": true
+    },
+    {
+      "check": "SIIM all threshold applications",
+      "passed": true
+    },
+    {
+      "check": "SIIM all observations in threshold counts",
+      "passed": true
+    },
+    {
+      "check": "SIIM bootstrap IDs",
+      "passed": true
+    },
+    {
+      "check": "ORIG_B2_s42_Derm7pt_COMPLETE probability compatibility",
+      "passed": true
+    },
+    {
+      "check": "ORIG_B2_s42_Derm7pt_COMPLETE metrics compatibility",
+      "passed": true
+    },
+    {
+      "check": "ORIG_B2_s2024_Derm7pt_COMPLETE probability compatibility",
+      "passed": true
+    },
+    {
+      "check": "ORIG_B2_s2024_Derm7pt_COMPLETE metrics compatibility",
+      "passed": true
+    },
+    {
+      "check": "ORIG_B2_s3407_Derm7pt_COMPLETE probability compatibility",
+      "passed": true
+    },
+    {
+      "check": "ORIG_B2_s3407_Derm7pt_COMPLETE metrics compatibility",
+      "passed": true
+    },
+    {
+      "check": "ORIG_B6_s42_Derm7pt_COMPLETE probability compatibility",
+      "passed": true
+    },
+    {
+      "check": "ORIG_B6_s42_Derm7pt_COMPLETE metrics compatibility",
+      "passed": true
+    },
+    {
+      "check": "ORIG_B6_s2024_Derm7pt_COMPLETE probability compatibility",
+      "passed": true
+    },
+    {
+      "check": "ORIG_B6_s2024_Derm7pt_COMPLETE metrics compatibility",
+      "passed": true
+    },
+    {
+      "check": "ORIG_B6_s3407_Derm7pt_COMPLETE probability compatibility",
+      "passed": true
+    },
+    {
+      "check": "ORIG_B6_s3407_Derm7pt_COMPLETE metrics compatibility",
+      "passed": true
+    },
+    {
+      "check": "Derm7pt complete point rows",
+      "passed": true
+    },
+    {
+      "check": "Derm7pt all two families/seeds/heads",
+      "passed": true
+    },
+    {
+      "check": "Derm7pt all 50 remappings",
+      "passed": true
+    },
+    {
+      "check": "Derm7pt donor coverage",
+      "passed": true
+    },
+    {
+      "check": "Derm7pt joint multiplicity preserved",
+      "passed": true
+    },
+    {
+      "check": "Derm7pt all threshold applications",
+      "passed": true
+    },
+    {
+      "check": "Derm7pt all observations in threshold counts",
+      "passed": true
+    },
+    {
+      "check": "Derm7pt bootstrap IDs",
+      "passed": true
+    },
+    {
+      "check": "difference algebra Derm7pt ORIG_B2 prob_mel AP",
+      "passed": true
+    },
+    {
+      "check": "difference algebra Derm7pt ORIG_B2 prob_mel Brier",
+      "passed": true
+    },
+    {
+      "check": "difference algebra Derm7pt ORIG_B2 prob_mel ECE15",
+      "passed": true
+    },
+    {
+      "check": "difference algebra Derm7pt ORIG_B2 prob_mel ROC_AUC",
+      "passed": true
+    },
+    {
+      "check": "difference algebra Derm7pt ORIG_B2 prob_mel binary_NLL",
+      "passed": true
+    },
+    {
+      "check": "difference algebra Derm7pt ORIG_B2 prob_mel_endpoint AP",
+      "passed": true
+    },
+    {
+      "check": "difference algebra Derm7pt ORIG_B2 prob_mel_endpoint Brier",
+      "passed": true
+    },
+    {
+      "check": "difference algebra Derm7pt ORIG_B2 prob_mel_endpoint ECE15",
+      "passed": true
+    },
+    {
+      "check": "difference algebra Derm7pt ORIG_B2 prob_mel_endpoint ROC_AUC",
+      "passed": true
+    },
+    {
+      "check": "difference algebra Derm7pt ORIG_B2 prob_mel_endpoint binary_NLL",
+      "passed": true
+    },
+    {
+      "check": "difference algebra Derm7pt ORIG_B6 prob_mel AP",
+      "passed": true
+    },
+    {
+      "check": "difference algebra Derm7pt ORIG_B6 prob_mel Brier",
+      "passed": true
+    },
+    {
+      "check": "difference algebra Derm7pt ORIG_B6 prob_mel ECE15",
+      "passed": true
+    },
+    {
+      "check": "difference algebra Derm7pt ORIG_B6 prob_mel ROC_AUC",
+      "passed": true
+    },
+    {
+      "check": "difference algebra Derm7pt ORIG_B6 prob_mel binary_NLL",
+      "passed": true
+    },
+    {
+      "check": "difference algebra Derm7pt ORIG_B6 prob_mel_endpoint AP",
+      "passed": true
+    },
+    {
+      "check": "difference algebra Derm7pt ORIG_B6 prob_mel_endpoint Brier",
+      "passed": true
+    },
+    {
+      "check": "difference algebra Derm7pt ORIG_B6 prob_mel_endpoint ECE15",
+      "passed": true
+    },
+    {
+      "check": "difference algebra Derm7pt ORIG_B6 prob_mel_endpoint ROC_AUC",
+      "passed": true
+    },
+    {
+      "check": "difference algebra Derm7pt ORIG_B6 prob_mel_endpoint binary_NLL",
+      "passed": true
+    },
+    {
+      "check": "difference algebra SIIM ORIG_B2 prob_mel AP",
+      "passed": true
+    },
+    {
+      "check": "difference algebra SIIM ORIG_B2 prob_mel Brier",
+      "passed": true
+    },
+    {
+      "check": "difference algebra SIIM ORIG_B2 prob_mel ECE15",
+      "passed": true
+    },
+    {
+      "check": "difference algebra SIIM ORIG_B2 prob_mel ROC_AUC",
+      "passed": true
+    },
+    {
+      "check": "difference algebra SIIM ORIG_B2 prob_mel binary_NLL",
+      "passed": true
+    },
+    {
+      "check": "difference algebra SIIM ORIG_B2 prob_mel_endpoint AP",
+      "passed": true
+    },
+    {
+      "check": "difference algebra SIIM ORIG_B2 prob_mel_endpoint Brier",
+      "passed": true
+    },
+    {
+      "check": "difference algebra SIIM ORIG_B2 prob_mel_endpoint ECE15",
+      "passed": true
+    },
+    {
+      "check": "difference algebra SIIM ORIG_B2 prob_mel_endpoint ROC_AUC",
+      "passed": true
+    },
+    {
+      "check": "difference algebra SIIM ORIG_B2 prob_mel_endpoint binary_NLL",
+      "passed": true
+    },
+    {
+      "check": "difference algebra SIIM ORIG_B6 prob_mel AP",
+      "passed": true
+    },
+    {
+      "check": "difference algebra SIIM ORIG_B6 prob_mel Brier",
+      "passed": true
+    },
+    {
+      "check": "difference algebra SIIM ORIG_B6 prob_mel ECE15",
+      "passed": true
+    },
+    {
+      "check": "difference algebra SIIM ORIG_B6 prob_mel ROC_AUC",
+      "passed": true
+    },
+    {
+      "check": "difference algebra SIIM ORIG_B6 prob_mel binary_NLL",
+      "passed": true
+    },
+    {
+      "check": "difference algebra SIIM ORIG_B6 prob_mel_endpoint AP",
+      "passed": true
+    },
+    {
+      "check": "difference algebra SIIM ORIG_B6 prob_mel_endpoint Brier",
+      "passed": true
+    },
+    {
+      "check": "difference algebra SIIM ORIG_B6 prob_mel_endpoint ECE15",
+      "passed": true
+    },
+    {
+      "check": "difference algebra SIIM ORIG_B6 prob_mel_endpoint ROC_AUC",
+      "passed": true
+    },
+    {
+      "check": "difference algebra SIIM ORIG_B6 prob_mel_endpoint binary_NLL",
+      "passed": true
+    },
+    {
+      "check": "all and only prescribed intervals",
+      "passed": true
+    },
+    {
+      "check": "no new dedicated-head intervals",
+      "passed": true
+    },
+    {
+      "check": "no replacement matched-null intervals",
+      "passed": true
+    }
+  ],
+  "statistics_environment": {
+    "executable": "${R52_PATH_6560E3761747}",
+    "numpy": "2.3.2",
+    "pandas": "3.0.3",
+    "sklearn": "1.9.0"
+  },
+  "no_individual_records_exported": true,
+  "scope": "limited Route B inputs and aggregate accounting; no A1/statistical redesign"
+}

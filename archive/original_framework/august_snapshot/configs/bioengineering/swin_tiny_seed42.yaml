@@ -1,0 +1,9 @@
+_base_: defaults_direct.yaml
+model:
+  name: swin_tiny
+  source: timm
+  timm_name: swin_tiny_patch4_window7_224
+  pretrained: true
+  allow_random_init_fallback: false
+  num_classes: 7
+

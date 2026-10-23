@@ -1,0 +1,47 @@
+{
+  "status": "COMPLETE",
+  "run": "XATTN_s2024",
+  "training_seed": 2024,
+  "cohort": "HAM_val",
+  "input": "NATIVE",
+  "best_path": "${R52_PATH_F235459FC86E}",
+  "best_sha256": "72e6407e5ca64f46a1c92a439dfb80eb64717f07504ebc6e887446d335dbc757",
+  "selected_epoch": 36,
+  "dtype": "FP32",
+  "TF32": false,
+  "strict_loading": true,
+  "multiclass": {
+    "macro_f1": 0.7983561590987325,
+    "multiclass_brier_sum7": 0.23360303235058075,
+    "multiclass_nll": 1.3292730602310325
+  },
+  "binary": [
+    {
+      "head": "softmax_MEL",
+      "roc_auc": 0.9142906217794572,
+      "average_precision": 0.678393196204719,
+      "brier": 0.06518338019414245,
+      "binary_nll": 0.7298860714831444,
+      "images": 1513,
+      "positive_images": 164
+    },
+    {
+      "head": "endpoint_MEL",
+      "roc_auc": 0.9179631705509049,
+      "average_precision": 0.6796821241003278,
+      "brier": 0.06745844186812922,
+      "binary_nll": 0.7138188738600841,
+      "images": 1513,
+      "positive_images": 164
+    }
+  ],
+  "selection_metrics_reproduced": true,
+  "readout_diagnostics": {
+    "validation_residual_coefficient_mean": -0.0025313543155789375,
+    "validation_residual_coefficient_sd_within_samples": 4.586562755735688e-07,
+    "validation_residual_coefficient_max": -0.0025313543155789375
+  },
+  "eta_raw": -0.005062751937657595,
+  "evaluation_seconds": 13.356430399988312,
+  "per_example_predictions_exported": false
+}

@@ -1,0 +1,26 @@
+_base_: lesionmamba_compact.yaml
+model:
+  name: lesionmamba_compact_vmamba_compatible
+  implementation_variant: vmamba_compatible_minimal
+  use_dpmss: false
+  stages:
+    stage1:
+      use_mple: true
+      scan_mode: basic_global
+      use_dpmss: false
+      use_lmgf: false
+    stage2:
+      use_mple: true
+      scan_mode: basic_global
+      use_dpmss: false
+      use_lmgf: true
+    stage3:
+      use_mple: true
+      scan_mode: basic_global
+      use_dpmss: false
+      use_lmgf: true
+    stage4:
+      use_mple: simplified
+      scan_mode: basic_global
+      use_dpmss: false
+      use_lmgf: false

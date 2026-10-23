@@ -1,0 +1,12 @@
+{
+  "source": "archive/original_framework/august_snapshot/lesionmamba/models/registry.py",
+  "source_sha256": "269409f15681a39899c1d0e21d8c230d14d18c41e79fe0c32a0c8e85714f1f18",
+  "overlay_sha256": "896d4e5dda90cd967b652878a30aafa89f5b632fb8f073018ffa6f3be101dae6",
+  "changes": [
+    "Remove eager import of excluded third-party port",
+    "Raise explicit error for DermaMamba only; no fallback"
+  ],
+  "scientific_branches_unchanged": true,
+  "historical_source_changed": false,
+  "model_runtime_test": "NOT_RUN"
+}

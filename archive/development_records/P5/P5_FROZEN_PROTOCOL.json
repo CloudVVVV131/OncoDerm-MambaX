@@ -1,0 +1,476 @@
+{
+  "frozen_at": "2026-10-16T14:11:50+08:00",
+  "started_at": "2026-10-16T14:06:55+08:00",
+  "deadline": "2026-10-16T16:06:55+08:00",
+  "status": "FROZEN",
+  "scope": "Additional analyses and HAM validation mechanism diagnostics, not rewritten P3/P4 primary analyses",
+  "new_training_runs": 0,
+  "task_A": {
+    "source_roots": [
+      "${R52_PATH_2E90ACAFEFFB}",
+      "${R52_PATH_12DFAC0CCEF0}"
+    ],
+    "preferred_source": "read-only mmap of original bootstrap_fixed_fits.npy",
+    "contrasts": [
+      "R_IMG_minus_M0",
+      "R_IMG_minus_XATTN",
+      "R_IMG_minus_B2S"
+    ],
+    "seed_order": [
+      42,
+      2024,
+      3407
+    ],
+    "model_order": [
+      "M0",
+      "R_IMG",
+      "R_CLIN",
+      "XATTN",
+      "B2S"
+    ],
+    "shape": [
+      10000,
+      3,
+      5,
+      4,
+      2
+    ],
+    "metric_order": [
+      "roc_auc",
+      "average_precision"
+    ],
+    "point_source": "PER_RUN_METRICS.csv, per-run metric differences first, then three-seed mean and sample SD ddof1",
+    "intervals": "95% percentile on saved paired difference draws; six focus AP comparisons additionally 1-0.05/6 coverage",
+    "six_comparison_quantiles": [
+      0.004166666666666667,
+      0.9958333333333333
+    ],
+    "qualification": "additional, post-result comparison selection; correction does not remove selection bias; not original confirmatory endpoints",
+    "preserve_original_R_CLIN_comparisons": true,
+    "no_external_inference": true
+  },
+  "task_B": {
+    "models": [
+      {
+        "model": "R_IMG",
+        "training_seed": 42,
+        "run": "R_IMG_s42",
+        "path": "${R52_PATH_A43577A49353}",
+        "sha256": "f92283cc46bcc45a59e123364c6cea3da8f4e0377cff4a2b8d54458a622c3c13",
+        "bytes": 137416109,
+        "best_epoch": 23,
+        "completed_epochs": 38,
+        "effective_config_path": "${R52_PATH_D4DACB25116E}",
+        "effective_config_sha256": "aa76ec93e2aec5ebfa1567ce1898acc89bac88b9fc325cdc188d53e26201c8f7",
+        "config_snapshot": "${R52_PATH_9C93A908822E}",
+        "origin": "existing_fixed_best_no_retraining",
+        "prior_validation_reference": {
+          "macro_f1": 0.7862156146710697,
+          "softmax_MEL_AP": 0.7245745283535093,
+          "softmax_MEL_AUC": 0.9301944529823356
+        }
+      },
+      {
+        "model": "R_CLIN",
+        "training_seed": 42,
+        "run": "R_CLIN_s42",
+        "path": "${R52_PATH_9A2FF8F30438}",
+        "sha256": "56af879c23aaa3e741afa0306f55a5e05778c2752a7d699d8ccdb2a85c3cc597",
+        "bytes": 137416109,
+        "best_epoch": 26,
+        "completed_epochs": 41,
+        "effective_config_path": "${R52_PATH_E6E9F56F926F}",
+        "effective_config_sha256": "00ae66e0942cda7c13a2504487f87be292d3edc1bb38cc35df0ae7368807ca07",
+        "config_snapshot": "${R52_PATH_6FE981E7E730}",
+        "origin": "existing_fixed_best_no_retraining",
+        "prior_validation_reference": {
+          "macro_f1": 0.790628506011951,
+          "softmax_MEL_AP": 0.7328620993900526,
+          "softmax_MEL_AUC": 0.9256427525357537
+        }
+      },
+      {
+        "model": "R_IMG",
+        "training_seed": 2024,
+        "run": "R_IMG_s2024",
+        "path": "${R52_PATH_A619576E4C28}",
+        "sha256": "76bb5d4554fcba952ab3cd36a40feda4f29e0f1236443ed7ad97aa54778cb1c4",
+        "bytes": 137416429,
+        "best_epoch": 14,
+        "completed_epochs": 29,
+        "effective_config_path": "${R52_PATH_584FA0DED44A}",
+        "effective_config_sha256": "eb09b2135fd90080b2b4a92c138ea996bfeb63302c6aaa03aac40b2ef0edc069",
+        "config_snapshot": "${R52_PATH_E2FA2F5E8B1F}",
+        "origin": "existing_fixed_best_no_retraining",
+        "prior_validation_reference": {
+          "macro_f1": 0.7890588316606079,
+          "softmax_MEL_AP": 0.6955934765080051,
+          "softmax_MEL_AUC": 0.9251071254226255
+        }
+      },
+      {
+        "model": "R_CLIN",
+        "training_seed": 2024,
+        "run": "R_CLIN_s2024",
+        "path": "${R52_PATH_7E486FDF155F}",
+        "sha256": "dc9d4567cb001365250df5a46b66e99e32796823ab1e69339300b4b707c801d7",
+        "bytes": 137416429,
+        "best_epoch": 32,
+        "completed_epochs": 47,
+        "effective_config_path": "${R52_PATH_F77B96588D51}",
+        "effective_config_sha256": "ae1adfb235d1313da7c9fd2fbeee137a8cfcf0437e55f48976d14b5aface5597",
+        "config_snapshot": "${R52_PATH_716F97B19425}",
+        "origin": "existing_fixed_best_no_retraining",
+        "prior_validation_reference": {
+          "macro_f1": 0.782159640651938,
+          "softmax_MEL_AP": 0.6826772660140887,
+          "softmax_MEL_AUC": 0.9275886383771177
+        }
+      },
+      {
+        "model": "R_IMG",
+        "training_seed": 3407,
+        "run": "R_IMG_s3407",
+        "path": "${R52_PATH_C0D2C1E16B34}",
+        "sha256": "4bc4c03e0124ddb73cdb1da0c28cf22a78df6a4183d8e269324288522bae5180",
+        "bytes": 137416429,
+        "best_epoch": 52,
+        "completed_epochs": 67,
+        "effective_config_path": "${R52_PATH_38DD6FA5E0CD}",
+        "effective_config_sha256": "754ba58c799e802ef07ed0d984bdaf1be57622c3f5409ecb31504bd05b708e33",
+        "config_snapshot": "${R52_PATH_EC0A47B66ED8}",
+        "origin": "existing_fixed_best_no_retraining",
+        "prior_validation_reference": {
+          "macro_f1": 0.7775761230456943,
+          "softmax_MEL_AP": 0.676290947378546,
+          "softmax_MEL_AUC": 0.9252811477336418
+        }
+      },
+      {
+        "model": "R_CLIN",
+        "training_seed": 3407,
+        "run": "R_CLIN_s3407",
+        "path": "${R52_PATH_DDF79AC516E8}",
+        "sha256": "5bcdca73e3d273b389cd3086b72b7d11b6b2642ecb0c250ae1be18ec1da0a3fe",
+        "bytes": 137416429,
+        "best_epoch": 29,
+        "completed_epochs": 44,
+        "effective_config_path": "${R52_PATH_1FA8FB2D9786}",
+        "effective_config_sha256": "46d16a2a0708b81c0d0bc5657a1b18d0271933f62885803860c5549e2726803c",
+        "config_snapshot": "${R52_PATH_2CB9009FED86}",
+        "origin": "existing_fixed_best_no_retraining",
+        "prior_validation_reference": {
+          "macro_f1": 0.7984713909819676,
+          "softmax_MEL_AP": 0.6946192389543431,
+          "softmax_MEL_AUC": 0.9184535970637691
+        }
+      }
+    ],
+    "cohort": "HAM_val",
+    "images": 1513,
+    "input": "NATIVE",
+    "conditions": [
+      "NATIVE",
+      "SHIFT_HALF",
+      "PERMUTE_FIXED"
+    ],
+    "ham_validation_csv": {
+      "path": "${R52_PATH_A7EDEF14667C}",
+      "sha256": "b1e4982d61df694d6acc64a5c024f9423a110d87489a2731c5e361f183caf4f3",
+      "bytes": 84872
+    },
+    "image_root": "${R52_PATH_DF0C8252ABE7}",
+    "path_source": "P3 p3_eval_data.py EvaluationData HAM branch: REV/data/HAM10000/images; P3 frozen split file",
+    "intervention_site": "region_tokens: after original resize/sigmoid/3x3 replicate-padded soft morphology; before feature-weighted pooling",
+    "SHIFT_HALF": "all three completed region maps torch.roll(H//2,W//2) in spatial axes",
+    "PERMUTE_FIXED": "uid=int.from_bytes(SHA256(exact_image_id UTF8)[:8],little,unsigned); PCG64(SeedSequence([20261018,uid])).permutation(H*W); all regions gather same index",
+    "same_rule_all_models_and_seeds": true,
+    "region_order": [
+      "interior",
+      "boundary",
+      "context"
+    ],
+    "mass_rtol": 1e-05,
+    "native_check": {
+      "first_images": 8,
+      "atol": 1e-05,
+      "rtol": 0.0001
+    },
+    "alpha": "recomputed from changed tokens, not frozen",
+    "state": "all parameters and buffers unchanged",
+    "caching": "batch-local backbone/fused/mask/original_pool/clinical_embedding once; no disk feature cache",
+    "preprocessing": "original RGB resize short256 / center224 / ImageNet normalization",
+    "precision": "FP32, eval, inference_mode, TF32 off",
+    "batch": 8,
+    "workers": 2,
+    "metrics": {
+      "AP": "sklearn average_precision_score, not trapezoidal PR area",
+      "AUC": "sklearn roc_auc_score",
+      "Brier": "unclipped mean squared error",
+      "binary_NLL": "epsilon1e-7, clipping [epsilon,1-epsilon]",
+      "multiclass_Brier": "mean of sum over seven classes",
+      "multiclass_NLL": "target probability clipped [1e-7,1]",
+      "macro_F1": "labels 0..6, arithmetic macro",
+      "binary_ECE15": "positive-probability equal-width bins [k/15,(k+1)/15), last includes1; sum n_bin/N*abs(mean_probability-observed_positive_rate)",
+      "multiclass_ECE15": "top-label confidence/accuracy, same15bins; empty bins mean/rate null, contribution zero"
+    },
+    "bootstrap": false,
+    "threshold_selection": false,
+    "calibration_fitting": false,
+    "interpretation": "validation fixed-model spatial-dependence diagnostic, not localization accuracy, causal lesion explanation or new external validation"
+  },
+  "prohibited": [
+    "training",
+    "reselection",
+    "new architecture",
+    "new seeds",
+    "external forwarding",
+    "cloud",
+    "system changes",
+    "manuscript edits"
+  ],
+  "disk_free_bytes_at_start": 13543571456,
+  "reserved_output_budget_bytes": 2147483648,
+  "manifest": [
+    {
+      "path": "${R52_PATH_1EE841CE89EF}",
+      "sha256": "53dfb0e156a0c9d1ec4e62b84ee592f3a2e46409e57da418cc2c9297e76e95b7",
+      "bytes": 8840
+    },
+    {
+      "path": "${R52_PATH_288121512F1C}",
+      "sha256": "50bcb2a55608ced9a0c4877f699cb85791238d8b6685c497286ce6e73c5fd11b",
+      "bytes": 24592
+    },
+    {
+      "path": "${R52_PATH_CF072F75C30F}",
+      "sha256": "e6999b548a95134bacba7fd0bc684558e21c81c0eeee6f703934c25e9f4ae900",
+      "bytes": 3702
+    },
+    {
+      "path": "${R52_PATH_485603C66467}",
+      "sha256": "2625719f7142fc9127d5906b073738908117d847fa4117ffba9741579db0bf50",
+      "bytes": 7018
+    },
+    {
+      "path": "${R52_PATH_6C9EC87EB546}",
+      "sha256": "40bad99b07ed4a7f2b5b92179a04885fa71fc11a76d73710897a38924ded3a3d",
+      "bytes": 13787
+    },
+    {
+      "path": "${R52_PATH_B8DF67A96C09}",
+      "sha256": "8b9c4c9ef3befcade863aaf4cb0eb0b563b40a239e06e56dd6e1e1708923fbc7",
+      "bytes": 2204
+    },
+    {
+      "path": "${R52_PATH_999386A74AA7}",
+      "sha256": "abd4ac93f194b822006b804b71d4ad4a71c2be0e6bd7531f2f572436eed943ba",
+      "bytes": 2291
+    },
+    {
+      "path": "${R52_PATH_A6F9FA9391A0}",
+      "sha256": "7e09b237d0d533fa140b8927fd3c47b275e4d29060380e080a06dbd7b7480b9a",
+      "bytes": 247
+    },
+    {
+      "path": "${R52_PATH_86A5B50DF29E}",
+      "sha256": "2647c619c0f26fb273c9e3bebaa9013876fea150163a29c3004210bd74789771",
+      "bytes": 39159
+    },
+    {
+      "path": "${R52_PATH_C282C9C9F26D}",
+      "sha256": "cdf156ae56f320c22e2e6ad12915fb9a215afd27d3c04bdfb48afc7ce862bc25",
+      "bytes": 826
+    },
+    {
+      "path": "${R52_PATH_33DC0EF9FA24}",
+      "sha256": "60bd28e76e13d2c6d2a6bc3606d25f07817aefcc2bcc4feb9edff041f48fa26c",
+      "bytes": 12257
+    },
+    {
+      "path": "${R52_PATH_1854D72D69E8}",
+      "sha256": "40bad99b07ed4a7f2b5b92179a04885fa71fc11a76d73710897a38924ded3a3d",
+      "bytes": 13787
+    },
+    {
+      "path": "${R52_PATH_10BE3EADB00B}",
+      "sha256": "a35edd1d76f54dc16badfbfc179f3abc6a660a790fdc40d7424d5e3e14a401bc",
+      "bytes": 2489
+    },
+    {
+      "path": "${R52_PATH_B35C4B757C06}",
+      "sha256": "d436b245d30c73e12a28e4ced0075be25fddc370c9997b2e973c2ce84eccc12d",
+      "bytes": 2381
+    },
+    {
+      "path": "${R52_PATH_52EE956C5670}",
+      "sha256": "f646aa15e5bb86d64b631819bd7b3f16b2e0876c9f0ad2158e4cfdf98ba992c4",
+      "bytes": 325
+    },
+    {
+      "path": "${R52_PATH_A43577A49353}",
+      "sha256": "f92283cc46bcc45a59e123364c6cea3da8f4e0377cff4a2b8d54458a622c3c13",
+      "bytes": 137416109
+    },
+    {
+      "path": "${R52_PATH_9C93A908822E}",
+      "sha256": "aa76ec93e2aec5ebfa1567ce1898acc89bac88b9fc325cdc188d53e26201c8f7",
+      "bytes": 10377
+    },
+    {
+      "path": "${R52_PATH_9A2FF8F30438}",
+      "sha256": "56af879c23aaa3e741afa0306f55a5e05778c2752a7d699d8ccdb2a85c3cc597",
+      "bytes": 137416109
+    },
+    {
+      "path": "${R52_PATH_6FE981E7E730}",
+      "sha256": "00ae66e0942cda7c13a2504487f87be292d3edc1bb38cc35df0ae7368807ca07",
+      "bytes": 10380
+    },
+    {
+      "path": "${R52_PATH_A619576E4C28}",
+      "sha256": "76bb5d4554fcba952ab3cd36a40feda4f29e0f1236443ed7ad97aa54778cb1c4",
+      "bytes": 137416429
+    },
+    {
+      "path": "${R52_PATH_E2FA2F5E8B1F}",
+      "sha256": "eb09b2135fd90080b2b4a92c138ea996bfeb63302c6aaa03aac40b2ef0edc069",
+      "bytes": 10712
+    },
+    {
+      "path": "${R52_PATH_7E486FDF155F}",
+      "sha256": "dc9d4567cb001365250df5a46b66e99e32796823ab1e69339300b4b707c801d7",
+      "bytes": 137416429
+    },
+    {
+      "path": "${R52_PATH_716F97B19425}",
+      "sha256": "ae1adfb235d1313da7c9fd2fbeee137a8cfcf0437e55f48976d14b5aface5597",
+      "bytes": 10715
+    },
+    {
+      "path": "${R52_PATH_C0D2C1E16B34}",
+      "sha256": "4bc4c03e0124ddb73cdb1da0c28cf22a78df6a4183d8e269324288522bae5180",
+      "bytes": 137416429
+    },
+    {
+      "path": "${R52_PATH_EC0A47B66ED8}",
+      "sha256": "754ba58c799e802ef07ed0d984bdaf1be57622c3f5409ecb31504bd05b708e33",
+      "bytes": 10712
+    },
+    {
+      "path": "${R52_PATH_DDF79AC516E8}",
+      "sha256": "5bcdca73e3d273b389cd3086b72b7d11b6b2642ecb0c250ae1be18ec1da0a3fe",
+      "bytes": 137416429
+    },
+    {
+      "path": "${R52_PATH_2CB9009FED86}",
+      "sha256": "46d16a2a0708b81c0d0bc5657a1b18d0271933f62885803860c5549e2726803c",
+      "bytes": 10715
+    },
+    {
+      "path": "${R52_PATH_0DBC2001FB85}",
+      "sha256": "67d0b7f2b09003813e8ad20ead76921d20d2c72c15144d404f242bedc55545b5",
+      "bytes": 1978
+    },
+    {
+      "path": "${R52_PATH_9928F8E31E76}",
+      "sha256": "67d0b7f2b09003813e8ad20ead76921d20d2c72c15144d404f242bedc55545b5",
+      "bytes": 1978
+    },
+    {
+      "path": "${R52_PATH_CC6104BD82EB}",
+      "sha256": "56b5e91c3bb77ab933c25fd65eba883419bdc5691cc94cb9dc840e8f4e3674eb",
+      "bytes": 22
+    },
+    {
+      "path": "${R52_PATH_FB8C768279FD}",
+      "sha256": "56b5e91c3bb77ab933c25fd65eba883419bdc5691cc94cb9dc840e8f4e3674eb",
+      "bytes": 22
+    },
+    {
+      "path": "${R52_PATH_CF78920A970C}",
+      "sha256": "78d6dddaf4113248d3df55c21acbd7751075189a56b282833042bc6bd2fb3f62",
+      "bytes": 190
+    },
+    {
+      "path": "${R52_PATH_FEE577D11004}",
+      "sha256": "78d6dddaf4113248d3df55c21acbd7751075189a56b282833042bc6bd2fb3f62",
+      "bytes": 190
+    },
+    {
+      "path": "${R52_PATH_FE596DACC50A}",
+      "sha256": "db399b81dbed64eb56130f27f1936089808872260a50fd345ce909f1ed1685e6",
+      "bytes": 10801
+    },
+    {
+      "path": "${R52_PATH_0DCC3489D14C}",
+      "sha256": "db399b81dbed64eb56130f27f1936089808872260a50fd345ce909f1ed1685e6",
+      "bytes": 10801
+    },
+    {
+      "path": "${R52_PATH_38DD6A726D7E}",
+      "sha256": "4c001f03eca3a93ee3e9a590d46ef0710f66fc88be1512241d3f71a0bc3be6c6",
+      "bytes": 2104
+    },
+    {
+      "path": "${R52_PATH_98971C1C21CF}",
+      "sha256": "4c001f03eca3a93ee3e9a590d46ef0710f66fc88be1512241d3f71a0bc3be6c6",
+      "bytes": 2104
+    },
+    {
+      "path": "${R52_PATH_72089D8B0038}",
+      "sha256": "c0c19257e4aa5fcff4bf73c6923128029375a903ef71a7b43e0cefa6fc1c0a7d",
+      "bytes": 66
+    },
+    {
+      "path": "${R52_PATH_3E45623841D5}",
+      "sha256": "c0c19257e4aa5fcff4bf73c6923128029375a903ef71a7b43e0cefa6fc1c0a7d",
+      "bytes": 66
+    },
+    {
+      "path": "${R52_PATH_5BA6EBF9814D}",
+      "sha256": "7e737a004f69053821628f84b3da9c44a4e4a208a386fa7322c5c7ff9331a0c5",
+      "bytes": 13751
+    },
+    {
+      "path": "${R52_PATH_B975CD3E10F4}",
+      "sha256": "7e737a004f69053821628f84b3da9c44a4e4a208a386fa7322c5c7ff9331a0c5",
+      "bytes": 13751
+    },
+    {
+      "path": "${R52_PATH_C556C285455D}",
+      "sha256": "5362ba3d8c6815c88321a89e11f528e2e72840d5862837f01f3c87427e1eafdc",
+      "bytes": 7527
+    },
+    {
+      "path": "${R52_PATH_395F0980D2D5}",
+      "sha256": "5362ba3d8c6815c88321a89e11f528e2e72840d5862837f01f3c87427e1eafdc",
+      "bytes": 7527
+    },
+    {
+      "path": "${R52_PATH_A7EDEF14667C}",
+      "sha256": "b1e4982d61df694d6acc64a5c024f9423a110d87489a2731c5e361f183caf4f3",
+      "bytes": 84872
+    },
+    {
+      "path": "${R52_PATH_6AA7D7E765BC}",
+      "sha256": "7692b8828b8b2a6839b669b094fc871a54ec45b586a994505217d7d252bb6a09",
+      "bytes": 543
+    },
+    {
+      "path": "${R52_PATH_EC68FF46A729}",
+      "sha256": "a4dded9b7b107327b27339b2710be946092fb981098080449e3025a3b51b03c7",
+      "bytes": 44500
+    },
+    {
+      "path": "${R52_PATH_D609F9DC8A20}",
+      "sha256": "8e8cd4e644ab179e484255326d6d5eab4b9f2efad0584f30136692ee7708ed70",
+      "bytes": 5078
+    },
+    {
+      "path": "${R52_PATH_2BCA13B7E7FB}",
+      "sha256": "dac8f201f0b57bc11a3f4260a73b8f3a4865df25e5a44b679e3b4a809f1f6b25",
+      "bytes": 1671
+    }
+  ]
+}

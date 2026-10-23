@@ -1,0 +1,3 @@
+input_size: 384
+epochs: 20
+models: [best_baseline, lesionmamba_compact]

@@ -1,0 +1,95 @@
+{
+  "version": "P6-v2.0",
+  "task_sha256": "b55d17a0d257bf9c3954520b4049b806a8e070617f0f80276d4e98555279908d",
+  "window": {
+    "started_at": "2026-10-16T14:58:36.909633+08:00",
+    "deadline": "2026-10-16T20:58:36.909633+08:00",
+    "source_seed42": "${R52_PATH_F74ED8905ECC}",
+    "source_P1": "${R52_PATH_8BF64AF677FF}",
+    "source_P2": "${R52_PATH_A777747B3623}",
+    "source_P3": "${R52_PATH_D326FCF49049}",
+    "new_runs": [
+      "FIM_TKEEP_REGION_s42",
+      "FIM_TKEEP_GLOBAL_s42"
+    ],
+    "D_free_bytes_at_admission": 13525745664,
+    "estimated_required_bytes": 4294967296,
+    "estimate_basis": "Two ~138MB best and ~414MB last checkpoints, atomic save temporaries, shared pre-training state, logs and safety reserve",
+    "allowed_data": [
+      "HAM_train",
+      "HAM_validation",
+      "frozen_aux100"
+    ],
+    "automatic_next_phase": false
+  },
+  "frozen_at": "2026-10-16T15:10:24.429939+08:00",
+  "conditions": {
+    "FIM_TKEEP_REGION_s42": "region",
+    "FIM_TKEEP_GLOBAL_s42": "global"
+  },
+  "readout": {
+    "channels": 768,
+    "hidden": 128,
+    "slot_order": [
+      "g",
+      "interior",
+      "boundary",
+      "context"
+    ],
+    "slots": "4 independent LayerNorm(768),Linear(768,128,bias=True),GELU",
+    "fusion": "concat -> LayerNorm(512) -> Linear(512,768,bias=False)",
+    "output": "g + 0.5*tanh(eta)*(h-g)",
+    "eta_initial": 0,
+    "new_module_seed": 6042,
+    "clinical_in_readout": false,
+    "mask_weights_detached": true,
+    "min_mass_fraction": 0.0001,
+    "global_control": "all three region slots use same fused feature GAP"
+  },
+  "training_seed": 42,
+  "split_seed": 42,
+  "new_training_runs": 2,
+  "train_n": 6982,
+  "validation_n": 1513,
+  "aux_n": 100,
+  "classification_order": "42+epoch",
+  "image_augmentation": "42+epoch*1000003+index*1009",
+  "aux_rng": "PCG64 SeedSequence([42,epoch,19])",
+  "loader_seed": 42017,
+  "effective_batches": [
+    48,
+    32
+  ],
+  "microbatch": 8,
+  "workers": 2,
+  "optimizer": "AdamW backbone3e-5/other3e-4,wd0.05",
+  "schedule": "warmup5,cosine80",
+  "max_epochs": 80,
+  "patience": 15,
+  "gradient_clip": 1,
+  "loss": {
+    "CE_beta": 0.999,
+    "smoothing_effective": 0,
+    "CE_denominator": "all effective-batch target class weights",
+    "melanoma_BCE": 0.5,
+    "consistency": 0.05,
+    "mask_Dice_BCE": 0.1,
+    "sparsity": 0.0005,
+    "TV": 0.002
+  },
+  "best_selection": [
+    "validation_macro_F1",
+    "validation_softmax_MEL_AUC",
+    "earlier_exact_tie"
+  ],
+  "AP_used_for_selection": false,
+  "FP32_eval": true,
+  "TF32": false,
+  "bootstrap": false,
+  "threshold_selection": false,
+  "calibrator_fitting": false,
+  "external_evaluation": false,
+  "new_seed_expansion": false,
+  "main_development_contrast": "TKEEP_REGION-TKEEP_GLOBAL validation softmax_MEL AP",
+  "status_of_hypothesis": "post-P5 single-seed development, not independent confirmation"
+}

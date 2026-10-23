@@ -1,0 +1,333 @@
+{
+  "original_config": {
+    "project": {
+      "name": "oncoderm_mambax_submission_v1",
+      "output_dir": "outputs",
+      "seed": 3407
+    },
+    "data": {
+      "dataset": "HAM10000",
+      "metadata_csv": "data/raw/HAM10000/HAM10000_metadata.csv",
+      "image_dir": "data/raw/HAM10000/images",
+      "split_dir": "splits",
+      "input_size": 224,
+      "resize_short_side": 256,
+      "num_classes": 7,
+      "label_column": "dx",
+      "image_id_column": "image_id",
+      "group_column": "lesion_id",
+      "patient_id_column": "patient_id",
+      "split": {
+        "train": 0.7,
+        "val": 0.15,
+        "test": 0.15,
+        "stratify": "dx",
+        "group_policy": "lesion_id_first_patient_id_if_complete",
+        "group_priority": [
+          "lesion_id",
+          "patient_id"
+        ]
+      },
+      "transforms": {
+        "random_resized_crop_scale": [
+          0.8,
+          1.0
+        ],
+        "hflip_p": 0.5,
+        "vflip_p": 0.5,
+        "rotation_degrees": 30,
+        "color_jitter": [
+          0.1,
+          0.1,
+          0.08,
+          0.02
+        ],
+        "gaussian_blur_p": 0.05,
+        "random_erasing_p": 0.0,
+        "mixup_alpha": 0.0,
+        "cutmix_alpha": 0.0
+      },
+      "metadata": {
+        "enabled": true,
+        "age_column": "age",
+        "sex_column": "sex",
+        "localization_column": "localization",
+        "age_scale": 100.0,
+        "include_missing_indicators": true,
+        "sex_values": [
+          "male",
+          "female",
+          "unknown"
+        ],
+        "localization_values": [
+          "abdomen",
+          "acral",
+          "back",
+          "chest",
+          "ear",
+          "face",
+          "foot",
+          "genital",
+          "hand",
+          "lower extremity",
+          "neck",
+          "scalp",
+          "trunk",
+          "unknown",
+          "upper extremity"
+        ]
+      },
+      "mask_aux": {
+        "enabled": true,
+        "image_dir": "data/raw/ISIC_masks/images",
+        "mask_dir": "data/raw/ISIC_masks/masks",
+        "batch_size": 32,
+        "num_workers": 0
+      }
+    },
+    "train": {
+      "epochs": 80,
+      "batch_size": 48,
+      "batch_size_candidates": [
+        64,
+        128
+      ],
+      "num_workers": 8,
+      "optimizer": "adamw",
+      "lr": 0.0003,
+      "weight_decay": 0.05,
+      "warmup_epochs": 5,
+      "scheduler": "cosine",
+      "amp": true,
+      "grad_clip": 1.0,
+      "early_stopping_patience": 15,
+      "selection_metric": "macro_f1",
+      "selection_tie_breaker": "mel_auc",
+      "backbone_lr": 3e-05,
+      "adapter_lr": 0.0003,
+      "head_lr": 0.0003
+    },
+    "loss": {
+      "name": "weighted_ce",
+      "beta": 0.999,
+      "gamma": 2.0,
+      "label_smoothing": 0.05,
+      "lambda_sparse": 0.0005,
+      "lambda_tv": 0.002,
+      "multitask": true,
+      "lambda_7class": 1.0,
+      "lambda_melanoma": 0.5,
+      "lambda_mask_aux": 0.1,
+      "lambda_consistency": 0.05
+    },
+    "eval": {
+      "bootstrap_iters": 1000,
+      "bootstrap_min_iters_if_time_limited": 500,
+      "ece_bins": 15,
+      "threshold_source": "validation",
+      "save_logits": true,
+      "save_val_predictions": true,
+      "save_test_predictions": true,
+      "save_attention": true,
+      "report_ci_metrics": [
+        "macro_f1",
+        "macro_auc",
+        "mel_auc",
+        "sensitivity",
+        "specificity"
+      ],
+      "calibration": {
+        "min_temperature": 0.5,
+        "max_temperature": 5.0
+      }
+    },
+    "model": {
+      "name": "oncoderm_mambax_b6_full",
+      "source": "oncoderm_mambax",
+      "timm_name": "convnext_tiny",
+      "pretrained": false,
+      "num_classes": 7,
+      "out_indices": [
+        1,
+        2,
+        3
+      ],
+      "fusion_dim": 768,
+      "multi_scale_fusion": true,
+      "dropout": 0.1,
+      "cssa": {
+        "enabled": true,
+        "stage3_enabled": true,
+        "adapter_dim": 256,
+        "scan_kernel_size": 7
+      },
+      "lesion_prior": {
+        "enabled": true
+      },
+      "metadata_fusion": {
+        "enabled": true,
+        "hidden_dim": 64
+      },
+      "heads": {
+        "melanoma_endpoint": true
+      }
+    },
+    "training_seed": 3407,
+    "split_seed": 42,
+    "p1_variant": "R_IMG"
+  },
+  "condition": "R_IMG",
+  "lambda_mask_aux": 0.1,
+  "seed": 3407,
+  "training_seed": 3407,
+  "split_seed": 42,
+  "run_name": "R_IMG_s3407",
+  "classification_order_seed": "training_seed + epoch (zero-based)",
+  "dataloader_generator_seed": 3407017,
+  "classification_effective_batch": 48,
+  "auxiliary_effective_batch": 32,
+  "microbatch": 8,
+  "workers": 2,
+  "precision_train": "FP16 AMP, FP32 parameters/loss reductions",
+  "precision_eval": "FP32",
+  "TF32": false,
+  "amp_overflow_policy": "halve scale; restore pre-update BN buffers and RNG; retry same effective batch (up to 8 retries), no skipped data updates",
+  "max_epochs": 80,
+  "patience": 15,
+  "warmup_epochs": 5,
+  "selection": "val macro-F1, then softmax MEL AUC, earliest exact tie",
+  "label_smoothing_effective": 0.0,
+  "class_weights": [
+    0.9249691963195801,
+    0.6544250845909119,
+    0.35862797498703003,
+    2.4320335388183594,
+    0.35923999547958374,
+    0.19564157724380493,
+    2.0750632286071777
+  ],
+  "bce_pos_weight": 8.009032249450684,
+  "aux_metadata": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "aux_geometry": "shared direct 224 square resize; image bilinear, mask nearest",
+  "aux_sampling": "32 distinct fixed-set members per update, PCG64 SeedSequence([training_seed, epoch, 19]); matched conditions",
+  "classification_aug_seed": "training_seed + epoch*1000003 + dataset_index*1009",
+  "initialization": {
+    "base": {
+      "public_weight_path": "${R52_PATH_2EEF09F096AD}",
+      "public_weight_sha256": "a1aefa409b513cf209b085424eb3efffe4e4a9f511491bc2c12ea35209e6bb95",
+      "public_weight_bytes": 114374272,
+      "snapshot_revision": "aa096f03029c7f0ec052013f64c819b34f8ad790",
+      "pretrained_config": {
+        "url": "",
+        "hf_hub_id": "timm/convnext_tiny.in12k_ft_in1k",
+        "architecture": "convnext_tiny",
+        "tag": "in12k_ft_in1k",
+        "custom_load": false,
+        "input_size": [
+          3,
+          224,
+          224
+        ],
+        "test_input_size": [
+          3,
+          288,
+          288
+        ],
+        "fixed_input_size": false,
+        "interpolation": "bicubic",
+        "crop_pct": 0.95,
+        "test_crop_pct": 1.0,
+        "crop_mode": "center",
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ],
+        "num_classes": 1000,
+        "pool_size": [
+          7,
+          7
+        ],
+        "first_conv": "stem.0",
+        "classifier": "head.fc",
+        "license": "apache-2.0"
+      },
+      "seed": 3407,
+      "training_seed": 3407,
+      "split_seed": 42,
+      "model_source": "${R52_PATH_31F48A66389A}",
+      "timm_version": "1.0.27",
+      "torch_version": "2.8.0+cu128",
+      "status": "READY",
+      "initialization_policy": "new random non-pretrained parameters; fixed local public backbone; no historical state loaded",
+      "initial_state_path": "${R52_PATH_BDAC0D0C8BEC}",
+      "initial_state_sha256": "15223aa8ffec7ddba52868fec1ac7001abfd9300e4cff917fb735ca090c3eb34",
+      "backbone_tensor_sha256": "3f9364a25ab219d4a7cee90ca26e6cb83bd3fee80c005de6b9a0c23bdb7d235e",
+      "nonbackbone_tensor_sha256": "dbd8be1b0fe90464c23292cc2147270b9ed41f32794faa5d8d438bab3a7ef6a1",
+      "parameter_count": 33431726
+    },
+    "training_seed": 3407,
+    "new_module_seed": 4407,
+    "source_loaded": "${R52_PATH_BDAC0D0C8BEC}",
+    "strict_base_load_required": true,
+    "trained_weights_used_for_initialization": false,
+    "new_module_rng_isolated_required": true
+  },
+  "mask_manifest_sha256": "ef507cb90b4955b2a9f7dabbdc532a1bf9176899c72c46f646231f795c648a13",
+  "source_paths": {
+    "model": "${R52_PATH_5FF90A46D2A3}",
+    "candidate": "${R52_PATH_11E3AFF04D18}",
+    "integration": "${R52_PATH_484B621214B5}"
+  },
+  "new_module_seed": 4407,
+  "new_module_initial_hashes": {
+    "region_type": "80422bc3d307b4a25bdafcc84ac7fb01cb55a09810e8b0f37bb12e0edb5c48ca",
+    "eta": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+    "token_norm.weight": "9107f3ba55602154349710bf6dfd7b861c4c17f8b61b9f542e5d3301ef6f9a5a",
+    "token_norm.bias": "e80232b4d18d0bb7e794be263ba937626f383f9917d4b8a737ba893a8f752293",
+    "global_norm.weight": "9107f3ba55602154349710bf6dfd7b861c4c17f8b61b9f542e5d3301ef6f9a5a",
+    "global_norm.bias": "e80232b4d18d0bb7e794be263ba937626f383f9917d4b8a737ba893a8f752293",
+    "meta_norm.weight": "9107f3ba55602154349710bf6dfd7b861c4c17f8b61b9f542e5d3301ef6f9a5a",
+    "meta_norm.bias": "e80232b4d18d0bb7e794be263ba937626f383f9917d4b8a737ba893a8f752293",
+    "token_projection.weight": "7f861ed405668f8c63dc338fb9920234d282d0dcacf38708331ac1e0e0405671",
+    "global_projection.weight": "75237c63abc4722107f99721125e0602ac1123fa56691511f767f6d99992114c",
+    "meta_projection.weight": "49b12c9e5ddfa4db121d3a3e9476ee34d85058962d92ae08bcc6cadefe4c15f1",
+    "score.weight": "0318ebb950ff119e11ec92c0eff24911ad120d79f9bec69f410368fd186aca1c",
+    "output_projection.weight": "ac7e6609b5d948adafaa45e5846f25cbb1a65a967fa75fa85b497b03a18bdc22"
+  },
+  "readout_rng_isolated": true,
+  "parameter_count": 34321583,
+  "readout_parameter_count": 889857,
+  "allowed_evaluation": [
+    "HAM_validation"
+  ],
+  "AP_used_for_selection": false
+}

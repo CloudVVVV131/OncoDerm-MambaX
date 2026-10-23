@@ -1,0 +1,6 @@
+_base_: ../submission_v1/defaults_oncoderm.yaml
+project:
+  name: oncoderm_mambax_submission_v1_stability
+  seed: 3407
+  split_seed: 42
+

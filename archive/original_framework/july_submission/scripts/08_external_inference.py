@@ -1,0 +1,149 @@
+from __future__ import annotations
+
+import argparse
+from pathlib import Path
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+import numpy as np
+import pandas as pd
+import torch
+from torch.utils.data import DataLoader
+
+from lesionmamba.data.datasets import ExternalEndpointDataset
+from lesionmamba.data.transforms import build_transforms
+from lesionmamba.engine.checkpoint import load_checkpoint
+from lesionmamba.metrics.melanoma_endpoint import endpoint_metrics_from_probs, endpoint_metrics_from_scores
+from lesionmamba.models.registry import build_model
+from lesionmamba.utils.config import load_yaml
+from lesionmamba.utils.io import ensure_dir, write_json
+
+
+def validation_thresholds(run_dir: Path) -> tuple[dict[str, float], str]:
+    threshold_path = run_dir / "melanoma_thresholds.json"
+    if threshold_path.exists():
+        import json
+
+        thresholds = json.loads(threshold_path.read_text(encoding="utf-8"))
+        return {k.replace("threshold_", ""): float(v) for k, v in thresholds.items()}, "saved_validation_thresholds"
+    pred_dir = Path("outputs/predictions")
+    try:
+        val_labels = np.load(pred_dir / f"{run_dir.name}_val_labels.npy")
+        val_probs = np.load(pred_dir / f"{run_dir.name}_val_probs.npy")
+        endpoint_path = pred_dir / f"{run_dir.name}_val_endpoint_probs.npy"
+        if endpoint_path.exists():
+            _, thresholds = endpoint_metrics_from_scores(val_labels, np.load(endpoint_path))
+        else:
+            _, thresholds = endpoint_metrics_from_probs(val_labels, val_probs)
+        write_json(thresholds, threshold_path)
+        return thresholds, "computed_from_validation_predictions"
+    except FileNotFoundError:
+        return {"youden": 0.5, "spec90": 0.5, "spec95": 0.5}, "missing_validation_predictions_used_0.5"
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--all-runs", default="outputs/runs")
+    args = parser.parse_args()
+    labels = Path("data/raw/ISIC_external/labels_harmonized.csv")
+    ensure_dir("results")
+    if not labels.exists():
+        write_json(
+            {"status": "not_run", "reason": "Missing data/raw/ISIC_external/labels_harmonized.csv"},
+            "results/external_test_status.json",
+        )
+        print("external inference skipped: harmonized labels missing")
+        return
+    image_dir = Path("data/raw/ISIC_external/images")
+    rows = []
+    pred_dir = ensure_dir("outputs/predictions")
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    for run_dir in Path(args.all_runs).glob("*"):
+        if not run_dir.is_dir():
+            continue
+        config = load_yaml(run_dir / "config.yaml")
+        dataset = ExternalEndpointDataset(
+            labels,
+            image_dir,
+            transform=build_transforms(config, "eval"),
+            metadata_config=config.get("data", {}).get("metadata", {}),
+        )
+        loader = DataLoader(dataset, batch_size=int(config["train"].get("batch_size", 64)), shuffle=False, num_workers=0)
+        model = build_model(config).to(device)
+        ckpt_path = run_dir / "checkpoints" / "best_val_macro_f1.pth"
+        if ckpt_path.exists():
+            ckpt = load_checkpoint(ckpt_path, map_location=device)
+            model.load_state_dict(ckpt["model"], strict=False)
+        model.eval()
+        all_scores, all_labels, out_rows = [], [], []
+        with torch.no_grad():
+            for batch in loader:
+                images = batch["image"].to(device)
+                metadata = batch.get("metadata")
+                if isinstance(metadata, torch.Tensor):
+                    metadata = metadata.to(device)
+                out = model(images, metadata=metadata)
+                logits = out["logits"].float().cpu().numpy()
+                probs = np.exp(logits - logits.max(axis=1, keepdims=True))
+                probs = probs / probs.sum(axis=1, keepdims=True)
+                mel_logits = out.get("mel_logits")
+                if isinstance(mel_logits, torch.Tensor):
+                    scores = torch.sigmoid(mel_logits).float().cpu().numpy()
+                else:
+                    scores = probs[:, 4]
+                all_scores.append(scores)
+                all_labels.append(batch["label"].numpy())
+                for i in range(len(batch["label"])):
+                    out_rows.append(
+                        {
+                            "image_id": batch["image_id"][i],
+                            "label": int(batch["label"][i]),
+                            "prob_mel": float(probs[i, 4]),
+                            "prob_mel_endpoint": float(scores[i]),
+                            "path": batch["path"][i],
+                        }
+                    )
+        scores_arr = np.concatenate(all_scores, axis=0)
+        binary_labels = np.concatenate(all_labels, axis=0)
+        # Convert binary external labels into 7-class-compatible labels for endpoint helper.
+        labels7 = np.where(binary_labels == 1, 4, 5)
+        thresholds, threshold_source = validation_thresholds(run_dir)
+        metrics, _ = endpoint_metrics_from_scores(labels7, scores_arr, thresholds=thresholds)
+        pd.DataFrame(out_rows).to_csv(pred_dir / f"{run_dir.name}_external_predictions.csv", index=False)
+        internal_mel_auc = None
+        metrics_path = run_dir / "metrics_test.json"
+        if metrics_path.exists():
+            import json
+
+            internal_mel_auc = json.loads(metrics_path.read_text(encoding="utf-8")).get("mel_auc")
+        rows.append(
+            {
+                "run_id": run_dir.name,
+                "threshold_source": threshold_source,
+                "Internal Mel-AUC": internal_mel_auc,
+                "External Mel-AUC": metrics.get("roc_auc"),
+                "Drop": None if internal_mel_auc is None else internal_mel_auc - metrics.get("roc_auc"),
+                **metrics,
+            }
+        )
+    columns = [
+        "run_id",
+        "threshold_source",
+        "Internal Mel-AUC",
+        "External Mel-AUC",
+        "Drop",
+        "roc_auc",
+        "pr_auc",
+        "sensitivity",
+        "specificity",
+        "brier",
+        "ece",
+    ]
+    pd.DataFrame(rows, columns=columns if not rows else None).to_csv("results/external_test_table.csv", index=False)
+    write_json({"status": "completed", "labels_csv": str(labels), "rows": len(rows)}, "results/external_test_status.json")
+    print(f"wrote external status for {len(rows)} runs")
+
+
+if __name__ == "__main__":
+    main()
