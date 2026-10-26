@@ -3,6 +3,28 @@
 Research software for dermoscopic skin-lesion classification, melanoma endpoint
 evaluation, and analysis of internal and external performance.
 
+## Current Release: R5.2
+
+**Start here for the R5.2 source and analysis archive.**
+
+- [Browse the R5.2 source](https://github.com/CloudVVVV131/OncoDerm-MambaX/tree/release/r5.2-source-archive)
+- [R5.2 release and downloads](https://github.com/CloudVVVV131/OncoDerm-MambaX/releases/tag/r5.2-source-archive)
+- [Download the reviewed source ZIP](https://github.com/CloudVVVV131/OncoDerm-MambaX/releases/download/r5.2-source-archive/OncoDerm_R5_2_Source_Release_Candidate.zip)
+- [R5.2 runbook](https://github.com/CloudVVVV131/OncoDerm-MambaX/blob/r5.2-source-archive/RUNBOOK.md)
+- [Zenodo version DOI: 10.5281/zenodo.23604529](https://doi.org/10.5281/zenodo.23604529)
+- [File-specific license scope](https://github.com/CloudVVVV131/OncoDerm-MambaX/blob/r5.2-source-archive/LICENSE_SCOPE.csv)
+
+R5.2 is preserved on the dedicated `release/r5.2-source-archive` branch and
+`r5.2-source-archive` tag. The `main` branch retains the earlier source layout;
+its installation instructions and citation below describe that earlier version.
+For R5.2, use the source and runbook linked above. The previous
+[v0.3.0 release](https://github.com/CloudVVVV131/OncoDerm-MambaX/releases/tag/v0.3.0)
+and its history remain available.
+
+---
+
+**Earlier source guide (v0.3.0 / retained main code)**
+
 ## Contents
 
 - `lesionmamba/`: OncoDerm-MambaX, timm comparators, data loaders, losses and metrics.
